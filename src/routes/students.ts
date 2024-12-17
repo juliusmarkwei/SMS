@@ -7,7 +7,7 @@ import { signupStudentValidationScheme } from "@/utils/middleware/validators/stu
 
 const router = Router();
 
-router.get("/:studentId", StudentController.singleStudent);
+router.get("/:studentId", StudentController.getSingleStudent);
 router.put(
     "/:studentId",
     checkSchema(studentUpdateValidationScheme),

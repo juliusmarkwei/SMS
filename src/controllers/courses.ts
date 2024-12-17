@@ -11,9 +11,20 @@ connect();
 
 class CourseController {
     static async getAllCourses(req: Request, res: Response) {
-        const { department, semester } = req.query;
+        const {
+            department,
+            semester,
+            credits,
+            page = 1,
+            limit = 10,
+        } = req.query;
 
         try {
+            // Pagination setup
+            const pageNumber = parseInt(page as string, 10) || 1;
+            const pageSize = parseInt(limit as string, 10) || 10;
+            const skip = (pageNumber - 1) * pageSize;
+
             const query: any = {};
             if (department) {
                 query.department = { $regex: department, $options: "i" };
@@ -21,18 +32,24 @@ class CourseController {
             if (semester) {
                 query.semester = { $regex: semester, $options: "i" };
             }
+            if (credits) {
+                query.credits = parseInt(credits as string, 10);
+            }
 
-            // cache key
             const cacheKey = `courses:dep=${department || "all"}&sem=${
                 semester || "all"
-            }`;
+            }&credits=${credits}&page=${pageNumber}&limit=${pageSize}`;
 
             const courses = await getOrSetCache(cacheKey, async () => {
-                const results: ICourse[] | null = await Course.find(
-                    query
-                ).select("-__v");
+                const results: ICourse[] = await Course.find(query)
+                    .select("-__v")
+                    .skip(skip)
+                    .limit(pageSize);
                 return results;
             });
+
+            // Get the total count of documents (for pagination metadata)
+            const totalCourses = await Course.countDocuments(query);
 
             if (!courses || courses.length === 0) {
                 res.status(404).json({
@@ -42,7 +59,17 @@ class CourseController {
                 return;
             }
 
-            res.status(200).json({ success: true, courses });
+            // Pagination metadata
+            const totalPages = Math.ceil(totalCourses / pageSize);
+
+            res.status(200).json({
+                success: true,
+                page: pageNumber,
+                limit: pageSize,
+                totalCourses,
+                totalPages,
+                courses,
+            });
         } catch (error) {
             res.status(500).json({
                 success: false,
@@ -106,8 +133,8 @@ class CourseController {
             });
             await course.save();
             res.status(201).json({
-                message: "Course created successfully!",
                 success: true,
+                message: "Course created successfully!",
             });
         } catch (error: any) {
             logger.error(error);
@@ -119,8 +146,8 @@ class CourseController {
                 )[0];
                 const duplicateValue = error.keyValue[duplicateField];
                 res.status(400).json({
-                    message: `A course with the same ${duplicateField} (${duplicateValue}) already exists.`,
                     success: false,
+                    message: `A course with the same ${duplicateField} (${duplicateValue}) already exists.`,
                 });
                 return;
             }
@@ -131,17 +158,17 @@ class CourseController {
                     (err: any) => err.message
                 );
                 res.status(400).json({
+                    success: false,
                     message: "Validation error",
                     errors: validationErrors,
-                    success: false,
                 });
                 return;
             }
 
             // General error fallback
             res.status(500).json({
-                message: "Internal server error",
                 success: false,
+                message: "Internal server error",
             });
         }
     }
@@ -236,7 +263,10 @@ class CourseController {
                 });
                 return;
             }
-            res.status(200).json({ message: "Course deleted", success: true });
+            res.status(200).json({
+                success: true,
+                message: "Course deleted successfullt!",
+            });
         } catch (error) {
             logger.error(error);
             res.status(500).json({

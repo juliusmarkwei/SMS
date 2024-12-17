@@ -22,21 +22,45 @@ class EnrollmentController {
             return;
         }
 
-        const { _id } =
+        const { id, role } = req.user as { [key: string]: string };
+        const isInstructor = role === Role.INSTRUCTOR;
+        if (!isInstructor) {
+            // check if student is enrolling themselve, else deny them
+            const student = await Student.findOne({ user: id, _id: studentId });
+            if (!student) {
+                res.status(401).json({
+                    success: false,
+                    message: "You are not authorized to enroll another student",
+                });
+                return;
+            }
+        }
+
+        console.log("--------------------------------");
+
+        const course =
             ((await Course.findOne({ code: courseCode }).select(
                 "_id"
             )) as ICourse) || null;
 
+        if (!course) {
+            res.status(404).json({
+                success: false,
+                message: `Course with code ${courseCode} not found`,
+            });
+            return;
+        }
+
         try {
             const enrollment = new Enrollment({
                 student: studentId,
-                course: _id,
+                course: course._id,
             });
             await enrollment.save();
 
             // add courseId to courses for the student
             await Student.findByIdAndUpdate(studentId, {
-                $push: { courses: _id },
+                $push: { courses: course._id },
             });
 
             res.status(201).json({
@@ -75,6 +99,8 @@ class EnrollmentController {
 
     static async getAllCoursesForAStudent(req: Request, res: Response) {
         const { studentId } = req.params;
+
+        // Validate studentId
         if (!studentId) {
             res.status(400).json({
                 message: "Student ID is required",
@@ -83,35 +109,57 @@ class EnrollmentController {
             return;
         }
 
-        const query: any = { _id: studentId };
-
-        // check to restrict student's to view only their courses
-        const { id, role } = req.user as { [key: string]: string };
-        const isInstructor = role === Role.INSTRUCTOR;
-        if (!isInstructor) {
-            query.user = id;
-        }
-
         try {
+            const { id, role } = req.user as { [key: string]: string };
+            const isInstructor = role === Role.INSTRUCTOR;
+
+            // Restrict students to only view their own courses
+            const query: any = { _id: studentId };
+            if (!isInstructor) {
+                query.user = id;
+            }
+
+            console.log(query);
+
             const cacheKey = isInstructor
                 ? `enrollments:studentId=${studentId}`
                 : `enrollments:studentId=${studentId}&user=${id}`;
 
             const courses = await getOrSetCache(cacheKey, async () => {
-                const results: IStudent[] | null = await Student.find(query)
-                    .populate("courses")
-                    .select("-__v");
-                return results
-                    .map((student: any) => student.toObject().courses)
-                    .flat();
+                // Fetch the student and populate courses
+                const studentCourses: IStudent[] | null = await Student.find(
+                    query
+                )
+                    .populate("courses", "-__v")
+                    .select("courses");
+
+                if (!studentCourses || studentCourses.length === 0) {
+                    return null;
+                }
+                console.log("-----------------------------", studentCourses);
+                logger.info("Fetched Courses:", studentCourses);
+
+                // Return the courses array
+                return studentCourses[0].courses;
             });
 
-            res.status(200).json({ success: true, courses });
-        } catch (error) {
-            logger.error(error);
+            if (!courses || courses.length === 0) {
+                res.status(404).json({
+                    success: false,
+                    message: "No courses found for this student",
+                });
+                return;
+            }
+
+            res.status(200).json({
+                success: true,
+                courses,
+            });
+        } catch (error: any) {
+            logger.error(error.message);
             res.status(500).json({
                 success: false,
-                message: "Internal server error",
+                message: error.message || "Internal server error",
             });
         }
     }
@@ -189,7 +237,7 @@ class EnrollmentController {
                     user: id,
                 }).select("_id");
                 if (!student) {
-                    res.status(403).json({
+                    res.status(401).json({
                         success: false,
                         message: "Unauthorized: Student not found",
                     });
@@ -213,9 +261,9 @@ class EnrollmentController {
             }
 
             // Remove the enrollment from the student's courses array
-            await Student.updateOne(
+            await Student.findByIdAndUpdate(
                 { _id: deletedEnrollment.student },
-                { $pull: { courses: enrollmentId } }
+                { $pull: { courses: deletedEnrollment.course } }
             );
 
             res.status(200).json({
@@ -241,8 +289,9 @@ class EnrollmentController {
                             path: "student",
                             populate: {
                                 path: "user",
-                                select: "name email phone _id",
+                                select: "name _id",
                             },
+                            select: "name email level",
                         })
                         .populate("course", "_id name code")
                         .select("-__v");

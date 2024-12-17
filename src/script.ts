@@ -31,7 +31,7 @@ app.use(express.static(path.resolve(__dirname, "..", "public")));
 
 app.use("/api/v1/auth/", authRouter);
 
-app.use(checkJwtToken, studentRateLimiter);
+app.use(checkJwtToken);
 app.use("/api/v1/students/", studentRouter);
 app.use("/api/v1/instructors/", instructorRouter);
 app.use("/api/v1/courses/", courseRouter);

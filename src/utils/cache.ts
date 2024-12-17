@@ -2,7 +2,7 @@ import { createClient, RedisClientType } from "redis";
 
 const client: RedisClientType = createClient();
 
-const DEFAULT_EXPIRATION_TIME = 30;
+const DEFAULT_EXPIRATION_TIME = 60;
 
 (async () => {
     try {

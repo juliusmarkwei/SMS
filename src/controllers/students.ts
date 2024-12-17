@@ -16,6 +16,10 @@ import { IStudent } from "@/utils/types/student";
 connect();
 
 class StudentController {
+    static async getStudentById(studentId: string) {
+        return await Student.findById(studentId);
+    }
+
     static async createStudent(req: Request, res: Response) {
         const errors = requestBodyErrorsInterrupt(req, res);
         if (errors) return;
@@ -77,7 +81,7 @@ class StudentController {
             res.status(201).json({
                 success: true,
                 message: `${Role.STUDENT} created successfully!`,
-                data: { id: user._id, email: user.email },
+                data: { studentId: student._id, email: user.email },
             });
         } catch (err) {
             logger.error(err);
@@ -89,33 +93,35 @@ class StudentController {
     }
 
     // View user info (students & instructors allowed)
-    static async singleStudent(req: Request, res: Response) {
+    static async getSingleStudent(req: Request, res: Response) {
         try {
             const { studentId } = req.params;
 
-            if (!studentId) {
+            if (!studentId || !Types.ObjectId.isValid(studentId)) {
                 res.status(400).json({
                     success: false,
-                    error: "Student ID is required",
+                    error: "studentId not provided or is invalid",
                 });
                 return;
             }
 
-            // Validate if `studentId` is a valid MongoDB ObjectId
-            if (!Types.ObjectId.isValid(studentId)) {
-                res.status(400).json({
-                    success: false,
-                    error: "Invalid Student ID format",
-                });
-                return;
+            const query: any = { _id: studentId };
+
+            // check to restrict student's to view only their courses
+            const { id, role } = req.user as { [key: string]: string };
+            const isInstructor = role === Role.INSTRUCTOR;
+            if (!isInstructor) {
+                query.user = id;
             }
+
+            logger.debug(query);
 
             // Fetch the student from cache or database
             const student = await getOrSetCache(
-                `student:${studentId}`,
+                `student:studId=${studentId}&user=${id}`,
                 async () => {
-                    const studentDoc: IStudent | null = await Student.findById(
-                        new Types.ObjectId(studentId)
+                    const studentDoc: IStudent | null = await Student.findOne(
+                        query
                     )
                         .populate({
                             path: "user",
@@ -124,11 +130,12 @@ class StudentController {
                         .select("level cgpa courses _id");
 
                     if (!studentDoc) {
-                        throw new Error("Student not found");
+                        throw new Error(
+                            "You are not authorized to view this student's information"
+                        );
                     }
 
                     // Convert to plain object and merge fields
-                    console.log(studentDoc);
                     const studentObject = studentDoc.toObject();
                     const { user, ...studentData } = studentObject;
                     return { ...user, ...studentData };
@@ -166,37 +173,48 @@ class StudentController {
             const validationErrors = requestBodyErrorsInterrupt(req, res);
             if (validationErrors) return;
 
+            // Extract validated data
             const { name, phone, dateOfBirth, address, gender, level, cgpa } =
                 matchedData(req);
+            const { id, role } = req.user as { [key: string]: string };
 
-            const updates: any = { name, phone, dateOfBirth, address, gender };
+            const basicUpdates = { name, phone, dateOfBirth, address, gender };
 
-            // Role-based updates
-            if (req.user!.role === Role.STUDENT) {
-                // Students can only update their basic profile information
-                const updatedUser: IUser | null = await User.findByIdAndUpdate(
-                    new Types.ObjectId(studentId),
-                    updates,
-                    { new: true, runValidators: true }
+            if (role === Role.STUDENT) {
+                // Students can only update their own basic profile
+                const foundStudent = await StudentController.getStudentById(
+                    studentId
                 );
 
-                if (!updatedUser) {
-                    res.status(404).json({
+                if (!foundStudent || foundStudent.user.toString() !== id) {
+                    res.status(401).json({
                         success: false,
-                        error: "User not found",
+                        error: "You are not authorized to update this student's information",
                     });
                     return;
                 }
+
+                if (level || cgpa) {
+                    res.status(401).json({
+                        success: false,
+                        error: "You are not authorized to update this student's level or cgpa",
+                    });
+                    return;
+                }
+
+                await User.findByIdAndUpdate(id, basicUpdates, {
+                    new: true,
+                    runValidators: true,
+                });
             } else {
-                // Instructors can update both user and student-specific data
+                // Instructors can update student-specific data and basic user data
                 const studentUpdates = { level, cgpa };
 
                 const updatedStudent: IStudent | null =
-                    await Student.findByIdAndUpdate(
-                        new Types.ObjectId(studentId),
-                        studentUpdates,
-                        { new: true, runValidators: true }
-                    );
+                    await Student.findByIdAndUpdate(studentId, studentUpdates, {
+                        new: true,
+                        runValidators: true,
+                    });
 
                 if (!updatedStudent) {
                     res.status(404).json({
@@ -207,44 +225,48 @@ class StudentController {
                 }
 
                 const updatedUser: IUser | null = await User.findByIdAndUpdate(
-                    new Types.ObjectId(studentId),
-                    updates,
+                    updatedStudent.user,
+                    basicUpdates,
                     { new: true, runValidators: true }
                 );
 
                 if (!updatedUser) {
                     res.status(404).json({
                         success: false,
-                        error: "User not found",
+                        error: "Associated user not found",
                     });
                     return;
                 }
             }
 
-            res.json({
+            res.status(200).json({
                 success: true,
-                message: "User updated successfully",
+                message: "Student updated successfully",
             });
         } catch (error: any) {
             res.status(500).json({
                 success: false,
                 error:
                     error.message ||
-                    "An error occurred while updating the user",
+                    "An error occurred while updating the student",
             });
         }
     }
 
     // Get all students (instructors only)
     static async getAllStudents(req: Request, res: Response) {
-        const { name, gender, level, cgpa } = req.query;
+        const { name, gender, level, cgpa, page = 1, limit = 10 } = req.query;
         logger.debug(req.query);
+
         try {
             const query: any = {};
 
+            // Filtering for level
             if (level) {
                 query["level"] = parseInt(level as string, 10);
             }
+
+            // Filtering for cgpa
             if (cgpa) {
                 const cgpaFilter =
                     typeof cgpa === "string" ? cgpa : cgpa.toString();
@@ -261,40 +283,72 @@ class StudentController {
                 }
             }
 
-            console.log(query);
-            // Fetch all students and populate the user data
-            const students: IStudent[] | null = await Student.find(query)
-                .populate({
-                    path: "user",
-                    select: "name email phone dateOfBirth address gender -_id",
-                    match: {
-                        ...(name
-                            ? {
-                                  name: {
-                                      $regex: new RegExp(name as string, "i"),
-                                  },
-                              }
-                            : {}),
-                        ...(gender ? { gender } : {}),
-                    },
-                })
-                .select("level cgpa courses _id")
-                .exec();
+            const cacheKey = `students:name=${name}&gender=${gender}&level=${level}&cgpa=${cgpa}&page=${page}&limit=${limit}`;
 
-            const filteredStudents = students.filter(
-                (student) => student.user !== null
+            const students: IStudent[] | null = await getOrSetCache(
+                cacheKey,
+                async () => {
+                    const skip =
+                        (parseInt(page as string, 10) - 1) *
+                        parseInt(limit as string, 10);
+
+                    const students: IStudent[] | null = await Student.find(
+                        query
+                    )
+                        .populate({
+                            path: "user",
+                            select: "name email phone dateOfBirth address gender -_id",
+                            match: {
+                                ...(name
+                                    ? {
+                                          name: {
+                                              $regex: new RegExp(
+                                                  name as string,
+                                                  "i"
+                                              ),
+                                          },
+                                      }
+                                    : {}),
+                                ...(gender ? { gender } : {}),
+                            },
+                        })
+                        .select("level cgpa courses _id")
+                        .skip(skip)
+                        .limit(parseInt(limit as string, 10))
+                        .exec();
+
+                    // Filter out results where the user field is null
+                    const filteredStudents = students.filter(
+                        (student) => student.user !== null
+                    );
+
+                    if (!filteredStudents || filteredStudents.length === 0) {
+                        return null;
+                    }
+
+                    // Merge the user fields into the main student object
+                    const mergedStudents = filteredStudents.map((student) => {
+                        const studentObj = student.toObject();
+                        const { user, ...studentData } = studentObj;
+                        return { ...user, ...studentData };
+                    });
+
+                    return mergedStudents;
+                }
             );
 
-            // Convert each student document to a plain object and merge the user fields
-            const mergedStudents = filteredStudents.map((student) => {
-                const studentObj = student.toObject();
-                const { user, ...studentData } = studentObj;
-                return { ...user, ...studentData };
-            });
+            // Calculate total count (needed for pagination metadata)
+            const totalCount = await Student.countDocuments(query);
 
             res.status(200).json({
                 success: true,
-                students: mergedStudents,
+                currentPage: parseInt(page as string, 10),
+                totalPages: Math.ceil(
+                    totalCount / parseInt(limit as string, 10)
+                ),
+                count: totalCount,
+                size: parseInt(limit as string, 10),
+                data: students,
             });
         } catch (error: any) {
             res.status(500).json({
