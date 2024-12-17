@@ -1,6 +1,7 @@
 import { models, model, Schema } from "mongoose";
+import { IInstructor } from "@/utils/types/instructor";
 
-const InstructorSchema = new Schema(
+const InstructorSchema: Schema<IInstructor> = new Schema(
     {
         user: {
             type: Schema.Types.ObjectId,
@@ -9,7 +10,7 @@ const InstructorSchema = new Schema(
         },
         department: {
             type: String,
-            required: true,
+            required: false,
         },
         coursesTaught: [
             {

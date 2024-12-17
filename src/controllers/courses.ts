@@ -5,6 +5,7 @@ import { logger } from "@/utils/logger";
 import { requestBodyErrorsInterrupt } from "@/utils/middleware/handleReqBodyErrors";
 import { matchedData } from "express-validator";
 import { getOrSetCache } from "@/utils/cache";
+import { ICourse } from "@/utils/types/course";
 
 connect();
 
@@ -27,7 +28,9 @@ class CourseController {
             }`;
 
             const courses = await getOrSetCache(cacheKey, async () => {
-                const results = await Course.find(query).select("-__v");
+                const results: ICourse[] | null = await Course.find(
+                    query
+                ).select("-__v");
                 return results;
             });
 
@@ -61,7 +64,7 @@ class CourseController {
             const course = await getOrSetCache(
                 `course:courseCode=${courseCode}`,
                 async () => {
-                    const result = await Course.findOne({
+                    const result: ICourse | null = await Course.findOne({
                         code: courseCode,
                     }).select("-__v");
 
@@ -86,14 +89,14 @@ class CourseController {
     }
 
     static async createCourse(req: Request, res: Response) {
-        const result = requestBodyErrorsInterrupt(req, res);
-        if (result) return;
+        const errors = requestBodyErrorsInterrupt(req, res);
+        if (errors) return;
 
         const { name, code, description, credits, semester, department } =
             matchedData(req);
 
         try {
-            const course = new Course({
+            const course: ICourse = new Course({
                 name,
                 code,
                 description,
@@ -153,14 +156,14 @@ class CourseController {
             return;
         }
 
-        const result = requestBodyErrorsInterrupt(req, res);
-        if (result) return;
+        const errors = requestBodyErrorsInterrupt(req, res);
+        if (errors) return;
 
         const { name, code, description, credits, semester, department } =
             matchedData(req);
 
         try {
-            const course = await Course.findOneAndUpdate(
+            const course: ICourse | null = await Course.findOneAndUpdate(
                 { code: courseCode },
                 { name, code, description, credits, semester, department },
                 { new: true }
@@ -223,7 +226,9 @@ class CourseController {
             return;
         }
         try {
-            const course = await Course.findOneAndDelete({ code: courseCode });
+            const course: ICourse | null = await Course.findOneAndDelete({
+                code: courseCode,
+            });
             if (!course) {
                 res.status(404).json({
                     message: "Course not found",

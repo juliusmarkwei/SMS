@@ -6,6 +6,7 @@ import { getOrSetCache } from "@/utils/cache";
 import Student from "@/models/Student";
 import Course from "@/models/Course";
 import { Role } from "@/utils/enums";
+import { ICourse } from "@/utils/types/course";
 
 connect();
 
@@ -20,9 +21,10 @@ class EnrollmentController {
             return;
         }
 
-        const { _id } = await Course.findOne({ code: courseCode }).select(
-            "_id"
-        );
+        const { _id } =
+            ((await Course.findOne({ code: courseCode }).select(
+                "_id"
+            )) as ICourse) || null;
 
         try {
             const enrollment = new Enrollment({
@@ -128,7 +130,7 @@ class EnrollmentController {
             const cacheKey = `enrollments:courseCode=${courseCode}`;
 
             const students = await getOrSetCache(cacheKey, async () => {
-                const course = await Course.findOne({
+                const course: ICourse | null = await Course.findOne({
                     code: courseCode,
                 }).select("_id");
 
@@ -162,6 +164,7 @@ class EnrollmentController {
 
     static async deleteEnrollment(req: Request, res: Response) {
         const { enrollmentId } = req.params;
+
         if (!enrollmentId) {
             res.status(400).json({
                 success: false,
@@ -170,25 +173,48 @@ class EnrollmentController {
             return;
         }
 
-        const enrollmentQuery: any = {};
-        // check to restrict a student to delete their own enrollment only
+        // Build query to restrict students from deleting other enrollments
         const { id, role } = req.user as { [key: string]: string };
         const isInstructor = role === Role.INSTRUCTOR;
-        if (!isInstructor) {
-            const studentId = await Student.find({ user: id }).select("_id");
-            enrollmentQuery.student = studentId;
-        }
 
         try {
-            const deletedEnrollment: any = await Enrollment.findByIdAndDelete(
-                enrollmentId
-            );
+            const enrollmentQuery: any = { _id: enrollmentId };
 
-            // delete the from user model
-            await Student.updateMany(
-                { courses: enrollmentId, _id: deletedEnrollment.student },
+            if (!isInstructor) {
+                // Get the student's _id
+                const student = await Student.findOne({ user: id }).select(
+                    "_id"
+                );
+                if (!student) {
+                    res.status(403).json({
+                        success: false,
+                        message: "Unauthorized: Student not found",
+                    });
+                    return;
+                }
+
+                // Restrict deletion to the student's enrollment only
+                enrollmentQuery.student = student._id;
+            }
+
+            // Delete the enrollment
+            const deletedEnrollment: any = await Enrollment.findOneAndDelete(
+                enrollmentQuery
+            );
+            if (!deletedEnrollment) {
+                res.status(404).json({
+                    success: false,
+                    message: "Enrollment not found!",
+                });
+                return;
+            }
+
+            // Remove the enrollment from the student's courses array
+            await Student.updateOne(
+                { _id: deletedEnrollment.student },
                 { $pull: { courses: enrollmentId } }
             );
+
             res.status(200).json({
                 success: true,
                 message: "Enrollment deleted successfully",
@@ -212,22 +238,30 @@ class EnrollmentController {
                             path: "student",
                             populate: {
                                 path: "user",
-                                select: "name email phone -_id",
+                                select: "name email phone _id",
                             },
                         })
                         .populate("course", "_id name code")
                         .select("-__v");
 
                     const foramattedResults = results.map((enrollment: any) => {
-                        const { student, course, ...rest } =
-                            enrollment.toObject();
+                        const { student, ...rest } = enrollment.toObject();
+                        const { user, ...studentRest } = student;
+                        const studentDateCombined = {
+                            ...studentRest,
+                            ...user,
+                            __v: undefined, // exclude from result
+                            courses: undefined,
+                            cgps: undefined,
+                            createdAt: undefined,
+                            updatedAt: undefined,
+                        };
                         return {
                             ...rest,
-                            ...student,
-                            ...course,
+                            student: studentDateCombined,
                         };
                     });
-                    return results;
+                    return foramattedResults;
                 }
             );
 

@@ -43,7 +43,7 @@ export const sendResetPasswordEmail = async (
     }
 };
 
-export const emailNewUsers = async (user: IUser) => {
+export const emailNewUsers = async (user: IUser, password: string) => {
     try {
         // create email transport
         const transporter = nodemailer.createTransport({
@@ -68,6 +68,7 @@ export const emailNewUsers = async (user: IUser) => {
             html: `
 				<p>Dear ${user.role} - ${user.name || "User"},</p>
 				<p>We are pleased to inform you that you have been successfully registered on our platform.
+                Your password is <strong>${password}</strong>.
                 Reset your password to start using our system. We look forward to having you as a part of our community.</p>
 				<p>Thank you</p>
 			`,

@@ -10,13 +10,14 @@ import bcrypt from "bcrypt";
 import { emailNewUsers } from "@/utils/mailer";
 import { logger } from "@/utils/logger";
 import { getOrSetCache } from "@/utils/cache";
+import { IUser } from "@/utils/types/user";
 
 connect();
 
 class StudentController {
     static async createStudent(req: Request, res: Response) {
-        const error = requestBodyErrorsInterrupt(req, res);
-        if (error) return;
+        const errors = requestBodyErrorsInterrupt(req, res);
+        if (errors) return;
 
         try {
             const {
@@ -32,7 +33,7 @@ class StudentController {
             } = matchedData(req);
 
             // Check if user already exists
-            const userExists = await User.findOne({ email });
+            const userExists: IUser | null = await User.findOne({ email });
             if (userExists) {
                 res.status(400).json({
                     success: false,
@@ -48,7 +49,7 @@ class StudentController {
             );
 
             // Create user and student simultaneously
-            const user = new User({
+            const user: IUser = new User({
                 name,
                 email,
                 password: hashedPassword,
@@ -66,7 +67,7 @@ class StudentController {
             await Promise.all([user.save(), student.save()]);
 
             // Notify new user via email of their new account
-            await emailNewUsers(user);
+            await emailNewUsers(user, password);
 
             res.status(201).json({
                 success: true,
@@ -81,77 +82,6 @@ class StudentController {
             });
         }
     }
-
-    // static async createInstructor(req: Request, res: Response) {
-    //     const error = requestBodyErrorsInterrupt(req, res);
-    //     if (error) return;
-
-    //     try {
-    //         const {
-    //             name,
-    //             email,
-    //             password,
-    //             phone,
-    //             gender,
-    //             dateOfBirth,
-    //             address,
-    //             department,
-    //             salary,
-    //         } = matchedData(req);
-
-    //         // Check if user already exists
-    //         const userExists = await User.findOne({ email });
-    //         if (userExists) {
-    //             res.status(400).json({
-    //                 success: false,
-    //                 error: "Instructor already exists!",
-    //             });
-    //             return;
-    //         }
-
-    //         // Hash password
-    //         const hashedPassword = await bcrypt.hash(
-    //             password,
-    //             await bcrypt.genSalt(10)
-    //         );
-
-    //         // Create user and instructor simultaneously
-    //         const user = new User({
-    //             name,
-    //             email,
-    //             password: hashedPassword,
-    //             role: Role.INSTRUCTOR,
-    //             phone,
-    //             gender,
-    //             dateOfBirth,
-    //             address,
-    //         });
-
-    //         const instructor = new Instructor({
-    //             user: user._id,
-    //             department,
-    //             salary,
-    //         });
-
-    //         // running both save operations concurrently
-    //         await Promise.all([user.save(), instructor.save()]);
-
-    //         // Notify new isntructors via email about their new account
-    //         await emailNewUsers(user);
-
-    //         res.status(201).json({
-    //             success: true,
-    //             message: `${Role.INSTRUCTOR} created successfully!`,
-    //             data: { id: user._id, email: user.email },
-    //         });
-    //     } catch (err) {
-    //         logger.error(err);
-    //         res.status(500).json({
-    //             success: false,
-    //             error: "Internal server error.",
-    //         });
-    //     }
-    // }
 
     // View user info (students & instructors allowed)
     static async singleStudent(req: Request, res: Response) {
@@ -239,7 +169,7 @@ class StudentController {
             // Role-based updates
             if (req.user!.role === Role.STUDENT) {
                 // Students can only update their basic profile information
-                const updatedUser = await User.findByIdAndUpdate(
+                const updatedUser: IUser | null = await User.findByIdAndUpdate(
                     new Types.ObjectId(studentId),
                     updates,
                     { new: true, runValidators: true }
@@ -270,7 +200,7 @@ class StudentController {
                     return;
                 }
 
-                const updatedUser = await User.findByIdAndUpdate(
+                const updatedUser: IUser | null = await User.findByIdAndUpdate(
                     new Types.ObjectId(studentId),
                     updates,
                     { new: true, runValidators: true }
@@ -425,7 +355,7 @@ class StudentController {
             }
 
             // Delete the associated user
-            const deletedUser = await User.findByIdAndDelete(
+            const deletedUser: IUser | null = await User.findByIdAndDelete(
                 new Types.ObjectId(studentId)
             );
 

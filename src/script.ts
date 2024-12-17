@@ -8,6 +8,7 @@ import { checkJwtToken } from "@/utils/middleware/authenticateUser";
 import { studentRouter } from "./routes/students";
 import { courseRouter } from "./routes/courses";
 import { enrollmentRouter } from "./routes/enrollments";
+import { instructorRouter } from "./routes/instructors";
 
 const app = express();
 const PORT = 3000;
@@ -31,6 +32,7 @@ app.use("/api/v1/auth/", authRouter);
 
 app.use(checkJwtToken);
 app.use("/api/v1/students/", studentRouter);
+app.use("/api/v1/instructors/", instructorRouter);
 app.use("/api/v1/courses/", courseRouter);
 app.use("/api/v1/enrollments/", enrollmentRouter);
 

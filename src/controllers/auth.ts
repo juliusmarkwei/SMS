@@ -9,6 +9,7 @@ import { sendResetPasswordEmail } from "@/utils/mailer";
 import connect from "@/utils/dbConfig";
 import { AuthToken } from "@/utils/types/jwt";
 import { Token } from "@/utils/enums";
+import { IUser } from "@/utils/types/user";
 
 connect();
 
@@ -92,7 +93,7 @@ class AuthController {
             }
 
             // Find the user associated with the refresh token
-            const user = await User.findById(decoded.id);
+            const user: IUser | null = await User.findById(decoded.id);
             if (!user) {
                 res.status(400).json({
                     success: false,
@@ -123,14 +124,14 @@ class AuthController {
     }
 
     static async forgotPassword(req: Request, res: Response) {
-        const result = requestBodyErrorsInterrupt(req, res);
-        if (result) return;
+        const errors = requestBodyErrorsInterrupt(req, res);
+        if (errors) return;
 
         try {
             const { email } = matchedData(req);
 
             // Find the user by email
-            const user = await User.findOne({ email });
+            const user: IUser | null = await User.findOne({ email });
             if (!user) {
                 res.status(400).json({
                     error: "Check your email and try again!",
@@ -178,8 +179,8 @@ class AuthController {
     }
 
     static async resetPassword(req: Request, res: Response) {
-        const result = requestBodyErrorsInterrupt(req, res);
-        if (result) return;
+        const errors = requestBodyErrorsInterrupt(req, res);
+        if (errors) return;
 
         const { password, confirmPassword } = matchedData(req);
 
@@ -219,7 +220,7 @@ class AuthController {
             }
 
             // Find user with valid reset token
-            const user = await User.findOne({
+            const user: IUser | null = await User.findOne({
                 resetToken: token,
                 resetTokenExpiry: { $gt: new Date() },
             });

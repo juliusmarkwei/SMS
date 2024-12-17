@@ -2,10 +2,8 @@ import { Router } from "express";
 import { checkSchema } from "express-validator";
 import StudentController from "@/controllers/students";
 import { isInstructor } from "@/utils/middleware/isInstructor";
-import {
-    signupValidationScheme,
-    studentUpdateValidationScheme,
-} from "@/utils/middleware/validators/auth";
+import { studentUpdateValidationScheme } from "@/utils/middleware/validators/student";
+import { signupStudentValidationScheme } from "@/utils/middleware/validators/student";
 
 const router = Router();
 
@@ -21,7 +19,7 @@ router.put(
 router.use(isInstructor);
 router.post(
     "/",
-    checkSchema(signupValidationScheme),
+    checkSchema(signupStudentValidationScheme),
     StudentController.createStudent
 );
 router.get("/", StudentController.getAllStudents);
