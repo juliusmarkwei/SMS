@@ -30,7 +30,7 @@ const CourseSchema: Schema<ICourse> = new Schema(
         semester: {
             type: String,
             required: [true, "Semester is required"],
-            enum: ["Spring", "Summer", "Fall", "Winter"],
+            enum: ["First", "Second"],
         },
         department: {
             type: String,

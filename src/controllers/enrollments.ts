@@ -7,6 +7,7 @@ import Student from "@/models/Student";
 import Course from "@/models/Course";
 import { Role } from "@/utils/enums";
 import { ICourse } from "@/utils/types/course";
+import { IStudent } from "@/utils/types/student";
 
 connect();
 
@@ -97,7 +98,7 @@ class EnrollmentController {
                 : `enrollments:studentId=${studentId}&user=${id}`;
 
             const courses = await getOrSetCache(cacheKey, async () => {
-                const results: any = await Student.find(query)
+                const results: IStudent[] | null = await Student.find(query)
                     .populate("courses")
                     .select("-__v");
                 return results
@@ -138,7 +139,9 @@ class EnrollmentController {
                     throw new Error(`Course with code ${courseCode} not found`);
                 }
 
-                const results = await Student.find({ courses: course._id })
+                const results: IStudent[] | null = await Student.find({
+                    courses: course._id,
+                })
                     .populate("user", "name email phone -_id")
                     .select("-__v -createdAt -updatedAt -courses");
 
@@ -182,9 +185,9 @@ class EnrollmentController {
 
             if (!isInstructor) {
                 // Get the student's _id
-                const student = await Student.findOne({ user: id }).select(
-                    "_id"
-                );
+                const student: IStudent | null = await Student.findOne({
+                    user: id,
+                }).select("_id");
                 if (!student) {
                     res.status(403).json({
                         success: false,

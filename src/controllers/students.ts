@@ -11,6 +11,7 @@ import { emailNewUsers } from "@/utils/mailer";
 import { logger } from "@/utils/logger";
 import { getOrSetCache } from "@/utils/cache";
 import { IUser } from "@/utils/types/user";
+import { IStudent } from "@/utils/types/student";
 
 connect();
 
@@ -61,7 +62,11 @@ class StudentController {
             });
 
             // Saving user and creating student in parallel
-            const student = new Student({ user: user._id, level, cgpa });
+            const student: IStudent = new Student({
+                user: user._id,
+                level,
+                cgpa,
+            });
 
             // running both save operations concurrently
             await Promise.all([user.save(), student.save()]);
@@ -109,7 +114,7 @@ class StudentController {
             const student = await getOrSetCache(
                 `student:${studentId}`,
                 async () => {
-                    const studentDoc = await Student.findById(
+                    const studentDoc: IStudent | null = await Student.findById(
                         new Types.ObjectId(studentId)
                     )
                         .populate({
@@ -186,11 +191,12 @@ class StudentController {
                 // Instructors can update both user and student-specific data
                 const studentUpdates = { level, cgpa };
 
-                const updatedStudent = await Student.findByIdAndUpdate(
-                    new Types.ObjectId(studentId),
-                    studentUpdates,
-                    { new: true, runValidators: true }
-                );
+                const updatedStudent: IStudent | null =
+                    await Student.findByIdAndUpdate(
+                        new Types.ObjectId(studentId),
+                        studentUpdates,
+                        { new: true, runValidators: true }
+                    );
 
                 if (!updatedStudent) {
                     res.status(404).json({
@@ -232,7 +238,7 @@ class StudentController {
     // Get all students (instructors only)
     static async getAllStudents(req: Request, res: Response) {
         const { name, gender, level, cgpa } = req.query;
-        console.log(req.query);
+        logger.debug(req.query);
         try {
             const query: any = {};
 
@@ -257,7 +263,7 @@ class StudentController {
 
             console.log(query);
             // Fetch all students and populate the user data
-            const students = await Student.find(query)
+            const students: IStudent[] | null = await Student.find(query)
                 .populate({
                     path: "user",
                     select: "name email phone dateOfBirth address gender -_id",
@@ -300,34 +306,6 @@ class StudentController {
         }
     }
 
-    // Get all instructors (instructors only)
-    // static async getInstructors(req: Request, res: Response) {
-    //     try {
-    //         const instructors = await Instructor.find()
-    //             .populate({
-    //                 path: "user",
-    //                 select: "name email phone dateOfBirth address",
-    //             })
-    //             .populate({
-    //                 path: "coursesTaught",
-    //                 select: "courseName courseCode",
-    //             })
-    //             .select("department");
-
-    //         res.status(200).json({
-    //             success: true,
-    //             instructors,
-    //         });
-    //     } catch (error: any) {
-    //         res.status(500).json({
-    //             success: false,
-    //             error:
-    //                 error.message ||
-    //                 "An error occurred while fetching instructors.",
-    //         });
-    //     }
-    // }
-
     // instructors only
     static async deleteStudent(req: Request, res: Response) {
         try {
@@ -342,9 +320,8 @@ class StudentController {
             }
 
             // Delete the student
-            const deletedStudent = await Student.findByIdAndDelete(
-                new Types.ObjectId(studentId)
-            );
+            const deletedStudent: IStudent | null =
+                await Student.findByIdAndDelete(new Types.ObjectId(studentId));
 
             if (!deletedStudent) {
                 res.status(404).json({

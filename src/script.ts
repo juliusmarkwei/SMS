@@ -9,6 +9,7 @@ import { studentRouter } from "./routes/students";
 import { courseRouter } from "./routes/courses";
 import { enrollmentRouter } from "./routes/enrollments";
 import { instructorRouter } from "./routes/instructors";
+import { studentRateLimiter } from "./utils/middleware/rateLimitStudent";
 
 const app = express();
 const PORT = 3000;
@@ -30,7 +31,7 @@ app.use(express.static(path.resolve(__dirname, "..", "public")));
 
 app.use("/api/v1/auth/", authRouter);
 
-app.use(checkJwtToken);
+app.use(checkJwtToken, studentRateLimiter);
 app.use("/api/v1/students/", studentRouter);
 app.use("/api/v1/instructors/", instructorRouter);
 app.use("/api/v1/courses/", courseRouter);

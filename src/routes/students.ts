@@ -7,7 +7,6 @@ import { signupStudentValidationScheme } from "@/utils/middleware/validators/stu
 
 const router = Router();
 
-// authenticated students & instructoes routes
 router.get("/:studentId", StudentController.singleStudent);
 router.put(
     "/:studentId",

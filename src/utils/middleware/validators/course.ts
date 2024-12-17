@@ -24,9 +24,8 @@ const baseValidationSchema = {
     semester: {
         optional: true,
         isIn: {
-            options: [["Spring", "Summer", "Fall", "Winter"]],
-            errorMessage:
-                "Semester must be one of Spring, Summer, Fall, or Winter",
+            options: [["First", "Second"]],
+            errorMessage: "Semester must be one of First or Second",
         },
     },
     department: {

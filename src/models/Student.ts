@@ -1,6 +1,7 @@
-import { models, model, Schema } from "mongoose";
+import { models, model, Schema, Types } from "mongoose";
+import { IStudent } from "@/utils/types/student";
 
-const StudentSchema = new Schema(
+const StudentSchema: Schema<IStudent> = new Schema(
     {
         user: {
             type: Schema.Types.ObjectId,
@@ -10,10 +11,10 @@ const StudentSchema = new Schema(
         },
         level: {
             type: Number,
-            default: 0,
+            default: 100,
         },
         cgpa: {
-            type: Number,
+            type: Types.Decimal128,
             default: 0,
         },
         courses: [

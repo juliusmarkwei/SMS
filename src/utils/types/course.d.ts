@@ -5,7 +5,7 @@ export interface ICourse extends Document {
     code: string;
     description?: string;
     credits: number;
-    semester: "Spring" | "Summer" | "Fall" | "Winter";
+    semester: "First" | "Second";
     department: string;
     createdAt?: Date;
     updatedAt?: Date;

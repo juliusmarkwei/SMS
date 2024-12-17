@@ -1,4 +1,4 @@
-import { models, model, Schema } from "mongoose";
+import { models, model, Schema, Types } from "mongoose";
 import { IInstructor } from "@/utils/types/instructor";
 
 const InstructorSchema: Schema<IInstructor> = new Schema(
@@ -20,7 +20,7 @@ const InstructorSchema: Schema<IInstructor> = new Schema(
             },
         ],
         salary: {
-            type: Number,
+            type: Types.Decimal128,
             required: false,
         },
     },

@@ -57,6 +57,7 @@ export const signupStudentValidationScheme = {
         optional: { options: { nullable: true } }, // Make level optional
         isInt: {
             errorMessage: "Level should be an integer",
+            options: { min: 100, max: 400 },
         },
     },
     cgpa: {
