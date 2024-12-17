@@ -6,6 +6,7 @@ const StudentSchema = new Schema(
             type: Schema.Types.ObjectId,
             ref: "User",
             required: true,
+            unique: true,
         },
         level: {
             type: Number,

@@ -71,6 +71,7 @@ export const signupValidationScheme = {
         optional: { options: { nullable: true } }, // Make cgpa optional
         isFloat: {
             errorMessage: "CGPA should be a float",
+            option: { min: 0, max: 4 },
         },
     },
 
@@ -187,6 +188,7 @@ export const studentUpdateValidationScheme = {
         optional: true,
         isFloat: {
             errorMessage: "CGPA should be a float",
+            option: { min: 0, max: 4 },
         },
     },
 };

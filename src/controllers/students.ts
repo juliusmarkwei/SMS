@@ -6,14 +6,14 @@ import { requestBodyErrorsInterrupt } from "@/utils/middleware/handleReqBodyErro
 import { matchedData } from "express-validator";
 import Student from "@/models/Student";
 import { Role } from "@/utils/enums";
-import Instructor from "@/models/Instructor";
 import bcrypt from "bcrypt";
 import { emailNewUsers } from "@/utils/mailer";
 import { logger } from "@/utils/logger";
+import { getOrSetCache } from "@/utils/cache";
 
 connect();
 
-class StudentInstructorController {
+class StudentController {
     static async createStudent(req: Request, res: Response) {
         const error = requestBodyErrorsInterrupt(req, res);
         if (error) return;
@@ -166,30 +166,47 @@ class StudentInstructorController {
                 return;
             }
 
-            // Fetch the student with populated user info
-            const student = await Student.findById(
-                new Types.ObjectId(studentId)
-            )
-                .populate({
-                    path: "user",
-                    select: "name email phone dateOfBirth address",
-                })
-                .select("level cgpa courses");
-
-            if (!student) {
-                res.status(404).json({
+            // Validate if `studentId` is a valid MongoDB ObjectId
+            if (!Types.ObjectId.isValid(studentId)) {
+                res.status(400).json({
                     success: false,
-                    error: "Student not found",
+                    error: "Invalid Student ID format",
                 });
                 return;
             }
 
-            res.json({
+            // Fetch the student from cache or database
+            const student = await getOrSetCache(
+                `student:${studentId}`,
+                async () => {
+                    const studentDoc = await Student.findById(
+                        new Types.ObjectId(studentId)
+                    )
+                        .populate({
+                            path: "user",
+                            select: "name email phone dateOfBirth -_id",
+                        })
+                        .select("level cgpa courses _id");
+
+                    if (!studentDoc) {
+                        throw new Error("Student not found");
+                    }
+
+                    // Convert to plain object and merge fields
+                    console.log(studentDoc);
+                    const studentObject = studentDoc.toObject();
+                    const { user, ...studentData } = studentObject;
+                    return { ...user, ...studentData };
+                }
+            );
+
+            res.status(200).json({
                 success: true,
                 student,
             });
         } catch (error: any) {
-            res.status(500).json({
+            // Handle errors gracefully
+            res.status(error.message === "Student not found" ? 404 : 500).json({
                 success: false,
                 error:
                     error.message ||
@@ -284,18 +301,64 @@ class StudentInstructorController {
 
     // Get all students (instructors only)
     static async getAllStudents(req: Request, res: Response) {
+        const { name, gender, level, cgpa } = req.query;
+        console.log(req.query);
         try {
+            const query: any = {};
+
+            if (level) {
+                query["level"] = parseInt(level as string, 10);
+            }
+            if (cgpa) {
+                const cgpaFilter =
+                    typeof cgpa === "string" ? cgpa : cgpa.toString();
+
+                if (cgpaFilter.includes("gte:")) {
+                    const value = parseFloat(cgpaFilter.split(":")[1]);
+                    query["cgpa"] = { ...query["cgpa"], $gte: value };
+                } else if (cgpaFilter.includes("lte:")) {
+                    const value = parseFloat(cgpaFilter.split(":")[1]);
+                    query["cgpa"] = { ...query["cgpa"], $lte: value };
+                } else {
+                    const value = parseFloat(cgpaFilter);
+                    query["cgpa"] = value;
+                }
+            }
+
+            console.log(query);
             // Fetch all students and populate the user data
-            const students = await Student.find()
+            const students = await Student.find(query)
                 .populate({
                     path: "user",
-                    select: "name email phone dateOfBirth address",
+                    select: "name email phone dateOfBirth address gender -_id",
+                    match: {
+                        ...(name
+                            ? {
+                                  name: {
+                                      $regex: new RegExp(name as string, "i"),
+                                  },
+                              }
+                            : {}),
+                        ...(gender ? { gender } : {}),
+                    },
                 })
-                .select("level cgpa courses");
+                .select("level cgpa courses _id")
+                .exec();
+
+            const filteredStudents = students.filter(
+                (student) => student.user !== null
+            );
+
+            // Convert each student document to a plain object and merge the user fields
+            const mergedStudents = filteredStudents.map((student) => {
+                const studentObj = student.toObject();
+                const { user, ...studentData } = studentObj;
+                return { ...user, ...studentData };
+            });
 
             res.status(200).json({
                 success: true,
-                students,
+                students: mergedStudents,
             });
         } catch (error: any) {
             res.status(500).json({
@@ -335,7 +398,7 @@ class StudentInstructorController {
     //     }
     // }
 
-    // Delete specific-student and it equivalent user recors
+    // instructors only
     static async deleteStudent(req: Request, res: Response) {
         try {
             const { studentId } = req.params;
@@ -389,4 +452,4 @@ class StudentInstructorController {
     }
 }
 
-export default StudentInstructorController;
+export default StudentController;

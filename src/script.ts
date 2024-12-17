@@ -5,7 +5,9 @@ import { logger, requestLogMiddleware } from "./utils/logger";
 import { authRouter } from "@/routes/auth";
 import cors from "cors";
 import { checkJwtToken } from "@/utils/middleware/authenticateUser";
-import { studentInstructorRouter } from "./routes/students&Instructors.ts";
+import { studentRouter } from "./routes/students";
+import { courseRouter } from "./routes/courses";
+import { enrollmentRouter } from "./routes/enrollments";
 
 const app = express();
 const PORT = 3000;
@@ -28,7 +30,9 @@ app.use(express.static(path.resolve(__dirname, "..", "public")));
 app.use("/api/v1/auth/", authRouter);
 
 app.use(checkJwtToken);
-app.use("/api/v1/students/", studentInstructorRouter);
+app.use("/api/v1/students/", studentRouter);
+app.use("/api/v1/courses/", courseRouter);
+app.use("/api/v1/enrollments/", enrollmentRouter);
 
 app.listen(PORT, () => {
     logger.info(`Server started on port ${PORT}`);

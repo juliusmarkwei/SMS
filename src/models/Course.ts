@@ -1,4 +1,4 @@
-import { Schema, model, models, Types } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const CourseSchema = new Schema(
     {
@@ -6,6 +6,7 @@ const CourseSchema = new Schema(
             type: String,
             required: [true, "Course name is required"],
             trim: true,
+            unique: true,
         },
         code: {
             type: String,
@@ -23,14 +24,18 @@ const CourseSchema = new Schema(
             type: Number,
             required: [true, "Number of credits is required"],
             min: 1,
+            max: 3,
         },
-
-        instructors: [
-            {
-                type: Types.ObjectId,
-                ref: "Instructor",
-            },
-        ],
+        semester: {
+            type: String,
+            required: [true, "Semester is required"],
+            enum: ["Spring", "Summer", "Fall", "Winter"],
+        },
+        department: {
+            type: String,
+            required: [true, "Department is required"],
+            trim: true,
+        },
     },
     {
         timestamps: true,
