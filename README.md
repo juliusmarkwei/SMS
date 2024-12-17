@@ -182,8 +182,8 @@ Response:
     "page": 1,
     "limit": 2,
     "data": [
-        { "_id": 1, "name": "Julius Markwei", "cgpa": 3.5 },
-        { "_id": 2, "name": "Sherlock Holmes", "cgpa": 3.8 }
+        { "_id": 1, "name": "Julius Markwei", "cgpa": 3.5,... },
+        { "_id": 2, "name": "Sherlock Holmes", "cgpa": 3.8,... }
     ]
 }
 ```
@@ -258,15 +258,3 @@ Below is a preview of the browsable API documentation using Swagger.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-### Placeholder for API Image
-
-To add images for the browsable API, include the image files in your project directory and replace the placeholder path:
-
-```md
-![Swagger API Documentation](./assets/swagger-api-image.png)
-```
-
----
-
-Let me know if you need any further details or adjustments to the README!
