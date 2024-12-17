@@ -1,5 +1,6 @@
 import { createLogger, format, transports } from "winston";
 import { NextFunction, Request, Response } from "express";
+import path from "path";
 
 // Winston logger configuration
 export const logger = createLogger({
@@ -7,10 +8,19 @@ export const logger = createLogger({
     format: format.combine(
         format.timestamp(),
         format.printf(({ timestamp, level, message }) => {
-            return `[${level.toUpperCase()}]: ${message}`;
+            return `${timestamp} [${level.toUpperCase()}]: ${message}`;
         })
     ),
-    transports: [new transports.Console()],
+    transports: [
+        // Logs to the console
+        new transports.Console(),
+
+        // Logs to a file (http.log) in the logs directory
+        new transports.File({
+            filename: path.join(__dirname, "..", "logs", "http.log"),
+            level: "http",
+        }),
+    ],
 });
 
 // Middleware to log HTTP requests

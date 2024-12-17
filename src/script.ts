@@ -10,6 +10,10 @@ import { courseRouter } from "./routes/courses";
 import { enrollmentRouter } from "./routes/enrollments";
 import { instructorRouter } from "./routes/instructors";
 import { studentRateLimiter } from "./utils/middleware/rateLimitStudent";
+import { Router } from "express";
+import { sortStudentRouter, sortCourseRouter } from "./routes/sort";
+import swaggerUi from "swagger-ui-express";
+import { swaggerDocs } from "./utils/swaggerConfig";
 
 const app = express();
 const PORT = 3000;
@@ -29,13 +33,22 @@ app.use(cors(options));
 // static files
 app.use(express.static(path.resolve(__dirname, "..", "public")));
 
-app.use("/api/v1/auth/", authRouter);
+// Parent Router for /api/v1
+const apiRouter = Router();
 
-app.use(checkJwtToken);
-app.use("/api/v1/students/", studentRouter);
-app.use("/api/v1/instructors/", instructorRouter);
-app.use("/api/v1/courses/", courseRouter);
-app.use("/api/v1/enrollments/", enrollmentRouter);
+apiRouter.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
+
+apiRouter.use("/auth", authRouter);
+apiRouter.use(checkJwtToken, studentRateLimiter);
+apiRouter.use("/students", studentRouter);
+apiRouter.use("/instructors", instructorRouter);
+apiRouter.use("/courses", courseRouter);
+apiRouter.use("/enrollments", enrollmentRouter);
+apiRouter.use("/sort/students", sortStudentRouter);
+apiRouter.use("/sort/courses", sortCourseRouter);
+
+// Use the parent router
+app.use("/api/v1", apiRouter);
 
 app.listen(PORT, () => {
     logger.info(`Server started on port ${PORT}`);

@@ -1,0 +1,929 @@
+2024-12-17T19:14:57.080Z [INFO]: Connecting to database
+2024-12-17T19:14:57.505Z [INFO]: Connecting to database
+2024-12-17T19:14:57.939Z [INFO]: Connecting to database
+2024-12-17T19:14:58.362Z [INFO]: Connecting to database
+2024-12-17T19:14:58.442Z [INFO]: Server started on port 3000
+2024-12-17T19:15:00.687Z [INFO]: Connected to database
+2024-12-17T19:15:31.858Z [INFO]: Fetched Courses:
+2024-12-17T19:15:31.871Z [HTTP]: GET /api/v1/enrollments/student/675ec943a1368b32c795f301 200 - 345ms
+2024-12-17T19:15:50.325Z [HTTP]: GET /api/v1/enrollments/student/675ec943a1368b32c795f301 200 - 9ms
+2024-12-17T19:15:52.799Z [HTTP]: GET /api/v1/enrollments/student/675ec943a1368b32c795f301 200 - 6ms
+2024-12-17T19:41:51.878Z [INFO]: Connecting to database
+2024-12-17T19:41:52.330Z [INFO]: Connecting to database
+2024-12-17T19:41:52.789Z [INFO]: Connecting to database
+2024-12-17T19:41:53.177Z [INFO]: Connecting to database
+2024-12-17T19:41:53.244Z [INFO]: Server started on port 3000
+2024-12-17T19:41:54.805Z [INFO]: Connected to database
+2024-12-17T19:45:13.347Z [INFO]: Connecting to database
+2024-12-17T19:45:13.821Z [INFO]: Connecting to database
+2024-12-17T19:45:14.306Z [INFO]: Connecting to database
+2024-12-17T19:45:14.723Z [INFO]: Connecting to database
+2024-12-17T19:45:14.800Z [INFO]: Server started on port 3000
+2024-12-17T19:45:16.232Z [INFO]: Connected to database
+2024-12-17T19:45:37.683Z [INFO]: Connecting to database
+2024-12-17T19:45:38.120Z [INFO]: Connecting to database
+2024-12-17T19:45:38.541Z [INFO]: Connecting to database
+2024-12-17T19:45:38.951Z [INFO]: Connecting to database
+2024-12-17T19:45:39.035Z [INFO]: Server started on port 3000
+2024-12-17T19:45:40.344Z [INFO]: Connected to database
+2024-12-17T19:48:45.584Z [INFO]: Connecting to database
+2024-12-17T19:48:46.089Z [INFO]: Connecting to database
+2024-12-17T19:48:46.532Z [INFO]: Connecting to database
+2024-12-17T19:48:46.964Z [INFO]: Connecting to database
+2024-12-17T19:48:47.052Z [INFO]: Server started on port 3000
+2024-12-17T19:48:48.434Z [INFO]: Connected to database
+2024-12-17T19:53:35.300Z [INFO]: Connecting to database
+2024-12-17T19:53:35.969Z [INFO]: Connecting to database
+2024-12-17T19:53:36.527Z [INFO]: Connecting to database
+2024-12-17T19:53:36.994Z [INFO]: Connecting to database
+2024-12-17T19:53:37.073Z [INFO]: Server started on port 3000
+2024-12-17T19:53:38.599Z [INFO]: Connected to database
+2024-12-17T19:56:40.660Z [INFO]: Connecting to database
+2024-12-17T19:56:41.151Z [INFO]: Connecting to database
+2024-12-17T19:56:41.629Z [INFO]: Connecting to database
+2024-12-17T19:56:42.078Z [INFO]: Connecting to database
+2024-12-17T19:56:42.166Z [INFO]: Server started on port 3000
+2024-12-17T19:56:43.622Z [INFO]: Connected to database
+2024-12-17T19:59:44.814Z [INFO]: Connecting to database
+2024-12-17T19:59:45.249Z [INFO]: Connecting to database
+2024-12-17T19:59:45.723Z [INFO]: Connecting to database
+2024-12-17T19:59:46.202Z [INFO]: Connecting to database
+2024-12-17T19:59:46.287Z [INFO]: Server started on port 3000
+2024-12-17T19:59:47.704Z [INFO]: Connected to database
+2024-12-17T20:00:36.049Z [INFO]: Connecting to database
+2024-12-17T20:00:36.486Z [INFO]: Connecting to database
+2024-12-17T20:00:36.948Z [INFO]: Connecting to database
+2024-12-17T20:00:37.335Z [INFO]: Connecting to database
+2024-12-17T20:00:37.421Z [INFO]: Server started on port 3000
+2024-12-17T20:00:38.648Z [INFO]: Connected to database
+2024-12-17T20:03:40.946Z [INFO]: Connecting to database
+2024-12-17T20:03:41.402Z [INFO]: Connecting to database
+2024-12-17T20:03:41.941Z [INFO]: Connecting to database
+2024-12-17T20:03:42.372Z [INFO]: Connecting to database
+2024-12-17T20:03:42.456Z [INFO]: Server started on port 3000
+2024-12-17T20:03:43.866Z [INFO]: Connected to database
+2024-12-17T20:05:23.948Z [INFO]: Connecting to database
+2024-12-17T20:05:24.416Z [INFO]: Connecting to database
+2024-12-17T20:05:24.877Z [INFO]: Connecting to database
+2024-12-17T20:05:25.263Z [INFO]: Connecting to database
+2024-12-17T20:05:25.339Z [INFO]: Server started on port 3000
+2024-12-17T20:05:26.822Z [INFO]: Connected to database
+2024-12-17T20:06:20.071Z [INFO]: Connecting to database
+2024-12-17T20:06:20.578Z [INFO]: Connecting to database
+2024-12-17T20:06:21.012Z [INFO]: Connecting to database
+2024-12-17T20:06:21.398Z [INFO]: Connecting to database
+2024-12-17T20:06:21.485Z [INFO]: Server started on port 3000
+2024-12-17T20:06:22.850Z [INFO]: Connected to database
+2024-12-17T20:06:51.746Z [INFO]: Connecting to database
+2024-12-17T20:06:52.179Z [INFO]: Connecting to database
+2024-12-17T20:06:52.581Z [INFO]: Connecting to database
+2024-12-17T20:06:52.952Z [INFO]: Connecting to database
+2024-12-17T20:06:53.031Z [INFO]: Server started on port 3000
+2024-12-17T20:06:54.269Z [INFO]: Connected to database
+2024-12-17T20:07:19.103Z [INFO]: Connecting to database
+2024-12-17T20:07:19.553Z [INFO]: Connecting to database
+2024-12-17T20:07:19.966Z [INFO]: Connecting to database
+2024-12-17T20:07:20.391Z [INFO]: Connecting to database
+2024-12-17T20:07:20.481Z [INFO]: Server started on port 3000
+2024-12-17T20:07:21.772Z [INFO]: Connected to database
+2024-12-17T20:08:03.988Z [INFO]: Connecting to database
+2024-12-17T20:08:04.436Z [INFO]: Connecting to database
+2024-12-17T20:08:04.850Z [INFO]: Connecting to database
+2024-12-17T20:08:05.273Z [INFO]: Connecting to database
+2024-12-17T20:08:05.404Z [INFO]: Connecting to database
+2024-12-17T20:08:05.417Z [INFO]: Server started on port 3000
+2024-12-17T20:08:06.890Z [INFO]: Connected to database
+2024-12-17T20:08:53.937Z [INFO]: Connecting to database
+2024-12-17T20:08:54.361Z [INFO]: Connecting to database
+2024-12-17T20:08:54.790Z [INFO]: Connecting to database
+2024-12-17T20:08:55.178Z [INFO]: Connecting to database
+2024-12-17T20:08:55.304Z [INFO]: Connecting to database
+2024-12-17T20:08:55.313Z [INFO]: Server started on port 3000
+2024-12-17T20:08:56.626Z [INFO]: Connected to database
+2024-12-17T20:09:16.542Z [HTTP]: GET /api/v1/sort/courses/?sortBy=name 200 - 194ms
+2024-12-17T20:09:34.588Z [HTTP]: GET /api/v1/sort/courses/?sortBy=code 200 - 6ms
+2024-12-17T20:09:57.548Z [HTTP]: GET /api/v1/sort/courses/?sortBy=semester 200 - 7ms
+2024-12-17T20:10:06.329Z [HTTP]: GET /api/v1/sort/courses/?sortBy=semester 200 - 5ms
+2024-12-17T20:10:08.564Z [HTTP]: GET /api/v1/sort/courses/?sortBy=semester 200 - 5ms
+2024-12-17T20:10:11.045Z [HTTP]: GET /api/v1/sort/courses/?sortBy=semester 200 - 3ms
+2024-12-17T20:10:32.132Z [HTTP]: GET /api/v1/sort/courses/?sortBy=semester&order=desc 200 - 150ms
+2024-12-17T20:12:51.029Z [INFO]: Connecting to database
+2024-12-17T20:12:51.589Z [INFO]: Connecting to database
+2024-12-17T20:12:52.175Z [INFO]: Connecting to database
+2024-12-17T20:12:52.567Z [INFO]: Connecting to database
+2024-12-17T20:12:52.709Z [INFO]: Connecting to database
+2024-12-17T20:12:52.722Z [INFO]: Server started on port 3000
+2024-12-17T20:12:54.327Z [INFO]: Connected to database
+2024-12-17T20:14:08.948Z [INFO]: Connecting to database
+2024-12-17T20:14:09.550Z [INFO]: Connecting to database
+2024-12-17T20:14:10.063Z [INFO]: Connecting to database
+2024-12-17T20:14:10.551Z [INFO]: Connecting to database
+2024-12-17T20:14:10.826Z [INFO]: Connecting to database
+2024-12-17T20:14:10.840Z [INFO]: Server started on port 3000
+2024-12-17T20:14:12.360Z [INFO]: Connected to database
+2024-12-17T20:16:12.890Z [INFO]: Connecting to database
+2024-12-17T20:16:13.331Z [INFO]: Connecting to database
+2024-12-17T20:16:13.762Z [INFO]: Connecting to database
+2024-12-17T20:16:14.211Z [INFO]: Connecting to database
+2024-12-17T20:16:14.353Z [INFO]: Connecting to database
+2024-12-17T20:16:14.362Z [INFO]: Server started on port 3000
+2024-12-17T20:16:15.909Z [INFO]: Connected to database
+2024-12-17T20:17:52.590Z [INFO]: Connecting to database
+2024-12-17T20:17:53.049Z [INFO]: Connecting to database
+2024-12-17T20:17:53.469Z [INFO]: Connecting to database
+2024-12-17T20:17:53.882Z [INFO]: Connecting to database
+2024-12-17T20:17:54.027Z [INFO]: Connecting to database
+2024-12-17T20:17:54.036Z [INFO]: Server started on port 3000
+2024-12-17T20:17:55.554Z [INFO]: Connected to database
+2024-12-17T20:21:45.997Z [HTTP]: GET /api/v1/sort/students/ 400 - 22ms
+2024-12-17T20:21:59.235Z [HTTP]: GET /api/v1/sort/students/?sortBy=level 200 - 428ms
+2024-12-17T20:22:17.397Z [HTTP]: GET /api/v1/sort/students/?sortBy=level&order=desc 200 - 5ms
+2024-12-17T20:23:46.333Z [INFO]: Connecting to database
+2024-12-17T20:23:46.816Z [INFO]: Connecting to database
+2024-12-17T20:23:47.251Z [INFO]: Connecting to database
+2024-12-17T20:23:47.724Z [INFO]: Connecting to database
+2024-12-17T20:23:47.868Z [INFO]: Connecting to database
+2024-12-17T20:23:47.876Z [INFO]: Server started on port 3000
+2024-12-17T20:23:49.506Z [INFO]: Connected to database
+2024-12-17T20:24:32.910Z [INFO]: Connecting to database
+2024-12-17T20:24:33.316Z [INFO]: Connecting to database
+2024-12-17T20:24:33.747Z [INFO]: Connecting to database
+2024-12-17T20:24:34.132Z [INFO]: Connecting to database
+2024-12-17T20:24:34.287Z [INFO]: Connecting to database
+2024-12-17T20:24:34.296Z [INFO]: Server started on port 3000
+2024-12-17T20:24:35.886Z [INFO]: Connected to database
+2024-12-17T20:24:36.781Z [HTTP]: GET /api/v1/sort/students/?sortBy=level&order=desc 200 - 654ms
+2024-12-17T20:25:21.200Z [INFO]: Connecting to database
+2024-12-17T20:25:21.673Z [INFO]: Connecting to database
+2024-12-17T20:25:22.123Z [INFO]: Connecting to database
+2024-12-17T20:25:22.505Z [INFO]: Connecting to database
+2024-12-17T20:25:22.654Z [INFO]: Connecting to database
+2024-12-17T20:25:22.663Z [INFO]: Server started on port 3000
+2024-12-17T20:25:24.675Z [INFO]: Connected to database
+2024-12-17T21:48:32.496Z [INFO]: Connected to database
+2024-12-17T21:55:34.472Z [INFO]: Connected to database
+2024-12-17T22:01:36.265Z [INFO]: Connected to database
+2024-12-17T22:28:27.693Z [INFO]: Connecting to database
+2024-12-17T22:28:28.120Z [INFO]: Connecting to database
+2024-12-17T22:28:28.528Z [INFO]: Connecting to database
+2024-12-17T22:28:28.953Z [INFO]: Connecting to database
+2024-12-17T22:28:29.108Z [INFO]: Connecting to database
+2024-12-17T22:28:29.260Z [INFO]: Server started on port 3000
+2024-12-17T22:28:32.356Z [INFO]: Connected to database
+2024-12-17T22:28:41.249Z [HTTP]: GET / 404 - 22ms
+2024-12-17T22:28:47.324Z [HTTP]: GET /auth/login 404 - 3ms
+2024-12-17T22:28:55.149Z [HTTP]: GET /api/v1 301 - 9ms
+2024-12-17T22:28:55.172Z [HTTP]: GET /api/v1/ 200 - 7ms
+2024-12-17T22:28:55.240Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 5ms
+2024-12-17T22:28:55.244Z [HTTP]: GET /api/v1/swagger-ui.css 200 - 25ms
+2024-12-17T22:28:55.257Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 200 - 23ms
+2024-12-17T22:28:55.274Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 200 - 44ms
+2024-12-17T22:28:57.389Z [HTTP]: GET /api/v1/favicon-32x32.png 200 - 3ms
+2024-12-17T22:29:57.860Z [INFO]: Connecting to database
+2024-12-17T22:29:58.412Z [INFO]: Connecting to database
+2024-12-17T22:29:59.038Z [INFO]: Connecting to database
+2024-12-17T22:29:59.505Z [INFO]: Connecting to database
+2024-12-17T22:29:59.664Z [INFO]: Connecting to database
+2024-12-17T22:29:59.807Z [INFO]: Server started on port 3000
+2024-12-17T22:30:02.175Z [INFO]: Connected to database
+2024-12-17T22:32:33.327Z [INFO]: Connecting to database
+2024-12-17T22:32:33.746Z [INFO]: Connecting to database
+2024-12-17T22:32:34.137Z [INFO]: Connecting to database
+2024-12-17T22:32:34.555Z [INFO]: Connecting to database
+2024-12-17T22:32:34.710Z [INFO]: Connecting to database
+2024-12-17T22:32:34.858Z [INFO]: Server started on port 3000
+2024-12-17T22:32:36.548Z [HTTP]: GET /api/v1/ 304 - 33ms
+2024-12-17T22:32:36.576Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 4ms
+2024-12-17T22:32:36.588Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 6ms
+2024-12-17T22:32:36.591Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 7ms
+2024-12-17T22:32:36.594Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 7ms
+2024-12-17T22:32:36.922Z [INFO]: Connected to database
+2024-12-17T22:32:38.556Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 1ms
+2024-12-17T22:33:22.047Z [INFO]: Connecting to database
+2024-12-17T22:33:22.508Z [INFO]: Connecting to database
+2024-12-17T22:33:22.927Z [INFO]: Connecting to database
+2024-12-17T22:33:23.351Z [INFO]: Connecting to database
+2024-12-17T22:33:23.511Z [INFO]: Connecting to database
+2024-12-17T22:33:23.647Z [INFO]: Server started on port 3000
+2024-12-17T22:33:26.388Z [INFO]: Connected to database
+2024-12-18T07:24:09.704Z [INFO]: Connecting to database
+2024-12-18T07:24:10.173Z [INFO]: Connecting to database
+2024-12-18T07:24:10.577Z [INFO]: Connecting to database
+2024-12-18T07:24:10.996Z [INFO]: Connecting to database
+2024-12-18T07:24:11.153Z [INFO]: Connecting to database
+2024-12-18T07:24:11.297Z [INFO]: Server started on port 3000
+2024-12-18T07:24:12.887Z [INFO]: Connected to database
+2024-12-18T07:24:55.197Z [INFO]: Connecting to database
+2024-12-18T07:24:55.631Z [INFO]: Connecting to database
+2024-12-18T07:24:56.081Z [INFO]: Connecting to database
+2024-12-18T07:24:56.544Z [INFO]: Connecting to database
+2024-12-18T07:24:56.692Z [INFO]: Connecting to database
+2024-12-18T07:24:56.829Z [INFO]: Server started on port 3000
+2024-12-18T07:24:58.896Z [INFO]: Connected to database
+2024-12-18T07:28:06.210Z [INFO]: Connecting to database
+2024-12-18T07:28:06.647Z [INFO]: Connecting to database
+2024-12-18T07:28:07.038Z [INFO]: Connecting to database
+2024-12-18T07:28:07.420Z [INFO]: Connecting to database
+2024-12-18T07:28:07.576Z [INFO]: Connecting to database
+2024-12-18T07:28:07.712Z [INFO]: Server started on port 3000
+2024-12-18T07:28:09.869Z [INFO]: Connected to database
+2024-12-18T07:28:36.364Z [HTTP]: GET /api/v1/ 304 - 18ms
+2024-12-18T07:28:36.444Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 16ms
+2024-12-18T07:28:36.452Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 14ms
+2024-12-18T07:28:36.472Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 17ms
+2024-12-18T07:28:36.476Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 22ms
+2024-12-18T07:28:41.638Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 1ms
+2024-12-18T07:32:59.755Z [INFO]: Connecting to database
+2024-12-18T07:33:00.333Z [INFO]: Connecting to database
+2024-12-18T07:33:00.860Z [INFO]: Connecting to database
+2024-12-18T07:33:01.233Z [INFO]: Connecting to database
+2024-12-18T07:33:01.371Z [INFO]: Connecting to database
+2024-12-18T07:33:01.516Z [INFO]: Server started on port 3000
+2024-12-18T07:33:04.381Z [HTTP]: GET /api/v1/ 304 - 20ms
+2024-12-18T07:33:04.434Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 8ms
+2024-12-18T07:33:04.457Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 12ms
+2024-12-18T07:33:04.460Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 11ms
+2024-12-18T07:33:04.467Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 11ms
+2024-12-18T07:33:05.041Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 2ms
+2024-12-18T07:33:09.052Z [INFO]: Connected to database
+2024-12-18T07:34:41.328Z [INFO]: Connecting to database
+2024-12-18T07:34:41.760Z [INFO]: Connecting to database
+2024-12-18T07:34:42.213Z [INFO]: Connecting to database
+2024-12-18T07:34:42.647Z [INFO]: Connecting to database
+2024-12-18T07:34:42.800Z [INFO]: Connecting to database
+2024-12-18T07:34:42.951Z [INFO]: Server started on port 3000
+2024-12-18T07:34:44.731Z [INFO]: Connected to database
+2024-12-18T07:34:57.671Z [INFO]: Connecting to database
+2024-12-18T07:34:58.061Z [INFO]: Connecting to database
+2024-12-18T07:34:58.440Z [INFO]: Connecting to database
+2024-12-18T07:34:58.808Z [INFO]: Connecting to database
+2024-12-18T07:34:58.949Z [INFO]: Connecting to database
+2024-12-18T07:34:59.106Z [INFO]: Server started on port 3000
+2024-12-18T07:35:01.133Z [INFO]: Connected to database
+2024-12-18T07:35:01.383Z [HTTP]: GET /api/v1/ 304 - 19ms
+2024-12-18T07:35:01.448Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 16ms
+2024-12-18T07:35:01.451Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 15ms
+2024-12-18T07:35:01.456Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 12ms
+2024-12-18T07:35:01.459Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 16ms
+2024-12-18T07:35:01.997Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 1ms
+2024-12-18T07:37:22.244Z [INFO]: Connecting to database
+2024-12-18T07:37:22.726Z [INFO]: Connecting to database
+2024-12-18T07:37:23.177Z [INFO]: Connecting to database
+2024-12-18T07:37:23.570Z [INFO]: Connecting to database
+2024-12-18T07:37:23.722Z [INFO]: Connecting to database
+2024-12-18T07:37:23.888Z [INFO]: Server started on port 3000
+2024-12-18T07:37:25.740Z [INFO]: Connected to database
+2024-12-18T07:37:56.036Z [INFO]: Connecting to database
+2024-12-18T07:37:56.550Z [INFO]: Connecting to database
+2024-12-18T07:37:57.023Z [INFO]: Connecting to database
+2024-12-18T07:37:57.476Z [INFO]: Connecting to database
+2024-12-18T07:37:57.673Z [INFO]: Connecting to database
+2024-12-18T07:37:57.862Z [INFO]: Server started on port 3000
+2024-12-18T07:37:59.241Z [INFO]: Connected to database
+2024-12-18T07:39:10.730Z [INFO]: Connecting to database
+2024-12-18T07:39:11.202Z [INFO]: Connecting to database
+2024-12-18T07:39:11.590Z [INFO]: Connecting to database
+2024-12-18T07:39:11.964Z [INFO]: Connecting to database
+2024-12-18T07:39:12.106Z [INFO]: Connecting to database
+2024-12-18T07:39:12.261Z [INFO]: Server started on port 3000
+2024-12-18T07:39:13.934Z [HTTP]: GET /api/v1/ 304 - 18ms
+2024-12-18T07:39:13.990Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 9ms
+2024-12-18T07:39:14.016Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 13ms
+2024-12-18T07:39:14.018Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 13ms
+2024-12-18T07:39:14.024Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 10ms
+2024-12-18T07:39:14.288Z [INFO]: Connected to database
+2024-12-18T07:39:14.605Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 2ms
+2024-12-18T07:40:33.609Z [INFO]: Connecting to database
+2024-12-18T07:40:34.047Z [INFO]: Connecting to database
+2024-12-18T07:40:34.431Z [INFO]: Connecting to database
+2024-12-18T07:40:34.820Z [INFO]: Connecting to database
+2024-12-18T07:40:34.968Z [INFO]: Connecting to database
+2024-12-18T07:40:35.123Z [INFO]: Server started on port 3000
+2024-12-18T07:40:36.714Z [INFO]: Connected to database
+2024-12-18T07:40:39.081Z [HTTP]: GET /api/v1/ 304 - 20ms
+2024-12-18T07:40:39.133Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 7ms
+2024-12-18T07:40:39.160Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 14ms
+2024-12-18T07:40:39.167Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 19ms
+2024-12-18T07:40:39.173Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 17ms
+2024-12-18T07:40:39.735Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 2ms
+2024-12-18T07:50:44.277Z [INFO]: Connecting to database
+2024-12-18T07:50:44.691Z [INFO]: Connecting to database
+2024-12-18T07:50:45.141Z [INFO]: Connecting to database
+2024-12-18T07:50:45.591Z [INFO]: Connecting to database
+2024-12-18T07:50:45.742Z [INFO]: Connecting to database
+2024-12-18T07:50:45.918Z [INFO]: Server started on port 3000
+2024-12-18T07:50:47.898Z [INFO]: Connected to database
+2024-12-18T07:55:50.491Z [INFO]: Connecting to database
+2024-12-18T07:55:51.036Z [INFO]: Connecting to database
+2024-12-18T07:55:51.648Z [INFO]: Connecting to database
+2024-12-18T07:55:52.086Z [INFO]: Connecting to database
+2024-12-18T07:55:52.226Z [INFO]: Connecting to database
+2024-12-18T07:55:52.410Z [INFO]: Server started on port 3000
+2024-12-18T07:55:54.048Z [INFO]: Connected to database
+2024-12-18T07:56:10.999Z [INFO]: Connecting to database
+2024-12-18T07:56:11.537Z [INFO]: Connecting to database
+2024-12-18T07:56:12.129Z [INFO]: Connecting to database
+2024-12-18T07:56:12.584Z [INFO]: Connecting to database
+2024-12-18T07:56:12.761Z [INFO]: Connecting to database
+2024-12-18T07:56:12.983Z [INFO]: Server started on port 3000
+2024-12-18T07:56:14.585Z [INFO]: Connected to database
+2024-12-18T07:56:17.326Z [HTTP]: GET /api/v1/ 304 - 20ms
+2024-12-18T07:56:17.393Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 7ms
+2024-12-18T07:56:17.428Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 8ms
+2024-12-18T07:56:17.432Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 21ms
+2024-12-18T07:56:17.436Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 19ms
+2024-12-18T07:56:18.151Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 1ms
+2024-12-18T08:04:24.104Z [INFO]: Connecting to database
+2024-12-18T08:04:24.531Z [INFO]: Connecting to database
+2024-12-18T08:04:24.942Z [INFO]: Connecting to database
+2024-12-18T08:04:25.346Z [INFO]: Connecting to database
+2024-12-18T08:04:25.509Z [INFO]: Connecting to database
+2024-12-18T08:04:25.714Z [INFO]: Server started on port 3000
+2024-12-18T08:04:27.350Z [INFO]: Connected to database
+2024-12-18T08:04:31.306Z [HTTP]: GET /api/v1/ 304 - 21ms
+2024-12-18T08:04:31.374Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 9ms
+2024-12-18T08:04:31.401Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 21ms
+2024-12-18T08:04:31.409Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 14ms
+2024-12-18T08:04:31.411Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 21ms
+2024-12-18T08:04:32.171Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 2ms
+2024-12-18T08:18:22.415Z [INFO]: Connecting to database
+2024-12-18T08:18:22.930Z [INFO]: Connecting to database
+2024-12-18T08:18:23.455Z [INFO]: Connecting to database
+2024-12-18T08:18:23.863Z [INFO]: Connecting to database
+2024-12-18T08:18:24.010Z [INFO]: Connecting to database
+2024-12-18T08:18:24.234Z [INFO]: Server started on port 3000
+2024-12-18T08:18:25.770Z [INFO]: Connected to database
+2024-12-18T08:18:44.214Z [INFO]: Connecting to database
+2024-12-18T08:18:44.742Z [INFO]: Connecting to database
+2024-12-18T08:18:45.238Z [INFO]: Connecting to database
+2024-12-18T08:18:45.699Z [INFO]: Connecting to database
+2024-12-18T08:18:45.901Z [INFO]: Connecting to database
+2024-12-18T08:18:46.161Z [INFO]: Server started on port 3000
+2024-12-18T08:18:47.530Z [INFO]: Connected to database
+2024-12-18T08:18:57.247Z [HTTP]: GET /api/v1/ 304 - 20ms
+2024-12-18T08:18:57.321Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 24ms
+2024-12-18T08:18:57.325Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 13ms
+2024-12-18T08:18:57.330Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 14ms
+2024-12-18T08:18:57.333Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 18ms
+2024-12-18T08:18:58.022Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 1ms
+2024-12-18T08:20:22.170Z [INFO]: Connecting to database
+2024-12-18T08:20:22.671Z [INFO]: Connecting to database
+2024-12-18T08:20:23.171Z [INFO]: Connecting to database
+2024-12-18T08:20:23.668Z [INFO]: Connecting to database
+2024-12-18T08:20:23.853Z [INFO]: Connecting to database
+2024-12-18T08:20:24.159Z [INFO]: Server started on port 3000
+2024-12-18T08:20:25.705Z [INFO]: Connected to database
+2024-12-18T08:20:58.897Z [INFO]: Connecting to database
+2024-12-18T08:20:59.332Z [INFO]: Connecting to database
+2024-12-18T08:20:59.797Z [INFO]: Connecting to database
+2024-12-18T08:21:00.284Z [INFO]: Connecting to database
+2024-12-18T08:21:00.470Z [INFO]: Connecting to database
+2024-12-18T08:21:00.747Z [INFO]: Server started on port 3000
+2024-12-18T08:21:02.176Z [INFO]: Connected to database
+2024-12-18T08:21:37.073Z [INFO]: Connecting to database
+2024-12-18T08:21:37.717Z [INFO]: Connecting to database
+2024-12-18T08:21:38.206Z [INFO]: Connecting to database
+2024-12-18T08:21:38.634Z [INFO]: Connecting to database
+2024-12-18T08:21:38.788Z [INFO]: Connecting to database
+2024-12-18T08:21:39.011Z [INFO]: Server started on port 3000
+2024-12-18T08:21:40.505Z [INFO]: Connected to database
+2024-12-18T08:21:53.083Z [HTTP]: GET /api/v1/ 304 - 16ms
+2024-12-18T08:21:53.143Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 9ms
+2024-12-18T08:21:53.168Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 13ms
+2024-12-18T08:21:53.178Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 19ms
+2024-12-18T08:21:53.195Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 33ms
+2024-12-18T08:21:53.996Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 1ms
+2024-12-18T08:22:37.507Z [INFO]: Connecting to database
+2024-12-18T08:22:37.937Z [INFO]: Connecting to database
+2024-12-18T08:22:38.365Z [INFO]: Connecting to database
+2024-12-18T08:22:38.835Z [INFO]: Connecting to database
+2024-12-18T08:22:38.989Z [INFO]: Connecting to database
+2024-12-18T08:22:39.210Z [INFO]: Server started on port 3000
+2024-12-18T08:22:40.786Z [INFO]: Connected to database
+2024-12-18T08:22:43.326Z [HTTP]: GET /api/v1/ 304 - 20ms
+2024-12-18T08:22:43.384Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 9ms
+2024-12-18T08:22:43.407Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 8ms
+2024-12-18T08:22:43.417Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 26ms
+2024-12-18T08:22:43.420Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 23ms
+2024-12-18T08:22:44.161Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 2ms
+2024-12-18T08:31:09.991Z [INFO]: Connecting to database
+2024-12-18T08:31:10.459Z [INFO]: Connecting to database
+2024-12-18T08:31:10.882Z [INFO]: Connecting to database
+2024-12-18T08:31:11.297Z [INFO]: Connecting to database
+2024-12-18T08:31:11.471Z [INFO]: Connecting to database
+2024-12-18T08:31:11.718Z [INFO]: Server started on port 3000
+2024-12-18T08:31:13.472Z [INFO]: Connected to database
+2024-12-18T08:33:24.081Z [INFO]: Connecting to database
+2024-12-18T08:33:24.553Z [INFO]: Connecting to database
+2024-12-18T08:33:25.109Z [INFO]: Connecting to database
+2024-12-18T08:33:25.660Z [INFO]: Connecting to database
+2024-12-18T08:33:25.858Z [INFO]: Connecting to database
+2024-12-18T08:33:26.286Z [INFO]: Server started on port 3000
+2024-12-18T08:33:27.365Z [HTTP]: GET /api/v1/ 304 - 15ms
+2024-12-18T08:33:27.418Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 7ms
+2024-12-18T08:33:27.434Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 11ms
+2024-12-18T08:33:27.447Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 25ms
+2024-12-18T08:33:27.450Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 25ms
+2024-12-18T08:33:27.779Z [INFO]: Connected to database
+2024-12-18T08:33:28.095Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 2ms
+2024-12-18T08:37:27.608Z [INFO]: Connecting to database
+2024-12-18T08:37:28.212Z [INFO]: Connecting to database
+2024-12-18T08:37:28.758Z [INFO]: Connecting to database
+2024-12-18T08:37:29.229Z [INFO]: Connecting to database
+2024-12-18T08:37:29.407Z [INFO]: Connecting to database
+2024-12-18T08:37:29.674Z [INFO]: Server started on port 3000
+2024-12-18T08:37:31.121Z [INFO]: Connected to database
+2024-12-18T08:38:35.554Z [INFO]: Connecting to database
+2024-12-18T08:38:35.996Z [INFO]: Connecting to database
+2024-12-18T08:38:36.527Z [INFO]: Connecting to database
+2024-12-18T08:38:37.036Z [INFO]: Connecting to database
+2024-12-18T08:38:37.195Z [INFO]: Connecting to database
+2024-12-18T08:38:37.443Z [INFO]: Server started on port 3000
+2024-12-18T08:38:38.977Z [INFO]: Connected to database
+2024-12-18T08:39:45.365Z [INFO]: Connecting to database
+2024-12-18T08:39:45.787Z [INFO]: Connecting to database
+2024-12-18T08:39:46.213Z [INFO]: Connecting to database
+2024-12-18T08:39:46.600Z [INFO]: Connecting to database
+2024-12-18T08:39:46.755Z [INFO]: Connecting to database
+2024-12-18T08:39:46.986Z [INFO]: Server started on port 3000
+2024-12-18T08:39:48.620Z [INFO]: Connected to database
+2024-12-18T08:40:39.870Z [INFO]: Connecting to database
+2024-12-18T08:40:40.308Z [INFO]: Connecting to database
+2024-12-18T08:40:40.736Z [INFO]: Connecting to database
+2024-12-18T08:40:41.133Z [INFO]: Connecting to database
+2024-12-18T08:40:41.298Z [INFO]: Connecting to database
+2024-12-18T08:40:41.534Z [INFO]: Server started on port 3000
+2024-12-18T08:40:42.847Z [HTTP]: GET /api/v1/ 304 - 16ms
+2024-12-18T08:40:42.901Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 5ms
+2024-12-18T08:40:42.920Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 7ms
+2024-12-18T08:40:42.928Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 11ms
+2024-12-18T08:40:42.939Z [INFO]: Connected to database
+2024-12-18T08:40:42.965Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 50ms
+2024-12-18T08:40:43.646Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 2ms
+2024-12-18T08:41:29.635Z [INFO]: Connecting to database
+2024-12-18T08:41:30.214Z [INFO]: Connecting to database
+2024-12-18T08:41:30.761Z [INFO]: Connecting to database
+2024-12-18T08:41:31.201Z [INFO]: Connecting to database
+2024-12-18T08:41:31.353Z [INFO]: Connecting to database
+2024-12-18T08:41:31.585Z [INFO]: Server started on port 3000
+2024-12-18T08:41:32.327Z [HTTP]: GET /api/v1/ 304 - 13ms
+2024-12-18T08:41:32.371Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 6ms
+2024-12-18T08:41:32.396Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 9ms
+2024-12-18T08:41:32.400Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 27ms
+2024-12-18T08:41:32.413Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 27ms
+2024-12-18T08:41:32.887Z [INFO]: Connected to database
+2024-12-18T08:41:33.048Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 2ms
+2024-12-18T08:42:43.602Z [INFO]: Connecting to database
+2024-12-18T08:42:44.065Z [INFO]: Connecting to database
+2024-12-18T08:42:44.509Z [INFO]: Connecting to database
+2024-12-18T08:42:45.099Z [INFO]: Connecting to database
+2024-12-18T08:42:45.288Z [INFO]: Connecting to database
+2024-12-18T08:42:45.550Z [INFO]: Server started on port 3000
+2024-12-18T08:42:47.115Z [INFO]: Connected to database
+2024-12-18T08:42:48.587Z [HTTP]: GET /api/v1/ 304 - 18ms
+2024-12-18T08:42:48.644Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 9ms
+2024-12-18T08:42:48.658Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 10ms
+2024-12-18T08:42:48.671Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 16ms
+2024-12-18T08:42:48.678Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 9ms
+2024-12-18T08:42:49.506Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 5ms
+2024-12-18T08:43:35.074Z [INFO]: Connecting to database
+2024-12-18T08:43:35.612Z [INFO]: Connecting to database
+2024-12-18T08:43:36.055Z [INFO]: Connecting to database
+2024-12-18T08:43:36.465Z [INFO]: Connecting to database
+2024-12-18T08:43:36.627Z [INFO]: Connecting to database
+2024-12-18T08:43:36.876Z [INFO]: Server started on port 3000
+2024-12-18T08:43:37.456Z [HTTP]: GET /api/v1/ 304 - 14ms
+2024-12-18T08:43:37.485Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 3ms
+2024-12-18T08:43:37.499Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 6ms
+2024-12-18T08:43:37.500Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 6ms
+2024-12-18T08:43:37.505Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 8ms
+2024-12-18T08:43:38.312Z [INFO]: Connected to database
+2024-12-18T08:43:39.805Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 1ms
+2024-12-18T08:44:57.718Z [INFO]: Connecting to database
+2024-12-18T08:44:58.378Z [INFO]: Connecting to database
+2024-12-18T08:44:58.944Z [INFO]: Connecting to database
+2024-12-18T08:44:59.402Z [INFO]: Connecting to database
+2024-12-18T08:44:59.557Z [INFO]: Connecting to database
+2024-12-18T08:44:59.804Z [INFO]: Server started on port 3000
+2024-12-18T08:45:01.287Z [INFO]: Connected to database
+2024-12-18T08:45:14.226Z [INFO]: Connecting to database
+2024-12-18T08:45:14.720Z [INFO]: Connecting to database
+2024-12-18T08:45:15.343Z [INFO]: Connecting to database
+2024-12-18T08:45:15.812Z [INFO]: Connecting to database
+2024-12-18T08:45:15.968Z [INFO]: Connecting to database
+2024-12-18T08:45:16.211Z [INFO]: Server started on port 3000
+2024-12-18T08:45:17.554Z [INFO]: Connected to database
+2024-12-18T08:45:46.188Z [INFO]: Connecting to database
+2024-12-18T08:45:46.594Z [INFO]: Connecting to database
+2024-12-18T08:45:47.013Z [INFO]: Connecting to database
+2024-12-18T08:45:47.400Z [INFO]: Connecting to database
+2024-12-18T08:45:47.558Z [INFO]: Connecting to database
+2024-12-18T08:45:47.795Z [INFO]: Server started on port 3000
+2024-12-18T08:45:49.234Z [INFO]: Connected to database
+2024-12-18T08:46:04.824Z [HTTP]: GET /api/v1/ 304 - 24ms
+2024-12-18T08:46:04.925Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 11ms
+2024-12-18T08:46:04.948Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 12ms
+2024-12-18T08:46:04.953Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 21ms
+2024-12-18T08:46:04.955Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 20ms
+2024-12-18T08:46:05.642Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 2ms
+2024-12-18T08:47:07.964Z [INFO]: Connecting to database
+2024-12-18T08:47:08.394Z [INFO]: Connecting to database
+2024-12-18T08:47:08.850Z [INFO]: Connecting to database
+2024-12-18T08:47:09.322Z [INFO]: Connecting to database
+2024-12-18T08:47:09.519Z [INFO]: Connecting to database
+2024-12-18T08:47:09.791Z [INFO]: Server started on port 3000
+2024-12-18T08:47:11.300Z [INFO]: Connected to database
+2024-12-18T08:47:12.057Z [HTTP]: GET /api/v1/ 304 - 17ms
+2024-12-18T08:47:12.109Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 7ms
+2024-12-18T08:47:12.142Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 8ms
+2024-12-18T08:47:12.145Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 13ms
+2024-12-18T08:47:12.147Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 17ms
+2024-12-18T08:47:12.894Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 4ms
+2024-12-18T08:49:49.303Z [INFO]: Connecting to database
+2024-12-18T08:49:49.831Z [INFO]: Connecting to database
+2024-12-18T08:49:50.396Z [INFO]: Connecting to database
+2024-12-18T08:49:50.868Z [INFO]: Connecting to database
+2024-12-18T08:49:51.060Z [INFO]: Connecting to database
+2024-12-18T08:49:51.410Z [INFO]: Server started on port 3000
+2024-12-18T08:49:53.117Z [INFO]: Connected to database
+2024-12-18T08:51:32.724Z [INFO]: Connecting to database
+2024-12-18T08:51:33.127Z [INFO]: Connecting to database
+2024-12-18T08:51:33.660Z [INFO]: Connecting to database
+2024-12-18T08:51:34.100Z [INFO]: Connecting to database
+2024-12-18T08:51:34.285Z [INFO]: Connecting to database
+2024-12-18T08:51:34.614Z [INFO]: Server started on port 3000
+2024-12-18T08:51:36.099Z [INFO]: Connected to database
+2024-12-18T08:51:42.421Z [HTTP]: GET /api/v1/ 304 - 18ms
+2024-12-18T08:51:42.479Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 6ms
+2024-12-18T08:51:42.488Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 7ms
+2024-12-18T08:51:42.490Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 6ms
+2024-12-18T08:51:42.497Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 11ms
+2024-12-18T08:51:43.271Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 3ms
+2024-12-18T08:57:38.200Z [INFO]: Connecting to database
+2024-12-18T08:57:38.658Z [INFO]: Connecting to database
+2024-12-18T08:57:39.092Z [INFO]: Connecting to database
+2024-12-18T08:57:39.508Z [INFO]: Connecting to database
+2024-12-18T08:57:39.675Z [INFO]: Connecting to database
+2024-12-18T08:57:39.916Z [INFO]: Server started on port 3000
+2024-12-18T08:57:41.434Z [INFO]: Connected to database
+2024-12-18T08:57:44.000Z [HTTP]: GET /api/v1/ 304 - 19ms
+2024-12-18T08:57:44.078Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 15ms
+2024-12-18T08:57:44.084Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 15ms
+2024-12-18T08:57:44.092Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 11ms
+2024-12-18T08:57:44.095Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 21ms
+2024-12-18T08:57:44.944Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 4ms
+2024-12-18T08:59:52.563Z [INFO]: Connecting to database
+2024-12-18T08:59:53.118Z [INFO]: Connecting to database
+2024-12-18T08:59:53.701Z [INFO]: Connecting to database
+2024-12-18T08:59:54.161Z [INFO]: Connecting to database
+2024-12-18T08:59:54.337Z [INFO]: Connecting to database
+2024-12-18T08:59:54.620Z [INFO]: Server started on port 3000
+2024-12-18T08:59:56.140Z [INFO]: Connected to database
+2024-12-18T08:59:57.599Z [HTTP]: GET /api/v1/ 304 - 17ms
+2024-12-18T08:59:57.635Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 5ms
+2024-12-18T08:59:57.648Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 6ms
+2024-12-18T08:59:57.650Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 6ms
+2024-12-18T08:59:57.661Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 8ms
+2024-12-18T09:00:00.048Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 0ms
+2024-12-18T09:01:21.554Z [INFO]: Connecting to database
+2024-12-18T09:01:22.035Z [INFO]: Connecting to database
+2024-12-18T09:01:22.507Z [INFO]: Connecting to database
+2024-12-18T09:01:23.004Z [INFO]: Connecting to database
+2024-12-18T09:01:23.200Z [INFO]: Connecting to database
+2024-12-18T09:01:23.606Z [INFO]: Server started on port 3000
+2024-12-18T09:01:25.203Z [INFO]: Connected to database
+2024-12-18T09:01:26.090Z [HTTP]: GET /api/v1/ 304 - 17ms
+2024-12-18T09:01:26.158Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 11ms
+2024-12-18T09:01:26.174Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 14ms
+2024-12-18T09:01:26.180Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 12ms
+2024-12-18T09:01:26.186Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 15ms
+2024-12-18T09:01:26.925Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 4ms
+2024-12-18T09:03:14.605Z [INFO]: Connecting to database
+2024-12-18T09:03:14.992Z [INFO]: Connecting to database
+2024-12-18T09:03:15.394Z [INFO]: Connecting to database
+2024-12-18T09:03:15.798Z [INFO]: Connecting to database
+2024-12-18T09:03:15.952Z [INFO]: Connecting to database
+2024-12-18T09:03:16.187Z [INFO]: Server started on port 3000
+2024-12-18T09:03:17.616Z [INFO]: Connected to database
+2024-12-18T09:03:24.768Z [HTTP]: GET /api/v1/ 304 - 20ms
+2024-12-18T09:03:24.846Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 10ms
+2024-12-18T09:03:24.856Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 16ms
+2024-12-18T09:03:24.870Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 10ms
+2024-12-18T09:03:24.873Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 15ms
+2024-12-18T09:03:25.692Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 5ms
+2024-12-18T09:04:49.948Z [INFO]: Connecting to database
+2024-12-18T09:04:50.549Z [INFO]: Connecting to database
+2024-12-18T09:04:51.128Z [INFO]: Connecting to database
+2024-12-18T09:04:51.575Z [INFO]: Connecting to database
+2024-12-18T09:04:51.728Z [INFO]: Connecting to database
+2024-12-18T09:04:52.053Z [INFO]: Server started on port 3000
+2024-12-18T09:04:53.938Z [INFO]: Connected to database
+2024-12-18T09:04:56.626Z [HTTP]: GET /api/v1/ 304 - 17ms
+2024-12-18T09:04:56.687Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 6ms
+2024-12-18T09:04:56.714Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 15ms
+2024-12-18T09:04:56.722Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 10ms
+2024-12-18T09:04:56.727Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 21ms
+2024-12-18T09:04:57.529Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 3ms
+2024-12-18T09:06:56.864Z [INFO]: Connecting to database
+2024-12-18T09:06:57.590Z [INFO]: Connecting to database
+2024-12-18T09:06:58.217Z [INFO]: Connecting to database
+2024-12-18T09:06:58.709Z [INFO]: Connecting to database
+2024-12-18T09:06:58.969Z [INFO]: Connecting to database
+2024-12-18T09:06:59.294Z [INFO]: Server started on port 3000
+2024-12-18T09:07:01.276Z [INFO]: Connected to database
+2024-12-18T09:07:26.394Z [INFO]: Connecting to database
+2024-12-18T09:07:26.832Z [INFO]: Connecting to database
+2024-12-18T09:07:27.302Z [INFO]: Connecting to database
+2024-12-18T09:07:27.805Z [INFO]: Connecting to database
+2024-12-18T09:07:27.990Z [INFO]: Connecting to database
+2024-12-18T09:07:28.295Z [INFO]: Server started on port 3000
+2024-12-18T09:07:29.814Z [INFO]: Connected to database
+2024-12-18T09:08:31.380Z [INFO]: Connecting to database
+2024-12-18T09:08:31.919Z [INFO]: Connecting to database
+2024-12-18T09:08:32.645Z [INFO]: Connecting to database
+2024-12-18T09:08:33.265Z [INFO]: Connecting to database
+2024-12-18T09:08:33.449Z [INFO]: Connecting to database
+2024-12-18T09:08:33.730Z [INFO]: Server started on port 3000
+2024-12-18T09:08:35.361Z [INFO]: Connected to database
+2024-12-18T09:08:36.151Z [HTTP]: GET /api/v1/ 304 - 17ms
+2024-12-18T09:08:36.218Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 12ms
+2024-12-18T09:08:36.242Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 9ms
+2024-12-18T09:08:36.244Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 8ms
+2024-12-18T09:08:36.252Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 13ms
+2024-12-18T09:08:37.032Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 4ms
+2024-12-18T09:09:29.955Z [INFO]: Connecting to database
+2024-12-18T09:09:30.328Z [INFO]: Connecting to database
+2024-12-18T09:09:30.758Z [INFO]: Connecting to database
+2024-12-18T09:09:31.282Z [INFO]: Connecting to database
+2024-12-18T09:09:31.489Z [INFO]: Connecting to database
+2024-12-18T09:09:31.769Z [INFO]: Server started on port 3000
+2024-12-18T09:09:33.098Z [INFO]: Connected to database
+2024-12-18T09:09:54.460Z [INFO]: Connecting to database
+2024-12-18T09:09:54.847Z [INFO]: Connecting to database
+2024-12-18T09:09:55.302Z [INFO]: Connecting to database
+2024-12-18T09:09:55.731Z [INFO]: Connecting to database
+2024-12-18T09:09:55.895Z [INFO]: Connecting to database
+2024-12-18T09:09:56.175Z [INFO]: Server started on port 3000
+2024-12-18T09:09:57.839Z [INFO]: Connected to database
+2024-12-18T09:10:43.027Z [HTTP]: GET /api/v1/ 304 - 17ms
+2024-12-18T09:10:43.094Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 10ms
+2024-12-18T09:10:43.114Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 11ms
+2024-12-18T09:10:43.121Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 16ms
+2024-12-18T09:10:43.131Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 19ms
+2024-12-18T09:10:43.941Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 2ms
+2024-12-18T09:13:03.360Z [INFO]: Connecting to database
+2024-12-18T09:13:03.848Z [INFO]: Connecting to database
+2024-12-18T09:13:04.481Z [INFO]: Connecting to database
+2024-12-18T09:13:04.977Z [INFO]: Connecting to database
+2024-12-18T09:13:05.163Z [INFO]: Connecting to database
+2024-12-18T09:13:05.431Z [INFO]: Server started on port 3000
+2024-12-18T09:13:06.988Z [INFO]: Connected to database
+2024-12-18T09:13:08.933Z [HTTP]: GET /api/v1/ 304 - 18ms
+2024-12-18T09:13:09.023Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 22ms
+2024-12-18T09:13:09.033Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 26ms
+2024-12-18T09:13:09.050Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 20ms
+2024-12-18T09:13:09.057Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 29ms
+2024-12-18T09:13:09.786Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 2ms
+2024-12-18T09:18:38.750Z [INFO]: Connecting to database
+2024-12-18T09:18:39.141Z [INFO]: Connecting to database
+2024-12-18T09:18:39.584Z [INFO]: Connecting to database
+2024-12-18T09:18:39.983Z [INFO]: Connecting to database
+2024-12-18T09:18:40.136Z [INFO]: Connecting to database
+2024-12-18T09:18:40.383Z [INFO]: Server started on port 3000
+2024-12-18T09:18:42.001Z [INFO]: Connected to database
+2024-12-18T09:19:00.788Z [INFO]: Connecting to database
+2024-12-18T09:19:01.241Z [INFO]: Connecting to database
+2024-12-18T09:19:01.700Z [INFO]: Connecting to database
+2024-12-18T09:19:02.139Z [INFO]: Connecting to database
+2024-12-18T09:19:02.312Z [INFO]: Connecting to database
+2024-12-18T09:19:02.569Z [INFO]: Server started on port 3000
+2024-12-18T09:19:03.997Z [INFO]: Connected to database
+2024-12-18T09:19:31.680Z [INFO]: Connecting to database
+2024-12-18T09:19:32.120Z [INFO]: Connecting to database
+2024-12-18T09:19:32.539Z [INFO]: Connecting to database
+2024-12-18T09:19:32.968Z [INFO]: Connecting to database
+2024-12-18T09:19:33.143Z [INFO]: Connecting to database
+2024-12-18T09:19:33.409Z [INFO]: Server started on port 3000
+2024-12-18T09:19:34.796Z [INFO]: Connected to database
+2024-12-18T09:27:07.972Z [INFO]: Connecting to database
+2024-12-18T09:27:08.487Z [INFO]: Connecting to database
+2024-12-18T09:27:08.970Z [INFO]: Connecting to database
+2024-12-18T09:27:09.401Z [INFO]: Connecting to database
+2024-12-18T09:27:09.574Z [INFO]: Connecting to database
+2024-12-18T09:27:09.921Z [INFO]: Server started on port 3000
+2024-12-18T09:27:11.603Z [INFO]: Connected to database
+2024-12-18T09:27:40.965Z [INFO]: Connecting to database
+2024-12-18T09:27:41.338Z [INFO]: Connecting to database
+2024-12-18T09:27:41.745Z [INFO]: Connecting to database
+2024-12-18T09:27:42.153Z [INFO]: Connecting to database
+2024-12-18T09:27:42.322Z [INFO]: Connecting to database
+2024-12-18T09:27:42.622Z [INFO]: Server started on port 3000
+2024-12-18T09:27:44.477Z [INFO]: Connected to database
+2024-12-18T09:28:26.298Z [INFO]: Connecting to database
+2024-12-18T09:28:26.753Z [INFO]: Connecting to database
+2024-12-18T09:28:27.234Z [INFO]: Connecting to database
+2024-12-18T09:28:27.627Z [INFO]: Connecting to database
+2024-12-18T09:28:27.800Z [INFO]: Connecting to database
+2024-12-18T09:28:28.059Z [INFO]: Server started on port 3000
+2024-12-18T09:28:30.273Z [HTTP]: GET /api/v1/ 304 - 18ms
+2024-12-18T09:28:30.337Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 8ms
+2024-12-18T09:28:30.357Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 8ms
+2024-12-18T09:28:30.361Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 9ms
+2024-12-18T09:28:30.367Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 12ms
+2024-12-18T09:28:32.286Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 3ms
+2024-12-18T09:29:36.179Z [INFO]: Connecting to database
+2024-12-18T09:29:36.561Z [INFO]: Connecting to database
+2024-12-18T09:29:36.948Z [INFO]: Connecting to database
+2024-12-18T09:29:37.315Z [INFO]: Connecting to database
+2024-12-18T09:29:37.463Z [INFO]: Connecting to database
+2024-12-18T09:29:37.714Z [INFO]: Server started on port 3000
+2024-12-18T09:29:40.740Z [HTTP]: GET /api/v1/ 304 - 17ms
+2024-12-18T09:29:40.805Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 5ms
+2024-12-18T09:29:40.813Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 3ms
+2024-12-18T09:29:40.825Z [HTTP]: GET /api/v1/swagger-ui-init.js 304 - 5ms
+2024-12-18T09:29:40.828Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 11ms
+2024-12-18T09:29:41.492Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 4ms
+2024-12-18T09:30:48.477Z [INFO]: Connecting to database
+2024-12-18T09:30:48.836Z [INFO]: Connecting to database
+2024-12-18T09:30:49.257Z [INFO]: Connecting to database
+2024-12-18T09:30:49.666Z [INFO]: Connecting to database
+2024-12-18T09:30:49.816Z [INFO]: Connecting to database
+2024-12-18T09:30:50.060Z [INFO]: Server started on port 3000
+2024-12-18T09:32:12.220Z [INFO]: Connecting to database
+2024-12-18T09:32:12.578Z [INFO]: Connecting to database
+2024-12-18T09:32:12.995Z [INFO]: Connecting to database
+2024-12-18T09:32:13.379Z [INFO]: Connecting to database
+2024-12-18T09:32:13.522Z [INFO]: Connecting to database
+2024-12-18T09:32:13.778Z [INFO]: Server started on port 3000
+2024-12-18T09:32:15.992Z [INFO]: Connected to database
+2024-12-18T09:32:21.826Z [HTTP]: GET /api/v1/ 304 - 16ms
+2024-12-18T09:32:21.901Z [HTTP]: GET /api/v1/swagger-ui.css 304 - 19ms
+2024-12-18T09:32:21.910Z [HTTP]: GET /api/v1/swagger-ui-bundle.js 304 - 18ms
+2024-12-18T09:32:21.917Z [HTTP]: GET /api/v1/swagger-ui-init.js 200 - 10ms
+2024-12-18T09:32:21.920Z [HTTP]: GET /api/v1/swagger-ui-standalone-preset.js 304 - 16ms
+2024-12-18T09:32:22.689Z [HTTP]: GET /api/v1/favicon-32x32.png 304 - 3ms
+2024-12-18T09:32:42.349Z [HTTP]: POST /api/v1/auth/login 200 - 1ms
+2024-12-18T09:33:30.024Z [HTTP]: POST /api/v1/auth/login 200 - 1ms
+2024-12-18T09:34:42.310Z [HTTP]: POST /api/v1/auth/login 200 - 1ms
+2024-12-18T09:35:31.635Z [INFO]: Connecting to database
+2024-12-18T09:35:32.000Z [INFO]: Connecting to database
+2024-12-18T09:35:32.398Z [INFO]: Connecting to database
+2024-12-18T09:35:32.820Z [INFO]: Connecting to database
+2024-12-18T09:35:32.969Z [INFO]: Connecting to database
+2024-12-18T09:35:33.201Z [INFO]: Server started on port 3000
+2024-12-18T09:35:34.786Z [INFO]: Connected to database
+2024-12-18T09:35:37.323Z [HTTP]: POST /api/v1/auth/login 200 - 343ms
+2024-12-18T09:35:45.953Z [HTTP]: POST /api/v1/auth/login 200 - 320ms
+2024-12-18T09:35:59.012Z [HTTP]: GET /api/v1/courses 401 - 5ms
+2024-12-18T09:36:30.529Z [HTTP]: GET /api/v1/courses 401 - 2ms
+2024-12-18T09:40:33.109Z [INFO]: Connecting to database
+2024-12-18T09:40:33.528Z [INFO]: Connecting to database
+2024-12-18T09:40:33.952Z [INFO]: Connecting to database
+2024-12-18T09:40:34.322Z [INFO]: Connecting to database
+2024-12-18T09:40:34.466Z [INFO]: Connecting to database
+2024-12-18T09:40:34.703Z [INFO]: Server started on port 3000
+2024-12-18T09:40:36.511Z [INFO]: Connected to database
+2024-12-18T09:42:11.184Z [INFO]: Connecting to database
+2024-12-18T09:42:11.571Z [INFO]: Connecting to database
+2024-12-18T09:42:12.040Z [INFO]: Connecting to database
+2024-12-18T09:42:12.457Z [INFO]: Connecting to database
+2024-12-18T09:42:12.596Z [INFO]: Connecting to database
+2024-12-18T09:42:12.827Z [INFO]: Server started on port 3000
+2024-12-18T09:42:14.491Z [INFO]: Connected to database
+2024-12-18T09:42:20.036Z [HTTP]: GET /api/v1/ 401 - 19ms
+2024-12-18T09:42:21.554Z [HTTP]: GET /favicon.ico 404 - 6ms
+2024-12-18T09:42:46.675Z [INFO]: Connecting to database
+2024-12-18T09:42:47.081Z [INFO]: Connecting to database
+2024-12-18T09:42:47.522Z [INFO]: Connecting to database
+2024-12-18T09:42:47.928Z [INFO]: Connecting to database
+2024-12-18T09:42:48.089Z [INFO]: Connecting to database
+2024-12-18T09:42:48.343Z [INFO]: Server started on port 3000
+2024-12-18T09:42:49.787Z [INFO]: Connected to database
+2024-12-18T09:43:26.336Z [HTTP]: GET /api/v1/ 401 - 16ms
+2024-12-18T09:43:45.741Z [INFO]: Connecting to database
+2024-12-18T09:43:46.163Z [INFO]: Connecting to database
+2024-12-18T09:43:46.616Z [INFO]: Connecting to database
+2024-12-18T09:43:47.020Z [INFO]: Connecting to database
+2024-12-18T09:43:47.170Z [INFO]: Connecting to database
+2024-12-18T09:43:47.436Z [INFO]: Server started on port 3000
+2024-12-18T09:43:49.190Z [INFO]: Connected to database
+2024-12-18T09:44:32.452Z [INFO]: Connecting to database
+2024-12-18T09:44:32.840Z [INFO]: Connecting to database
+2024-12-18T09:44:33.233Z [INFO]: Connecting to database
+2024-12-18T09:44:33.625Z [INFO]: Connecting to database
+2024-12-18T09:44:33.765Z [INFO]: Connecting to database
+2024-12-18T09:44:34.004Z [INFO]: Server started on port 3000
+2024-12-18T09:44:36.182Z [INFO]: Connected to database
+2024-12-18T09:44:37.805Z [HTTP]: GET /api/v1/ 401 - 16ms
+2024-12-18T09:44:38.822Z [HTTP]: GET /api/v1/ 401 - 4ms
+2024-12-18T09:44:45.037Z [HTTP]: GET /api/v1/ 401 - 2ms
+2024-12-18T09:45:20.776Z [INFO]: Connecting to database
+2024-12-18T09:45:21.184Z [INFO]: Connecting to database
+2024-12-18T09:45:21.628Z [INFO]: Connecting to database
+2024-12-18T09:45:22.123Z [INFO]: Connecting to database
+2024-12-18T09:45:22.295Z [INFO]: Connecting to database
+2024-12-18T09:45:22.556Z [INFO]: Server started on port 3000
+2024-12-18T09:45:23.795Z [HTTP]: GET /api/v1/ 401 - 21ms
+2024-12-18T09:45:24.210Z [INFO]: Connected to database
+2024-12-18T09:46:12.602Z [INFO]: Connecting to database
+2024-12-18T09:46:12.963Z [INFO]: Connecting to database
+2024-12-18T09:46:13.382Z [INFO]: Connecting to database
+2024-12-18T09:46:13.757Z [INFO]: Connecting to database
+2024-12-18T09:46:13.912Z [INFO]: Connecting to database
+2024-12-18T09:46:14.151Z [INFO]: Server started on port 3000
+2024-12-18T09:46:15.876Z [INFO]: Connected to database
+2024-12-18T09:46:50.570Z [INFO]: Connecting to database
+2024-12-18T09:46:50.945Z [INFO]: Connecting to database
+2024-12-18T09:46:51.401Z [INFO]: Connecting to database
+2024-12-18T09:46:51.801Z [INFO]: Connecting to database
+2024-12-18T09:46:51.940Z [INFO]: Connecting to database
+2024-12-18T09:46:52.201Z [INFO]: Server started on port 3000
+2024-12-18T09:46:54.097Z [INFO]: Connected to database
+2024-12-18T09:47:25.109Z [INFO]: Connecting to database
+2024-12-18T09:47:25.492Z [INFO]: Connecting to database
+2024-12-18T09:47:25.922Z [INFO]: Connecting to database
+2024-12-18T09:47:26.334Z [INFO]: Connecting to database
+2024-12-18T09:47:26.489Z [INFO]: Connecting to database
+2024-12-18T09:47:26.741Z [INFO]: Server started on port 3000
+2024-12-18T09:47:28.633Z [INFO]: Connected to database
+2024-12-18T09:47:41.909Z [INFO]: Connecting to database
+2024-12-18T09:47:42.409Z [INFO]: Connecting to database
+2024-12-18T09:47:42.868Z [INFO]: Connecting to database
+2024-12-18T09:47:43.282Z [INFO]: Connecting to database
+2024-12-18T09:47:43.441Z [INFO]: Connecting to database
+2024-12-18T09:47:43.693Z [INFO]: Server started on port 3000
+2024-12-18T09:47:45.347Z [INFO]: Connected to database
+2024-12-18T09:48:17.133Z [INFO]: Connecting to database
+2024-12-18T09:48:17.525Z [INFO]: Connecting to database
+2024-12-18T09:48:17.943Z [INFO]: Connecting to database
+2024-12-18T09:48:18.323Z [INFO]: Connecting to database
+2024-12-18T09:48:18.474Z [INFO]: Connecting to database
+2024-12-18T09:48:18.715Z [INFO]: Server started on port 3000
+2024-12-18T09:48:20.126Z [INFO]: Connected to database
+2024-12-18T09:48:48.729Z [HTTP]: GET /api/v1/ 401 - 16ms
+2024-12-18T09:48:56.334Z [HTTP]: GET /api/v1/docs 301 - 7ms
+2024-12-18T09:48:56.344Z [HTTP]: GET /api/v1/docs/ 200 - 5ms
+2024-12-18T09:48:56.386Z [HTTP]: GET /api/v1/docs/swagger-ui.css 200 - 14ms
+2024-12-18T09:48:56.397Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 200 - 6ms
+2024-12-18T09:48:56.406Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 200 - 16ms
+2024-12-18T09:48:56.424Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 200 - 39ms
+2024-12-18T09:48:57.261Z [HTTP]: GET /api/v1/docs/favicon-32x32.png 200 - 5ms
+2024-12-18T09:49:59.662Z [INFO]: Connecting to database
+2024-12-18T09:50:00.018Z [INFO]: Connecting to database
+2024-12-18T09:50:00.415Z [INFO]: Connecting to database
+2024-12-18T09:50:00.790Z [INFO]: Connecting to database
+2024-12-18T09:50:00.931Z [INFO]: Connecting to database
+2024-12-18T09:50:01.165Z [INFO]: Server started on port 3000
+2024-12-18T09:50:02.785Z [INFO]: Connected to database
+2024-12-18T09:50:55.633Z [INFO]: Connecting to database
+2024-12-18T09:50:56.015Z [INFO]: Connecting to database
+2024-12-18T09:50:56.399Z [INFO]: Connecting to database
+2024-12-18T09:50:56.781Z [INFO]: Connecting to database
+2024-12-18T09:50:56.923Z [INFO]: Connecting to database
+2024-12-18T09:50:57.167Z [INFO]: Server started on port 3000
+2024-12-18T09:50:58.925Z [INFO]: Connected to database
+2024-12-18T09:51:26.174Z [INFO]: Connecting to database
+2024-12-18T09:51:26.529Z [INFO]: Connecting to database
+2024-12-18T09:51:26.922Z [INFO]: Connecting to database
+2024-12-18T09:51:27.311Z [INFO]: Connecting to database
+2024-12-18T09:51:27.452Z [INFO]: Connecting to database
+2024-12-18T09:51:27.697Z [INFO]: Server started on port 3000
+2024-12-18T09:51:29.435Z [INFO]: Connected to database
+2024-12-18T09:51:32.788Z [HTTP]: GET /api/v1/docs/ 304 - 20ms
+2024-12-18T09:51:32.837Z [HTTP]: GET /api/v1/docs/swagger-ui.css 304 - 7ms
+2024-12-18T09:51:32.852Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 304 - 8ms
+2024-12-18T09:51:32.854Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 304 - 7ms
+2024-12-18T09:51:32.860Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 200 - 10ms
+2024-12-18T09:51:33.488Z [HTTP]: GET /api/v1/docs/favicon-32x32.png 304 - 2ms
+2024-12-18T09:51:57.603Z [HTTP]: POST /api/v1/auth/login 200 - 285ms
+2024-12-18T09:52:31.804Z [HTTP]: GET /api/v1/students 401 - 3ms
+2024-12-18T09:53:00.107Z [HTTP]: GET /api/v1/students 200 - 472ms
+2024-12-18T09:53:22.411Z [HTTP]: GET /api/v1/students?gender=female 200 - 399ms
+2024-12-18T09:54:44.691Z [INFO]: Connecting to database
+2024-12-18T09:54:45.102Z [INFO]: Connecting to database
+2024-12-18T09:54:45.600Z [INFO]: Connecting to database
+2024-12-18T09:54:46.129Z [INFO]: Connecting to database
+2024-12-18T09:54:46.326Z [INFO]: Connecting to database
+2024-12-18T09:54:46.624Z [INFO]: Server started on port 3000
+2024-12-18T09:54:48.472Z [INFO]: Connected to database
+2024-12-18T09:55:30.673Z [INFO]: Connecting to database
+2024-12-18T09:55:31.109Z [INFO]: Connecting to database
+2024-12-18T09:55:31.594Z [INFO]: Connecting to database
+2024-12-18T09:55:32.090Z [INFO]: Connecting to database
+2024-12-18T09:55:32.317Z [INFO]: Connecting to database
+2024-12-18T09:55:32.680Z [INFO]: Server started on port 3000
+2024-12-18T09:55:34.368Z [INFO]: Connected to database
+2024-12-18T09:56:37.559Z [INFO]: Connecting to database
+2024-12-18T09:56:37.956Z [INFO]: Connecting to database
+2024-12-18T09:56:38.491Z [INFO]: Connecting to database
+2024-12-18T09:56:38.901Z [INFO]: Connecting to database
+2024-12-18T09:56:39.062Z [INFO]: Connecting to database
+2024-12-18T09:56:39.322Z [INFO]: Server started on port 3000
+2024-12-18T09:56:41.164Z [INFO]: Connected to database
+2024-12-18T09:57:38.661Z [INFO]: Connecting to database
+2024-12-18T09:57:39.092Z [INFO]: Connecting to database
+2024-12-18T09:57:39.522Z [INFO]: Connecting to database
+2024-12-18T09:57:39.891Z [INFO]: Connecting to database
+2024-12-18T09:57:40.035Z [INFO]: Connecting to database
+2024-12-18T09:57:40.294Z [INFO]: Server started on port 3000
+2024-12-18T09:57:47.242Z [INFO]: Connected to database
