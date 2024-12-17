@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import connect from "@/utils/dbConfig";
 import User from "@/models/User";
 import { requestBodyErrorsInterrupt } from "@/utils/middleware/handleReqBodyErrors";
 import { matchedData } from "express-validator";
@@ -13,8 +12,6 @@ import { IInstructor } from "@/utils/types/instructor";
 import { IUser } from "@/utils/types/user";
 import { ICourse } from "@/utils/types/course";
 import { getOrSetCache } from "@/utils/cache";
-
-connect();
 
 class InstructorController {
     static async createInstructor(req: Request, res: Response) {

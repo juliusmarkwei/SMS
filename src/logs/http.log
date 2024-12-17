@@ -927,3 +927,54 @@
 2024-12-18T09:57:40.035Z [INFO]: Connecting to database
 2024-12-18T09:57:40.294Z [INFO]: Server started on port 3000
 2024-12-18T09:57:47.242Z [INFO]: Connected to database
+2024-12-18T13:15:03.996Z [INFO]: Connecting to database
+2024-12-18T13:15:04.420Z [INFO]: Connecting to database
+2024-12-18T13:15:04.897Z [INFO]: Connecting to database
+2024-12-18T13:15:05.283Z [INFO]: Connecting to database
+2024-12-18T13:15:05.433Z [INFO]: Connecting to database
+2024-12-18T13:15:05.663Z [INFO]: Server started on port 3000
+2024-12-18T13:15:07.357Z [INFO]: Connected to database
+2024-12-18T13:15:15.006Z [HTTP]: GET / 404 - 15ms
+2024-12-18T13:15:19.413Z [HTTP]: GET /auth/login 404 - 4ms
+2024-12-18T13:15:21.773Z [HTTP]: GET /api/v1/ 401 - 5ms
+2024-12-18T13:15:40.372Z [HTTP]: GET /api/v1/docs/ 304 - 6ms
+2024-12-18T13:15:40.409Z [HTTP]: GET /api/v1/docs/swagger-ui.css 304 - 5ms
+2024-12-18T13:15:40.419Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 304 - 6ms
+2024-12-18T13:15:40.426Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 200 - 9ms
+2024-12-18T13:15:40.428Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 304 - 13ms
+2024-12-19T07:59:38.851Z [INFO]: Server started on port 3000
+2024-12-19T07:59:40.605Z [INFO]: Connected to database
+2024-12-19T07:59:44.469Z [HTTP]: GET / 404 - 22ms
+2024-12-19T07:59:45.938Z [HTTP]: GET /auth/login 404 - 4ms
+2024-12-19T07:59:48.861Z [HTTP]: GET /api/v1/sjsjds 401 - 2ms
+2024-12-19T07:59:50.178Z [HTTP]: GET /favicon.ico 404 - 1ms
+2024-12-19T08:00:02.274Z [HTTP]: GET /api/v1/docs/ 304 - 6ms
+2024-12-19T08:00:02.319Z [HTTP]: GET /api/v1/docs/swagger-ui.css 304 - 4ms
+2024-12-19T08:00:02.333Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 304 - 7ms
+2024-12-19T08:00:02.338Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 304 - 14ms
+2024-12-19T08:00:02.376Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 200 - 55ms
+2024-12-19T08:00:40.003Z [HTTP]: POST /api/v1/auth/login 200 - 281ms
+2024-12-19T08:00:56.524Z [HTTP]: GET /api/v1/auth/users/me 404 - 1ms
+2024-12-19T08:02:09.762Z [INFO]: Server started on port 3000
+2024-12-19T08:02:11.311Z [INFO]: Connected to database
+2024-12-19T08:02:19.433Z [HTTP]: GET / 404 - 18ms
+2024-12-19T08:02:20.828Z [HTTP]: GET /auth/login 404 - 4ms
+2024-12-19T08:02:25.112Z [HTTP]: GET /api/v1/auth/dajdhk 404 - 4ms
+2024-12-19T08:02:53.397Z [INFO]: Server started on port 3000
+2024-12-19T08:02:54.730Z [INFO]: Connected to database
+2024-12-19T08:25:51.339Z [INFO]: Server started on port 3000
+2024-12-19T08:25:52.835Z [HTTP]: GET /api/v1/docs/ 304 - 19ms
+2024-12-19T08:25:52.878Z [HTTP]: GET /api/v1/docs/swagger-ui.css 304 - 6ms
+2024-12-19T08:25:52.890Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 304 - 5ms
+2024-12-19T08:25:52.893Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 304 - 10ms
+2024-12-19T08:25:52.895Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 304 - 11ms
+2024-12-19T08:25:53.112Z [INFO]: Connected to database
+2024-12-19T08:25:53.624Z [HTTP]: GET /api/v1/docs/ 304 - 2ms
+2024-12-19T08:25:54.272Z [HTTP]: GET /api/v1/docs/ 304 - 2ms
+2024-12-19T08:25:54.999Z [HTTP]: GET /api/v1/docs/swagger-ui.css 304 - 2ms
+2024-12-19T08:25:55.024Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 304 - 13ms
+2024-12-19T08:25:55.044Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 200 - 5ms
+2024-12-19T08:25:55.046Z [HTTP]: GET /api/v1/docs/swagger-ui.css 304 - 10ms
+2024-12-19T08:25:55.064Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 200 - 26ms
+2024-12-19T08:25:55.088Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 200 - 51ms
+2024-12-19T08:25:55.972Z [HTTP]: GET /api/v1/docs/favicon-32x32.png 304 - 1ms

@@ -14,9 +14,12 @@ import { Router } from "express";
 import { sortStudentRouter, sortCourseRouter } from "./routes/sort";
 import swaggerUi from "swagger-ui-express";
 import { swaggerDocs } from "./utils/swaggerConfig";
+import connect from "./utils/dbConfig";
+import _404Controller from "./controllers/404";
 
 const app = express();
 const PORT = 3000;
+connect(); // db connection
 
 app.use(json());
 app.use(urlencoded({ extended: true }));
@@ -49,6 +52,7 @@ apiRouter.use("/sort/courses", sortCourseRouter);
 
 // Use the parent router
 app.use("/api/v1", apiRouter);
+app.use("*", _404Controller.index);
 
 app.listen(PORT, () => {
     logger.info(`Server started on port ${PORT}`);

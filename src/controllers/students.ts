@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import connect from "@/utils/dbConfig";
 import User from "@/models/User";
 import { Types } from "mongoose";
 import { requestBodyErrorsInterrupt } from "@/utils/middleware/handleReqBodyErrors";
@@ -12,8 +11,6 @@ import { logger } from "@/utils/logger";
 import { getOrSetCache } from "@/utils/cache";
 import { IUser } from "@/utils/types/user";
 import { IStudent } from "@/utils/types/student";
-
-connect();
 
 class StudentController {
     static async getStudentById(studentId: string) {

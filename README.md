@@ -11,6 +11,9 @@ This is a robust, scalable web application designed to digitize and streamline s
 -   **Enrollment Management**: Enroll students in courses and manage their course enrollment.
 -   **Sorting Endpoints**: Various sorting algorithms applied to student and course data.
 -   **JWT Authentication**: Secure user authentication with token-based login.
+-   **Advanced Filtering**: Dynamic query filters, such as `cgpa=gte:2.8`, for refined searches.
+-   **Caching**: Dynamic key-based caching mechanism with a 1-minute expiration for optimized performance.
+-   **CORS Configuration**: Initially restricted to specific applications, now configured to accept requests from all origins.
 
 ---
 
@@ -23,54 +26,54 @@ This is a robust, scalable web application designed to digitize and streamline s
 ├── README.md
 ├── src
 │   ├── controllers
-│   │   ├── auth.ts
-│   │   ├── courses.ts
-│   │   ├── enrollments.ts
-│   │   ├── instructor.ts
-│   │   ├── sort.ts
-│   │   └── students.ts
+│   │   ├── auth.ts          # Handles authentication routes like login and password reset.
+│   │   ├── courses.ts       # Manages course-related operations.
+│   │   ├── enrollments.ts   # Handles student enrollments in courses.
+│   │   ├── instructor.ts    # Manages instructor-specific actions.
+│   │   ├── sort.ts          # Provides sorting functionality for students and courses.
+│   │   └── students.ts      # Manages student-related CRUD operations.
 │   ├── logs
-│   │   └── http.log
+│   │   └── http.log         # Stores HTTP request and response logs.
 │   ├── models
-│   │   ├── Course.ts
-│   │   ├── Enrollment.ts
-│   │   ├── Instructor.ts
-│   │   ├── Student.ts
-│   │   └── User.ts
+│   │   ├── Course.ts        # Schema and model for courses.
+│   │   ├── Enrollment.ts    # Schema and model for course enrollments.
+│   │   ├── Instructor.ts    # Schema for instructors extending from the User model.
+│   │   ├── Student.ts       # Schema for students extending from the User model.
+│   │   └── User.ts          # Parent model storing shared user information.
 │   ├── routes
-│   │   ├── auth.ts
-│   │   ├── courses.ts
-│   │   ├── enrollments.ts
-│   │   ├── instructors.ts
-│   │   ├── sort.ts
-│   │   └── students.ts
-│   ├── script.ts
+│   │   ├── auth.ts          # Defines routes for authentication.
+│   │   ├── courses.ts       # Defines routes for course operations.
+│   │   ├── enrollments.ts   # Defines routes for enrollment actions.
+│   │   ├── instructors.ts   # Defines routes for instructor management.
+│   │   ├── sort.ts          # Defines routes for sorting functionalities.
+│   │   └── students.ts      # Defines routes for student management.
+│   ├── script.ts            # Entry point for utility scripts or setup tasks.
 │   └── utils
-│       ├── cache.ts
-│       ├── dbConfig.ts
-│       ├── enums.ts
-│       ├── logger.ts
-│       ├── mailer.ts
+│       ├── cache.ts         # Caching mechanism for improved performance.
+│       ├── dbConfig.ts      # Database configuration file.
+│       ├── enums.ts         # Contains enumerations for constants.
+│       ├── logger.ts        # Logger setup using Winston.
+│       ├── mailer.ts        # Utility for sending emails.
 │       ├── middleware
-│       │   ├── authenticateUser.ts
-│       │   ├── handleReqBodyErrors.ts
-│       │   ├── isInstructor.ts
-│       │   ├── processCourses.ts
-│       │   ├── rateLimitStudent.ts
+│       │   ├── authenticateUser.ts   # JWT-based user authentication middleware.
+│       │   ├── handleReqBodyErrors.ts # Validates and handles request body errors.
+│       │   ├── isInstructor.ts       # Middleware to check instructor roles.
+│       │   ├── processCourses.ts     # Middleware for processing course data.
+│       │   ├── rateLimitStudent.ts   # Rate-limiting middleware for students.
 │       │   └── validators
-│       │       ├── auth.ts
-│       │       ├── course.ts
-│       │       ├── instructor.ts
-│       │       └── student.ts
-│       ├── sortingTechniques.ts
-│       ├── swaggerConfig.ts
+│       │       ├── auth.ts           # Validation for authentication requests.
+│       │       ├── course.ts         # Validation for course-related requests.
+│       │       ├── instructor.ts     # Validation for instructor actions.
+│       │       └── student.ts        # Validation for student-related actions.
+│       ├── sortingTechniques.ts      # Implementation of sorting algorithms.
+│       ├── swaggerConfig.ts          # Swagger API documentation configuration.
 │       └── types
-│           ├── course.d.ts
-│           ├── instructor.d.ts
-│           ├── jwt.d.ts
-│           ├── student.d.ts
-│           └── user.d.ts
-└── tsconfig.json
+│           ├── course.d.ts           # Type definitions for course data.
+│           ├── instructor.d.ts       # Type definitions for instructor data.
+│           ├── jwt.d.ts              # Type definitions for JWT tokens.
+│           ├── student.d.ts          # Type definitions for student data.
+│           └── user.d.ts             # Type definitions for shared user data.
+└── tsconfig.json                     # TypeScript configuration file.
 ```
 
 ---
@@ -93,12 +96,22 @@ This is a robust, scalable web application designed to digitize and streamline s
 
 ---
 
+## Advanced Functionalities
+
+-   **Caching**: Implements a dynamic key-based caching system with a 1-minute expiration.
+-   **Advanced Filtering**: Supports query filters like `cgpa=gte:2.8` for precise data retrieval.
+-   **CORS Configuration**: Initially restricted to specific applications, now open to all origins for better accessibility.
+
+---
+
 ## API Routes
 
 ### Public Routes
 
--   **POST** `/auth/login`: Log in and retrieve a JWT token.
--   **POST** `/auth/password-reset`: Request a password reset link.
+-   **POST** `/api/v1/auth/login`: Log in and retrieve accessToken and refreshToken.
+-   **POST** `/api/v1/auth/forgot-password`: Request a password reset link.
+-   **POST** `/api/v1/auth/password-reset`: Send the token received in your mail and your new password.
+-   **POST** `/api/v1/auth/refresh-token`: Send the refreshToken in request body to get recieve a new accessToken.
 
 ### Protected Routes
 

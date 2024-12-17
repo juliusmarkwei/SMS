@@ -1,13 +1,10 @@
 import { Request, Response } from "express";
-import connect from "@/utils/dbConfig";
 import Course from "@/models/Course";
 import { logger } from "@/utils/logger";
 import { requestBodyErrorsInterrupt } from "@/utils/middleware/handleReqBodyErrors";
 import { matchedData } from "express-validator";
 import { getOrSetCache } from "@/utils/cache";
 import { ICourse } from "@/utils/types/course";
-
-connect();
 
 class CourseController {
     static async getAllCourses(req: Request, res: Response) {

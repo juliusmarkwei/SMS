@@ -6,12 +6,9 @@ import User from "@/models/User";
 import { logger } from "@/utils/logger";
 import jwt from "jsonwebtoken";
 import { sendResetPasswordEmail } from "@/utils/mailer";
-import connect from "@/utils/dbConfig";
 import { AuthToken } from "@/utils/types/jwt";
 import { Token } from "@/utils/enums";
 import { IUser } from "@/utils/types/user";
-
-connect();
 
 class AuthController {
     static async login(req: Request, res: Response) {

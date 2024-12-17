@@ -1,5 +1,4 @@
 import { Response, Request } from "express";
-import connect from "@/utils/dbConfig";
 import Enrollment from "@/models/Enrollment";
 import { logger } from "@/utils/logger";
 import { getOrSetCache } from "@/utils/cache";
@@ -8,8 +7,6 @@ import Course from "@/models/Course";
 import { Role } from "@/utils/enums";
 import { ICourse } from "@/utils/types/course";
 import { IStudent } from "@/utils/types/student";
-
-connect();
 
 class EnrollmentController {
     static async enrollStudentInCourse(req: Request, res: Response) {

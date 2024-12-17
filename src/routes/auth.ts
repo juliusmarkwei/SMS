@@ -6,6 +6,7 @@ import {
     forgotPasswordValidationSchema,
     resetPasswordValidationSchema,
 } from "@/utils/middleware/validators/auth";
+import _404Controller from "@/controllers/404";
 
 const router = Router();
 
@@ -204,4 +205,6 @@ router.post(
  */
 router.post("/refresh-token", AuthController.refreshAccessToken);
 
+// handle 404
+router.use(_404Controller.index);
 export { router as authRouter };
