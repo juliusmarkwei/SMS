@@ -1,4 +1,4 @@
-# School Administrative Web Application
+# School Management System API
 
 ## Overview
 
