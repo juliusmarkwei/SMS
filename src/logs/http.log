@@ -978,3 +978,183 @@
 2024-12-19T08:25:55.064Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 200 - 26ms
 2024-12-19T08:25:55.088Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 200 - 51ms
 2024-12-19T08:25:55.972Z [HTTP]: GET /api/v1/docs/favicon-32x32.png 304 - 1ms
+2024-12-22T14:27:58.279Z [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+2024-12-22T14:31:31.767Z [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+2024-12-22T14:33:20.942Z [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+2024-12-22T14:35:45.084Z [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+2024-12-22T14:37:50.476Z [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+2024-12-22T14:41:49.975Z [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+2024-12-22T14:45:12.294Z [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+2024-12-22T14:47:10.600Z [ERROR]: Operation `users.findOne()` buffering timed out after 10000ms
+2024-12-23T01:13:44.703Z [ERROR]: (0 , express_validator_1.matchedData) is not a function
+2024-12-23T01:23:24.954Z [ERROR]: (0 , express_validator_1.matchedData) is not a function
+2024-12-23T01:36:13.180Z [ERROR]: (0 , express_validator_1.matchedData) is not a function
+2024-12-23T01:36:56.095Z [ERROR]: (0 , express_validator_1.matchedData) is not a function
+2024-12-23T01:40:06.526Z [ERROR]: (0 , express_validator_1.matchedData) is not a function
+2024-12-23T01:41:51.840Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T01:42:58.230Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T01:43:33.276Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T01:44:50.358Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T01:46:54.967Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T01:48:48.247Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T01:49:53.101Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T01:53:14.249Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T01:56:41.215Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T01:59:12.951Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T02:18:07.351Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T02:36:34.018Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T17:26:03.054Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T17:31:26.033Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T17:33:15.786Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T17:36:42.890Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T17:52:46.716Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T17:55:21.634Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T17:56:27.319Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T17:57:01.113Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T17:58:57.167Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T18:01:44.945Z [ERROR]: Student validation failed: user: Path `user` is required.
+2024-12-23T19:05:26.466Z [ERROR]: error saving user
+2024-12-23T19:07:09.611Z [ERROR]: error saving user
+2024-12-23T19:08:59.786Z [ERROR]: Internal server error.
+2024-12-23T19:09:39.830Z [ERROR]: Internal server error.
+2024-12-23T19:11:18.300Z [ERROR]: Internal server error.
+2024-12-23T19:13:41.307Z [ERROR]: Internal server error.
+2024-12-23T19:15:41.699Z [ERROR]: Internal server error.
+2024-12-23T19:18:06.057Z [ERROR]: Internal server error.
+2024-12-23T19:22:36.094Z [ERROR]: Internal server error.
+2024-12-23T19:23:28.532Z [ERROR]: Internal server error.
+2024-12-23T19:24:40.321Z [ERROR]: Internal server error.
+2024-12-23T19:37:45.031Z [ERROR]: Internal server error.
+2024-12-23T19:42:44.649Z [ERROR]: Internal server error.
+2024-12-23T19:45:52.913Z [ERROR]: user.save is not a function
+2024-12-23T19:45:52.956Z [ERROR]: user.save is not a function
+2024-12-23T19:49:20.784Z [ERROR]: Internal server error.
+2024-12-27T18:43:28.445Z [ERROR]: User_1.default.findOne is not a function
+2024-12-27T18:46:25.897Z [ERROR]: User_1.default.findOne is not a function
+2024-12-27T18:46:25.944Z [ERROR]: User_1.default.findOne is not a function
+2024-12-27T18:46:25.962Z [ERROR]: User_1.default.findOne is not a function
+2024-12-27T18:50:17.906Z [ERROR]: User_1.default.findOne is not a function
+2024-12-27T18:52:44.160Z [ERROR]: Internal server error.
+2024-12-27T18:53:54.553Z [ERROR]: Internal server error.
+2024-12-27T18:54:38.403Z [ERROR]: Internal server error.
+2024-12-27T19:00:42.122Z [ERROR]: Internal server error.
+2024-12-27T19:05:14.378Z [ERROR]: Internal server error.
+2024-12-27T19:06:14.693Z [ERROR]: Internal server error.
+2024-12-27T19:30:32.072Z [ERROR]: Internal server error.
+2024-12-27T19:31:53.351Z [ERROR]: Internal server error.
+2024-12-27T20:27:06.642Z [ERROR]: Internal server error.
+2024-12-27T20:27:47.731Z [ERROR]: Internal server error.
+2024-12-27T20:28:26.316Z [ERROR]: Internal server error.
+2024-12-27T20:29:08.378Z [ERROR]: Internal server error.
+2024-12-27T20:31:37.849Z [ERROR]: Internal server error.
+2024-12-27T20:33:49.696Z [ERROR]: Internal server error.
+2024-12-27T21:01:53.153Z [ERROR]: Internal server error.
+2024-12-27T21:02:37.898Z [ERROR]: Internal server error.
+2024-12-27T21:03:47.334Z [ERROR]: Internal server error.
+2024-12-27T21:06:31.584Z [ERROR]: Internal server error.
+2024-12-27T21:08:27.861Z [ERROR]: Internal server error.
+2024-12-27T21:10:21.146Z [ERROR]: Internal server error.
+2024-12-27T21:13:02.536Z [ERROR]: Internal server error.
+2024-12-27T21:30:44.333Z [ERROR]: Internal server error.
+2024-12-27T21:32:57.444Z [ERROR]: Internal server error.
+2024-12-27T21:37:53.064Z [ERROR]: Internal server error.
+2024-12-27T21:39:34.680Z [ERROR]: Internal server error.
+2024-12-27T21:41:24.378Z [ERROR]: Internal server error.
+2024-12-27T21:43:23.852Z [ERROR]: Internal server error.
+2024-12-27T21:46:21.346Z [ERROR]: Internal server error.
+2024-12-27T21:47:16.250Z [ERROR]: Internal server error.
+2024-12-27T21:50:49.398Z [ERROR]: Internal server error.
+2024-12-27T21:54:17.991Z [ERROR]: Internal server error.
+2024-12-27T21:59:19.895Z [INFO]: Server started on port 3000
+2024-12-27T21:59:29.421Z [INFO]: Connected to database
+2024-12-27T21:59:36.056Z [HTTP]: POST /api/v1/auth/login 200 - 534ms
+2024-12-27T22:00:06.065Z [HTTP]: GET /api/v1/auth/users/me 404 - 7ms
+2024-12-27T22:00:25.080Z [HTTP]: GET /api/v1/students/675edf2b6d45f4587f937c78 200 - 845ms
+2024-12-27T22:01:01.260Z [HTTP]: GET /api/v1/sort/students/?sortBy=level&order=desc 200 - 953ms
+2024-12-27T22:01:22.050Z [HTTP]: GET /api/v1/students 200 - 1170ms
+2024-12-27T22:02:11.955Z [INFO]: Server started on port 3000
+2024-12-27T22:02:16.164Z [INFO]: Connected to database
+2024-12-27T22:03:27.656Z [ERROR]: Internal server error.
+2024-12-27T22:09:13.476Z [ERROR]: Internal server error.
+2024-12-28T09:57:00.467Z [ERROR]: Internal server error.
+2024-12-28T10:11:39.469Z [ERROR]: Internal server error.
+2024-12-28T10:13:45.454Z [ERROR]: Internal server error.
+2024-12-28T10:17:41.199Z [ERROR]: Internal server error.
+2024-12-28T10:19:05.267Z [ERROR]: Internal server error.
+2024-12-28T10:25:27.120Z [ERROR]: Internal server error.
+2024-12-28T10:35:33.812Z [ERROR]: Internal server error.
+2024-12-28T10:37:11.734Z [ERROR]: Internal server error.
+2024-12-28T10:44:20.420Z [ERROR]: Internal server error.
+2024-12-28T10:45:18.533Z [ERROR]: Internal server error.
+2024-12-28T10:47:50.023Z [ERROR]: Internal server error.
+2024-12-28T10:49:22.816Z [ERROR]: Internal server error.
+2024-12-28T10:53:54.131Z [ERROR]: Internal server error.
+2024-12-28T10:55:10.847Z [ERROR]: Internal server error.
+2024-12-28T10:57:40.612Z [ERROR]: Internal server error.
+2024-12-28T11:05:13.779Z [ERROR]: Internal server error.
+2024-12-28T11:06:48.855Z [ERROR]: Internal server error.
+2024-12-28T11:07:21.426Z [ERROR]: Internal server error.
+2024-12-28T11:08:20.902Z [ERROR]: Internal server error.
+2024-12-28T11:22:09.408Z [ERROR]: Internal server error.
+2024-12-28T11:24:37.342Z [ERROR]: Internal server error.
+2024-12-28T11:26:06.934Z [ERROR]: Internal server error.
+2024-12-28T11:36:02.309Z [ERROR]: Internal server error.
+2024-12-28T11:37:53.798Z [ERROR]: Internal server error.
+2024-12-28T11:52:10.010Z [ERROR]: Internal server error.
+2024-12-28T11:56:33.970Z [ERROR]: Internal server error.
+2024-12-28T11:58:53.163Z [ERROR]: Internal server error.
+2024-12-28T12:00:37.146Z [ERROR]: Internal server error.
+2024-12-28T12:05:02.844Z [ERROR]: Internal server error.
+2024-12-28T12:07:59.502Z [ERROR]: Internal server error.
+2024-12-28T12:14:23.509Z [ERROR]: Internal server error.
+2024-12-28T12:16:57.969Z [ERROR]: Internal server error.
+2024-12-28T12:17:55.560Z [ERROR]: Internal server error.
+2024-12-28T13:22:31.916Z [ERROR]: Internal server error.
+2024-12-28T13:23:03.576Z [ERROR]: Internal server error.
+2024-12-28T13:25:03.421Z [ERROR]: Internal server error.
+2024-12-28T13:26:31.910Z [ERROR]: Internal server error.
+2024-12-28T13:27:33.604Z [ERROR]: Internal server error.
+2024-12-28T13:30:07.332Z [ERROR]: Internal server error.
+2024-12-28T13:32:21.130Z [ERROR]: Internal server error.
+2024-12-28T13:33:12.168Z [ERROR]: Internal server error.
+2024-12-28T13:34:59.346Z [ERROR]: Internal server error.
+2024-12-28T13:37:38.516Z [ERROR]: Internal server error.
+2024-12-28T13:48:32.987Z [ERROR]: Internal server error.
+2024-12-28T13:52:35.657Z [ERROR]: Internal server error.
+2024-12-28T13:54:44.721Z [ERROR]: Internal server error.
+2024-12-28T13:57:15.392Z [ERROR]: Internal server error.
+2024-12-28T14:09:21.290Z [ERROR]: Internal server error.
+2024-12-28T14:10:19.997Z [ERROR]: Internal server error.
+2024-12-28T14:11:29.381Z [ERROR]: Internal server error.
+2024-12-28T14:15:59.998Z [ERROR]: Internal server error.
+2024-12-28T14:17:14.380Z [ERROR]: Internal server error.
+2024-12-28T14:32:21.711Z [ERROR]: Internal server error.
+2024-12-28T14:38:20.287Z [ERROR]: Internal server error.
+2024-12-28T14:44:05.115Z [ERROR]: Internal server error.
+2024-12-28T14:47:35.945Z [ERROR]: Internal server error.
+2024-12-28T14:48:44.233Z [ERROR]: Internal server error.
+2024-12-28T14:49:56.048Z [ERROR]: Internal server error.
+2024-12-28T14:51:19.493Z [ERROR]: Internal server error.
+2024-12-28T15:06:36.528Z [ERROR]: Internal server error.
+2024-12-28T15:07:53.713Z [ERROR]: Internal server error.
+2024-12-28T15:24:46.378Z [ERROR]: Internal server error.
+2024-12-28T15:25:26.274Z [ERROR]: Internal server error.
+2024-12-28T15:45:31.095Z [ERROR]: Internal server error.
+2024-12-28T15:46:55.566Z [ERROR]: Internal server error.
+2024-12-28T15:48:49.349Z [ERROR]: Internal server error.
+2024-12-28T15:54:16.058Z [ERROR]: Internal server error.
+2024-12-28T15:55:47.415Z [ERROR]: Internal server error.
+2024-12-28T15:57:16.152Z [ERROR]: Internal server error.
+2024-12-28T16:37:27.716Z [ERROR]: Internal server error.
+2024-12-28T16:48:00.756Z [ERROR]: Internal server error.
+2024-12-28T16:50:15.472Z [ERROR]: Internal server error.
+2024-12-28T16:51:05.255Z [ERROR]: Internal server error.
+2024-12-28T16:53:00.856Z [ERROR]: Internal server error.
+2024-12-28T16:53:43.843Z [ERROR]: Internal server error.
+2024-12-28T16:55:03.597Z [ERROR]: Internal server error.
+2024-12-28T17:27:57.886Z [ERROR]: Internal server error.
+2024-12-28T17:29:41.196Z [ERROR]: Internal server error.
+2024-12-28T17:31:09.914Z [ERROR]: Internal server error.
+2024-12-28T17:33:07.832Z [ERROR]: Internal server error.
+2024-12-28T17:34:10.452Z [ERROR]: Internal server error.
+2024-12-28T17:35:25.123Z [ERROR]: Internal server error.

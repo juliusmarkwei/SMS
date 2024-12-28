@@ -1,16 +1,16 @@
 import { Request, Response } from "express";
-import User from "@/models/User";
+import User from "../models/User";
 import { Types } from "mongoose";
-import { requestBodyErrorsInterrupt } from "@/utils/middleware/handleReqBodyErrors";
+import { requestBodyErrorsInterrupt } from "../utils/middleware/handleReqBodyErrors";
 import { matchedData } from "express-validator";
-import Student from "@/models/Student";
-import { Role } from "@/utils/enums";
+import Student from "../models/Student";
+import { Role } from "../utils/enums";
 import bcrypt from "bcrypt";
-import { emailNewUsers } from "@/utils/mailer";
-import { logger } from "@/utils/logger";
-import { getOrSetCache } from "@/utils/cache";
-import { IUser } from "@/utils/types/user";
-import { IStudent } from "@/utils/types/student";
+import { emailNewUsers } from "../utils/mailer";
+import { logger } from "../utils/logger";
+import { getOrSetCache } from "../utils/cache";
+import { IUser } from "../utils/types/user";
+import { IStudent } from "../utils/types/student";
 
 class StudentController {
     static async getStudentById(studentId: string) {
@@ -45,10 +45,8 @@ class StudentController {
             }
 
             // Hash password
-            const hashedPassword = await bcrypt.hash(
-                password,
-                await bcrypt.genSalt(10)
-            );
+            const salt = await bcrypt.genSalt(10);
+            const hashedPassword = await bcrypt.hash(password, salt);
 
             // Create user and student simultaneously
             const user: IUser = new User({
@@ -120,16 +118,24 @@ class StudentController {
                     const studentDoc: IStudent | null = await Student.findOne(
                         query
                     )
-                        .populate({
+                        ?.populate({
                             path: "user",
                             select: "name email phone dateOfBirth -_id",
                         })
                         .select("level cgpa courses _id");
 
                     if (!studentDoc) {
-                        throw new Error(
-                            "You are not authorized to view this student's information"
-                        );
+                        if (isInstructor) {
+                            const error = new Error("Student not found");
+                            error.name = "StudentNotFound";
+                            throw error;
+                        } else {
+                            const error = new Error(
+                                "You are not authorized to view this student's information"
+                            );
+                            error.name = "NotAuthorized";
+                            throw error;
+                        }
                     }
 
                     // Convert to plain object and merge fields
@@ -145,7 +151,11 @@ class StudentController {
             });
         } catch (error: any) {
             // Handle errors gracefully
-            res.status(error.message === "Student not found" ? 404 : 500).json({
+            res.status(
+                ["StudentNotFound", "NotAuthorized"].includes(error.name)
+                    ? 404
+                    : 500
+            ).json({
                 success: false,
                 error:
                     error.message ||
@@ -183,7 +193,8 @@ class StudentController {
                     studentId
                 );
 
-                if (!foundStudent || foundStudent.user.toString() !== id) {
+                if (!foundStudent && foundStudent.user.toString() !== id) {
+                    console.log("------------------------------");
                     res.status(401).json({
                         success: false,
                         error: "You are not authorized to update this student's information",
@@ -198,7 +209,6 @@ class StudentController {
                     });
                     return;
                 }
-
                 await User.findByIdAndUpdate(id, basicUpdates, {
                     new: true,
                     runValidators: true,
@@ -292,7 +302,7 @@ class StudentController {
                     const students: IStudent[] | null = await Student.find(
                         query
                     )
-                        .populate({
+                        ?.populate({
                             path: "user",
                             select: "name email phone dateOfBirth address gender -_id",
                             match: {
@@ -372,7 +382,7 @@ class StudentController {
 
             // Delete the student
             const deletedStudent: IStudent | null =
-                await Student.findByIdAndDelete(new Types.ObjectId(studentId));
+                await Student.findByIdAndDelete(studentId);
 
             if (!deletedStudent) {
                 res.status(404).json({
@@ -382,9 +392,11 @@ class StudentController {
                 return;
             }
 
+            console.log("------------------------------*********");
+
             // Delete the associated user
             const deletedUser: IUser | null = await User.findByIdAndDelete(
-                new Types.ObjectId(studentId)
+                new Types.ObjectId(deletedStudent.user)
             );
 
             if (!deletedUser) {

@@ -43,7 +43,7 @@ export const sendResetPasswordEmail = async (
     }
 };
 
-export const emailNewUsers = async (user: IUser, password: string) => {
+export const emailNewUsers = async (user: IUser | any, password: string) => {
     try {
         // create email transport
         const transporter = nodemailer.createTransport({

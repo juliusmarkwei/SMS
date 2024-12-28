@@ -1,18 +1,8 @@
 import { createClient, RedisClientType } from "redis";
 
-const client: RedisClientType = createClient();
+export const client: RedisClientType = createClient();
 
 const DEFAULT_EXPIRATION_TIME = 60;
-
-(async () => {
-    try {
-        if (!client.isReady) {
-            await client.connect();
-        }
-    } catch (err) {
-        console.error("Error connecting to Redis:", err);
-    }
-})();
 
 export const getOrSetCache = async (
     key: string,
