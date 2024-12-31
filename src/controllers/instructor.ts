@@ -128,7 +128,6 @@ class InstructorController {
                 instructors,
             });
         } catch (error: any) {
-            console.log(`An error occured: ${error}`);
             res.status(500).json({
                 success: false,
                 error:
@@ -208,23 +207,16 @@ class InstructorController {
                 department,
                 salary,
                 courses,
-            } = matchedData(req);
+                } = matchedData(req);
 
             // Validate courses if provided
             if (courses && Array.isArray(courses) && courses.length > 0) {
                 const validCourses: ICourse[] = await Course.find({
                     _id: { $in: courses },
                 });
-                console.log(
-                    `Valid courses from controller is : ${JSON.stringify(
-                        validCourses
-                    )}`
-                );
 
-                if (validCourses.length !== courses.length) {
-                    console.log(
-                        "Invalid courses provided----------------------------"
-                    );
+                if (!validCourses || validCourses.length !== courses.length) {
+
                     res.status(400).json({
                         success: false,
                         error: "One or more courses provided are invalid",
@@ -233,7 +225,8 @@ class InstructorController {
                 }
             }
 
-            // Fetch user ID from the authenticated request
+
+            // Fetch user ID from the authenticated
             const { id } = req?.user as { [key: string]: string };
 
             // Update User's basic details
@@ -261,13 +254,9 @@ class InstructorController {
                 };
             }
 
-            logger.info(JSON.stringify(updateFields));
-
             // Update Instructor's specific details
             const updatedInstructor: IInstructor | null =
-                await Instructor.findByIdAndUpdate(instructorId, updateFields, {
-                    new: true,
-                });
+                await Instructor.findByIdAndUpdate(instructorId, updateFields);
 
             if (!updatedInstructor) {
                 res.status(404).json({
@@ -276,6 +265,7 @@ class InstructorController {
                 });
                 return;
             }
+
 
             res.status(200).json({
                 success: true,

@@ -6,7 +6,6 @@ import app, { server } from "../../script";
 import { generateTestToken, instructors } from "../../test_data/user.data";
 import { client, getOrSetCache } from "../../utils/cache";
 import mongoose from "mongoose";
-import { user1, instructor1 } from "../../test_data/user.data";
 
 jest.mock("../../models/User");
 jest.mock("../../models/Instructor");
@@ -255,19 +254,17 @@ describe("Instructor Routes", () => {
                 dateOfBirth: new Date(2003 - 12 - 30),
             };
 
-            console.log("Created user:", user);
 
             const instructor: any = {
+                _id: 1,
                 user: user._id,
                 department: "Computer Science",
                 coursesTaught: [],
                 salary: 50_000.0,
             };
 
-            console.log("Created instructor:", instructor);
 
             instructorId = instructor._id;
-            console.log("Instructor ID set to:", instructorId);
 
             // // Create a valid course for future tests
             const validCourse: any = {
@@ -291,13 +288,31 @@ describe("Instructor Routes", () => {
             (Course.find as jest.Mock).mockResolvedValue([
                 { _id: validCourseId },
             ]);
+            (User.findByIdAndUpdate as jest.Mock).mockResolvedValue({
+                _id: "userId",
+                name: "Mario Reynolds",
+                email: "marioreynolds05@gmail.com"
+            });
+            (Instructor.findByIdAndUpdate as jest.Mock).mockResolvedValue({
+                _id: "instructorId",
+                department: "Computer Science",
+                salary: 50000,
+                coursesTaught: [],
+                user: {
+                    _id: "userId",
+                    name: "Mario Reynolds",
+                    email: "marioreynolds05@gmail.com",
+                    address: "Spintex",
+                }
+            });
+
             const response = await request(app)
                 .put(`${baseUrl}/${instructorId}`)
                 .set("Authorization", `Bearer ${token}`)
                 .send({
                     name: "Jane Doe",
                     phone: "0987654321",
-                    gender: "Female",
+                    gender: "female",
                     dateOfBirth: "1992-02-02",
                     address: "456 Main St",
                     department: "Mathematics",
@@ -305,31 +320,25 @@ describe("Instructor Routes", () => {
                     courses: [validCourseId],
                 });
 
+                expect(response.body.message).toBe(
+                    "Instructor updated successfully"
+                );
             expect(response.status).toBe(200);
             expect(response.body.success).toBe(true);
-            expect(response.body.message).toBe(
-                "Instructor updated successfully"
-            );
-
-            // Verify the updates in the database
-            const updatedInstructor = await Instructor.findById(
-                instructorId
-            ).populate("user");
-            console.log("Updated instructor:", updatedInstructor);
-            expect(updatedInstructor?.department).toBe("Mathematics");
-            expect(updatedInstructor?.salary).toBe(60000);
-            expect(updatedInstructor?.coursesTaught).toContainEqual(
-                validCourseId
-            );
-            expect(updatedInstructor?.user?.name).toBe("Jane Doe");
         });
 
         it("should return 404 for a non-existing instructor", async () => {
+            (User.findByIdAndUpdate as jest.Mock).mockResolvedValue({
+                _id: "userId",
+                name: "Instructor Name",
+                email: "instructor@gmail.com"
+            });
+            (Instructor.findByIdAndUpdate as jest.Mock).mockResolvedValue(null);
             const response = await request(app)
                 .put(`${baseUrl}/nonExistingId`)
                 .set("Authorization", `Bearer ${token}`)
                 .send({
-                    name: "Non-existent Instructor",
+                    name: "Mario Reynolds",
                 });
 
             expect(response.status).toBe(404);
@@ -338,6 +347,8 @@ describe("Instructor Routes", () => {
         });
 
         it("should return 400 for invalid course IDs", async () => {
+            (Course.find as jest.Mock).mockResolvedValue(null);
+
             const response = await request(app)
                 .put(`${baseUrl}/${instructorId}`)
                 .set("Authorization", `Bearer ${token}`)

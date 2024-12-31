@@ -3728,3 +3728,865 @@
 2024-12-31T13:00:29.879Z [ERROR]: [object Object]
 2024-12-31T13:00:31.050Z [INFO]: Connected to database
 2024-12-31T13:00:33.755Z [ERROR]: Internal server error.
+2024-12-31T14:44:38.320Z [ERROR]: Internal server error.
+2024-12-31T14:51:22.048Z [ERROR]: Internal server error.
+2024-12-31T14:51:24.934Z [INFO]: Server started on port 3000
+2024-12-31T14:51:25.343Z [ERROR]: Unexpected error
+2024-12-31T14:51:25.465Z [ERROR]: Unexpected error
+2024-12-31T14:51:26.798Z [INFO]: Connected to database
+2024-12-31T14:51:39.775Z [INFO]: Server started on port 3000
+2024-12-31T14:51:39.910Z [ERROR]: Database error
+2024-12-31T14:51:39.963Z [ERROR]: [object Object]
+2024-12-31T14:51:41.007Z [INFO]: Connected to database
+2024-12-31T14:51:48.890Z [INFO]: Server started on port 3000
+2024-12-31T14:51:49.009Z [ERROR]: Database error
+2024-12-31T14:51:50.130Z [INFO]: Connected to database
+2024-12-31T14:51:50.243Z [INFO]: [object Object]
+2024-12-31T14:51:50.270Z [INFO]: [object Object]
+2024-12-31T14:56:30.121Z [ERROR]: Internal server error.
+2024-12-31T14:56:33.426Z [INFO]: Server started on port 3000
+2024-12-31T14:56:33.872Z [ERROR]: Unexpected error
+2024-12-31T14:56:33.995Z [ERROR]: Unexpected error
+2024-12-31T14:56:35.098Z [INFO]: Connected to database
+2024-12-31T14:56:37.079Z [INFO]: Server started on port 3000
+2024-12-31T14:56:37.215Z [ERROR]: Database error
+2024-12-31T14:56:37.262Z [ERROR]: [object Object]
+2024-12-31T14:56:38.352Z [INFO]: Connected to database
+2024-12-31T14:56:40.747Z [INFO]: Server started on port 3000
+2024-12-31T14:56:40.884Z [ERROR]: Database error
+2024-12-31T14:56:42.133Z [INFO]: Connected to database
+2024-12-31T14:56:42.258Z [INFO]: [object Object]
+2024-12-31T14:56:42.291Z [INFO]: [object Object]
+2024-12-31T15:01:49.443Z [INFO]: Server started on port 3000
+2024-12-31T15:01:49.597Z [ERROR]: Unexpected error
+2024-12-31T15:01:49.680Z [ERROR]: Unexpected error
+2024-12-31T15:01:51.103Z [INFO]: Connected to database
+2024-12-31T15:05:04.537Z [INFO]: Server started on port 3000
+2024-12-31T15:05:04.681Z [ERROR]: Unexpected error
+2024-12-31T15:05:04.757Z [ERROR]: Unexpected error
+2024-12-31T15:05:06.333Z [INFO]: Connected to database
+2024-12-31T15:05:08.824Z [INFO]: Server started on port 3000
+2024-12-31T15:05:08.947Z [ERROR]: Unexpected error
+2024-12-31T15:05:09.013Z [ERROR]: Unexpected error
+2024-12-31T15:05:10.093Z [INFO]: Connected to database
+2024-12-31T15:05:12.705Z [INFO]: Server started on port 3000
+2024-12-31T15:05:12.837Z [ERROR]: Unexpected error
+2024-12-31T15:05:12.909Z [ERROR]: Unexpected error
+2024-12-31T15:05:14.136Z [INFO]: Connected to database
+2024-12-31T15:10:53.895Z [INFO]: Server started on port 3000
+2024-12-31T15:10:54.030Z [ERROR]: Unexpected error
+2024-12-31T15:10:54.101Z [ERROR]: Unexpected error
+2024-12-31T15:10:55.452Z [INFO]: Connected to database
+2024-12-31T15:10:59.107Z [INFO]: Server started on port 3000
+2024-12-31T15:10:59.176Z [ERROR]: Database error
+2024-12-31T15:11:00.255Z [INFO]: Connected to database
+2024-12-31T15:11:00.298Z [INFO]: [object Object]
+2024-12-31T15:11:00.318Z [INFO]: [object Object]
+2024-12-31T15:11:02.793Z [INFO]: Server started on port 3000
+2024-12-31T15:11:02.868Z [ERROR]: Database error
+2024-12-31T15:11:02.894Z [ERROR]: [object Object]
+2024-12-31T15:11:04.039Z [INFO]: Connected to database
+2024-12-31T15:11:08.002Z [INFO]: Server started on port 3000
+2024-12-31T15:11:08.134Z [ERROR]: Unexpected error
+2024-12-31T15:11:08.201Z [ERROR]: Unexpected error
+2024-12-31T15:11:09.201Z [INFO]: Connected to database
+2024-12-31T15:11:10.005Z [INFO]: Server started on port 3000
+2024-12-31T15:11:10.103Z [ERROR]: Database error
+2024-12-31T15:11:11.474Z [INFO]: Connected to database
+2024-12-31T15:11:11.517Z [INFO]: [object Object]
+2024-12-31T15:11:11.535Z [INFO]: [object Object]
+2024-12-31T15:11:12.013Z [INFO]: Server started on port 3000
+2024-12-31T15:11:12.076Z [ERROR]: Database error
+2024-12-31T15:11:12.099Z [ERROR]: [object Object]
+2024-12-31T15:11:13.443Z [INFO]: Connected to database
+2024-12-31T15:11:36.716Z [INFO]: Server started on port 3000
+2024-12-31T15:11:37.038Z [ERROR]: Unexpected error
+2024-12-31T15:11:37.112Z [ERROR]: Unexpected error
+2024-12-31T15:11:38.046Z [INFO]: Connected to database
+2024-12-31T15:11:39.678Z [ERROR]: Internal server error.
+2024-12-31T15:11:41.393Z [INFO]: Server started on port 3000
+2024-12-31T15:11:41.485Z [ERROR]: Database error
+2024-12-31T15:11:42.571Z [INFO]: Connected to database
+2024-12-31T15:11:42.645Z [INFO]: [object Object]
+2024-12-31T15:11:42.666Z [INFO]: [object Object]
+2024-12-31T15:11:44.170Z [INFO]: Server started on port 3000
+2024-12-31T15:11:44.280Z [ERROR]: Database error
+2024-12-31T15:11:44.315Z [ERROR]: [object Object]
+2024-12-31T15:11:45.492Z [INFO]: Connected to database
+2024-12-31T15:13:13.424Z [INFO]: Server started on port 3000
+2024-12-31T15:13:13.563Z [ERROR]: Unexpected error
+2024-12-31T15:13:13.637Z [ERROR]: Unexpected error
+2024-12-31T15:13:14.862Z [INFO]: Connected to database
+2024-12-31T15:13:15.999Z [INFO]: Server started on port 3000
+2024-12-31T15:13:16.062Z [ERROR]: Database error
+2024-12-31T15:13:17.172Z [INFO]: Connected to database
+2024-12-31T15:13:17.204Z [INFO]: [object Object]
+2024-12-31T15:13:17.220Z [INFO]: [object Object]
+2024-12-31T15:13:18.181Z [INFO]: Server started on port 3000
+2024-12-31T15:13:18.267Z [ERROR]: Database error
+2024-12-31T15:13:18.296Z [ERROR]: [object Object]
+2024-12-31T15:13:19.438Z [INFO]: Connected to database
+2024-12-31T15:13:22.533Z [INFO]: Server started on port 3000
+2024-12-31T15:13:22.608Z [ERROR]: Database error
+2024-12-31T15:13:23.740Z [INFO]: Connected to database
+2024-12-31T15:13:23.782Z [INFO]: [object Object]
+2024-12-31T15:13:23.803Z [INFO]: [object Object]
+2024-12-31T15:13:24.329Z [INFO]: Server started on port 3000
+2024-12-31T15:13:24.407Z [ERROR]: Database error
+2024-12-31T15:13:24.435Z [ERROR]: [object Object]
+2024-12-31T15:13:25.558Z [INFO]: Connected to database
+2024-12-31T15:13:28.298Z [INFO]: Server started on port 3000
+2024-12-31T15:13:28.403Z [ERROR]: Database error
+2024-12-31T15:13:29.499Z [INFO]: Connected to database
+2024-12-31T15:13:29.543Z [INFO]: [object Object]
+2024-12-31T15:13:29.563Z [INFO]: [object Object]
+2024-12-31T15:13:30.096Z [INFO]: Server started on port 3000
+2024-12-31T15:13:30.176Z [ERROR]: Database error
+2024-12-31T15:13:30.203Z [ERROR]: [object Object]
+2024-12-31T15:13:31.346Z [INFO]: Connected to database
+2024-12-31T15:13:33.341Z [INFO]: Server started on port 3000
+2024-12-31T15:13:33.461Z [ERROR]: Unexpected error
+2024-12-31T15:13:33.516Z [ERROR]: Unexpected error
+2024-12-31T15:13:34.672Z [INFO]: Connected to database
+2024-12-31T15:13:37.893Z [INFO]: Server started on port 3000
+2024-12-31T15:13:38.045Z [ERROR]: Unexpected error
+2024-12-31T15:13:38.132Z [ERROR]: Unexpected error
+2024-12-31T15:13:39.146Z [INFO]: Connected to database
+2024-12-31T15:13:40.449Z [INFO]: Server started on port 3000
+2024-12-31T15:13:40.515Z [ERROR]: Database error
+2024-12-31T15:13:41.686Z [INFO]: Connected to database
+2024-12-31T15:13:41.745Z [INFO]: [object Object]
+2024-12-31T15:13:41.768Z [INFO]: [object Object]
+2024-12-31T15:13:42.304Z [INFO]: Server started on port 3000
+2024-12-31T15:13:42.372Z [ERROR]: Database error
+2024-12-31T15:13:42.396Z [ERROR]: [object Object]
+2024-12-31T15:13:43.584Z [INFO]: Connected to database
+2024-12-31T15:13:45.784Z [INFO]: Server started on port 3000
+2024-12-31T15:13:47.204Z [INFO]: Connected to database
+2024-12-31T15:14:18.746Z [INFO]: Server started on port 3000
+2024-12-31T15:14:18.884Z [ERROR]: Unexpected error
+2024-12-31T15:14:18.959Z [ERROR]: Unexpected error
+2024-12-31T15:14:20.163Z [INFO]: Connected to database
+2024-12-31T15:14:21.434Z [INFO]: Server started on port 3000
+2024-12-31T15:14:21.507Z [ERROR]: Database error
+2024-12-31T15:14:22.792Z [INFO]: Connected to database
+2024-12-31T15:14:22.836Z [INFO]: [object Object]
+2024-12-31T15:14:22.853Z [INFO]: [object Object]
+2024-12-31T15:14:23.421Z [INFO]: Server started on port 3000
+2024-12-31T15:14:23.494Z [ERROR]: Database error
+2024-12-31T15:14:23.523Z [ERROR]: [object Object]
+2024-12-31T15:14:24.705Z [INFO]: Connected to database
+2024-12-31T15:16:06.806Z [INFO]: Server started on port 3000
+2024-12-31T15:16:06.881Z [ERROR]: Database error
+2024-12-31T15:16:08.256Z [INFO]: Connected to database
+2024-12-31T15:16:08.303Z [INFO]: [object Object]
+2024-12-31T15:16:08.326Z [INFO]: [object Object]
+2024-12-31T15:16:09.545Z [INFO]: Server started on port 3000
+2024-12-31T15:16:09.624Z [ERROR]: Database error
+2024-12-31T15:16:09.652Z [ERROR]: [object Object]
+2024-12-31T15:16:11.121Z [INFO]: Connected to database
+2024-12-31T15:16:13.968Z [INFO]: Server started on port 3000
+2024-12-31T15:16:14.050Z [ERROR]: Database error
+2024-12-31T15:16:15.193Z [INFO]: Connected to database
+2024-12-31T15:16:15.236Z [INFO]: [object Object]
+2024-12-31T15:16:15.258Z [INFO]: [object Object]
+2024-12-31T15:16:15.793Z [INFO]: Server started on port 3000
+2024-12-31T15:16:15.858Z [ERROR]: Database error
+2024-12-31T15:16:15.883Z [ERROR]: [object Object]
+2024-12-31T15:16:17.080Z [INFO]: Connected to database
+2024-12-31T15:16:19.367Z [INFO]: Server started on port 3000
+2024-12-31T15:16:19.492Z [ERROR]: Unexpected error
+2024-12-31T15:16:19.551Z [ERROR]: Unexpected error
+2024-12-31T15:16:20.672Z [INFO]: Connected to database
+2024-12-31T15:17:00.571Z [INFO]: Server started on port 3000
+2024-12-31T15:17:00.715Z [ERROR]: Unexpected error
+2024-12-31T15:17:00.790Z [ERROR]: Unexpected error
+2024-12-31T15:17:01.897Z [INFO]: Connected to database
+2024-12-31T15:17:03.417Z [INFO]: Server started on port 3000
+2024-12-31T15:17:03.486Z [ERROR]: Database error
+2024-12-31T15:17:04.692Z [INFO]: Connected to database
+2024-12-31T15:17:04.733Z [INFO]: [object Object]
+2024-12-31T15:17:04.751Z [INFO]: [object Object]
+2024-12-31T15:17:05.275Z [INFO]: Server started on port 3000
+2024-12-31T15:17:05.348Z [ERROR]: Database error
+2024-12-31T15:17:05.373Z [ERROR]: [object Object]
+2024-12-31T15:17:06.485Z [INFO]: Connected to database
+2024-12-31T15:17:34.805Z [INFO]: Server started on port 3000
+2024-12-31T15:17:35.137Z [ERROR]: Unexpected error
+2024-12-31T15:17:35.234Z [ERROR]: Unexpected error
+2024-12-31T15:17:36.402Z [INFO]: Connected to database
+2024-12-31T15:17:38.278Z [INFO]: Server started on port 3000
+2024-12-31T15:17:38.369Z [ERROR]: Database error
+2024-12-31T15:17:39.463Z [INFO]: Connected to database
+2024-12-31T15:17:39.536Z [INFO]: [object Object]
+2024-12-31T15:17:39.557Z [INFO]: [object Object]
+2024-12-31T15:17:40.864Z [INFO]: Server started on port 3000
+2024-12-31T15:17:40.963Z [ERROR]: Database error
+2024-12-31T15:17:41.001Z [ERROR]: [object Object]
+2024-12-31T15:17:42.094Z [INFO]: Connected to database
+2024-12-31T15:17:43.477Z [ERROR]: Internal server error.
+2024-12-31T15:18:24.825Z [INFO]: Server started on port 3000
+2024-12-31T15:18:24.972Z [ERROR]: Unexpected error
+2024-12-31T15:18:25.047Z [ERROR]: Unexpected error
+2024-12-31T15:18:26.019Z [INFO]: Connected to database
+2024-12-31T15:18:27.528Z [INFO]: Server started on port 3000
+2024-12-31T15:18:27.595Z [ERROR]: Database error
+2024-12-31T15:18:28.851Z [INFO]: Connected to database
+2024-12-31T15:18:28.890Z [INFO]: [object Object]
+2024-12-31T15:18:28.908Z [INFO]: [object Object]
+2024-12-31T15:18:29.464Z [INFO]: Server started on port 3000
+2024-12-31T15:18:29.542Z [ERROR]: Database error
+2024-12-31T15:18:29.572Z [ERROR]: [object Object]
+2024-12-31T15:18:30.740Z [INFO]: Connected to database
+2024-12-31T15:18:45.618Z [INFO]: Server started on port 3000
+2024-12-31T15:18:46.997Z [INFO]: Connected to database
+2024-12-31T15:23:29.998Z [INFO]: Server started on port 3000
+2024-12-31T15:23:30.137Z [ERROR]: Unexpected error
+2024-12-31T15:23:30.213Z [ERROR]: Unexpected error
+2024-12-31T15:23:31.600Z [INFO]: Connected to database
+2024-12-31T15:23:33.103Z [INFO]: Server started on port 3000
+2024-12-31T15:23:33.174Z [ERROR]: Database error
+2024-12-31T15:23:34.434Z [INFO]: Connected to database
+2024-12-31T15:23:34.473Z [INFO]: [object Object]
+2024-12-31T15:23:34.492Z [INFO]: [object Object]
+2024-12-31T15:23:35.069Z [INFO]: Server started on port 3000
+2024-12-31T15:23:35.140Z [ERROR]: Database error
+2024-12-31T15:23:35.168Z [ERROR]: [object Object]
+2024-12-31T15:23:36.286Z [INFO]: Connected to database
+2024-12-31T15:23:53.948Z [INFO]: Server started on port 3000
+2024-12-31T15:23:54.401Z [ERROR]: Unexpected error
+2024-12-31T15:23:54.496Z [ERROR]: Unexpected error
+2024-12-31T15:23:55.663Z [INFO]: Connected to database
+2024-12-31T15:23:57.461Z [INFO]: Server started on port 3000
+2024-12-31T15:23:57.555Z [ERROR]: Database error
+2024-12-31T15:23:59.671Z [INFO]: Connected to database
+2024-12-31T15:23:59.743Z [INFO]: [object Object]
+2024-12-31T15:23:59.765Z [INFO]: [object Object]
+2024-12-31T15:24:01.078Z [INFO]: Server started on port 3000
+2024-12-31T15:24:01.170Z [ERROR]: Database error
+2024-12-31T15:24:01.208Z [ERROR]: [object Object]
+2024-12-31T15:24:02.266Z [INFO]: Connected to database
+2024-12-31T15:24:03.746Z [ERROR]: Internal server error.
+2024-12-31T15:24:58.916Z [INFO]: Server started on port 3000
+2024-12-31T15:24:59.058Z [ERROR]: Unexpected error
+2024-12-31T15:24:59.132Z [ERROR]: Unexpected error
+2024-12-31T15:25:00.625Z [INFO]: Connected to database
+2024-12-31T15:25:02.278Z [INFO]: Server started on port 3000
+2024-12-31T15:25:02.355Z [ERROR]: Database error
+2024-12-31T15:25:03.539Z [INFO]: Connected to database
+2024-12-31T15:25:03.577Z [INFO]: [object Object]
+2024-12-31T15:25:03.595Z [INFO]: [object Object]
+2024-12-31T15:25:04.237Z [INFO]: Server started on port 3000
+2024-12-31T15:25:04.311Z [ERROR]: Database error
+2024-12-31T15:25:04.340Z [ERROR]: [object Object]
+2024-12-31T15:25:05.629Z [INFO]: Connected to database
+2024-12-31T15:25:19.009Z [INFO]: Server started on port 3000
+2024-12-31T15:25:19.151Z [ERROR]: Unexpected error
+2024-12-31T15:25:19.226Z [ERROR]: Unexpected error
+2024-12-31T15:25:20.280Z [INFO]: Connected to database
+2024-12-31T15:25:21.971Z [INFO]: Server started on port 3000
+2024-12-31T15:25:22.052Z [ERROR]: Database error
+2024-12-31T15:25:23.206Z [INFO]: Connected to database
+2024-12-31T15:25:23.248Z [INFO]: [object Object]
+2024-12-31T15:25:23.267Z [INFO]: [object Object]
+2024-12-31T15:25:23.828Z [INFO]: Server started on port 3000
+2024-12-31T15:25:23.901Z [ERROR]: Database error
+2024-12-31T15:25:23.928Z [ERROR]: [object Object]
+2024-12-31T15:25:25.093Z [INFO]: Connected to database
+2024-12-31T15:25:32.382Z [INFO]: Server started on port 3000
+2024-12-31T15:25:32.465Z [ERROR]: Database error
+2024-12-31T15:25:33.562Z [INFO]: Connected to database
+2024-12-31T15:25:33.602Z [INFO]: [object Object]
+2024-12-31T15:25:33.623Z [INFO]: [object Object]
+2024-12-31T15:25:34.196Z [INFO]: Server started on port 3000
+2024-12-31T15:25:34.267Z [ERROR]: Database error
+2024-12-31T15:25:34.295Z [ERROR]: [object Object]
+2024-12-31T15:25:35.479Z [INFO]: Connected to database
+2024-12-31T15:25:39.880Z [INFO]: Server started on port 3000
+2024-12-31T15:25:39.960Z [ERROR]: Database error
+2024-12-31T15:25:41.063Z [INFO]: Connected to database
+2024-12-31T15:25:41.109Z [INFO]: [object Object]
+2024-12-31T15:25:41.131Z [INFO]: [object Object]
+2024-12-31T15:25:41.701Z [INFO]: Server started on port 3000
+2024-12-31T15:25:41.773Z [ERROR]: Database error
+2024-12-31T15:25:41.796Z [ERROR]: [object Object]
+2024-12-31T15:25:42.858Z [INFO]: Connected to database
+2024-12-31T15:25:55.330Z [INFO]: Server started on port 3000
+2024-12-31T15:25:55.421Z [ERROR]: Database error
+2024-12-31T15:25:56.622Z [INFO]: Connected to database
+2024-12-31T15:25:56.675Z [INFO]: [object Object]
+2024-12-31T15:25:56.697Z [INFO]: [object Object]
+2024-12-31T15:25:57.249Z [INFO]: Server started on port 3000
+2024-12-31T15:25:57.319Z [ERROR]: Database error
+2024-12-31T15:25:57.347Z [ERROR]: [object Object]
+2024-12-31T15:25:59.406Z [INFO]: Connected to database
+2024-12-31T15:26:13.329Z [INFO]: Server started on port 3000
+2024-12-31T15:26:13.404Z [ERROR]: Database error
+2024-12-31T15:26:14.705Z [INFO]: Connected to database
+2024-12-31T15:26:14.755Z [INFO]: [object Object]
+2024-12-31T15:26:14.777Z [INFO]: [object Object]
+2024-12-31T15:26:15.325Z [INFO]: Server started on port 3000
+2024-12-31T15:26:15.399Z [ERROR]: Database error
+2024-12-31T15:26:15.423Z [ERROR]: [object Object]
+2024-12-31T15:26:16.592Z [INFO]: Connected to database
+2024-12-31T15:26:37.056Z [INFO]: Server started on port 3000
+2024-12-31T15:26:37.134Z [ERROR]: Database error
+2024-12-31T15:26:38.485Z [INFO]: Connected to database
+2024-12-31T15:26:38.532Z [INFO]: [object Object]
+2024-12-31T15:26:38.555Z [INFO]: [object Object]
+2024-12-31T15:26:39.088Z [INFO]: Server started on port 3000
+2024-12-31T15:26:39.153Z [ERROR]: Database error
+2024-12-31T15:26:39.178Z [ERROR]: [object Object]
+2024-12-31T15:26:40.244Z [INFO]: Connected to database
+2024-12-31T15:26:51.221Z [INFO]: Server started on port 3000
+2024-12-31T15:26:51.314Z [ERROR]: Database error
+2024-12-31T15:26:52.444Z [INFO]: Connected to database
+2024-12-31T15:26:52.484Z [INFO]: [object Object]
+2024-12-31T15:26:52.505Z [INFO]: [object Object]
+2024-12-31T15:26:53.067Z [INFO]: Server started on port 3000
+2024-12-31T15:26:53.152Z [ERROR]: Database error
+2024-12-31T15:26:53.185Z [ERROR]: [object Object]
+2024-12-31T15:26:54.414Z [INFO]: Connected to database
+2024-12-31T15:26:59.956Z [INFO]: Server started on port 3000
+2024-12-31T15:27:00.044Z [ERROR]: Database error
+2024-12-31T15:27:01.216Z [INFO]: Connected to database
+2024-12-31T15:27:01.263Z [INFO]: [object Object]
+2024-12-31T15:27:01.285Z [INFO]: [object Object]
+2024-12-31T15:27:01.823Z [INFO]: Server started on port 3000
+2024-12-31T15:27:01.887Z [ERROR]: Database error
+2024-12-31T15:27:01.913Z [ERROR]: [object Object]
+2024-12-31T15:27:03.098Z [INFO]: Connected to database
+2024-12-31T15:27:06.022Z [INFO]: Server started on port 3000
+2024-12-31T15:27:06.151Z [ERROR]: Unexpected error
+2024-12-31T15:27:06.211Z [ERROR]: Unexpected error
+2024-12-31T15:27:07.317Z [INFO]: Connected to database
+2024-12-31T15:27:13.882Z [INFO]: Server started on port 3000
+2024-12-31T15:27:14.004Z [ERROR]: Unexpected error
+2024-12-31T15:27:14.096Z [ERROR]: Unexpected error
+2024-12-31T15:27:15.311Z [INFO]: Connected to database
+2024-12-31T15:27:17.325Z [INFO]: Server started on port 3000
+2024-12-31T15:27:17.413Z [ERROR]: Database error
+2024-12-31T15:27:18.514Z [INFO]: Connected to database
+2024-12-31T15:27:18.558Z [INFO]: [object Object]
+2024-12-31T15:27:18.577Z [INFO]: [object Object]
+2024-12-31T15:27:19.139Z [INFO]: Server started on port 3000
+2024-12-31T15:27:19.215Z [ERROR]: Database error
+2024-12-31T15:27:19.243Z [ERROR]: [object Object]
+2024-12-31T15:27:20.432Z [INFO]: Connected to database
+2024-12-31T15:28:06.353Z [INFO]: Server started on port 3000
+2024-12-31T15:28:06.508Z [ERROR]: Unexpected error
+2024-12-31T15:28:06.602Z [ERROR]: Unexpected error
+2024-12-31T15:28:07.895Z [INFO]: Connected to database
+2024-12-31T15:28:10.084Z [INFO]: Server started on port 3000
+2024-12-31T15:28:10.173Z [ERROR]: Database error
+2024-12-31T15:28:11.391Z [INFO]: Connected to database
+2024-12-31T15:28:11.433Z [INFO]: [object Object]
+2024-12-31T15:28:11.452Z [INFO]: [object Object]
+2024-12-31T15:28:12.041Z [INFO]: Server started on port 3000
+2024-12-31T15:28:12.115Z [ERROR]: Database error
+2024-12-31T15:28:12.140Z [ERROR]: [object Object]
+2024-12-31T15:28:13.283Z [INFO]: Connected to database
+2024-12-31T15:28:22.055Z [INFO]: Server started on port 3000
+2024-12-31T15:28:22.202Z [ERROR]: Unexpected error
+2024-12-31T15:28:22.308Z [ERROR]: Unexpected error
+2024-12-31T15:28:23.446Z [INFO]: Connected to database
+2024-12-31T15:28:25.835Z [INFO]: Server started on port 3000
+2024-12-31T15:28:25.924Z [ERROR]: Database error
+2024-12-31T15:28:27.245Z [INFO]: Connected to database
+2024-12-31T15:28:27.290Z [INFO]: [object Object]
+2024-12-31T15:28:27.312Z [INFO]: [object Object]
+2024-12-31T15:28:27.925Z [INFO]: Server started on port 3000
+2024-12-31T15:28:28.004Z [ERROR]: Database error
+2024-12-31T15:28:28.036Z [ERROR]: [object Object]
+2024-12-31T15:28:29.397Z [INFO]: Connected to database
+2024-12-31T15:30:39.621Z [INFO]: Server started on port 3000
+2024-12-31T15:30:39.805Z [ERROR]: Unexpected error
+2024-12-31T15:30:39.899Z [ERROR]: Unexpected error
+2024-12-31T15:30:41.253Z [INFO]: Connected to database
+2024-12-31T15:30:44.940Z [INFO]: Server started on port 3000
+2024-12-31T15:30:45.026Z [ERROR]: Database error
+2024-12-31T15:30:46.083Z [INFO]: Connected to database
+2024-12-31T15:30:46.128Z [INFO]: [object Object]
+2024-12-31T15:30:46.158Z [INFO]: [object Object]
+2024-12-31T15:30:48.513Z [INFO]: Server started on port 3000
+2024-12-31T15:30:48.609Z [ERROR]: Database error
+2024-12-31T15:30:48.642Z [ERROR]: [object Object]
+2024-12-31T15:30:49.847Z [INFO]: Connected to database
+2024-12-31T15:31:23.884Z [INFO]: Server started on port 3000
+2024-12-31T15:31:24.355Z [ERROR]: Unexpected error
+2024-12-31T15:31:24.464Z [ERROR]: Unexpected error
+2024-12-31T15:31:25.402Z [INFO]: Connected to database
+2024-12-31T15:31:27.573Z [INFO]: Server started on port 3000
+2024-12-31T15:31:27.674Z [ERROR]: Database error
+2024-12-31T15:31:28.848Z [INFO]: Connected to database
+2024-12-31T15:31:28.921Z [INFO]: [object Object]
+2024-12-31T15:31:28.945Z [INFO]: [object Object]
+2024-12-31T15:31:30.347Z [INFO]: Server started on port 3000
+2024-12-31T15:31:30.443Z [ERROR]: Database error
+2024-12-31T15:31:30.478Z [ERROR]: [object Object]
+2024-12-31T15:31:31.803Z [INFO]: Connected to database
+2024-12-31T15:31:33.313Z [ERROR]: Internal server error.
+2024-12-31T15:32:49.002Z [INFO]: Server started on port 3000
+2024-12-31T15:32:49.144Z [ERROR]: Unexpected error
+2024-12-31T15:32:49.229Z [ERROR]: Unexpected error
+2024-12-31T15:32:50.682Z [INFO]: Connected to database
+2024-12-31T15:32:52.831Z [INFO]: Server started on port 3000
+2024-12-31T15:32:52.907Z [ERROR]: Database error
+2024-12-31T15:32:54.049Z [INFO]: Connected to database
+2024-12-31T15:32:54.750Z [INFO]: [object Object]
+2024-12-31T15:32:55.555Z [INFO]: [object Object]
+2024-12-31T15:32:56.442Z [INFO]: Server started on port 3000
+2024-12-31T15:32:57.709Z [ERROR]: Database error
+2024-12-31T15:32:57.760Z [ERROR]: [object Object]
+2024-12-31T15:32:58.838Z [INFO]: Connected to database
+2024-12-31T15:33:08.389Z [INFO]: Server started on port 3000
+2024-12-31T15:33:08.727Z [ERROR]: Unexpected error
+2024-12-31T15:33:08.803Z [ERROR]: Unexpected error
+2024-12-31T15:33:09.960Z [INFO]: Connected to database
+2024-12-31T15:33:11.681Z [INFO]: Server started on port 3000
+2024-12-31T15:33:11.768Z [ERROR]: Database error
+2024-12-31T15:33:14.093Z [INFO]: Connected to database
+2024-12-31T15:33:14.165Z [INFO]: [object Object]
+2024-12-31T15:33:14.188Z [INFO]: [object Object]
+2024-12-31T15:33:15.512Z [INFO]: Server started on port 3000
+2024-12-31T15:33:15.610Z [ERROR]: Database error
+2024-12-31T15:33:15.645Z [ERROR]: [object Object]
+2024-12-31T15:33:16.844Z [INFO]: Connected to database
+2024-12-31T15:33:17.983Z [ERROR]: Internal server error.
+2024-12-31T15:33:32.982Z [INFO]: Server started on port 3000
+2024-12-31T15:33:33.126Z [ERROR]: Unexpected error
+2024-12-31T15:33:33.203Z [ERROR]: Unexpected error
+2024-12-31T15:33:36.840Z [INFO]: Connected to database
+2024-12-31T15:33:41.241Z [INFO]: Server started on port 3000
+2024-12-31T15:33:41.346Z [ERROR]: Database error
+2024-12-31T15:33:42.668Z [INFO]: Connected to database
+2024-12-31T15:33:42.710Z [INFO]: [object Object]
+2024-12-31T15:33:42.734Z [INFO]: [object Object]
+2024-12-31T15:33:46.703Z [INFO]: Server started on port 3000
+2024-12-31T15:33:46.890Z [ERROR]: Database error
+2024-12-31T15:33:46.950Z [ERROR]: [object Object]
+2024-12-31T15:33:48.051Z [INFO]: Connected to database
+2024-12-31T15:33:52.650Z [INFO]: Server started on port 3000
+2024-12-31T15:33:52.987Z [ERROR]: Unexpected error
+2024-12-31T15:33:53.065Z [ERROR]: Unexpected error
+2024-12-31T15:33:54.129Z [INFO]: Connected to database
+2024-12-31T15:33:56.141Z [INFO]: Server started on port 3000
+2024-12-31T15:33:56.229Z [ERROR]: Database error
+2024-12-31T15:33:57.610Z [INFO]: Connected to database
+2024-12-31T15:33:57.682Z [INFO]: [object Object]
+2024-12-31T15:33:57.702Z [INFO]: [object Object]
+2024-12-31T15:34:06.985Z [INFO]: Server started on port 3000
+2024-12-31T15:34:07.198Z [ERROR]: Unexpected error
+2024-12-31T15:34:09.066Z [ERROR]: Unexpected error
+2024-12-31T15:34:09.724Z [ERROR]: Internal server error.
+2024-12-31T15:34:09.800Z [INFO]: Connected to database
+2024-12-31T15:35:25.600Z [INFO]: Server started on port 3000
+2024-12-31T15:35:25.921Z [ERROR]: Unexpected error
+2024-12-31T15:35:26.005Z [ERROR]: Unexpected error
+2024-12-31T15:35:27.410Z [INFO]: Connected to database
+2024-12-31T15:35:28.661Z [ERROR]: Internal server error.
+2024-12-31T15:35:30.083Z [INFO]: Server started on port 3000
+2024-12-31T15:35:30.184Z [ERROR]: Database error
+2024-12-31T15:35:31.288Z [INFO]: Connected to database
+2024-12-31T15:35:31.358Z [INFO]: [object Object]
+2024-12-31T15:35:31.381Z [INFO]: [object Object]
+2024-12-31T15:35:34.109Z [INFO]: Server started on port 3000
+2024-12-31T15:35:34.205Z [ERROR]: Database error
+2024-12-31T15:35:34.240Z [ERROR]: [object Object]
+2024-12-31T15:35:35.358Z [INFO]: Connected to database
+2024-12-31T15:36:15.435Z [INFO]: Server started on port 3000
+2024-12-31T15:36:15.732Z [ERROR]: Unexpected error
+2024-12-31T15:36:15.805Z [ERROR]: Unexpected error
+2024-12-31T15:36:16.922Z [INFO]: Connected to database
+2024-12-31T15:36:18.492Z [INFO]: Server started on port 3000
+2024-12-31T15:36:18.580Z [ERROR]: Database error
+2024-12-31T15:36:19.849Z [INFO]: Connected to database
+2024-12-31T15:36:19.919Z [INFO]: [object Object]
+2024-12-31T15:36:19.940Z [INFO]: [object Object]
+2024-12-31T15:36:21.244Z [INFO]: Server started on port 3000
+2024-12-31T15:36:21.343Z [ERROR]: Database error
+2024-12-31T15:36:21.378Z [ERROR]: [object Object]
+2024-12-31T15:36:22.395Z [INFO]: Connected to database
+2024-12-31T15:36:23.550Z [ERROR]: Internal server error.
+2024-12-31T15:36:44.899Z [INFO]: Server started on port 3000
+2024-12-31T15:36:45.196Z [ERROR]: Unexpected error
+2024-12-31T15:36:45.271Z [ERROR]: Unexpected error
+2024-12-31T15:36:46.769Z [INFO]: Connected to database
+2024-12-31T15:36:48.000Z [ERROR]: Internal server error.
+2024-12-31T15:36:49.402Z [INFO]: Server started on port 3000
+2024-12-31T15:36:49.499Z [ERROR]: Database error
+2024-12-31T15:36:50.721Z [INFO]: Connected to database
+2024-12-31T15:36:50.789Z [INFO]: [object Object]
+2024-12-31T15:36:50.810Z [INFO]: [object Object]
+2024-12-31T15:36:51.995Z [INFO]: Server started on port 3000
+2024-12-31T15:36:52.093Z [ERROR]: Database error
+2024-12-31T15:36:52.128Z [ERROR]: [object Object]
+2024-12-31T15:36:53.392Z [INFO]: Connected to database
+2024-12-31T15:37:28.744Z [INFO]: Server started on port 3000
+2024-12-31T15:37:29.042Z [ERROR]: Unexpected error
+2024-12-31T15:37:29.119Z [ERROR]: Unexpected error
+2024-12-31T15:37:30.130Z [INFO]: Connected to database
+2024-12-31T15:37:31.728Z [INFO]: Server started on port 3000
+2024-12-31T15:37:31.808Z [ERROR]: Database error
+2024-12-31T15:37:33.025Z [INFO]: Connected to database
+2024-12-31T15:37:33.098Z [INFO]: [object Object]
+2024-12-31T15:37:33.121Z [INFO]: [object Object]
+2024-12-31T15:37:34.418Z [INFO]: Server started on port 3000
+2024-12-31T15:37:34.522Z [ERROR]: Database error
+2024-12-31T15:37:34.557Z [ERROR]: [object Object]
+2024-12-31T15:37:35.821Z [INFO]: Connected to database
+2024-12-31T15:37:36.936Z [ERROR]: Internal server error.
+2024-12-31T15:39:04.181Z [INFO]: Server started on port 3000
+2024-12-31T15:39:04.478Z [ERROR]: Unexpected error
+2024-12-31T15:39:04.551Z [ERROR]: Unexpected error
+2024-12-31T15:39:06.040Z [INFO]: Connected to database
+2024-12-31T15:39:07.253Z [ERROR]: Internal server error.
+2024-12-31T15:39:08.619Z [INFO]: Server started on port 3000
+2024-12-31T15:39:08.710Z [ERROR]: Database error
+2024-12-31T15:39:09.905Z [INFO]: Connected to database
+2024-12-31T15:39:09.974Z [INFO]: [object Object]
+2024-12-31T15:39:09.996Z [INFO]: [object Object]
+2024-12-31T15:39:11.109Z [INFO]: Server started on port 3000
+2024-12-31T15:39:11.206Z [ERROR]: Database error
+2024-12-31T15:39:11.240Z [ERROR]: [object Object]
+2024-12-31T15:39:12.975Z [INFO]: Connected to database
+2024-12-31T15:40:19.504Z [INFO]: Server started on port 3000
+2024-12-31T15:40:19.804Z [ERROR]: Unexpected error
+2024-12-31T15:40:19.879Z [ERROR]: Unexpected error
+2024-12-31T15:40:20.943Z [INFO]: Connected to database
+2024-12-31T15:40:22.299Z [INFO]: Server started on port 3000
+2024-12-31T15:40:22.391Z [ERROR]: Database error
+2024-12-31T15:40:22.424Z [ERROR]: [object Object]
+2024-12-31T15:40:23.973Z [INFO]: Connected to database
+2024-12-31T15:40:25.481Z [INFO]: Server started on port 3000
+2024-12-31T15:40:25.577Z [ERROR]: Database error
+2024-12-31T15:40:26.828Z [INFO]: Connected to database
+2024-12-31T15:40:26.898Z [INFO]: [object Object]
+2024-12-31T15:40:26.919Z [INFO]: [object Object]
+2024-12-31T15:40:27.992Z [ERROR]: Internal server error.
+2024-12-31T15:41:12.981Z [INFO]: Server started on port 3000
+2024-12-31T15:41:13.283Z [ERROR]: Unexpected error
+2024-12-31T15:41:13.358Z [ERROR]: Unexpected error
+2024-12-31T15:41:14.472Z [INFO]: Connected to database
+2024-12-31T15:41:16.017Z [INFO]: Server started on port 3000
+2024-12-31T15:41:16.102Z [ERROR]: Database error
+2024-12-31T15:41:17.282Z [INFO]: Connected to database
+2024-12-31T15:41:17.351Z [INFO]: [object Object]
+2024-12-31T15:41:17.370Z [INFO]: [object Object]
+2024-12-31T15:41:18.577Z [INFO]: Server started on port 3000
+2024-12-31T15:41:18.675Z [ERROR]: Database error
+2024-12-31T15:41:18.711Z [ERROR]: [object Object]
+2024-12-31T15:41:19.869Z [INFO]: Connected to database
+2024-12-31T15:41:20.953Z [ERROR]: Internal server error.
+2024-12-31T15:41:53.532Z [INFO]: Server started on port 3000
+2024-12-31T15:41:53.830Z [ERROR]: Unexpected error
+2024-12-31T15:41:53.903Z [ERROR]: Unexpected error
+2024-12-31T15:41:55.420Z [INFO]: Connected to database
+2024-12-31T15:41:56.654Z [ERROR]: Internal server error.
+2024-12-31T15:41:58.007Z [INFO]: Server started on port 3000
+2024-12-31T15:41:58.104Z [ERROR]: Database error
+2024-12-31T15:42:00.579Z [INFO]: Connected to database
+2024-12-31T15:42:00.650Z [INFO]: [object Object]
+2024-12-31T15:42:00.672Z [INFO]: [object Object]
+2024-12-31T15:42:01.903Z [INFO]: Server started on port 3000
+2024-12-31T15:42:02.003Z [ERROR]: Database error
+2024-12-31T15:42:02.037Z [ERROR]: [object Object]
+2024-12-31T15:42:03.279Z [INFO]: Connected to database
+2024-12-31T15:43:42.802Z [INFO]: Server started on port 3000
+2024-12-31T15:43:43.003Z [ERROR]: Unexpected error
+2024-12-31T15:43:43.089Z [ERROR]: Unexpected error
+2024-12-31T15:43:44.617Z [INFO]: Connected to database
+2024-12-31T15:43:46.231Z [INFO]: Server started on port 3000
+2024-12-31T15:43:46.316Z [ERROR]: Database error
+2024-12-31T15:43:47.559Z [INFO]: Connected to database
+2024-12-31T15:43:47.629Z [INFO]: [object Object]
+2024-12-31T15:43:47.649Z [INFO]: [object Object]
+2024-12-31T15:43:48.873Z [INFO]: Server started on port 3000
+2024-12-31T15:43:48.975Z [ERROR]: Database error
+2024-12-31T15:43:49.010Z [ERROR]: [object Object]
+2024-12-31T15:43:50.073Z [INFO]: Connected to database
+2024-12-31T15:43:57.637Z [ERROR]: Internal server error.
+2024-12-31T15:44:32.065Z [INFO]: Server started on port 3000
+2024-12-31T15:44:33.417Z [INFO]: Connected to database
+2024-12-31T15:46:37.562Z [INFO]: Server started on port 3000
+2024-12-31T15:46:39.059Z [INFO]: Connected to database
+2024-12-31T15:47:51.997Z [INFO]: Server started on port 3000
+2024-12-31T15:47:52.285Z [ERROR]: Unexpected error
+2024-12-31T15:47:52.374Z [ERROR]: Unexpected error
+2024-12-31T15:47:53.725Z [INFO]: Connected to database
+2024-12-31T15:47:54.971Z [ERROR]: Internal server error.
+2024-12-31T15:47:56.495Z [INFO]: Server started on port 3000
+2024-12-31T15:47:56.581Z [ERROR]: Database error
+2024-12-31T15:47:57.882Z [INFO]: Connected to database
+2024-12-31T15:47:57.949Z [INFO]: [object Object]
+2024-12-31T15:47:57.968Z [INFO]: [object Object]
+2024-12-31T15:47:59.346Z [INFO]: Server started on port 3000
+2024-12-31T15:47:59.447Z [ERROR]: Database error
+2024-12-31T15:47:59.483Z [ERROR]: [object Object]
+2024-12-31T15:48:00.791Z [INFO]: Connected to database
+2024-12-31T15:48:16.101Z [INFO]: Server started on port 3000
+2024-12-31T15:48:17.472Z [INFO]: Connected to database
+2024-12-31T15:49:54.780Z [INFO]: Connected to database
+2024-12-31T16:00:33.917Z [INFO]: Connected to database
+2024-12-31T16:03:53.454Z [INFO]: Connected to database
+2024-12-31T16:04:20.022Z [INFO]: Server started on port 3000
+2024-12-31T16:04:21.449Z [INFO]: Connected to database
+2024-12-31T16:05:06.975Z [INFO]: Server started on port 3000
+2024-12-31T16:05:08.606Z [INFO]: Connected to database
+2024-12-31T16:06:34.446Z [INFO]: Server started on port 3000
+2024-12-31T16:06:36.155Z [INFO]: Connected to database
+2024-12-31T16:07:33.054Z [INFO]: Server started on port 3000
+2024-12-31T16:07:34.683Z [INFO]: Connected to database
+2024-12-31T16:08:06.741Z [INFO]: Connected to database
+2024-12-31T16:08:57.872Z [INFO]: Connected to database
+2024-12-31T16:10:06.907Z [INFO]: Server started on port 3000
+2024-12-31T16:10:08.429Z [INFO]: Connected to database
+2024-12-31T16:23:34.703Z [INFO]: Server started on port 3000
+2024-12-31T16:23:36.466Z [INFO]: Connected to database
+2024-12-31T16:40:36.851Z [INFO]: Server started on port 3000
+2024-12-31T16:40:38.694Z [INFO]: Connected to database
+2024-12-31T16:42:03.517Z [INFO]: Server started on port 3000
+2024-12-31T16:42:05.628Z [INFO]: Connected to database
+2024-12-31T16:43:02.791Z [INFO]: Server started on port 3000
+2024-12-31T16:43:04.188Z [INFO]: Connected to database
+2024-12-31T16:45:36.679Z [INFO]: Server started on port 3000
+2024-12-31T16:45:38.512Z [INFO]: Connected to database
+2024-12-31T16:47:04.118Z [INFO]: Server started on port 3000
+2024-12-31T16:47:04.239Z [ERROR]: Cannot read properties of null (reading 'length')
+2024-12-31T16:47:05.726Z [INFO]: Connected to database
+2024-12-31T16:54:37.727Z [INFO]: Server started on port 3000
+2024-12-31T16:54:37.853Z [ERROR]: Cannot read properties of null (reading 'length')
+2024-12-31T16:54:39.646Z [INFO]: Connected to database
+2024-12-31T16:56:02.816Z [INFO]: Server started on port 3000
+2024-12-31T16:56:04.587Z [INFO]: Connected to database
+2024-12-31T16:58:17.810Z [INFO]: Server started on port 3000
+2024-12-31T16:58:18.255Z [ERROR]: Unexpected error
+2024-12-31T16:58:18.373Z [ERROR]: Unexpected error
+2024-12-31T16:58:19.759Z [INFO]: Connected to database
+2024-12-31T16:58:22.173Z [INFO]: Server started on port 3000
+2024-12-31T16:58:22.289Z [ERROR]: Database error
+2024-12-31T16:58:23.743Z [INFO]: Connected to database
+2024-12-31T16:58:23.831Z [INFO]: [object Object]
+2024-12-31T16:58:23.859Z [INFO]: [object Object]
+2024-12-31T16:58:25.514Z [INFO]: Server started on port 3000
+2024-12-31T16:58:25.643Z [ERROR]: Database error
+2024-12-31T16:58:25.692Z [ERROR]: [object Object]
+2024-12-31T16:58:26.858Z [INFO]: Connected to database
+2024-12-31T16:58:28.666Z [ERROR]: Internal server error.
+2024-12-31T17:13:14.806Z [INFO]: Server started on port 3000
+2024-12-31T17:13:15.183Z [ERROR]: Unexpected error
+2024-12-31T17:13:15.294Z [ERROR]: Unexpected error
+2024-12-31T17:13:16.528Z [INFO]: Connected to database
+2024-12-31T17:13:19.297Z [INFO]: Server started on port 3000
+2024-12-31T17:13:19.414Z [ERROR]: Database error
+2024-12-31T17:13:20.559Z [INFO]: Connected to database
+2024-12-31T17:13:20.645Z [INFO]: [object Object]
+2024-12-31T17:13:20.673Z [INFO]: [object Object]
+2024-12-31T17:13:22.305Z [INFO]: Server started on port 3000
+2024-12-31T17:13:22.436Z [ERROR]: Database error
+2024-12-31T17:13:22.483Z [ERROR]: [object Object]
+2024-12-31T17:13:23.600Z [INFO]: Connected to database
+2024-12-31T17:13:30.038Z [ERROR]: Internal server error.
+2024-12-31T17:49:00.829Z [INFO]: Server started on port 3000
+2024-12-31T17:49:01.041Z [ERROR]: Unexpected error
+2024-12-31T17:49:01.150Z [ERROR]: Unexpected error
+2024-12-31T17:49:02.072Z [INFO]: Connected to database
+2024-12-31T17:49:03.613Z [ERROR]: Internal server error.
+2024-12-31T17:49:05.634Z [INFO]: Server started on port 3000
+2024-12-31T17:49:05.747Z [ERROR]: Database error
+2024-12-31T17:49:06.874Z [INFO]: Connected to database
+2024-12-31T17:49:06.961Z [INFO]: [object Object]
+2024-12-31T17:49:06.988Z [INFO]: [object Object]
+2024-12-31T17:49:08.864Z [INFO]: Server started on port 3000
+2024-12-31T17:49:08.984Z [ERROR]: Database error
+2024-12-31T17:49:09.027Z [ERROR]: [object Object]
+2024-12-31T17:49:10.160Z [INFO]: Connected to database
+2024-12-31T17:55:06.926Z [INFO]: Server started on port 3000
+2024-12-31T17:55:07.040Z [ERROR]: Database error
+2024-12-31T17:55:08.221Z [INFO]: Connected to database
+2024-12-31T17:55:08.311Z [INFO]: [object Object]
+2024-12-31T17:55:08.340Z [INFO]: [object Object]
+2024-12-31T17:55:10.338Z [INFO]: Server started on port 3000
+2024-12-31T17:55:10.543Z [ERROR]: Unexpected error
+2024-12-31T17:55:10.638Z [ERROR]: Unexpected error
+2024-12-31T17:55:11.851Z [INFO]: Connected to database
+2024-12-31T17:55:13.691Z [INFO]: Server started on port 3000
+2024-12-31T17:55:13.809Z [ERROR]: Database error
+2024-12-31T17:55:13.851Z [ERROR]: [object Object]
+2024-12-31T17:55:14.952Z [INFO]: Connected to database
+2024-12-31T17:55:16.565Z [ERROR]: Internal server error.
+2024-12-31T18:04:17.929Z [INFO]: Server started on port 3000
+2024-12-31T18:04:18.137Z [ERROR]: Unexpected error
+2024-12-31T18:04:18.241Z [ERROR]: Unexpected error
+2024-12-31T18:04:19.188Z [INFO]: Connected to database
+2024-12-31T18:04:21.152Z [INFO]: Server started on port 3000
+2024-12-31T18:04:21.269Z [ERROR]: Database error
+2024-12-31T18:04:22.518Z [INFO]: Connected to database
+2024-12-31T18:04:22.608Z [INFO]: [object Object]
+2024-12-31T18:04:22.637Z [INFO]: [object Object]
+2024-12-31T18:04:24.445Z [INFO]: Server started on port 3000
+2024-12-31T18:04:24.567Z [ERROR]: Database error
+2024-12-31T18:04:24.611Z [ERROR]: [object Object]
+2024-12-31T18:04:25.757Z [INFO]: Connected to database
+2024-12-31T18:04:27.393Z [ERROR]: Internal server error.
+2024-12-31T18:07:46.179Z [INFO]: Server started on port 3000
+2024-12-31T18:07:46.296Z [ERROR]: Database error
+2024-12-31T18:07:47.531Z [INFO]: Connected to database
+2024-12-31T18:07:47.617Z [INFO]: [object Object]
+2024-12-31T18:07:47.647Z [INFO]: [object Object]
+2024-12-31T18:07:49.627Z [INFO]: Server started on port 3000
+2024-12-31T18:07:49.835Z [ERROR]: Unexpected error
+2024-12-31T18:07:49.933Z [ERROR]: Unexpected error
+2024-12-31T18:07:51.529Z [INFO]: Connected to database
+2024-12-31T18:07:53.341Z [INFO]: Server started on port 3000
+2024-12-31T18:07:53.460Z [ERROR]: Database error
+2024-12-31T18:07:53.504Z [ERROR]: [object Object]
+2024-12-31T18:07:54.845Z [INFO]: Connected to database
+2024-12-31T18:07:56.426Z [ERROR]: Internal server error.
+2024-12-31T19:18:23.001Z [INFO]: Server started on port 3000
+2024-12-31T19:18:23.148Z [ERROR]: Unexpected error
+2024-12-31T19:18:23.230Z [ERROR]: Unexpected error
+2024-12-31T19:18:24.186Z [INFO]: Connected to database
+2024-12-31T19:18:25.809Z [INFO]: Server started on port 3000
+2024-12-31T19:18:25.902Z [ERROR]: Database error
+2024-12-31T19:18:27.009Z [INFO]: Connected to database
+2024-12-31T19:18:27.079Z [INFO]: [object Object]
+2024-12-31T19:18:27.101Z [INFO]: [object Object]
+2024-12-31T19:18:28.515Z [INFO]: Server started on port 3000
+2024-12-31T19:18:28.614Z [ERROR]: Database error
+2024-12-31T19:18:28.648Z [ERROR]: [object Object]
+2024-12-31T19:18:29.681Z [INFO]: Connected to database
+2024-12-31T19:18:30.903Z [ERROR]: Internal server error.
+2024-12-31T19:24:49.028Z [INFO]: Server started on port 3000
+2024-12-31T19:24:50.552Z [INFO]: Connected to database
+2024-12-31T19:24:53.240Z [INFO]: Server started on port 3000
+2024-12-31T19:24:53.315Z [ERROR]: Database error
+2024-12-31T19:24:54.470Z [INFO]: Connected to database
+2024-12-31T19:24:54.510Z [INFO]: [object Object]
+2024-12-31T19:24:54.526Z [INFO]: [object Object]
+2024-12-31T19:24:56.402Z [INFO]: Server started on port 3000
+2024-12-31T19:24:56.549Z [ERROR]: Unexpected error
+2024-12-31T19:24:56.608Z [ERROR]: Unexpected error
+2024-12-31T19:24:57.597Z [INFO]: Connected to database
+2024-12-31T19:24:58.130Z [INFO]: Server started on port 3000
+2024-12-31T19:24:58.196Z [ERROR]: Database error
+2024-12-31T19:24:58.218Z [ERROR]: [object Object]
+2024-12-31T19:24:59.407Z [INFO]: Connected to database
+2024-12-31T19:26:01.009Z [INFO]: Server started on port 3000
+2024-12-31T19:26:02.409Z [INFO]: Connected to database
+2024-12-31T19:26:03.280Z [INFO]: Server started on port 3000
+2024-12-31T19:26:03.415Z [ERROR]: Unexpected error
+2024-12-31T19:26:03.474Z [ERROR]: Unexpected error
+2024-12-31T19:26:05.706Z [INFO]: Connected to database
+2024-12-31T19:26:06.531Z [INFO]: Server started on port 3000
+2024-12-31T19:26:06.646Z [ERROR]: Database error
+2024-12-31T19:26:07.929Z [INFO]: Connected to database
+2024-12-31T19:26:07.971Z [INFO]: [object Object]
+2024-12-31T19:26:07.992Z [INFO]: [object Object]
+2024-12-31T19:26:10.648Z [INFO]: Server started on port 3000
+2024-12-31T19:26:10.715Z [ERROR]: Database error
+2024-12-31T19:26:10.742Z [ERROR]: [object Object]
+2024-12-31T19:26:11.976Z [INFO]: Connected to database
+2024-12-31T19:26:44.197Z [INFO]: Server started on port 3000
+2024-12-31T19:26:44.267Z [ERROR]: Something went wrong
+2024-12-31T19:26:45.438Z [INFO]: Connected to database
+2024-12-31T19:26:46.353Z [INFO]: Server started on port 3000
+2024-12-31T19:26:46.479Z [ERROR]: Unexpected error
+2024-12-31T19:26:46.538Z [ERROR]: Unexpected error
+2024-12-31T19:26:47.573Z [INFO]: Connected to database
+2024-12-31T19:26:48.450Z [INFO]: Server started on port 3000
+2024-12-31T19:26:48.577Z [ERROR]: Database error
+2024-12-31T19:26:49.680Z [INFO]: Connected to database
+2024-12-31T19:26:49.719Z [INFO]: [object Object]
+2024-12-31T19:26:49.741Z [INFO]: [object Object]
+2024-12-31T19:26:50.282Z [INFO]: Server started on port 3000
+2024-12-31T19:26:50.356Z [ERROR]: Database error
+2024-12-31T19:26:50.382Z [ERROR]: [object Object]
+2024-12-31T19:26:51.557Z [INFO]: Connected to database
+2024-12-31T19:26:57.374Z [INFO]: Server started on port 3000
+2024-12-31T19:26:57.446Z [ERROR]: Something went wrong
+2024-12-31T19:26:57.514Z [ERROR]: Something went wrong
+2024-12-31T19:26:58.598Z [INFO]: Connected to database
+2024-12-31T19:27:01.748Z [INFO]: Server started on port 3000
+2024-12-31T19:27:01.876Z [ERROR]: Database error
+2024-12-31T19:27:03.035Z [INFO]: Connected to database
+2024-12-31T19:27:03.075Z [INFO]: [object Object]
+2024-12-31T19:27:03.094Z [INFO]: [object Object]
+2024-12-31T19:27:04.128Z [INFO]: Server started on port 3000
+2024-12-31T19:27:04.260Z [ERROR]: Unexpected error
+2024-12-31T19:27:04.324Z [ERROR]: Unexpected error
+2024-12-31T19:27:05.362Z [INFO]: Connected to database
+2024-12-31T19:27:05.921Z [INFO]: Server started on port 3000
+2024-12-31T19:27:05.994Z [ERROR]: Database error
+2024-12-31T19:27:06.021Z [ERROR]: [object Object]
+2024-12-31T19:27:07.346Z [INFO]: Connected to database
+2024-12-31T19:28:02.338Z [INFO]: Server started on port 3000
+2024-12-31T19:28:02.550Z [ERROR]: Something went wrong
+2024-12-31T19:28:02.612Z [ERROR]: Something went wrong
+2024-12-31T19:28:04.049Z [INFO]: Connected to database
+2024-12-31T19:28:05.583Z [INFO]: Server started on port 3000
+2024-12-31T19:28:05.680Z [ERROR]: Database error
+2024-12-31T19:28:06.799Z [INFO]: Connected to database
+2024-12-31T19:28:06.869Z [INFO]: [object Object]
+2024-12-31T19:28:06.890Z [INFO]: [object Object]
+2024-12-31T19:28:08.375Z [INFO]: Server started on port 3000
+2024-12-31T19:28:08.532Z [ERROR]: Unexpected error
+2024-12-31T19:28:08.610Z [ERROR]: Unexpected error
+2024-12-31T19:28:09.586Z [INFO]: Connected to database
+2024-12-31T19:28:13.634Z [INFO]: Server started on port 3000
+2024-12-31T19:28:13.730Z [ERROR]: Database error
+2024-12-31T19:28:13.765Z [ERROR]: [object Object]
+2024-12-31T19:28:14.951Z [INFO]: Connected to database
+2024-12-31T19:28:16.402Z [ERROR]: Internal server error.
+2024-12-31T19:59:01.095Z [INFO]: Server started on port 3000
+2024-12-31T19:59:01.159Z [ERROR]: Something went wrong
+2024-12-31T19:59:01.231Z [ERROR]: Something went wrong
+2024-12-31T19:59:02.531Z [INFO]: Connected to database
+2024-12-31T19:59:05.685Z [INFO]: Server started on port 3000
+2024-12-31T19:59:05.828Z [ERROR]: Unexpected error
+2024-12-31T19:59:05.890Z [ERROR]: Unexpected error
+2024-12-31T19:59:06.869Z [INFO]: Connected to database
+2024-12-31T19:59:07.903Z [INFO]: Server started on port 3000
+2024-12-31T19:59:07.969Z [ERROR]: Database error
+2024-12-31T19:59:09.302Z [INFO]: Connected to database
+2024-12-31T19:59:09.342Z [INFO]: [object Object]
+2024-12-31T19:59:09.360Z [INFO]: [object Object]
+2024-12-31T19:59:10.453Z [INFO]: Server started on port 3000
+2024-12-31T19:59:10.527Z [ERROR]: Database error
+2024-12-31T19:59:10.554Z [ERROR]: [object Object]
+2024-12-31T19:59:11.698Z [INFO]: Connected to database
+2024-12-31T20:07:38.608Z [INFO]: Server started on port 3000
+2024-12-31T20:07:38.659Z [ERROR]: Something went wrong
+2024-12-31T20:07:38.731Z [ERROR]: Something went wrong
+2024-12-31T20:07:40.222Z [INFO]: Connected to database
+2024-12-31T20:07:41.599Z [INFO]: Server started on port 3000
+2024-12-31T20:07:41.683Z [ERROR]: Database error
+2024-12-31T20:07:42.915Z [INFO]: Connected to database
+2024-12-31T20:07:42.954Z [INFO]: [object Object]
+2024-12-31T20:07:42.970Z [INFO]: [object Object]
+2024-12-31T20:07:44.334Z [INFO]: Server started on port 3000
+2024-12-31T20:07:44.469Z [ERROR]: Unexpected error
+2024-12-31T20:07:44.535Z [ERROR]: Unexpected error
+2024-12-31T20:07:45.572Z [INFO]: Connected to database
+2024-12-31T20:07:46.166Z [INFO]: Server started on port 3000
+2024-12-31T20:07:46.234Z [ERROR]: Database error
+2024-12-31T20:07:46.261Z [ERROR]: [object Object]
+2024-12-31T20:07:47.405Z [INFO]: Connected to database
+2024-12-31T20:08:30.399Z [INFO]: Server started on port 3000
+2024-12-31T20:08:30.633Z [ERROR]: Something went wrong
+2024-12-31T20:08:30.696Z [ERROR]: Something went wrong
+2024-12-31T20:08:31.848Z [INFO]: Connected to database
+2024-12-31T20:08:33.510Z [INFO]: Server started on port 3000
+2024-12-31T20:08:33.610Z [ERROR]: Database error
+2024-12-31T20:08:34.829Z [INFO]: Connected to database
+2024-12-31T20:08:34.904Z [INFO]: [object Object]
+2024-12-31T20:08:34.938Z [INFO]: [object Object]
+2024-12-31T20:08:40.040Z [INFO]: Server started on port 3000
+2024-12-31T20:08:40.229Z [ERROR]: Unexpected error
+2024-12-31T20:08:40.327Z [ERROR]: Unexpected error
+2024-12-31T20:08:41.309Z [INFO]: Connected to database
+2024-12-31T20:08:43.018Z [INFO]: Server started on port 3000
+2024-12-31T20:08:43.148Z [ERROR]: Database error
+2024-12-31T20:08:43.194Z [ERROR]: [object Object]
+2024-12-31T20:08:44.423Z [INFO]: Connected to database
+2024-12-31T20:08:46.190Z [ERROR]: Internal server error.
