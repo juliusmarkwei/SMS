@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
-import Course from "@/models/Course";
-import Student from "@/models/Student";
-import { logger } from "@/utils/logger";
-import { getOrSetCache } from "@/utils/cache";
-import { quickSort, mergeSort } from "@/utils/sortingTechniques";
-import { IStudent } from "@/utils/types/student";
+import Course from "../models/Course";
+import Student from "../models/Student";
+import { logger } from "../utils/logger";
+import { getOrSetCache } from "../utils/cache";
+import { quickSort, mergeSort } from "../utils/sortingTechniques";
+import { IStudent } from "../utils/types/student";
 
 class SortCourseAndStudentController {
     static async sortCourses(req: Request, res: Response) {

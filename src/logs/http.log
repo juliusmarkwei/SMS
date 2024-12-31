@@ -1158,3 +1158,2573 @@
 2024-12-28T17:33:07.832Z [ERROR]: Internal server error.
 2024-12-28T17:34:10.452Z [ERROR]: Internal server error.
 2024-12-28T17:35:25.123Z [ERROR]: Internal server error.
+2024-12-29T20:56:26.801Z [ERROR]: Internal server error.
+2024-12-29T20:58:17.421Z [ERROR]: Internal server error.
+2024-12-29T20:59:43.791Z [ERROR]: Internal server error.
+2024-12-29T21:00:36.984Z [ERROR]: Internal server error.
+2024-12-29T21:02:07.198Z [ERROR]: Internal server error.
+2024-12-29T21:03:30.110Z [ERROR]: Internal server error.
+2024-12-29T21:04:35.213Z [ERROR]: Internal server error.
+2024-12-29T21:07:15.405Z [ERROR]: Internal server error.
+2024-12-29T21:08:02.354Z [ERROR]: Internal server error.
+2024-12-29T21:13:09.357Z [ERROR]: Internal server error.
+2024-12-29T21:17:41.849Z [ERROR]: Internal server error.
+2024-12-29T21:18:53.966Z [ERROR]: Internal server error.
+2024-12-29T21:21:35.611Z [ERROR]: Internal server error.
+2024-12-29T21:22:59.423Z [ERROR]: Internal server error.
+2024-12-29T21:24:17.586Z [ERROR]: Internal server error.
+2024-12-29T21:29:14.294Z [ERROR]: Internal server error.
+2024-12-29T21:31:02.724Z [ERROR]: Internal server error.
+2024-12-29T21:37:31.829Z [ERROR]: Internal server error.
+2024-12-29T21:52:35.180Z [ERROR]: Internal server error.
+2024-12-29T21:54:11.573Z [ERROR]: Internal server error.
+2024-12-29T22:01:45.577Z [ERROR]: Internal server error.
+2024-12-29T22:04:12.292Z [ERROR]: Internal server error.
+2024-12-29T22:06:32.820Z [ERROR]: Internal server error.
+2024-12-29T22:06:47.435Z [INFO]: Server started on port 3000
+2024-12-29T22:06:47.496Z [HTTP]: GET /api/v1/courses?page=1&limit=2 401 - 29ms
+2024-12-29T22:06:47.549Z [HTTP]: GET /api/v1/courses 401 - 5ms
+2024-12-29T22:06:47.582Z [HTTP]: GET /api/v1/courses 401 - 5ms
+2024-12-29T22:06:47.614Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:06:47.780Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:06:47.808Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:06:47.852Z [HTTP]: POST /courses 404 - 4ms
+2024-12-29T22:06:47.883Z [HTTP]: POST /api/v1/courses 401 - 3ms
+2024-12-29T22:06:47.906Z [HTTP]: POST /api/v1/courses 401 - 2ms
+2024-12-29T22:06:47.933Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 2ms
+2024-12-29T22:06:47.958Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:06:47.983Z [HTTP]: DELETE /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:06:48.007Z [HTTP]: DELETE /api/v1/courses/C1 401 - 3ms
+2024-12-29T22:06:51.847Z [INFO]: Connected to database
+2024-12-29T22:08:56.339Z [INFO]: Server started on port 3000
+2024-12-29T22:08:56.602Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 401 - 155ms
+2024-12-29T22:08:56.654Z [HTTP]: GET /api/v1/courses 401 - 5ms
+2024-12-29T22:08:56.684Z [HTTP]: GET /api/v1/courses 401 - 4ms
+2024-12-29T22:08:56.708Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:08:56.734Z [HTTP]: GET /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:08:56.760Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:08:56.809Z [HTTP]: POST /courses 404 - 4ms
+2024-12-29T22:08:56.835Z [HTTP]: POST /api/v1/courses 401 - 3ms
+2024-12-29T22:08:56.862Z [HTTP]: POST /api/v1/courses 401 - 3ms
+2024-12-29T22:08:56.886Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:08:56.915Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:08:56.938Z [HTTP]: DELETE /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:08:56.965Z [HTTP]: DELETE /api/v1/courses/C1 401 - 3ms
+2024-12-29T22:08:59.423Z [ERROR]: Internal server error.
+2024-12-29T22:09:04.009Z [INFO]: Connected to database
+2024-12-29T22:11:56.807Z [INFO]: Server started on port 3000
+2024-12-29T22:11:56.935Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 401 - 17ms
+2024-12-29T22:11:56.990Z [HTTP]: GET /api/v1/courses 401 - 5ms
+2024-12-29T22:11:57.023Z [HTTP]: GET /api/v1/courses 401 - 5ms
+2024-12-29T22:11:57.047Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:11:57.216Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:11:57.243Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:11:57.292Z [HTTP]: POST /courses 404 - 3ms
+2024-12-29T22:11:57.318Z [HTTP]: POST /api/v1/courses 401 - 3ms
+2024-12-29T22:11:57.345Z [HTTP]: POST /api/v1/courses 401 - 3ms
+2024-12-29T22:11:57.371Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:11:57.398Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:11:57.422Z [HTTP]: DELETE /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:11:57.448Z [HTTP]: DELETE /api/v1/courses/C1 401 - 3ms
+2024-12-29T22:11:59.978Z [ERROR]: Internal server error.
+2024-12-29T22:12:08.428Z [INFO]: Connected to database
+2024-12-29T22:13:51.714Z [INFO]: Server started on port 3000
+2024-12-29T22:13:51.846Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 401 - 17ms
+2024-12-29T22:13:52.042Z [HTTP]: GET /api/v1/courses 401 - 5ms
+2024-12-29T22:13:52.072Z [HTTP]: GET /api/v1/courses 401 - 4ms
+2024-12-29T22:13:52.096Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:13:52.124Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:13:52.148Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:13:52.192Z [HTTP]: POST /courses 404 - 3ms
+2024-12-29T22:13:52.217Z [HTTP]: POST /api/v1/courses 401 - 2ms
+2024-12-29T22:13:52.246Z [HTTP]: POST /api/v1/courses 401 - 3ms
+2024-12-29T22:13:52.272Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:13:52.298Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 2ms
+2024-12-29T22:13:52.321Z [HTTP]: DELETE /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:13:52.346Z [HTTP]: DELETE /api/v1/courses/C1 401 - 3ms
+2024-12-29T22:13:55.144Z [ERROR]: Internal server error.
+2024-12-29T22:13:59.729Z [INFO]: Connected to database
+2024-12-29T22:14:50.092Z [INFO]: Server started on port 3000
+2024-12-29T22:14:50.356Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 401 - 17ms
+2024-12-29T22:14:50.412Z [HTTP]: GET /api/v1/courses 401 - 7ms
+2024-12-29T22:14:50.449Z [HTTP]: GET /api/v1/courses 401 - 4ms
+2024-12-29T22:14:50.473Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:14:50.503Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:14:50.527Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:14:50.573Z [HTTP]: POST /courses 404 - 4ms
+2024-12-29T22:14:50.600Z [HTTP]: POST /api/v1/courses 401 - 3ms
+2024-12-29T22:14:50.628Z [HTTP]: POST /api/v1/courses 401 - 3ms
+2024-12-29T22:14:50.653Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:14:50.680Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 3ms
+2024-12-29T22:14:50.736Z [HTTP]: DELETE /api/v1/courses/CSC321 401 - 4ms
+2024-12-29T22:14:50.762Z [HTTP]: DELETE /api/v1/courses/C1 401 - 4ms
+2024-12-29T22:14:52.927Z [ERROR]: Internal server error.
+2024-12-30T08:04:25.101Z [ERROR]: Internal server error.
+2024-12-30T08:04:35.762Z [INFO]: Server started on port 3000
+2024-12-30T08:04:35.822Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 401 - 22ms
+2024-12-30T08:04:35.879Z [HTTP]: GET /api/v1/courses 401 - 7ms
+2024-12-30T08:04:35.928Z [HTTP]: GET /api/v1/courses 401 - 7ms
+2024-12-30T08:04:35.968Z [HTTP]: GET /api/v1/courses/CSC321 401 - 6ms
+2024-12-30T08:04:36.166Z [HTTP]: GET /api/v1/courses/CSC321 401 - 5ms
+2024-12-30T08:04:36.193Z [HTTP]: GET /api/v1/courses/CSC321 401 - 4ms
+2024-12-30T08:04:36.247Z [HTTP]: POST /courses 404 - 4ms
+2024-12-30T08:04:36.274Z [HTTP]: POST /api/v1/courses 401 - 2ms
+2024-12-30T08:04:36.301Z [HTTP]: POST /api/v1/courses 401 - 3ms
+2024-12-30T08:04:36.327Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 3ms
+2024-12-30T08:04:36.353Z [HTTP]: PUT /api/v1/courses/CSC321 401 - 3ms
+2024-12-30T08:04:36.375Z [HTTP]: DELETE /api/v1/courses/CSC321 401 - 3ms
+2024-12-30T08:04:36.403Z [HTTP]: DELETE /api/v1/courses/C1 401 - 4ms
+2024-12-30T08:04:44.148Z [INFO]: Connected to database
+2024-12-30T08:28:57.743Z [INFO]: Server started on port 3000
+2024-12-30T08:28:57.709Z [ERROR]: Internal server error.
+2024-12-30T08:29:03.075Z [INFO]: Connected to database
+2024-12-30T08:29:40.074Z [ERROR]: Internal server error.
+2024-12-30T08:29:50.436Z [INFO]: Server started on port 3000
+2024-12-30T08:29:50.627Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 23ms
+2024-12-30T08:29:50.671Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T08:29:50.704Z [HTTP]: GET /api/v1/courses 500 - 5ms
+2024-12-30T08:29:50.734Z [HTTP]: GET /api/v1/courses/CSC321 404 - 9ms
+2024-12-30T08:29:50.769Z [HTTP]: GET /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T08:29:50.804Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T08:29:50.862Z [HTTP]: POST /api/v1/courses 400 - 14ms
+2024-12-30T08:29:50.891Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T08:29:50.920Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T08:29:50.986Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T08:29:51.018Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T08:29:51.043Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T08:29:51.074Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T08:29:54.202Z [INFO]: Connected to database
+2024-12-30T09:08:56.048Z [INFO]: Server started on port 3000
+2024-12-30T09:08:56.319Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 23ms
+2024-12-30T09:08:56.368Z [HTTP]: GET /api/v1/courses 404 - 7ms
+2024-12-30T09:08:56.405Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T09:08:56.433Z [HTTP]: GET /api/v1/courses/CSC321 404 - 8ms
+2024-12-30T09:08:56.467Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T09:08:56.500Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:08:56.557Z [HTTP]: POST /api/v1/courses 400 - 14ms
+2024-12-30T09:08:56.585Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T09:08:56.614Z [HTTP]: POST /api/v1/courses 400 - 6ms
+2024-12-30T09:08:56.644Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T09:08:56.672Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:08:56.697Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:08:56.725Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T09:08:58.834Z [ERROR]: Internal server error.
+2024-12-30T09:09:02.558Z [INFO]: Connected to database
+2024-12-30T09:15:00.206Z [INFO]: Server started on port 3000
+2024-12-30T09:15:00.476Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 24ms
+2024-12-30T09:15:00.515Z [HTTP]: GET /api/v1/courses 404 - 7ms
+2024-12-30T09:15:00.546Z [HTTP]: GET /api/v1/courses 500 - 5ms
+2024-12-30T09:15:00.573Z [HTTP]: GET /api/v1/courses/CSC321 404 - 8ms
+2024-12-30T09:15:00.605Z [HTTP]: GET /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T09:15:00.637Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T09:15:00.692Z [HTTP]: POST /api/v1/courses 400 - 15ms
+2024-12-30T09:15:00.720Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T09:15:00.749Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T09:15:00.777Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T09:15:00.805Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:15:00.828Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:15:00.855Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T09:15:03.197Z [ERROR]: Internal server error.
+2024-12-30T09:15:07.209Z [INFO]: Connected to database
+2024-12-30T09:19:41.415Z [INFO]: Server started on port 3000
+2024-12-30T09:19:41.686Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 24ms
+2024-12-30T09:19:41.725Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T09:19:41.756Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T09:19:41.784Z [HTTP]: GET /api/v1/courses/CSC321 404 - 8ms
+2024-12-30T09:19:41.816Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T09:19:41.849Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T09:19:41.905Z [HTTP]: POST /api/v1/courses 400 - 14ms
+2024-12-30T09:19:41.931Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T09:19:41.959Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T09:19:41.986Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T09:19:42.015Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T09:19:42.039Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:19:42.066Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T09:19:44.299Z [ERROR]: Internal server error.
+2024-12-30T09:19:48.077Z [INFO]: Connected to database
+2024-12-30T09:23:52.498Z [INFO]: Server started on port 3000
+2024-12-30T09:23:52.770Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 168ms
+2024-12-30T09:23:52.815Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T09:23:52.840Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T09:23:52.872Z [HTTP]: GET /api/v1/courses/CSC321 404 - 9ms
+2024-12-30T09:23:52.901Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T09:23:52.937Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:23:52.989Z [HTTP]: POST /api/v1/courses 400 - 14ms
+2024-12-30T09:23:53.020Z [HTTP]: POST /api/v1/courses 400 - 6ms
+2024-12-30T09:23:53.046Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T09:23:53.077Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T09:23:53.102Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:23:53.128Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 4ms
+2024-12-30T09:23:53.184Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T09:23:55.418Z [ERROR]: Internal server error.
+2024-12-30T09:23:58.659Z [INFO]: Connected to database
+2024-12-30T09:25:04.858Z [INFO]: Server started on port 3000
+2024-12-30T09:25:05.137Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 25ms
+2024-12-30T09:25:05.178Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T09:25:05.215Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T09:25:05.250Z [HTTP]: GET /api/v1/courses/CSC321 404 - 8ms
+2024-12-30T09:25:05.279Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T09:25:05.315Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:25:05.370Z [HTTP]: POST /api/v1/courses 400 - 14ms
+2024-12-30T09:25:05.400Z [HTTP]: POST /api/v1/courses 400 - 6ms
+2024-12-30T09:25:05.425Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T09:25:05.456Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T09:25:05.482Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:25:05.539Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:25:05.565Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T09:25:07.755Z [ERROR]: Internal server error.
+2024-12-30T09:25:14.923Z [INFO]: Connected to database
+2024-12-30T09:31:19.739Z [INFO]: Server started on port 3000
+2024-12-30T09:31:20.438Z [HTTP]: GET / 404 - 15ms
+2024-12-30T09:31:20.674Z [HTTP]: GET /favicon.ico 404 - 2ms
+2024-12-30T09:31:21.651Z [INFO]: Connected to database
+2024-12-30T09:31:25.005Z [HTTP]: GET /api/v1/docs/ 304 - 4ms
+2024-12-30T09:31:25.047Z [HTTP]: GET /api/v1/docs/swagger-ui.css 200 - 13ms
+2024-12-30T09:31:25.058Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 200 - 5ms
+2024-12-30T09:31:25.066Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 200 - 15ms
+2024-12-30T09:31:25.085Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 200 - 5ms
+2024-12-30T09:31:25.095Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 200 - 50ms
+2024-12-30T09:31:25.100Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 200 - 11ms
+2024-12-30T09:31:25.670Z [HTTP]: GET /api/v1/docs/favicon-32x32.png 304 - 2ms
+2024-12-30T09:31:26.491Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 200 - 9ms
+2024-12-30T09:32:29.838Z [INFO]: Server started on port 3000
+2024-12-30T09:32:30.513Z [HTTP]: GET /api/v1/docs/ 304 - 14ms
+2024-12-30T09:32:30.544Z [HTTP]: GET /api/v1/docs/swagger-ui.css 304 - 5ms
+2024-12-30T09:32:30.556Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 304 - 5ms
+2024-12-30T09:32:30.557Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 304 - 4ms
+2024-12-30T09:32:30.563Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 304 - 4ms
+2024-12-30T09:32:30.572Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 304 - 3ms
+2024-12-30T09:32:30.578Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 304 - 7ms
+2024-12-30T09:32:30.585Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 304 - 5ms
+2024-12-30T09:32:30.924Z [HTTP]: GET /api/v1/docs/favicon-32x32.png 304 - 2ms
+2024-12-30T09:32:31.738Z [INFO]: Connected to database
+2024-12-30T09:45:44.748Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 24ms
+2024-12-30T09:45:44.804Z [HTTP]: GET /api/v1/courses 404 - 8ms
+2024-12-30T09:45:44.834Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T09:45:44.871Z [HTTP]: GET /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T09:45:44.908Z [HTTP]: GET /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T09:45:44.933Z [ERROR]: Database error
+2024-12-30T09:45:44.940Z [HTTP]: GET /api/v1/courses/CSC321 500 - 11ms
+2024-12-30T09:45:44.996Z [HTTP]: POST /api/v1/courses 400 - 15ms
+2024-12-30T09:45:45.027Z [HTTP]: POST /api/v1/courses 400 - 6ms
+2024-12-30T09:45:45.058Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T09:45:45.087Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T09:45:45.115Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:45:45.141Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T09:45:45.170Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T09:45:48.531Z [ERROR]: Internal server error.
+2024-12-30T09:45:51.892Z [INFO]: Connected to database
+2024-12-30T09:57:06.827Z [INFO]: Server started on port 3000
+2024-12-30T09:57:07.125Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 174ms
+2024-12-30T09:57:07.175Z [HTTP]: GET /api/v1/courses 404 - 7ms
+2024-12-30T09:57:07.205Z [HTTP]: GET /api/v1/courses 500 - 7ms
+2024-12-30T09:57:07.242Z [HTTP]: GET /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T09:57:07.272Z [HTTP]: GET /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T09:57:07.301Z [ERROR]: Database error
+2024-12-30T09:57:07.310Z [HTTP]: GET /api/v1/courses/CSC321 500 - 13ms
+2024-12-30T09:57:07.367Z [HTTP]: POST /api/v1/courses 400 - 17ms
+2024-12-30T09:57:07.407Z [HTTP]: POST /api/v1/courses 400 - 7ms
+2024-12-30T09:57:07.436Z [HTTP]: POST /api/v1/courses 400 - 6ms
+2024-12-30T09:57:07.475Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 9ms
+2024-12-30T09:57:07.509Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T09:57:07.548Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 10ms
+2024-12-30T09:57:07.621Z [HTTP]: DELETE /api/v1/courses/C1 404 - 6ms
+2024-12-30T09:57:10.303Z [ERROR]: Internal server error.
+2024-12-30T09:57:13.768Z [INFO]: Connected to database
+2024-12-30T09:59:39.378Z [INFO]: Server started on port 3000
+2024-12-30T09:59:39.686Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 188ms
+2024-12-30T09:59:39.740Z [HTTP]: GET /api/v1/courses 404 - 8ms
+2024-12-30T09:59:39.776Z [HTTP]: GET /api/v1/courses 500 - 7ms
+2024-12-30T09:59:39.808Z [HTTP]: GET /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T09:59:39.836Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T09:59:39.865Z [ERROR]: Database error
+2024-12-30T09:59:39.873Z [HTTP]: GET /api/v1/courses/CSC321 500 - 13ms
+2024-12-30T09:59:39.928Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T09:59:39.958Z [HTTP]: POST /api/v1/courses 400 - 7ms
+2024-12-30T09:59:39.991Z [HTTP]: POST /api/v1/courses 400 - 6ms
+2024-12-30T09:59:40.019Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T09:59:40.048Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T09:59:40.074Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T09:59:40.101Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T09:59:42.942Z [ERROR]: Internal server error.
+2024-12-30T09:59:47.795Z [INFO]: Connected to database
+2024-12-30T10:01:59.605Z [INFO]: Server started on port 3000
+2024-12-30T10:01:59.880Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 26ms
+2024-12-30T10:01:59.932Z [HTTP]: GET /api/v1/courses 404 - 7ms
+2024-12-30T10:01:59.968Z [HTTP]: GET /api/v1/courses 500 - 7ms
+2024-12-30T10:02:00.004Z [HTTP]: GET /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T10:02:00.035Z [HTTP]: GET /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T10:02:00.062Z [ERROR]: Database error
+2024-12-30T10:02:00.070Z [HTTP]: GET /api/v1/courses/CSC321 500 - 11ms
+2024-12-30T10:02:00.142Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T10:02:00.172Z [HTTP]: POST /api/v1/courses 400 - 6ms
+2024-12-30T10:02:00.205Z [HTTP]: POST /api/v1/courses 400 - 6ms
+2024-12-30T10:02:00.233Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T10:02:00.262Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:02:00.288Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T10:02:00.315Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T10:02:03.024Z [ERROR]: Internal server error.
+2024-12-30T10:02:07.967Z [INFO]: Connected to database
+2024-12-30T10:04:55.282Z [INFO]: Server started on port 3000
+2024-12-30T10:04:55.589Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 27ms
+2024-12-30T10:04:55.643Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T10:04:55.668Z [HTTP]: GET /api/v1/courses 500 - 5ms
+2024-12-30T10:04:55.698Z [HTTP]: GET /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T10:04:55.723Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:04:55.749Z [ERROR]: Database error
+2024-12-30T10:04:55.757Z [HTTP]: GET /api/v1/courses/CSC321 500 - 11ms
+2024-12-30T10:04:55.814Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T10:04:55.845Z [HTTP]: POST /api/v1/courses 400 - 7ms
+2024-12-30T10:04:55.876Z [HTTP]: POST /api/v1/courses 400 - 6ms
+2024-12-30T10:04:55.906Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:04:55.931Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:04:55.959Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T10:04:55.985Z [HTTP]: DELETE /api/v1/courses/C1 404 - 6ms
+2024-12-30T10:04:58.483Z [ERROR]: Internal server error.
+2024-12-30T10:05:02.475Z [INFO]: Connected to database
+2024-12-30T10:13:26.015Z [ERROR]: Internal server error.
+2024-12-30T10:13:36.976Z [INFO]: Server started on port 3000
+2024-12-30T10:13:37.033Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 22ms
+2024-12-30T10:13:37.078Z [HTTP]: GET /api/v1/courses 404 - 7ms
+2024-12-30T10:13:37.246Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T10:13:37.271Z [HTTP]: GET /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:13:37.301Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T10:13:37.324Z [ERROR]: Database error
+2024-12-30T10:13:37.330Z [HTTP]: GET /api/v1/courses/CSC321 500 - 9ms
+2024-12-30T10:13:37.383Z [HTTP]: POST /api/v1/courses 201 - 14ms
+2024-12-30T10:13:37.410Z [HTTP]: POST /api/v1/courses 400 - 7ms
+2024-12-30T10:13:37.442Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T10:13:37.468Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:13:37.500Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T10:13:37.527Z [HTTP]: DELETE /api/v1/courses/CSC321 404 - 8ms
+2024-12-30T10:13:37.557Z [HTTP]: DELETE /api/v1/courses/C1 404 - 6ms
+2024-12-30T10:13:45.495Z [INFO]: Connected to database
+2024-12-30T10:17:28.741Z [INFO]: Server started on port 3000
+2024-12-30T10:17:28.998Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 24ms
+2024-12-30T10:17:29.040Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T10:17:29.087Z [HTTP]: GET /api/v1/courses 500 - 10ms
+2024-12-30T10:17:29.119Z [HTTP]: GET /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T10:17:29.146Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:17:29.171Z [ERROR]: Database error
+2024-12-30T10:17:29.178Z [HTTP]: GET /api/v1/courses/CSC321 500 - 10ms
+2024-12-30T10:17:29.234Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T10:17:29.265Z [HTTP]: POST /api/v1/courses 400 - 7ms
+2024-12-30T10:17:29.296Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T10:17:29.326Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T10:17:29.356Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:17:29.378Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 3ms
+2024-12-30T10:17:29.406Z [HTTP]: DELETE /api/v1/courses/C1 404 - 3ms
+2024-12-30T10:17:31.901Z [ERROR]: Internal server error.
+2024-12-30T10:17:36.426Z [INFO]: Connected to database
+2024-12-30T10:19:38.055Z [INFO]: Server started on port 3000
+2024-12-30T10:19:39.852Z [INFO]: Connected to database
+2024-12-30T10:19:53.007Z [HTTP]: GET /api/v1/docs/ 304 - 19ms
+2024-12-30T10:19:53.052Z [HTTP]: GET /api/v1/docs/swagger-ui.css 304 - 6ms
+2024-12-30T10:19:53.067Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 304 - 6ms
+2024-12-30T10:19:53.072Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 304 - 8ms
+2024-12-30T10:19:53.079Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 200 - 10ms
+2024-12-30T10:19:53.116Z [HTTP]: GET /api/v1/docs/swagger-ui-standalone-preset.js 304 - 6ms
+2024-12-30T10:19:53.123Z [HTTP]: GET /api/v1/docs/swagger-ui-init.js 200 - 5ms
+2024-12-30T10:19:53.126Z [HTTP]: GET /api/v1/docs/swagger-ui-bundle.js 304 - 7ms
+2024-12-30T10:24:32.316Z [INFO]: Server started on port 3000
+2024-12-30T10:24:32.432Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 24ms
+2024-12-30T10:24:32.645Z [HTTP]: GET /api/v1/courses 404 - 5ms
+2024-12-30T10:24:32.678Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T10:24:32.703Z [HTTP]: GET /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:24:32.730Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:24:32.752Z [ERROR]: Database error
+2024-12-30T10:24:32.759Z [HTTP]: GET /api/v1/courses/CSC321 500 - 10ms
+2024-12-30T10:24:32.814Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T10:24:32.844Z [HTTP]: POST /api/v1/courses 400 - 7ms
+2024-12-30T10:24:32.875Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T10:24:32.902Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T10:24:32.931Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:24:32.953Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 4ms
+2024-12-30T10:24:32.979Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T10:24:35.473Z [ERROR]: Internal server error.
+2024-12-30T10:24:39.853Z [INFO]: Connected to database
+2024-12-30T10:25:25.372Z [INFO]: Server started on port 3000
+2024-12-30T10:25:25.670Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 24ms
+2024-12-30T10:25:25.720Z [HTTP]: GET /api/v1/courses 404 - 7ms
+2024-12-30T10:25:25.747Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T10:25:25.775Z [HTTP]: GET /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:25:25.800Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:25:25.827Z [ERROR]: Database error
+2024-12-30T10:25:25.833Z [HTTP]: GET /api/v1/courses/CSC321 500 - 10ms
+2024-12-30T10:25:25.887Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T10:25:25.921Z [HTTP]: POST /api/v1/courses 400 - 8ms
+2024-12-30T10:25:25.950Z [HTTP]: POST /api/v1/courses 400 - 5ms
+2024-12-30T10:25:25.982Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:25:26.008Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:25:26.035Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T10:25:26.060Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T10:25:28.349Z [ERROR]: Internal server error.
+2024-12-30T10:25:32.520Z [INFO]: Connected to database
+2024-12-30T10:26:07.763Z [INFO]: Server started on port 3000
+2024-12-30T10:26:08.051Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 26ms
+2024-12-30T10:26:08.101Z [HTTP]: GET /api/v1/courses 404 - 9ms
+2024-12-30T10:26:08.131Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T10:26:08.163Z [HTTP]: GET /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:26:08.197Z [HTTP]: GET /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T10:26:08.223Z [ERROR]: Database error
+2024-12-30T10:26:08.230Z [HTTP]: GET /api/v1/courses/CSC321 500 - 11ms
+2024-12-30T10:26:08.285Z [HTTP]: POST /api/v1/courses 201 - 14ms
+2024-12-30T10:26:08.314Z [HTTP]: POST /api/v1/courses 400 - 6ms
+2024-12-30T10:26:08.350Z [HTTP]: POST /api/v1/courses 400 - 6ms
+2024-12-30T10:26:08.379Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:26:08.407Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:26:08.469Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 3ms
+2024-12-30T10:26:08.494Z [HTTP]: DELETE /api/v1/courses/C1 404 - 3ms
+2024-12-30T10:26:10.807Z [ERROR]: Internal server error.
+2024-12-30T10:26:14.075Z [INFO]: Connected to database
+2024-12-30T10:31:01.122Z [ERROR]: Internal server error.
+2024-12-30T10:32:03.896Z [ERROR]: Internal server error.
+2024-12-30T10:32:15.807Z [INFO]: Server started on port 3000
+2024-12-30T10:32:16.035Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 24ms
+2024-12-30T10:32:16.078Z [HTTP]: GET /api/v1/courses 404 - 7ms
+2024-12-30T10:32:16.108Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T10:32:16.133Z [HTTP]: GET /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:32:16.160Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:32:16.187Z [ERROR]: Database error
+2024-12-30T10:32:16.195Z [HTTP]: GET /api/v1/courses/CSC321 500 - 11ms
+2024-12-30T10:32:16.250Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T10:32:16.278Z [ERROR]: [object Object]
+2024-12-30T10:32:16.285Z [HTTP]: POST /api/v1/courses 400 - 12ms
+2024-12-30T10:32:16.314Z [HTTP]: POST /api/v1/courses 400 - 7ms
+2024-12-30T10:32:16.344Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T10:32:16.373Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:32:16.395Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 4ms
+2024-12-30T10:32:16.420Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T10:32:18.798Z [INFO]: Connected to database
+2024-12-30T10:33:14.745Z [INFO]: Server started on port 3000
+2024-12-30T10:33:15.046Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 35ms
+2024-12-30T10:33:15.090Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T10:33:15.115Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T10:33:15.142Z [HTTP]: GET /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:33:15.167Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:33:15.191Z [ERROR]: Database error
+2024-12-30T10:33:15.198Z [HTTP]: GET /api/v1/courses/CSC321 500 - 10ms
+2024-12-30T10:33:15.251Z [HTTP]: POST /api/v1/courses 201 - 14ms
+2024-12-30T10:33:15.282Z [ERROR]: [object Object]
+2024-12-30T10:33:15.293Z [HTTP]: POST /api/v1/courses 400 - 16ms
+2024-12-30T10:33:15.329Z [HTTP]: POST /api/v1/courses 400 - 7ms
+2024-12-30T10:33:15.361Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:33:15.386Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:33:15.411Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 4ms
+2024-12-30T10:33:15.471Z [HTTP]: DELETE /api/v1/courses/C1 404 - 3ms
+2024-12-30T10:33:17.752Z [ERROR]: Internal server error.
+2024-12-30T10:33:21.579Z [INFO]: Connected to database
+2024-12-30T10:38:17.943Z [INFO]: Server started on port 3000
+2024-12-30T10:38:18.306Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 35ms
+2024-12-30T10:38:18.365Z [HTTP]: GET /api/v1/courses 404 - 9ms
+2024-12-30T10:38:18.409Z [HTTP]: GET /api/v1/courses 500 - 9ms
+2024-12-30T10:38:18.452Z [HTTP]: GET /api/v1/courses/CSC321 200 - 10ms
+2024-12-30T10:38:18.517Z [HTTP]: GET /api/v1/courses/CSC321 404 - 13ms
+2024-12-30T10:38:18.569Z [ERROR]: Database error
+2024-12-30T10:38:18.577Z [HTTP]: GET /api/v1/courses/CSC321 500 - 15ms
+2024-12-30T10:38:18.652Z [HTTP]: POST /api/v1/courses 201 - 19ms
+2024-12-30T10:38:18.685Z [ERROR]: [object Object]
+2024-12-30T10:38:18.694Z [HTTP]: POST /api/v1/courses 400 - 14ms
+2024-12-30T10:38:18.735Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T10:38:18.774Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 8ms
+2024-12-30T10:38:18.809Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:38:18.848Z [HTTP]: DELETE /api/v1/courses/C1 404 - 7ms
+2024-12-30T10:38:21.594Z [ERROR]: Internal server error.
+2024-12-30T10:38:26.202Z [INFO]: Connected to database
+2024-12-30T10:39:03.199Z [INFO]: Server started on port 3000
+2024-12-30T10:39:03.503Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 36ms
+2024-12-30T10:39:03.564Z [HTTP]: GET /api/v1/courses 404 - 7ms
+2024-12-30T10:39:03.600Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T10:39:03.636Z [HTTP]: GET /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T10:39:03.665Z [HTTP]: GET /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T10:39:03.693Z [ERROR]: Database error
+2024-12-30T10:39:03.699Z [HTTP]: GET /api/v1/courses/CSC321 500 - 11ms
+2024-12-30T10:39:03.756Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T10:39:03.788Z [ERROR]: [object Object]
+2024-12-30T10:39:03.796Z [HTTP]: POST /api/v1/courses 400 - 13ms
+2024-12-30T10:39:03.865Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T10:39:03.893Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:39:03.920Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 4ms
+2024-12-30T10:39:03.946Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T10:39:06.026Z [ERROR]: Internal server error.
+2024-12-30T10:39:09.147Z [INFO]: Connected to database
+2024-12-30T10:43:12.754Z [ERROR]: Internal server error.
+2024-12-30T10:43:23.785Z [INFO]: Server started on port 3000
+2024-12-30T10:43:23.835Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 23ms
+2024-12-30T10:43:24.014Z [HTTP]: GET /api/v1/courses 404 - 8ms
+2024-12-30T10:43:24.047Z [HTTP]: GET /api/v1/courses 500 - 7ms
+2024-12-30T10:43:24.086Z [HTTP]: GET /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T10:43:24.129Z [HTTP]: GET /api/v1/courses/CSC321 404 - 9ms
+2024-12-30T10:43:24.160Z [ERROR]: Database error
+2024-12-30T10:43:24.169Z [HTTP]: GET /api/v1/courses/CSC321 500 - 13ms
+2024-12-30T10:43:24.256Z [HTTP]: POST /api/v1/courses 201 - 24ms
+2024-12-30T10:43:24.336Z [ERROR]: [object Object]
+2024-12-30T10:43:24.348Z [HTTP]: POST /api/v1/courses 400 - 18ms
+2024-12-30T10:43:24.415Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 10ms
+2024-12-30T10:43:24.460Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 9ms
+2024-12-30T10:43:24.543Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T10:43:24.601Z [HTTP]: DELETE /api/v1/courses/C1 404 - 6ms
+2024-12-30T10:43:29.341Z [INFO]: Connected to database
+2024-12-30T10:53:28.140Z [ERROR]: Internal server error.
+2024-12-30T10:53:41.624Z [INFO]: Server started on port 3000
+2024-12-30T10:53:41.880Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 40ms
+2024-12-30T10:53:41.959Z [HTTP]: GET /api/v1/courses 404 - 9ms
+2024-12-30T10:53:42.004Z [HTTP]: GET /api/v1/courses 500 - 9ms
+2024-12-30T10:53:42.064Z [HTTP]: GET /api/v1/courses/CSC321 200 - 15ms
+2024-12-30T10:53:42.135Z [HTTP]: GET /api/v1/courses/CSC321 404 - 9ms
+2024-12-30T10:53:42.175Z [ERROR]: Database error
+2024-12-30T10:53:42.187Z [HTTP]: GET /api/v1/courses/CSC321 500 - 18ms
+2024-12-30T10:53:42.334Z [HTTP]: POST /api/v1/courses 201 - 35ms
+2024-12-30T10:53:42.456Z [ERROR]: [object Object]
+2024-12-30T10:53:42.470Z [HTTP]: POST /api/v1/courses 400 - 23ms
+2024-12-30T10:53:42.551Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 10ms
+2024-12-30T10:53:42.629Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 11ms
+2024-12-30T10:53:42.674Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 9ms
+2024-12-30T10:53:42.760Z [HTTP]: DELETE /api/v1/courses/C1 404 - 12ms
+2024-12-30T10:53:49.005Z [INFO]: Connected to database
+2024-12-30T10:54:43.437Z [INFO]: Server started on port 3000
+2024-12-30T10:54:44.037Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 41ms
+2024-12-30T10:54:44.139Z [HTTP]: GET /api/v1/courses 404 - 12ms
+2024-12-30T10:54:44.215Z [HTTP]: GET /api/v1/courses 500 - 14ms
+2024-12-30T10:54:44.279Z [HTTP]: GET /api/v1/courses/CSC321 200 - 10ms
+2024-12-30T10:54:44.329Z [HTTP]: GET /api/v1/courses/CSC321 404 - 9ms
+2024-12-30T10:54:44.376Z [ERROR]: Database error
+2024-12-30T10:54:44.390Z [HTTP]: GET /api/v1/courses/CSC321 500 - 21ms
+2024-12-30T10:54:44.477Z [HTTP]: POST /api/v1/courses 201 - 22ms
+2024-12-30T10:54:44.526Z [ERROR]: [object Object]
+2024-12-30T10:54:44.538Z [HTTP]: POST /api/v1/courses 400 - 19ms
+2024-12-30T10:54:44.647Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T10:54:44.681Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T10:54:44.708Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 4ms
+2024-12-30T10:54:44.776Z [HTTP]: DELETE /api/v1/courses/C1 404 - 7ms
+2024-12-30T10:54:47.316Z [ERROR]: Internal server error.
+2024-12-30T10:55:13.545Z [INFO]: Connected to database
+2024-12-30T11:11:02.991Z [INFO]: Server started on port 3000
+2024-12-30T11:11:03.808Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 67ms
+2024-12-30T11:11:03.931Z [HTTP]: GET /api/v1/courses 404 - 17ms
+2024-12-30T11:11:04.007Z [HTTP]: GET /api/v1/courses 500 - 17ms
+2024-12-30T11:11:04.105Z [HTTP]: GET /api/v1/courses/CSC321 200 - 21ms
+2024-12-30T11:11:04.196Z [HTTP]: GET /api/v1/courses/CSC321 404 - 17ms
+2024-12-30T11:11:04.276Z [ERROR]: Database error
+2024-12-30T11:11:04.294Z [HTTP]: GET /api/v1/courses/CSC321 500 - 25ms
+2024-12-30T11:11:04.440Z [HTTP]: POST /api/v1/courses 201 - 41ms
+2024-12-30T11:11:04.609Z [ERROR]: [object Object]
+2024-12-30T11:11:04.631Z [HTTP]: POST /api/v1/courses 400 - 33ms
+2024-12-30T11:11:04.809Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 17ms
+2024-12-30T11:11:04.889Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 17ms
+2024-12-30T11:11:04.967Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 13ms
+2024-12-30T11:11:05.067Z [HTTP]: DELETE /api/v1/courses/C1 404 - 13ms
+2024-12-30T11:11:10.754Z [ERROR]: Internal server error.
+2024-12-30T11:11:16.078Z [INFO]: Connected to database
+2024-12-30T11:17:39.831Z [INFO]: Server started on port 3000
+2024-12-30T11:17:40.364Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 40ms
+2024-12-30T11:17:40.446Z [HTTP]: GET /api/v1/courses 404 - 11ms
+2024-12-30T11:17:40.497Z [HTTP]: GET /api/v1/courses 500 - 9ms
+2024-12-30T11:17:40.555Z [HTTP]: GET /api/v1/courses/CSC321 200 - 11ms
+2024-12-30T11:17:40.601Z [HTTP]: GET /api/v1/courses/CSC321 404 - 10ms
+2024-12-30T11:17:40.640Z [ERROR]: Database error
+2024-12-30T11:17:40.651Z [HTTP]: GET /api/v1/courses/CSC321 500 - 16ms
+2024-12-30T11:17:40.728Z [HTTP]: POST /api/v1/courses 201 - 20ms
+2024-12-30T11:17:40.782Z [ERROR]: [object Object]
+2024-12-30T11:17:40.801Z [HTTP]: POST /api/v1/courses 400 - 27ms
+2024-12-30T11:17:40.999Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 10ms
+2024-12-30T11:17:41.061Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 11ms
+2024-12-30T11:17:41.207Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 10ms
+2024-12-30T11:17:41.264Z [HTTP]: DELETE /api/v1/courses/C1 404 - 9ms
+2024-12-30T11:17:44.041Z [ERROR]: Internal server error.
+2024-12-30T11:18:03.694Z [INFO]: Connected to database
+2024-12-30T11:19:45.448Z [INFO]: Server started on port 3000
+2024-12-30T11:19:45.803Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 33ms
+2024-12-30T11:19:45.861Z [HTTP]: GET /api/v1/courses 404 - 9ms
+2024-12-30T11:19:45.900Z [HTTP]: GET /api/v1/courses 500 - 7ms
+2024-12-30T11:19:45.929Z [HTTP]: GET /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T11:19:45.960Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T11:19:45.987Z [ERROR]: Database error
+2024-12-30T11:19:45.995Z [HTTP]: GET /api/v1/courses/CSC321 500 - 12ms
+2024-12-30T11:19:46.057Z [HTTP]: POST /api/v1/courses 201 - 16ms
+2024-12-30T11:19:46.088Z [ERROR]: [object Object]
+2024-12-30T11:19:46.095Z [HTTP]: POST /api/v1/courses 400 - 11ms
+2024-12-30T11:19:46.128Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T11:19:46.157Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T11:19:46.189Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T11:19:46.221Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T11:19:50.288Z [ERROR]: Internal server error.
+2024-12-30T11:20:12.023Z [INFO]: Connected to database
+2024-12-30T11:20:52.947Z [INFO]: Server started on port 3000
+2024-12-30T11:20:53.130Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 36ms
+2024-12-30T11:20:53.205Z [HTTP]: GET /api/v1/courses 404 - 12ms
+2024-12-30T11:20:53.251Z [HTTP]: GET /api/v1/courses 500 - 9ms
+2024-12-30T11:20:53.293Z [HTTP]: GET /api/v1/courses/CSC321 200 - 10ms
+2024-12-30T11:20:53.328Z [HTTP]: GET /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T11:20:53.373Z [ERROR]: Database error
+2024-12-30T11:20:53.393Z [HTTP]: GET /api/v1/courses/CSC321 500 - 27ms
+2024-12-30T11:20:53.520Z [HTTP]: POST /api/v1/courses 201 - 31ms
+2024-12-30T11:20:53.582Z [ERROR]: [object Object]
+2024-12-30T11:20:53.594Z [HTTP]: POST /api/v1/courses 400 - 21ms
+2024-12-30T11:20:53.650Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 15ms
+2024-12-30T11:20:53.723Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 17ms
+2024-12-30T11:20:53.790Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 10ms
+2024-12-30T11:20:53.848Z [HTTP]: DELETE /api/v1/courses/C1 404 - 8ms
+2024-12-30T11:20:56.819Z [ERROR]: Internal server error.
+2024-12-30T11:21:18.613Z [HTTP]: POST /api/v1/enrollments/enroll 401 - 16ms
+2024-12-30T11:21:18.790Z [HTTP]: POST /api/v1/enrollments/enroll 401 - 10ms
+2024-12-30T11:21:18.874Z [HTTP]: POST /api/v1/enrollments/enroll 401 - 4ms
+2024-12-30T11:21:18.924Z [HTTP]: POST /api/v1/enrollments/enroll 401 - 5ms
+2024-12-30T11:21:19.001Z [HTTP]: POST /api/v1/enrollments/enroll 401 - 5ms
+2024-12-30T11:21:19.057Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 401 - 10ms
+2024-12-30T11:21:19.128Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 401 - 8ms
+2024-12-30T11:21:19.183Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 401 - 4ms
+2024-12-30T11:21:19.236Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 401 - 5ms
+2024-12-30T11:21:21.567Z [INFO]: Connected to database
+2024-12-30T11:21:22.060Z [INFO]: Connected to database
+2024-12-30T11:25:12.289Z [INFO]: Server started on port 3000
+2024-12-30T11:25:12.620Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 30ms
+2024-12-30T11:25:12.671Z [HTTP]: GET /api/v1/courses 404 - 9ms
+2024-12-30T11:25:12.711Z [HTTP]: GET /api/v1/courses 500 - 8ms
+2024-12-30T11:25:12.745Z [HTTP]: GET /api/v1/courses/CSC321 200 - 9ms
+2024-12-30T11:25:12.786Z [HTTP]: GET /api/v1/courses/CSC321 404 - 8ms
+2024-12-30T11:25:12.820Z [ERROR]: Database error
+2024-12-30T11:25:12.830Z [HTTP]: GET /api/v1/courses/CSC321 500 - 15ms
+2024-12-30T11:25:12.915Z [HTTP]: POST /api/v1/courses 201 - 23ms
+2024-12-30T11:25:12.956Z [ERROR]: [object Object]
+2024-12-30T11:25:12.966Z [HTTP]: POST /api/v1/courses 400 - 17ms
+2024-12-30T11:25:13.012Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T11:25:13.064Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 10ms
+2024-12-30T11:25:13.109Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T11:25:13.149Z [HTTP]: DELETE /api/v1/courses/C1 404 - 6ms
+2024-12-30T11:26:16.028Z [INFO]: Server started on port 3000
+2024-12-30T11:26:16.723Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 63ms
+2024-12-30T11:26:16.847Z [HTTP]: GET /api/v1/courses 404 - 19ms
+2024-12-30T11:26:16.946Z [HTTP]: GET /api/v1/courses 500 - 15ms
+2024-12-30T11:26:17.147Z [HTTP]: GET /api/v1/courses/CSC321 200 - 26ms
+2024-12-30T11:26:17.375Z [HTTP]: GET /api/v1/courses/CSC321 404 - 15ms
+2024-12-30T11:26:17.438Z [ERROR]: Database error
+2024-12-30T11:26:17.454Z [HTTP]: GET /api/v1/courses/CSC321 500 - 24ms
+2024-12-30T11:26:17.618Z [HTTP]: POST /api/v1/courses 201 - 44ms
+2024-12-30T11:26:17.751Z [ERROR]: [object Object]
+2024-12-30T11:26:17.767Z [HTTP]: POST /api/v1/courses 400 - 26ms
+2024-12-30T11:26:17.863Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 16ms
+2024-12-30T11:26:18.001Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 15ms
+2024-12-30T11:26:18.174Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 13ms
+2024-12-30T11:26:18.228Z [HTTP]: DELETE /api/v1/courses/C1 404 - 8ms
+2024-12-30T11:26:22.232Z [INFO]: Connected to database
+2024-12-30T11:26:22.182Z [ERROR]: Internal server error.
+2024-12-30T11:26:22.565Z [INFO]: Connected to database
+2024-12-30T11:31:30.308Z [INFO]: Server started on port 3000
+2024-12-30T11:31:30.751Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 31ms
+2024-12-30T11:31:30.807Z [HTTP]: GET /api/v1/courses 404 - 8ms
+2024-12-30T11:31:30.838Z [HTTP]: GET /api/v1/courses 500 - 7ms
+2024-12-30T11:31:30.874Z [HTTP]: GET /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T11:31:30.911Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T11:31:30.942Z [ERROR]: Database error
+2024-12-30T11:31:30.950Z [HTTP]: GET /api/v1/courses/CSC321 500 - 12ms
+2024-12-30T11:31:31.028Z [HTTP]: POST /api/v1/courses 201 - 22ms
+2024-12-30T11:31:31.072Z [ERROR]: [object Object]
+2024-12-30T11:31:31.081Z [HTTP]: POST /api/v1/courses 400 - 15ms
+2024-12-30T11:31:31.122Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 9ms
+2024-12-30T11:31:31.163Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T11:31:31.199Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T11:31:31.253Z [HTTP]: DELETE /api/v1/courses/C1 404 - 8ms
+2024-12-30T11:31:33.948Z [ERROR]: Internal server error.
+2024-12-30T11:31:51.989Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 52ms
+2024-12-30T11:31:52.108Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 13ms
+2024-12-30T11:31:52.167Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 9ms
+2024-12-30T11:31:52.230Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 9ms
+2024-12-30T11:31:52.309Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 8ms
+2024-12-30T11:31:52.349Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 404 - 10ms
+2024-12-30T11:31:52.468Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 404 - 13ms
+2024-12-30T11:31:52.512Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 9ms
+2024-12-30T11:31:52.561Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 4ms
+2024-12-30T11:31:54.303Z [INFO]: Connected to database
+2024-12-30T11:31:54.777Z [INFO]: Connected to database
+2024-12-30T11:49:08.003Z [INFO]: Server started on port 3000
+2024-12-30T11:49:09.922Z [INFO]: Connected to database
+2024-12-30T11:49:42.485Z [INFO]: Server started on port 3000
+2024-12-30T11:49:44.118Z [INFO]: Connected to database
+2024-12-30T11:56:39.869Z [ERROR]: Internal server error.
+2024-12-30T11:56:50.705Z [INFO]: Server started on port 3000
+2024-12-30T11:56:50.766Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 22ms
+2024-12-30T11:56:50.954Z [HTTP]: GET /api/v1/courses 404 - 8ms
+2024-12-30T11:56:50.989Z [HTTP]: GET /api/v1/courses 500 - 7ms
+2024-12-30T11:56:51.016Z [HTTP]: GET /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T11:56:51.044Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T11:56:51.069Z [ERROR]: Database error
+2024-12-30T11:56:51.075Z [HTTP]: GET /api/v1/courses/CSC321 500 - 10ms
+2024-12-30T11:56:51.129Z [HTTP]: POST /api/v1/courses 201 - 14ms
+2024-12-30T11:56:51.157Z [ERROR]: [object Object]
+2024-12-30T11:56:51.163Z [HTTP]: POST /api/v1/courses 400 - 10ms
+2024-12-30T11:56:51.190Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T11:56:51.215Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T11:56:51.241Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 4ms
+2024-12-30T11:56:51.264Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T11:56:58.177Z [INFO]: Server started on port 3000
+2024-12-30T11:56:59.201Z [INFO]: Connected to database
+2024-12-30T11:56:59.590Z [INFO]: Connected to database
+2024-12-30T11:57:03.225Z [HTTP]: POST /api/v1/enrollments/ 400 - 13ms
+2024-12-30T11:57:08.281Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 12ms
+2024-12-30T11:57:08.322Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 8ms
+2024-12-30T11:57:08.360Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 404 - 9ms
+2024-12-30T11:57:08.395Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 404 - 8ms
+2024-12-30T11:57:08.446Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 6ms
+2024-12-30T11:57:08.479Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 5ms
+2024-12-30T12:03:05.932Z [INFO]: Server started on port 3000
+2024-12-30T12:03:07.667Z [INFO]: Connected to database
+2024-12-30T12:03:10.884Z [HTTP]: POST /api/v1/enrollments/ 400 - 17ms
+2024-12-30T12:03:15.948Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 15ms
+2024-12-30T12:03:16.001Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 10ms
+2024-12-30T12:03:16.052Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 404 - 18ms
+2024-12-30T12:03:16.102Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 404 - 10ms
+2024-12-30T12:03:16.147Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 6ms
+2024-12-30T12:03:16.184Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 5ms
+2024-12-30T12:03:18.948Z [ERROR]: Internal server error.
+2024-12-30T12:03:21.284Z [INFO]: Server started on port 3000
+2024-12-30T12:03:21.358Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 31ms
+2024-12-30T12:03:21.386Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T12:03:21.413Z [HTTP]: GET /api/v1/courses 500 - 5ms
+2024-12-30T12:03:21.437Z [HTTP]: GET /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T12:03:21.466Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T12:03:21.488Z [ERROR]: Database error
+2024-12-30T12:03:21.495Z [HTTP]: GET /api/v1/courses/CSC321 500 - 10ms
+2024-12-30T12:03:21.536Z [HTTP]: POST /api/v1/courses 201 - 14ms
+2024-12-30T12:03:21.560Z [ERROR]: [object Object]
+2024-12-30T12:03:21.566Z [HTTP]: POST /api/v1/courses 400 - 10ms
+2024-12-30T12:03:21.611Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T12:03:21.636Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T12:03:21.661Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 4ms
+2024-12-30T12:03:21.690Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T12:03:26.506Z [INFO]: Connected to database
+2024-12-30T12:04:53.125Z [INFO]: Server started on port 3000
+2024-12-30T12:04:55.087Z [INFO]: Connected to database
+2024-12-30T12:04:58.032Z [HTTP]: POST /api/v1/enrollments/ 400 - 25ms
+2024-12-30T12:05:03.115Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 14ms
+2024-12-30T12:05:03.156Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 8ms
+2024-12-30T12:05:03.195Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 404 - 11ms
+2024-12-30T12:05:03.229Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 404 - 8ms
+2024-12-30T12:05:03.267Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 5ms
+2024-12-30T12:05:03.295Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 5ms
+2024-12-30T12:05:06.028Z [INFO]: Server started on port 3000
+2024-12-30T12:05:06.117Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 19ms
+2024-12-30T12:05:06.161Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T12:05:06.187Z [HTTP]: GET /api/v1/courses 500 - 5ms
+2024-12-30T12:05:06.215Z [HTTP]: GET /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T12:05:06.238Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T12:05:06.264Z [ERROR]: Database error
+2024-12-30T12:05:06.270Z [HTTP]: GET /api/v1/courses/CSC321 500 - 9ms
+2024-12-30T12:05:06.323Z [HTTP]: POST /api/v1/courses 201 - 22ms
+2024-12-30T12:05:06.361Z [ERROR]: [object Object]
+2024-12-30T12:05:06.369Z [HTTP]: POST /api/v1/courses 400 - 14ms
+2024-12-30T12:05:06.410Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T12:05:06.445Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T12:05:06.524Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T12:05:06.548Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T12:05:08.663Z [ERROR]: Internal server error.
+2024-12-30T12:05:14.010Z [INFO]: Connected to database
+2024-12-30T12:06:46.590Z [INFO]: Server started on port 3000
+2024-12-30T12:06:48.400Z [INFO]: Connected to database
+2024-12-30T12:06:51.566Z [HTTP]: POST /api/v1/enrollments/ 400 - 24ms
+2024-12-30T12:06:56.629Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 9ms
+2024-12-30T12:06:56.672Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 7ms
+2024-12-30T12:06:56.711Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 404 - 12ms
+2024-12-30T12:06:56.749Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 404 - 7ms
+2024-12-30T12:06:56.791Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 4ms
+2024-12-30T12:06:56.826Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 5ms
+2024-12-30T12:06:59.676Z [INFO]: Server started on port 3000
+2024-12-30T12:06:59.760Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 13ms
+2024-12-30T12:06:59.802Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T12:06:59.842Z [HTTP]: GET /api/v1/courses 500 - 8ms
+2024-12-30T12:06:59.872Z [HTTP]: GET /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T12:06:59.907Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T12:06:59.930Z [ERROR]: Database error
+2024-12-30T12:06:59.938Z [HTTP]: GET /api/v1/courses/CSC321 500 - 11ms
+2024-12-30T12:06:59.986Z [HTTP]: POST /api/v1/courses 201 - 16ms
+2024-12-30T12:07:00.027Z [ERROR]: [object Object]
+2024-12-30T12:07:00.037Z [HTTP]: POST /api/v1/courses 400 - 14ms
+2024-12-30T12:07:00.090Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T12:07:00.122Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 8ms
+2024-12-30T12:07:00.160Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 4ms
+2024-12-30T12:07:00.201Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T12:07:02.655Z [ERROR]: Internal server error.
+2024-12-30T12:07:06.850Z [INFO]: Connected to database
+2024-12-30T12:09:25.680Z [INFO]: Server started on port 3000
+2024-12-30T12:09:27.507Z [INFO]: Connected to database
+2024-12-30T12:09:30.653Z [HTTP]: POST /api/v1/enrollments/ 400 - 21ms
+2024-12-30T12:09:35.726Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 13ms
+2024-12-30T12:09:35.774Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 8ms
+2024-12-30T12:09:35.813Z [HTTP]: GET /api/v1/enrollments/student/student123/courses 404 - 12ms
+2024-12-30T12:09:35.848Z [INFO]: [object Object]
+2024-12-30T12:09:35.870Z [HTTP]: GET /api/v1/enrollments/student/student123 404 - 27ms
+2024-12-30T12:09:35.906Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 6ms
+2024-12-30T12:09:35.937Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 5ms
+2024-12-30T12:09:38.929Z [INFO]: Server started on port 3000
+2024-12-30T12:09:39.019Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 14ms
+2024-12-30T12:09:39.052Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T12:09:39.087Z [HTTP]: GET /api/v1/courses 500 - 5ms
+2024-12-30T12:09:39.121Z [HTTP]: GET /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T12:09:39.146Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T12:09:39.174Z [ERROR]: Database error
+2024-12-30T12:09:39.180Z [HTTP]: GET /api/v1/courses/CSC321 500 - 11ms
+2024-12-30T12:09:39.223Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T12:09:39.254Z [ERROR]: [object Object]
+2024-12-30T12:09:39.260Z [HTTP]: POST /api/v1/courses 400 - 10ms
+2024-12-30T12:09:39.287Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T12:09:39.317Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 7ms
+2024-12-30T12:09:39.340Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T12:09:39.367Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T12:09:41.671Z [ERROR]: Internal server error.
+2024-12-30T12:09:46.438Z [INFO]: Connected to database
+2024-12-30T13:42:22.035Z [INFO]: Server started on port 3000
+2024-12-30T13:42:24.073Z [INFO]: Connected to database
+2024-12-30T13:42:27.002Z [HTTP]: POST /api/v1/enrollments/ 400 - 19ms
+2024-12-30T13:42:32.070Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 16ms
+2024-12-30T13:42:32.116Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 7ms
+2024-12-30T13:42:32.151Z [INFO]: [object Object]
+2024-12-30T13:42:32.172Z [HTTP]: GET /api/v1/enrollments/student/student123 200 - 30ms
+2024-12-30T13:42:32.213Z [INFO]: [object Object]
+2024-12-30T13:42:32.248Z [HTTP]: GET /api/v1/enrollments/student/student123 404 - 41ms
+2024-12-30T13:42:32.298Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 11ms
+2024-12-30T13:42:32.344Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 6ms
+2024-12-30T13:42:35.601Z [INFO]: Server started on port 3000
+2024-12-30T13:42:35.711Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 19ms
+2024-12-30T13:42:35.765Z [HTTP]: GET /api/v1/courses 404 - 9ms
+2024-12-30T13:42:35.813Z [HTTP]: GET /api/v1/courses 500 - 9ms
+2024-12-30T13:42:35.849Z [HTTP]: GET /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T13:42:35.880Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T13:42:35.902Z [ERROR]: Database error
+2024-12-30T13:42:35.908Z [HTTP]: GET /api/v1/courses/CSC321 500 - 9ms
+2024-12-30T13:42:35.966Z [HTTP]: POST /api/v1/courses 201 - 21ms
+2024-12-30T13:42:35.991Z [ERROR]: [object Object]
+2024-12-30T13:42:35.997Z [HTTP]: POST /api/v1/courses 400 - 10ms
+2024-12-30T13:42:36.041Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T13:42:36.095Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T13:42:36.120Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 4ms
+2024-12-30T13:42:36.161Z [HTTP]: DELETE /api/v1/courses/C1 404 - 5ms
+2024-12-30T13:42:38.830Z [ERROR]: Internal server error.
+2024-12-30T13:42:44.229Z [INFO]: Connected to database
+2024-12-30T13:44:14.038Z [INFO]: Server started on port 3000
+2024-12-30T13:44:16.411Z [INFO]: Connected to database
+2024-12-30T13:44:19.002Z [HTTP]: POST /api/v1/enrollments/ 400 - 20ms
+2024-12-30T13:44:24.059Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 12ms
+2024-12-30T13:44:29.106Z [INFO]: [object Object]
+2024-12-30T13:44:29.136Z [HTTP]: GET /api/v1/enrollments/student/student123 200 - 39ms
+2024-12-30T13:44:29.169Z [INFO]: [object Object]
+2024-12-30T13:44:29.189Z [HTTP]: GET /api/v1/enrollments/student/student123 404 - 25ms
+2024-12-30T13:44:29.225Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 6ms
+2024-12-30T13:44:29.256Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 5ms
+2024-12-30T13:44:32.234Z [INFO]: Server started on port 3000
+2024-12-30T13:44:32.306Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 16ms
+2024-12-30T13:44:32.345Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T13:44:32.391Z [HTTP]: GET /api/v1/courses 500 - 8ms
+2024-12-30T13:44:32.428Z [HTTP]: GET /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T13:44:32.457Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T13:44:32.486Z [ERROR]: Database error
+2024-12-30T13:44:32.493Z [HTTP]: GET /api/v1/courses/CSC321 500 - 10ms
+2024-12-30T13:44:32.537Z [HTTP]: POST /api/v1/courses 201 - 16ms
+2024-12-30T13:44:32.575Z [ERROR]: [object Object]
+2024-12-30T13:44:32.582Z [HTTP]: POST /api/v1/courses 400 - 12ms
+2024-12-30T13:44:32.612Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T13:44:32.639Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T13:44:32.666Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T13:44:32.719Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T13:44:35.237Z [ERROR]: Internal server error.
+2024-12-30T13:44:39.549Z [INFO]: Connected to database
+2024-12-30T13:46:53.725Z [INFO]: Server started on port 3000
+2024-12-30T13:46:55.549Z [INFO]: Connected to database
+2024-12-30T13:46:58.696Z [HTTP]: POST /api/v1/enrollments/ 400 - 23ms
+2024-12-30T13:47:03.750Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 12ms
+2024-12-30T13:47:08.792Z [INFO]: [object Object]
+2024-12-30T13:47:08.813Z [HTTP]: GET /api/v1/enrollments/student/student123 200 - 29ms
+2024-12-30T13:47:08.839Z [INFO]: [object Object]
+2024-12-30T13:47:08.858Z [HTTP]: GET /api/v1/enrollments/student/student123 404 - 23ms
+2024-12-30T13:47:08.885Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 5ms
+2024-12-30T13:47:08.911Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 4ms
+2024-12-30T13:47:11.975Z [INFO]: Server started on port 3000
+2024-12-30T13:47:12.046Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 16ms
+2024-12-30T13:47:12.085Z [HTTP]: GET /api/v1/courses 404 - 7ms
+2024-12-30T13:47:12.127Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T13:47:12.164Z [HTTP]: GET /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T13:47:12.191Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T13:47:12.222Z [ERROR]: Database error
+2024-12-30T13:47:12.231Z [HTTP]: GET /api/v1/courses/CSC321 500 - 14ms
+2024-12-30T13:47:12.279Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T13:47:12.309Z [ERROR]: [object Object]
+2024-12-30T13:47:12.321Z [HTTP]: POST /api/v1/courses 400 - 17ms
+2024-12-30T13:47:12.357Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 10ms
+2024-12-30T13:47:12.393Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T13:47:12.421Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T13:47:12.475Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T13:47:14.711Z [ERROR]: Internal server error.
+2024-12-30T13:47:18.891Z [INFO]: Connected to database
+2024-12-30T13:48:34.593Z [INFO]: Server started on port 3000
+2024-12-30T13:48:37.069Z [INFO]: Connected to database
+2024-12-30T13:48:39.547Z [HTTP]: POST /api/v1/enrollments/ 400 - 16ms
+2024-12-30T13:48:44.601Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 10ms
+2024-12-30T13:48:49.644Z [INFO]: [object Object]
+2024-12-30T13:48:49.664Z [HTTP]: GET /api/v1/enrollments/student/student123 200 - 28ms
+2024-12-30T13:48:49.716Z [INFO]: [object Object]
+2024-12-30T13:48:49.761Z [HTTP]: GET /api/v1/enrollments/student/student123 404 - 52ms
+2024-12-30T13:48:49.825Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 9ms
+2024-12-30T13:48:49.884Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 7ms
+2024-12-30T13:48:52.636Z [INFO]: Server started on port 3000
+2024-12-30T13:48:52.703Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 15ms
+2024-12-30T13:48:52.739Z [HTTP]: GET /api/v1/courses 404 - 7ms
+2024-12-30T13:48:52.780Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T13:48:52.813Z [HTTP]: GET /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T13:48:52.838Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T13:48:52.864Z [ERROR]: Database error
+2024-12-30T13:48:52.871Z [HTTP]: GET /api/v1/courses/CSC321 500 - 10ms
+2024-12-30T13:48:52.913Z [HTTP]: POST /api/v1/courses 201 - 16ms
+2024-12-30T13:48:52.941Z [ERROR]: [object Object]
+2024-12-30T13:48:52.948Z [HTTP]: POST /api/v1/courses 400 - 11ms
+2024-12-30T13:48:52.975Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 7ms
+2024-12-30T13:48:53.004Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T13:48:53.045Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T13:48:53.079Z [HTTP]: DELETE /api/v1/courses/C1 404 - 3ms
+2024-12-30T13:48:55.122Z [ERROR]: Internal server error.
+2024-12-30T13:48:59.040Z [INFO]: Connected to database
+2024-12-30T13:54:49.888Z [INFO]: Server started on port 3000
+2024-12-30T13:54:52.328Z [INFO]: Connected to database
+2024-12-30T13:54:54.847Z [HTTP]: POST /api/v1/enrollments/ 400 - 19ms
+2024-12-30T13:54:59.908Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 12ms
+2024-12-30T13:55:04.954Z [INFO]: [object Object]
+2024-12-30T13:55:04.974Z [HTTP]: GET /api/v1/enrollments/student/student123 200 - 27ms
+2024-12-30T13:55:05.026Z [INFO]: [object Object]
+2024-12-30T13:55:05.073Z [HTTP]: GET /api/v1/enrollments/student/student123 404 - 54ms
+2024-12-30T13:55:05.139Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 10ms
+2024-12-30T13:55:05.238Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 7ms
+2024-12-30T13:55:08.049Z [INFO]: Server started on port 3000
+2024-12-30T13:55:08.118Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 16ms
+2024-12-30T13:55:08.164Z [HTTP]: GET /api/v1/courses 404 - 7ms
+2024-12-30T13:55:08.201Z [HTTP]: GET /api/v1/courses 500 - 5ms
+2024-12-30T13:55:08.226Z [HTTP]: GET /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T13:55:08.255Z [HTTP]: GET /api/v1/courses/CSC321 404 - 5ms
+2024-12-30T13:55:08.277Z [ERROR]: Database error
+2024-12-30T13:55:08.284Z [HTTP]: GET /api/v1/courses/CSC321 500 - 10ms
+2024-12-30T13:55:08.327Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T13:55:08.354Z [ERROR]: [object Object]
+2024-12-30T13:55:08.360Z [HTTP]: POST /api/v1/courses 400 - 11ms
+2024-12-30T13:55:08.388Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T13:55:08.413Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T13:55:08.438Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 4ms
+2024-12-30T13:55:08.461Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T13:55:10.536Z [ERROR]: Internal server error.
+2024-12-30T13:55:14.249Z [INFO]: Connected to database
+2024-12-30T13:58:19.986Z [INFO]: Server started on port 3000
+2024-12-30T13:58:20.268Z [HTTP]: POST /api/v1/enrollments/ 201 - 19ms
+2024-12-30T13:58:20.315Z [HTTP]: POST /api/v1/enrollments/ 400 - 7ms
+2024-12-30T13:58:22.365Z [INFO]: Connected to database
+2024-12-30T13:58:25.379Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 11ms
+2024-12-30T13:58:30.423Z [INFO]: [object Object]
+2024-12-30T13:58:30.440Z [HTTP]: GET /api/v1/enrollments/student/student123 200 - 24ms
+2024-12-30T13:58:30.468Z [INFO]: [object Object]
+2024-12-30T13:58:30.487Z [HTTP]: GET /api/v1/enrollments/student/student123 404 - 23ms
+2024-12-30T13:58:30.510Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 5ms
+2024-12-30T13:58:30.537Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 4ms
+2024-12-30T13:58:33.294Z [INFO]: Server started on port 3000
+2024-12-30T13:58:33.380Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 14ms
+2024-12-30T13:58:33.424Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T13:58:33.453Z [HTTP]: GET /api/v1/courses 500 - 8ms
+2024-12-30T13:58:33.485Z [HTTP]: GET /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T13:58:33.512Z [HTTP]: GET /api/v1/courses/CSC321 404 - 8ms
+2024-12-30T13:58:33.542Z [ERROR]: Database error
+2024-12-30T13:58:33.548Z [HTTP]: GET /api/v1/courses/CSC321 500 - 10ms
+2024-12-30T13:58:33.590Z [HTTP]: POST /api/v1/courses 201 - 14ms
+2024-12-30T13:58:33.620Z [ERROR]: [object Object]
+2024-12-30T13:58:33.627Z [HTTP]: POST /api/v1/courses 400 - 11ms
+2024-12-30T13:58:33.655Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T13:58:33.685Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 8ms
+2024-12-30T13:58:33.707Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 4ms
+2024-12-30T13:58:33.773Z [HTTP]: DELETE /api/v1/courses/C1 404 - 4ms
+2024-12-30T13:58:36.065Z [ERROR]: Internal server error.
+2024-12-30T13:58:40.306Z [INFO]: Connected to database
+2024-12-30T13:59:58.663Z [INFO]: Server started on port 3000
+2024-12-30T13:59:58.951Z [HTTP]: POST /api/v1/enrollments/ 201 - 19ms
+2024-12-30T13:59:58.992Z [HTTP]: POST /api/v1/enrollments/ 400 - 7ms
+2024-12-30T14:00:00.713Z [INFO]: Connected to database
+2024-12-30T14:00:04.071Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 11ms
+2024-12-30T14:00:09.119Z [INFO]: [object Object]
+2024-12-30T14:00:09.136Z [HTTP]: GET /api/v1/enrollments/student/student123 200 - 25ms
+2024-12-30T14:00:09.169Z [INFO]: [object Object]
+2024-12-30T14:00:09.184Z [HTTP]: GET /api/v1/enrollments/student/student123 404 - 19ms
+2024-12-30T14:00:09.217Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 5ms
+2024-12-30T14:00:09.243Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 4ms
+2024-12-30T14:00:11.990Z [INFO]: Server started on port 3000
+2024-12-30T14:00:12.074Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 15ms
+2024-12-30T14:00:12.112Z [HTTP]: GET /api/v1/courses 404 - 6ms
+2024-12-30T14:00:12.146Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T14:00:12.170Z [HTTP]: GET /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T14:00:12.201Z [HTTP]: GET /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T14:00:12.223Z [ERROR]: Database error
+2024-12-30T14:00:12.230Z [HTTP]: GET /api/v1/courses/CSC321 500 - 10ms
+2024-12-30T14:00:12.276Z [HTTP]: POST /api/v1/courses 201 - 15ms
+2024-12-30T14:00:12.301Z [ERROR]: [object Object]
+2024-12-30T14:00:12.308Z [HTTP]: POST /api/v1/courses 400 - 11ms
+2024-12-30T14:00:12.339Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 8ms
+2024-12-30T14:00:12.364Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T14:00:12.393Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T14:00:12.420Z [HTTP]: DELETE /api/v1/courses/C1 404 - 6ms
+2024-12-30T14:00:14.221Z [ERROR]: Internal server error.
+2024-12-30T14:00:18.587Z [INFO]: Connected to database
+2024-12-30T14:10:41.075Z [INFO]: Server started on port 3000
+2024-12-30T14:10:42.853Z [INFO]: Connected to database
+2024-12-30T14:15:07.506Z [INFO]: Server started on port 3000
+2024-12-30T14:15:12.985Z [INFO]: Connected to database
+2024-12-30T14:18:47.684Z [INFO]: Server started on port 3000
+2024-12-30T14:18:47.963Z [HTTP]: POST /api/v1/enrollments/ 201 - 18ms
+2024-12-30T14:18:48.010Z [HTTP]: POST /api/v1/enrollments/ 400 - 6ms
+2024-12-30T14:18:49.760Z [INFO]: Connected to database
+2024-12-30T14:18:53.072Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 11ms
+2024-12-30T14:30:33.133Z [INFO]: [object Object]
+2024-12-30T14:30:33.158Z [HTTP]: GET /api/v1/enrollments/student/student123 200 - 35ms
+2024-12-30T14:30:33.190Z [INFO]: [object Object]
+2024-12-30T14:30:33.217Z [HTTP]: GET /api/v1/enrollments/student/student123 404 - 31ms
+2024-12-30T14:30:33.261Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 200 - 8ms
+2024-12-30T14:30:33.294Z [HTTP]: DELETE /api/v1/enrollments/enrollment123 404 - 5ms
+2024-12-30T14:30:40.449Z [INFO]: Server started on port 3000
+2024-12-30T14:30:40.513Z [HTTP]: GET /api/v1/courses/?page=1&limit=2 200 - 20ms
+2024-12-30T14:30:40.552Z [HTTP]: GET /api/v1/courses 404 - 8ms
+2024-12-30T14:30:40.625Z [HTTP]: GET /api/v1/courses 500 - 6ms
+2024-12-30T14:30:40.652Z [HTTP]: GET /api/v1/courses/CSC321 200 - 5ms
+2024-12-30T14:30:40.682Z [HTTP]: GET /api/v1/courses/CSC321 404 - 8ms
+2024-12-30T14:30:40.704Z [ERROR]: Database error
+2024-12-30T14:30:40.711Z [HTTP]: GET /api/v1/courses/CSC321 500 - 11ms
+2024-12-30T14:30:40.764Z [HTTP]: POST /api/v1/courses 201 - 14ms
+2024-12-30T14:30:40.789Z [ERROR]: [object Object]
+2024-12-30T14:30:40.796Z [HTTP]: POST /api/v1/courses 400 - 11ms
+2024-12-30T14:30:40.824Z [HTTP]: PUT /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T14:30:40.853Z [HTTP]: PUT /api/v1/courses/CSC321 404 - 6ms
+2024-12-30T14:30:40.881Z [HTTP]: DELETE /api/v1/courses/CSC321 200 - 6ms
+2024-12-30T14:30:40.903Z [HTTP]: DELETE /api/v1/courses/C1 404 - 3ms
+2024-12-30T14:30:43.280Z [ERROR]: Internal server error.
+2024-12-30T14:30:47.890Z [INFO]: Connected to database
+2024-12-30T15:05:18.281Z [INFO]: Server started on port 3000
+2024-12-30T15:05:18.457Z [HTTP]: POST /api/v1/enrollments/ 201 - 22ms
+2024-12-30T15:05:18.665Z [HTTP]: POST /api/v1/enrollments/ 400 - 8ms
+2024-12-30T15:05:20.379Z [INFO]: Connected to database
+2024-12-30T15:05:23.769Z [HTTP]: POST /api/v1/enrollments/enroll 404 - 21ms
+2024-12-30T15:08:43.029Z [INFO]: Server started on port 3000
+2024-12-30T15:08:45.242Z [INFO]: Connected to database
+2024-12-30T15:08:53.443Z [INFO]: [object Object]
+2024-12-30T15:08:53.487Z [INFO]: [object Object]
+2024-12-30T15:09:01.645Z [INFO]: Server started on port 3000
+2024-12-30T15:09:01.889Z [ERROR]: Database error
+2024-12-30T15:09:01.974Z [ERROR]: [object Object]
+2024-12-30T15:09:04.933Z [ERROR]: Internal server error.
+2024-12-30T15:09:09.113Z [INFO]: Connected to database
+2024-12-30T15:10:42.035Z [INFO]: Server started on port 3000
+2024-12-30T15:10:44.233Z [INFO]: Connected to database
+2024-12-30T15:10:52.471Z [INFO]: [object Object]
+2024-12-30T15:10:52.525Z [INFO]: [object Object]
+2024-12-30T15:10:55.587Z [INFO]: Server started on port 3000
+2024-12-30T15:10:55.849Z [ERROR]: Database error
+2024-12-30T15:10:55.981Z [ERROR]: [object Object]
+2024-12-30T15:10:58.103Z [ERROR]: Internal server error.
+2024-12-30T15:11:01.960Z [INFO]: Connected to database
+2024-12-30T15:12:33.288Z [INFO]: Server started on port 3000
+2024-12-30T15:12:35.335Z [INFO]: Connected to database
+2024-12-30T15:12:48.679Z [INFO]: [object Object]
+2024-12-30T15:12:48.719Z [INFO]: [object Object]
+2024-12-30T15:12:51.682Z [INFO]: Server started on port 3000
+2024-12-30T15:12:51.876Z [ERROR]: Database error
+2024-12-30T15:12:51.942Z [ERROR]: [object Object]
+2024-12-30T15:12:54.239Z [ERROR]: Internal server error.
+2024-12-30T15:12:58.585Z [INFO]: Connected to database
+2024-12-30T15:19:49.596Z [INFO]: Server started on port 3000
+2024-12-30T15:19:51.402Z [INFO]: Connected to database
+2024-12-30T15:20:05.011Z [INFO]: [object Object]
+2024-12-30T15:20:05.077Z [INFO]: [object Object]
+2024-12-30T15:20:08.742Z [INFO]: Server started on port 3000
+2024-12-30T15:20:08.967Z [ERROR]: Database error
+2024-12-30T15:20:09.043Z [ERROR]: [object Object]
+2024-12-30T15:20:11.700Z [ERROR]: Internal server error.
+2024-12-30T15:20:16.446Z [INFO]: Connected to database
+2024-12-30T15:22:01.501Z [INFO]: Server started on port 3000
+2024-12-30T15:22:03.466Z [INFO]: Connected to database
+2024-12-30T15:22:16.910Z [INFO]: [object Object]
+2024-12-30T15:22:16.974Z [INFO]: [object Object]
+2024-12-30T15:22:21.161Z [INFO]: Server started on port 3000
+2024-12-30T15:22:21.390Z [ERROR]: Database error
+2024-12-30T15:22:21.470Z [ERROR]: [object Object]
+2024-12-30T15:22:23.926Z [ERROR]: Internal server error.
+2024-12-30T15:22:28.732Z [INFO]: Connected to database
+2024-12-30T15:24:10.707Z [INFO]: Server started on port 3000
+2024-12-30T15:24:12.437Z [INFO]: Connected to database
+2024-12-30T15:24:26.137Z [INFO]: [object Object]
+2024-12-30T15:24:26.187Z [INFO]: [object Object]
+2024-12-30T15:24:29.368Z [INFO]: Server started on port 3000
+2024-12-30T15:24:29.571Z [ERROR]: Database error
+2024-12-30T15:24:29.637Z [ERROR]: [object Object]
+2024-12-30T15:24:32.329Z [ERROR]: Internal server error.
+2024-12-30T15:24:37.196Z [INFO]: Connected to database
+2024-12-30T15:29:32.832Z [INFO]: Server started on port 3000
+2024-12-30T15:29:34.669Z [INFO]: Connected to database
+2024-12-30T15:29:48.217Z [INFO]: [object Object]
+2024-12-30T15:29:48.256Z [INFO]: [object Object]
+2024-12-30T15:29:51.320Z [INFO]: Server started on port 3000
+2024-12-30T15:29:51.517Z [ERROR]: Database error
+2024-12-30T15:29:51.589Z [ERROR]: [object Object]
+2024-12-30T15:29:54.028Z [ERROR]: Internal server error.
+2024-12-30T15:29:58.455Z [INFO]: Connected to database
+2024-12-30T15:36:10.267Z [INFO]: Server started on port 3000
+2024-12-30T15:36:12.143Z [INFO]: Connected to database
+2024-12-30T15:36:25.662Z [INFO]: [object Object]
+2024-12-30T15:36:25.753Z [INFO]: [object Object]
+2024-12-30T15:36:28.492Z [INFO]: Server started on port 3000
+2024-12-30T15:36:28.701Z [ERROR]: Database error
+2024-12-30T15:36:28.766Z [ERROR]: [object Object]
+2024-12-30T15:36:30.740Z [ERROR]: Internal server error.
+2024-12-30T15:36:34.095Z [INFO]: Connected to database
+2024-12-30T15:37:05.110Z [INFO]: Server started on port 3000
+2024-12-30T15:37:06.744Z [INFO]: Connected to database
+2024-12-30T15:37:20.512Z [INFO]: [object Object]
+2024-12-30T15:37:20.564Z [INFO]: [object Object]
+2024-12-30T15:37:24.172Z [INFO]: Server started on port 3000
+2024-12-30T15:37:24.446Z [ERROR]: Database error
+2024-12-30T15:37:24.525Z [ERROR]: [object Object]
+2024-12-30T15:37:27.627Z [ERROR]: Internal server error.
+2024-12-30T15:37:32.142Z [INFO]: Connected to database
+2024-12-30T15:38:53.431Z [INFO]: Server started on port 3000
+2024-12-30T15:38:57.018Z [INFO]: Connected to database
+2024-12-30T15:39:08.819Z [INFO]: [object Object]
+2024-12-30T15:39:08.860Z [INFO]: [object Object]
+2024-12-30T15:39:11.439Z [ERROR]: Internal server error.
+2024-12-30T15:39:20.589Z [INFO]: Server started on port 3000
+2024-12-30T15:39:20.803Z [ERROR]: Database error
+2024-12-30T15:39:20.876Z [ERROR]: [object Object]
+2024-12-30T15:39:22.323Z [INFO]: Connected to database
+2024-12-30T16:36:44.809Z [INFO]: Server started on port 3000
+2024-12-30T16:36:46.915Z [INFO]: Connected to database
+2024-12-30T16:37:00.246Z [INFO]: [object Object]
+2024-12-30T16:37:00.350Z [INFO]: [object Object]
+2024-12-30T16:37:03.675Z [INFO]: Server started on port 3000
+2024-12-30T16:37:03.892Z [ERROR]: Database error
+2024-12-30T16:37:03.963Z [ERROR]: [object Object]
+2024-12-30T16:37:05.445Z [INFO]: Connected to database
+2024-12-30T16:37:07.827Z [ERROR]: Internal server error.
+2024-12-30T16:48:26.590Z [INFO]: Server started on port 3000
+2024-12-30T16:48:28.528Z [INFO]: Connected to database
+2024-12-30T16:48:42.019Z [INFO]: [object Object]
+2024-12-30T16:48:42.078Z [INFO]: [object Object]
+2024-12-30T16:48:45.365Z [INFO]: Server started on port 3000
+2024-12-30T16:48:45.555Z [ERROR]: Database error
+2024-12-30T16:48:45.627Z [ERROR]: [object Object]
+2024-12-30T16:48:46.812Z [INFO]: Connected to database
+2024-12-30T16:48:49.140Z [ERROR]: Internal server error.
+2024-12-31T07:46:48.030Z [ERROR]: Internal server error.
+2024-12-31T07:46:58.727Z [INFO]: Server started on port 3000
+2024-12-31T07:46:59.053Z [ERROR]: Database error
+2024-12-31T07:46:59.132Z [ERROR]: [object Object]
+2024-12-31T07:47:01.151Z [INFO]: Connected to database
+2024-12-31T07:47:07.789Z [INFO]: Server started on port 3000
+2024-12-31T07:47:09.341Z [INFO]: Connected to database
+2024-12-31T07:47:22.952Z [INFO]: [object Object]
+2024-12-31T07:47:23.005Z [INFO]: [object Object]
+2024-12-31T07:58:27.299Z [INFO]: Server started on port 3000
+2024-12-31T07:58:29.795Z [INFO]: Connected to database
+2024-12-31T07:58:42.688Z [INFO]: [object Object]
+2024-12-31T07:58:42.729Z [INFO]: [object Object]
+2024-12-31T07:58:45.337Z [ERROR]: Internal server error.
+2024-12-31T07:58:47.766Z [INFO]: Server started on port 3000
+2024-12-31T07:58:47.960Z [ERROR]: Database error
+2024-12-31T07:58:48.025Z [ERROR]: [object Object]
+2024-12-31T07:58:49.375Z [INFO]: Connected to database
+2024-12-31T08:03:21.631Z [INFO]: Server started on port 3000
+2024-12-31T08:03:23.423Z [INFO]: Connected to database
+2024-12-31T08:03:47.462Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('675ec943a1368b32c795f301'), course: ObjectId('676051fd3cbd4e7f12075c2d') }
+2024-12-31T08:08:05.717Z [INFO]: Server started on port 3000
+2024-12-31T08:08:07.553Z [INFO]: Connected to database
+2024-12-31T08:08:21.807Z [INFO]: Server started on port 3000
+2024-12-31T08:08:23.640Z [INFO]: Connected to database
+2024-12-31T08:08:53.493Z [INFO]: Server started on port 3000
+2024-12-31T08:08:55.274Z [INFO]: Connected to database
+2024-12-31T08:10:31.864Z [INFO]: Server started on port 3000
+2024-12-31T08:10:33.763Z [INFO]: Connected to database
+2024-12-31T08:10:36.860Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('675ec943a1368b32c795f301'), course: ObjectId('676051fd3cbd4e7f12075c2d') }
+2024-12-31T08:11:05.349Z [ERROR]: Database error
+2024-12-31T08:11:05.438Z [ERROR]: [object Object]
+2024-12-31T08:11:06.981Z [INFO]: Connected to database
+2024-12-31T08:11:09.385Z [ERROR]: Internal server error.
+2024-12-31T08:12:54.729Z [INFO]: Server started on port 3000
+2024-12-31T08:12:56.472Z [INFO]: Connected to database
+2024-12-31T08:13:10.734Z [INFO]: Server started on port 3000
+2024-12-31T08:13:12.305Z [INFO]: Connected to database
+2024-12-31T08:14:05.597Z [INFO]: Server started on port 3000
+2024-12-31T08:14:07.288Z [INFO]: Connected to database
+2024-12-31T08:14:42.511Z [ERROR]: Database error
+2024-12-31T08:14:42.602Z [ERROR]: [object Object]
+2024-12-31T08:14:49.889Z [ERROR]: Internal server error.
+2024-12-31T08:15:01.931Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:15:01.997Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:15:02.257Z [INFO]: Connected to database
+2024-12-31T08:15:03.415Z [INFO]: Connected to database
+2024-12-31T08:15:03.509Z [INFO]: [object Object]
+2024-12-31T08:15:03.539Z [INFO]: [object Object]
+2024-12-31T08:15:39.233Z [ERROR]: Database error
+2024-12-31T08:15:39.316Z [ERROR]: [object Object]
+2024-12-31T08:15:40.679Z [INFO]: Connected to database
+2024-12-31T08:15:45.324Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:15:45.374Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:15:46.590Z [INFO]: Connected to database
+2024-12-31T08:15:46.677Z [INFO]: [object Object]
+2024-12-31T08:15:46.714Z [INFO]: [object Object]
+2024-12-31T08:15:50.781Z [ERROR]: Internal server error.
+2024-12-31T08:16:32.587Z [INFO]: Closing Redis client...
+2024-12-31T08:16:46.906Z [INFO]: Server started on port 3000
+2024-12-31T08:16:47.108Z [ERROR]: Database error
+2024-12-31T08:16:47.193Z [ERROR]: [object Object]
+2024-12-31T08:16:48.879Z [INFO]: Connected to database
+2024-12-31T08:16:50.888Z [INFO]: Server started on port 3000
+2024-12-31T08:16:51.000Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:16:51.042Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:16:52.667Z [INFO]: Connected to database
+2024-12-31T08:16:52.772Z [INFO]: [object Object]
+2024-12-31T08:16:52.821Z [INFO]: [object Object]
+2024-12-31T08:16:54.296Z [ERROR]: Internal server error.
+2024-12-31T08:21:04.542Z [INFO]: Server started on port 3000
+2024-12-31T08:21:04.887Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:21:04.929Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:21:06.424Z [INFO]: Connected to database
+2024-12-31T08:21:06.538Z [INFO]: [object Object]
+2024-12-31T08:21:06.573Z [INFO]: [object Object]
+2024-12-31T08:21:08.957Z [INFO]: Server started on port 3000
+2024-12-31T08:21:09.154Z [ERROR]: Database error
+2024-12-31T08:21:09.227Z [ERROR]: [object Object]
+2024-12-31T08:21:10.410Z [INFO]: Connected to database
+2024-12-31T08:21:12.243Z [ERROR]: Internal server error.
+2024-12-31T08:24:12.464Z [INFO]: Server started on port 3000
+2024-12-31T08:24:12.631Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:24:12.689Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:24:14.562Z [INFO]: Connected to database
+2024-12-31T08:24:14.687Z [INFO]: [object Object]
+2024-12-31T08:24:14.733Z [INFO]: [object Object]
+2024-12-31T08:24:16.127Z [INFO]: Server started on port 3000
+2024-12-31T08:24:16.288Z [ERROR]: Database error
+2024-12-31T08:24:16.354Z [ERROR]: [object Object]
+2024-12-31T08:24:17.451Z [INFO]: Connected to database
+2024-12-31T08:24:19.040Z [ERROR]: Internal server error.
+2024-12-31T08:24:42.170Z [INFO]: Server started on port 3000
+2024-12-31T08:24:42.519Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:24:42.560Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:24:44.028Z [INFO]: Connected to database
+2024-12-31T08:24:44.141Z [INFO]: [object Object]
+2024-12-31T08:24:44.178Z [INFO]: [object Object]
+2024-12-31T08:24:46.824Z [INFO]: Server started on port 3000
+2024-12-31T08:24:47.020Z [ERROR]: Database error
+2024-12-31T08:24:47.089Z [ERROR]: [object Object]
+2024-12-31T08:24:47.950Z [INFO]: Connected to database
+2024-12-31T08:24:49.946Z [ERROR]: Internal server error.
+2024-12-31T08:26:20.378Z [INFO]: Server started on port 3000
+2024-12-31T08:26:20.538Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:26:20.584Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:26:20.626Z [ERROR]: Database error
+2024-12-31T08:26:22.338Z [INFO]: Connected to database
+2024-12-31T08:26:22.438Z [INFO]: [object Object]
+2024-12-31T08:26:22.479Z [INFO]: [object Object]
+2024-12-31T08:26:23.652Z [ERROR]: Internal server error.
+2024-12-31T08:26:25.395Z [INFO]: Server started on port 3000
+2024-12-31T08:26:25.564Z [ERROR]: Database error
+2024-12-31T08:26:25.648Z [ERROR]: [object Object]
+2024-12-31T08:26:26.941Z [INFO]: Connected to database
+2024-12-31T08:27:44.183Z [INFO]: Server started on port 3000
+2024-12-31T08:27:44.336Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:27:44.386Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:27:44.427Z [ERROR]: Database error
+2024-12-31T08:27:46.305Z [INFO]: Connected to database
+2024-12-31T08:27:46.434Z [INFO]: [object Object]
+2024-12-31T08:27:46.478Z [INFO]: [object Object]
+2024-12-31T08:27:47.823Z [INFO]: Server started on port 3000
+2024-12-31T08:27:47.985Z [ERROR]: Database error
+2024-12-31T08:27:48.053Z [ERROR]: [object Object]
+2024-12-31T08:27:49.584Z [INFO]: Connected to database
+2024-12-31T08:27:51.453Z [ERROR]: Internal server error.
+2024-12-31T08:28:25.695Z [INFO]: Server started on port 3000
+2024-12-31T08:28:25.858Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:28:25.906Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:28:25.949Z [ERROR]: Database error
+2024-12-31T08:28:27.166Z [INFO]: Connected to database
+2024-12-31T08:28:27.308Z [INFO]: [object Object]
+2024-12-31T08:28:27.348Z [INFO]: [object Object]
+2024-12-31T08:28:29.509Z [INFO]: Server started on port 3000
+2024-12-31T08:28:29.669Z [ERROR]: Database error
+2024-12-31T08:28:29.738Z [ERROR]: [object Object]
+2024-12-31T08:28:30.805Z [INFO]: Connected to database
+2024-12-31T08:28:32.657Z [ERROR]: Internal server error.
+2024-12-31T08:29:08.397Z [INFO]: Server started on port 3000
+2024-12-31T08:29:08.547Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:29:08.623Z [ERROR]: Database error
+2024-12-31T08:29:10.416Z [INFO]: Connected to database
+2024-12-31T08:29:10.593Z [INFO]: [object Object]
+2024-12-31T08:29:10.652Z [INFO]: [object Object]
+2024-12-31T08:29:12.877Z [ERROR]: Internal server error.
+2024-12-31T08:29:14.794Z [INFO]: Server started on port 3000
+2024-12-31T08:29:15.004Z [ERROR]: Database error
+2024-12-31T08:29:15.073Z [ERROR]: [object Object]
+2024-12-31T08:29:16.151Z [INFO]: Connected to database
+2024-12-31T08:29:47.288Z [INFO]: Server started on port 3000
+2024-12-31T08:29:47.419Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:29:47.465Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:29:47.502Z [ERROR]: Database error
+2024-12-31T08:29:48.881Z [INFO]: Connected to database
+2024-12-31T08:29:48.976Z [INFO]: [object Object]
+2024-12-31T08:29:49.013Z [INFO]: [object Object]
+2024-12-31T08:29:50.343Z [INFO]: Server started on port 3000
+2024-12-31T08:29:50.496Z [ERROR]: Database error
+2024-12-31T08:29:50.549Z [ERROR]: [object Object]
+2024-12-31T08:29:52.003Z [INFO]: Connected to database
+2024-12-31T08:29:53.955Z [ERROR]: Internal server error.
+2024-12-31T08:30:47.565Z [INFO]: Server started on port 3000
+2024-12-31T08:30:47.720Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:30:47.779Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:30:47.831Z [ERROR]: Database error
+2024-12-31T08:30:49.608Z [INFO]: Connected to database
+2024-12-31T08:30:49.713Z [INFO]: [object Object]
+2024-12-31T08:30:49.752Z [INFO]: [object Object]
+2024-12-31T08:30:51.934Z [ERROR]: Internal server error.
+2024-12-31T08:30:53.177Z [INFO]: Server started on port 3000
+2024-12-31T08:30:53.336Z [ERROR]: Database error
+2024-12-31T08:30:53.404Z [ERROR]: [object Object]
+2024-12-31T08:30:54.633Z [INFO]: Connected to database
+2024-12-31T08:32:54.647Z [INFO]: Server started on port 3000
+2024-12-31T08:32:54.798Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:32:54.847Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:32:54.892Z [ERROR]: Database error
+2024-12-31T08:32:56.677Z [INFO]: Connected to database
+2024-12-31T08:32:56.791Z [INFO]: [object Object]
+2024-12-31T08:32:56.832Z [INFO]: [object Object]
+2024-12-31T08:32:58.154Z [INFO]: Server started on port 3000
+2024-12-31T08:32:58.317Z [ERROR]: Database error
+2024-12-31T08:32:58.393Z [ERROR]: [object Object]
+2024-12-31T08:32:59.863Z [INFO]: Connected to database
+2024-12-31T08:33:01.895Z [ERROR]: Internal server error.
+2024-12-31T08:33:14.513Z [INFO]: Server started on port 3000
+2024-12-31T08:33:14.860Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:33:14.905Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:33:14.944Z [ERROR]: Database error
+2024-12-31T08:33:16.658Z [INFO]: Connected to database
+2024-12-31T08:33:16.768Z [INFO]: [object Object]
+2024-12-31T08:33:16.804Z [INFO]: [object Object]
+2024-12-31T08:33:19.858Z [INFO]: Server started on port 3000
+2024-12-31T08:33:20.184Z [ERROR]: Database error
+2024-12-31T08:33:20.338Z [ERROR]: [object Object]
+2024-12-31T08:33:21.367Z [INFO]: Connected to database
+2024-12-31T08:33:24.263Z [ERROR]: Internal server error.
+2024-12-31T08:36:07.289Z [INFO]: Server started on port 3000
+2024-12-31T08:36:07.564Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:36:09.624Z [INFO]: Connected to database
+2024-12-31T08:36:47.252Z [INFO]: Server started on port 3000
+2024-12-31T08:36:47.469Z [ERROR]: Cannot read properties of undefined (reading 'select')
+2024-12-31T08:36:48.949Z [INFO]: Connected to database
+2024-12-31T08:37:04.239Z [INFO]: Server started on port 3000
+2024-12-31T08:37:04.420Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:37:04.478Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:37:04.527Z [ERROR]: Database error
+2024-12-31T08:37:06.059Z [INFO]: Connected to database
+2024-12-31T08:37:06.174Z [INFO]: [object Object]
+2024-12-31T08:37:06.223Z [INFO]: [object Object]
+2024-12-31T08:37:07.388Z [ERROR]: Internal server error.
+2024-12-31T08:37:09.748Z [INFO]: Server started on port 3000
+2024-12-31T08:37:09.901Z [ERROR]: Database error
+2024-12-31T08:37:09.969Z [ERROR]: [object Object]
+2024-12-31T08:37:11.980Z [INFO]: Connected to database
+2024-12-31T08:37:46.656Z [INFO]: Server started on port 3000
+2024-12-31T08:37:47.088Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:37:47.135Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:37:47.174Z [ERROR]: Database error
+2024-12-31T08:37:48.640Z [INFO]: Connected to database
+2024-12-31T08:37:48.760Z [INFO]: [object Object]
+2024-12-31T08:37:48.794Z [INFO]: [object Object]
+2024-12-31T08:37:51.159Z [INFO]: Server started on port 3000
+2024-12-31T08:37:51.349Z [ERROR]: Database error
+2024-12-31T08:37:51.415Z [ERROR]: [object Object]
+2024-12-31T08:37:52.839Z [INFO]: Connected to database
+2024-12-31T08:37:54.620Z [ERROR]: Internal server error.
+2024-12-31T08:38:31.377Z [INFO]: Server started on port 3000
+2024-12-31T08:38:31.532Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:38:31.593Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:38:31.637Z [ERROR]: Database error
+2024-12-31T08:38:33.615Z [INFO]: Connected to database
+2024-12-31T08:38:33.719Z [INFO]: [object Object]
+2024-12-31T08:38:33.766Z [INFO]: [object Object]
+2024-12-31T08:38:36.075Z [ERROR]: Internal server error.
+2024-12-31T08:38:37.274Z [INFO]: Server started on port 3000
+2024-12-31T08:38:37.434Z [ERROR]: Database error
+2024-12-31T08:38:37.504Z [ERROR]: [object Object]
+2024-12-31T08:38:38.842Z [INFO]: Connected to database
+2024-12-31T08:39:04.818Z [INFO]: Server started on port 3000
+2024-12-31T08:39:05.007Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:39:05.072Z [ERROR]: courseQuery.select is not a function
+2024-12-31T08:39:05.122Z [ERROR]: Database error
+2024-12-31T08:39:06.364Z [INFO]: Connected to database
+2024-12-31T08:39:06.462Z [INFO]: [object Object]
+2024-12-31T08:39:06.510Z [INFO]: [object Object]
+2024-12-31T08:39:07.952Z [INFO]: Server started on port 3000
+2024-12-31T08:39:08.120Z [ERROR]: Database error
+2024-12-31T08:39:08.180Z [ERROR]: [object Object]
+2024-12-31T08:39:09.432Z [INFO]: Connected to database
+2024-12-31T08:39:11.927Z [ERROR]: Internal server error.
+2024-12-31T08:39:51.572Z [INFO]: Server started on port 3000
+2024-12-31T08:39:51.771Z [ERROR]: Database error
+2024-12-31T08:39:53.143Z [INFO]: Connected to database
+2024-12-31T08:39:53.253Z [INFO]: [object Object]
+2024-12-31T08:39:53.293Z [INFO]: [object Object]
+2024-12-31T08:39:55.577Z [ERROR]: Internal server error.
+2024-12-31T08:39:56.938Z [INFO]: Server started on port 3000
+2024-12-31T08:39:57.095Z [ERROR]: Database error
+2024-12-31T08:39:57.163Z [ERROR]: [object Object]
+2024-12-31T08:39:58.687Z [INFO]: Connected to database
+2024-12-31T08:40:39.571Z [INFO]: Server started on port 3000
+2024-12-31T08:40:39.982Z [ERROR]: Database error
+2024-12-31T08:40:41.495Z [INFO]: Connected to database
+2024-12-31T08:40:41.690Z [INFO]: [object Object]
+2024-12-31T08:40:41.756Z [INFO]: [object Object]
+2024-12-31T08:40:46.338Z [INFO]: Server started on port 3000
+2024-12-31T08:40:46.814Z [ERROR]: Database error
+2024-12-31T08:40:46.964Z [ERROR]: [object Object]
+2024-12-31T08:40:48.250Z [INFO]: Connected to database
+2024-12-31T08:40:50.658Z [ERROR]: Internal server error.
+2024-12-31T08:40:59.264Z [INFO]: Server started on port 3000
+2024-12-31T08:40:59.514Z [ERROR]: Database error
+2024-12-31T08:41:01.051Z [INFO]: Connected to database
+2024-12-31T08:41:01.153Z [INFO]: [object Object]
+2024-12-31T08:41:01.190Z [INFO]: [object Object]
+2024-12-31T08:41:02.577Z [INFO]: Server started on port 3000
+2024-12-31T08:41:02.747Z [ERROR]: Database error
+2024-12-31T08:41:02.823Z [ERROR]: [object Object]
+2024-12-31T08:41:03.860Z [INFO]: Connected to database
+2024-12-31T08:41:06.590Z [ERROR]: Internal server error.
+2024-12-31T08:41:20.520Z [INFO]: Server started on port 3000
+2024-12-31T08:41:20.769Z [ERROR]: Database error
+2024-12-31T08:41:22.264Z [INFO]: Connected to database
+2024-12-31T08:41:22.391Z [INFO]: [object Object]
+2024-12-31T08:41:22.453Z [INFO]: [object Object]
+2024-12-31T08:41:23.870Z [ERROR]: Internal server error.
+2024-12-31T08:41:26.704Z [INFO]: Server started on port 3000
+2024-12-31T08:41:26.864Z [ERROR]: Database error
+2024-12-31T08:41:26.935Z [ERROR]: [object Object]
+2024-12-31T08:41:27.992Z [INFO]: Connected to database
+2024-12-31T08:43:55.537Z [INFO]: Server started on port 3000
+2024-12-31T08:43:55.933Z [ERROR]: Database error
+2024-12-31T08:43:57.953Z [INFO]: Connected to database
+2024-12-31T08:43:58.097Z [INFO]: [object Object]
+2024-12-31T08:43:58.158Z [INFO]: [object Object]
+2024-12-31T08:44:00.623Z [ERROR]: Internal server error.
+2024-12-31T08:44:02.980Z [INFO]: Server started on port 3000
+2024-12-31T08:44:03.182Z [ERROR]: Database error
+2024-12-31T08:44:03.258Z [ERROR]: [object Object]
+2024-12-31T08:44:04.762Z [INFO]: Connected to database
+2024-12-31T08:45:20.247Z [INFO]: Server started on port 3000
+2024-12-31T08:45:20.444Z [ERROR]: Database error
+2024-12-31T08:45:22.588Z [INFO]: Connected to database
+2024-12-31T08:45:22.702Z [INFO]: [object Object]
+2024-12-31T08:45:22.750Z [INFO]: [object Object]
+2024-12-31T08:45:24.204Z [INFO]: Server started on port 3000
+2024-12-31T08:45:24.400Z [ERROR]: Database error
+2024-12-31T08:45:24.474Z [ERROR]: [object Object]
+2024-12-31T08:45:25.872Z [INFO]: Connected to database
+2024-12-31T08:45:28.876Z [ERROR]: Internal server error.
+2024-12-31T08:45:44.615Z [INFO]: Server started on port 3000
+2024-12-31T08:45:45.090Z [ERROR]: Database error
+2024-12-31T08:45:46.651Z [INFO]: Connected to database
+2024-12-31T08:45:46.780Z [INFO]: [object Object]
+2024-12-31T08:45:46.814Z [INFO]: [object Object]
+2024-12-31T08:45:49.717Z [INFO]: Server started on port 3000
+2024-12-31T08:45:49.904Z [ERROR]: Database error
+2024-12-31T08:45:49.972Z [ERROR]: [object Object]
+2024-12-31T08:45:51.052Z [INFO]: Connected to database
+2024-12-31T08:45:53.000Z [ERROR]: Internal server error.
+2024-12-31T08:46:52.800Z [INFO]: Server started on port 3000
+2024-12-31T08:46:52.959Z [ERROR]: Database error
+2024-12-31T08:46:54.815Z [INFO]: Connected to database
+2024-12-31T08:46:54.908Z [INFO]: [object Object]
+2024-12-31T08:46:54.957Z [INFO]: [object Object]
+2024-12-31T08:46:56.114Z [ERROR]: Internal server error.
+2024-12-31T08:46:58.988Z [INFO]: Server started on port 3000
+2024-12-31T08:46:59.147Z [ERROR]: Database error
+2024-12-31T08:46:59.205Z [ERROR]: [object Object]
+2024-12-31T08:47:00.535Z [INFO]: Connected to database
+2024-12-31T08:48:47.600Z [INFO]: Server started on port 3000
+2024-12-31T08:48:47.988Z [ERROR]: Database error
+2024-12-31T08:48:49.693Z [INFO]: Connected to database
+2024-12-31T08:48:49.803Z [INFO]: [object Object]
+2024-12-31T08:48:49.839Z [INFO]: [object Object]
+2024-12-31T08:48:52.459Z [INFO]: Server started on port 3000
+2024-12-31T08:48:52.646Z [ERROR]: Database error
+2024-12-31T08:48:52.715Z [ERROR]: [object Object]
+2024-12-31T08:48:54.043Z [INFO]: Connected to database
+2024-12-31T08:48:55.977Z [ERROR]: Internal server error.
+2024-12-31T08:49:41.828Z [INFO]: Server started on port 3000
+2024-12-31T08:49:42.046Z [ERROR]: Database error
+2024-12-31T08:49:43.203Z [INFO]: Connected to database
+2024-12-31T08:49:43.330Z [INFO]: [object Object]
+2024-12-31T08:49:43.380Z [INFO]: [object Object]
+2024-12-31T08:49:44.924Z [INFO]: Server started on port 3000
+2024-12-31T08:49:45.125Z [ERROR]: Database error
+2024-12-31T08:49:45.200Z [ERROR]: [object Object]
+2024-12-31T08:49:46.105Z [INFO]: Connected to database
+2024-12-31T08:49:48.971Z [ERROR]: Internal server error.
+2024-12-31T08:49:59.624Z [INFO]: Server started on port 3000
+2024-12-31T08:49:59.889Z [ERROR]: Database error
+2024-12-31T08:50:01.632Z [INFO]: Connected to database
+2024-12-31T08:50:01.752Z [INFO]: [object Object]
+2024-12-31T08:50:01.785Z [INFO]: [object Object]
+2024-12-31T08:50:02.841Z [ERROR]: Internal server error.
+2024-12-31T08:50:05.962Z [INFO]: Server started on port 3000
+2024-12-31T08:50:06.130Z [ERROR]: Database error
+2024-12-31T08:50:06.185Z [ERROR]: [object Object]
+2024-12-31T08:50:07.674Z [INFO]: Connected to database
+2024-12-31T08:50:16.291Z [INFO]: Server started on port 3000
+2024-12-31T08:50:16.723Z [ERROR]: Database error
+2024-12-31T08:50:18.119Z [INFO]: Connected to database
+2024-12-31T08:50:18.237Z [INFO]: [object Object]
+2024-12-31T08:50:18.271Z [INFO]: [object Object]
+2024-12-31T08:50:20.913Z [ERROR]: Internal server error.
+2024-12-31T08:50:23.279Z [INFO]: Server started on port 3000
+2024-12-31T08:50:23.466Z [ERROR]: Database error
+2024-12-31T08:50:23.531Z [ERROR]: [object Object]
+2024-12-31T08:50:25.080Z [INFO]: Connected to database
+2024-12-31T08:51:17.083Z [INFO]: Server started on port 3000
+2024-12-31T08:51:17.450Z [ERROR]: Database error
+2024-12-31T08:51:19.254Z [INFO]: Connected to database
+2024-12-31T08:51:19.391Z [INFO]: [object Object]
+2024-12-31T08:51:19.446Z [INFO]: [object Object]
+2024-12-31T08:51:20.809Z [ERROR]: Internal server error.
+2024-12-31T08:51:24.106Z [INFO]: Server started on port 3000
+2024-12-31T08:51:24.267Z [ERROR]: Database error
+2024-12-31T08:51:24.337Z [ERROR]: [object Object]
+2024-12-31T08:51:25.449Z [INFO]: Connected to database
+2024-12-31T08:51:55.094Z [INFO]: Server started on port 3000
+2024-12-31T08:51:55.499Z [ERROR]: Database error
+2024-12-31T08:51:56.833Z [INFO]: Connected to database
+2024-12-31T08:51:56.957Z [INFO]: [object Object]
+2024-12-31T08:51:56.990Z [INFO]: [object Object]
+2024-12-31T08:51:59.462Z [INFO]: Server started on port 3000
+2024-12-31T08:51:59.653Z [ERROR]: Database error
+2024-12-31T08:51:59.729Z [ERROR]: [object Object]
+2024-12-31T08:52:00.862Z [INFO]: Connected to database
+2024-12-31T08:52:02.717Z [ERROR]: Internal server error.
+2024-12-31T08:53:56.912Z [INFO]: Server started on port 3000
+2024-12-31T08:53:57.201Z [ERROR]: Database error
+2024-12-31T08:53:58.879Z [INFO]: Connected to database
+2024-12-31T08:54:38.994Z [ERROR]: Internal server error.
+2024-12-31T08:54:43.178Z [INFO]: Server started on port 3000
+2024-12-31T08:54:43.363Z [ERROR]: Database error
+2024-12-31T08:54:44.872Z [INFO]: Connected to database
+2024-12-31T08:54:44.962Z [INFO]: [object Object]
+2024-12-31T08:54:45.013Z [INFO]: [object Object]
+2024-12-31T08:54:48.641Z [INFO]: Server started on port 3000
+2024-12-31T08:54:48.812Z [ERROR]: Database error
+2024-12-31T08:54:48.867Z [ERROR]: [object Object]
+2024-12-31T08:54:50.401Z [INFO]: Connected to database
+2024-12-31T08:55:34.727Z [ERROR]: Internal server error.
+2024-12-31T08:56:01.369Z [ERROR]: Internal server error.
+2024-12-31T08:56:20.244Z [ERROR]: Internal server error.
+2024-12-31T08:56:35.218Z [ERROR]: Internal server error.
+2024-12-31T08:56:42.025Z [INFO]: Server started on port 3000
+2024-12-31T08:56:42.204Z [ERROR]: Database error
+2024-12-31T08:56:43.764Z [INFO]: Connected to database
+2024-12-31T08:56:43.872Z [INFO]: [object Object]
+2024-12-31T08:56:43.918Z [INFO]: [object Object]
+2024-12-31T08:56:47.386Z [INFO]: Server started on port 3000
+2024-12-31T08:56:47.631Z [ERROR]: Database error
+2024-12-31T08:56:47.700Z [ERROR]: [object Object]
+2024-12-31T08:56:48.987Z [INFO]: Connected to database
+2024-12-31T08:57:23.193Z [INFO]: Server started on port 3000
+2024-12-31T08:57:23.596Z [ERROR]: Database error
+2024-12-31T08:57:25.031Z [INFO]: Connected to database
+2024-12-31T08:57:25.139Z [INFO]: [object Object]
+2024-12-31T08:57:25.174Z [INFO]: [object Object]
+2024-12-31T08:57:27.552Z [ERROR]: Internal server error.
+2024-12-31T08:57:29.622Z [INFO]: Server started on port 3000
+2024-12-31T08:57:29.802Z [ERROR]: Database error
+2024-12-31T08:57:29.870Z [ERROR]: [object Object]
+2024-12-31T08:57:31.490Z [INFO]: Connected to database
+2024-12-31T08:58:23.934Z [INFO]: Server started on port 3000
+2024-12-31T08:58:24.195Z [ERROR]: Database error
+2024-12-31T08:58:25.862Z [INFO]: Connected to database
+2024-12-31T08:58:25.955Z [INFO]: [object Object]
+2024-12-31T08:58:26.000Z [INFO]: [object Object]
+2024-12-31T08:58:27.427Z [INFO]: Server started on port 3000
+2024-12-31T08:58:27.625Z [ERROR]: Database error
+2024-12-31T08:58:27.695Z [ERROR]: [object Object]
+2024-12-31T08:58:29.130Z [INFO]: Connected to database
+2024-12-31T08:58:32.471Z [ERROR]: Internal server error.
+2024-12-31T08:58:43.005Z [INFO]: Server started on port 3000
+2024-12-31T08:58:43.408Z [ERROR]: Database error
+2024-12-31T08:58:44.903Z [INFO]: Connected to database
+2024-12-31T08:58:45.012Z [INFO]: [object Object]
+2024-12-31T08:58:45.049Z [INFO]: [object Object]
+2024-12-31T08:58:47.543Z [INFO]: Server started on port 3000
+2024-12-31T08:58:47.732Z [ERROR]: Database error
+2024-12-31T08:58:47.795Z [ERROR]: [object Object]
+2024-12-31T08:58:49.406Z [INFO]: Connected to database
+2024-12-31T08:58:51.625Z [ERROR]: Internal server error.
+2024-12-31T09:05:12.692Z [INFO]: Server started on port 3000
+2024-12-31T09:05:12.968Z [ERROR]: Database error
+2024-12-31T09:05:15.119Z [INFO]: Connected to database
+2024-12-31T09:05:15.235Z [INFO]: [object Object]
+2024-12-31T09:05:15.287Z [INFO]: [object Object]
+2024-12-31T09:05:16.595Z [ERROR]: Internal server error.
+2024-12-31T09:05:20.126Z [INFO]: Server started on port 3000
+2024-12-31T09:05:20.300Z [ERROR]: Database error
+2024-12-31T09:05:20.370Z [ERROR]: [object Object]
+2024-12-31T09:05:22.690Z [INFO]: Connected to database
+2024-12-31T09:05:56.070Z [INFO]: Server started on port 3000
+2024-12-31T09:05:56.471Z [ERROR]: Database error
+2024-12-31T09:05:58.064Z [INFO]: Connected to database
+2024-12-31T09:05:58.170Z [INFO]: [object Object]
+2024-12-31T09:05:58.205Z [INFO]: [object Object]
+2024-12-31T09:06:00.890Z [INFO]: Server started on port 3000
+2024-12-31T09:06:01.082Z [ERROR]: Database error
+2024-12-31T09:06:01.145Z [ERROR]: [object Object]
+2024-12-31T09:06:02.669Z [INFO]: Connected to database
+2024-12-31T09:06:05.318Z [ERROR]: Internal server error.
+2024-12-31T09:06:44.394Z [INFO]: Server started on port 3000
+2024-12-31T09:06:44.821Z [ERROR]: Database error
+2024-12-31T09:06:46.144Z [INFO]: Connected to database
+2024-12-31T09:06:46.256Z [INFO]: [object Object]
+2024-12-31T09:06:46.298Z [INFO]: [object Object]
+2024-12-31T09:06:47.538Z [ERROR]: Internal server error.
+2024-12-31T09:06:51.557Z [INFO]: Server started on port 3000
+2024-12-31T09:06:51.746Z [ERROR]: Database error
+2024-12-31T09:06:51.815Z [ERROR]: [object Object]
+2024-12-31T09:06:53.194Z [INFO]: Connected to database
+2024-12-31T09:07:41.494Z [INFO]: Server started on port 3000
+2024-12-31T09:07:43.342Z [INFO]: Connected to database
+2024-12-31T09:07:43.446Z [INFO]: [object Object]
+2024-12-31T09:07:43.483Z [INFO]: [object Object]
+2024-12-31T09:07:43.537Z [ERROR]: Student_1.default.findOne(...).select is not a function
+2024-12-31T09:07:43.575Z [ERROR]: Student_1.default.findOne(...).select is not a function
+2024-12-31T09:07:45.032Z [INFO]: Server started on port 3000
+2024-12-31T09:07:45.231Z [ERROR]: Database error
+2024-12-31T09:07:45.297Z [ERROR]: [object Object]
+2024-12-31T09:07:46.808Z [INFO]: Connected to database
+2024-12-31T09:07:50.643Z [ERROR]: Internal server error.
+2024-12-31T09:09:12.378Z [INFO]: Server started on port 3000
+2024-12-31T09:09:12.686Z [ERROR]: Database error
+2024-12-31T09:09:14.260Z [INFO]: Connected to database
+2024-12-31T09:09:14.374Z [INFO]: [object Object]
+2024-12-31T09:09:14.423Z [INFO]: [object Object]
+2024-12-31T09:09:15.677Z [ERROR]: Internal server error.
+2024-12-31T09:09:19.593Z [INFO]: Server started on port 3000
+2024-12-31T09:09:19.798Z [ERROR]: Database error
+2024-12-31T09:09:19.866Z [ERROR]: [object Object]
+2024-12-31T09:09:21.325Z [INFO]: Connected to database
+2024-12-31T09:09:55.310Z [INFO]: Server started on port 3000
+2024-12-31T09:09:55.613Z [ERROR]: Database error
+2024-12-31T09:09:57.165Z [INFO]: Connected to database
+2024-12-31T09:09:57.282Z [INFO]: [object Object]
+2024-12-31T09:09:57.343Z [INFO]: [object Object]
+2024-12-31T09:09:58.862Z [INFO]: Server started on port 3000
+2024-12-31T09:09:59.039Z [ERROR]: Database error
+2024-12-31T09:09:59.103Z [ERROR]: [object Object]
+2024-12-31T09:10:00.112Z [INFO]: Connected to database
+2024-12-31T09:10:05.859Z [ERROR]: Internal server error.
+2024-12-31T09:10:17.190Z [ERROR]: Internal server error.
+2024-12-31T09:10:24.345Z [INFO]: Server started on port 3000
+2024-12-31T09:10:24.569Z [ERROR]: Database error
+2024-12-31T09:10:26.351Z [INFO]: Connected to database
+2024-12-31T09:10:26.446Z [INFO]: [object Object]
+2024-12-31T09:10:26.486Z [INFO]: [object Object]
+2024-12-31T09:10:32.491Z [INFO]: Server started on port 3000
+2024-12-31T09:10:33.218Z [ERROR]: Database error
+2024-12-31T09:10:33.356Z [ERROR]: Database error
+2024-12-31T09:10:33.516Z [ERROR]: [object Object]
+2024-12-31T09:10:34.224Z [INFO]: Connected to database
+2024-12-31T09:10:34.403Z [INFO]: [object Object]
+2024-12-31T09:10:34.469Z [INFO]: Connected to database
+2024-12-31T09:10:34.468Z [INFO]: [object Object]
+2024-12-31T09:10:42.659Z [INFO]: Server started on port 3000
+2024-12-31T09:10:42.851Z [ERROR]: Database error
+2024-12-31T09:10:42.919Z [ERROR]: [object Object]
+2024-12-31T09:10:44.100Z [INFO]: Connected to database
+2024-12-31T09:10:47.162Z [ERROR]: Internal server error.
+2024-12-31T09:11:15.998Z [ERROR]: Internal server error.
+2024-12-31T09:11:22.376Z [INFO]: Server started on port 3000
+2024-12-31T09:11:22.611Z [ERROR]: Database error
+2024-12-31T09:11:24.435Z [INFO]: Connected to database
+2024-12-31T09:11:24.568Z [INFO]: [object Object]
+2024-12-31T09:11:24.627Z [INFO]: [object Object]
+2024-12-31T09:11:30.579Z [INFO]: Server started on port 3000
+2024-12-31T09:11:31.457Z [ERROR]: Database error
+2024-12-31T09:11:31.692Z [ERROR]: [object Object]
+2024-12-31T09:11:32.398Z [INFO]: Connected to database
+2024-12-31T09:13:08.585Z [ERROR]: Internal server error.
+2024-12-31T09:13:18.617Z [INFO]: Server started on port 3000
+2024-12-31T09:13:19.205Z [ERROR]: Database error
+2024-12-31T09:13:20.439Z [INFO]: Connected to database
+2024-12-31T09:13:20.648Z [INFO]: [object Object]
+2024-12-31T09:13:20.786Z [INFO]: [object Object]
+2024-12-31T09:13:28.190Z [INFO]: Server started on port 3000
+2024-12-31T09:13:28.974Z [ERROR]: Database error
+2024-12-31T09:13:29.239Z [ERROR]: [object Object]
+2024-12-31T09:13:30.201Z [INFO]: Connected to database
+2024-12-31T09:13:35.425Z [ERROR]: Internal server error.
+2024-12-31T09:13:43.571Z [INFO]: Server started on port 3000
+2024-12-31T09:13:43.892Z [ERROR]: Database error
+2024-12-31T09:13:45.420Z [INFO]: Connected to database
+2024-12-31T09:13:45.528Z [INFO]: [object Object]
+2024-12-31T09:13:45.567Z [INFO]: [object Object]
+2024-12-31T09:13:48.279Z [INFO]: Server started on port 3000
+2024-12-31T09:13:48.483Z [ERROR]: Database error
+2024-12-31T09:13:48.556Z [ERROR]: [object Object]
+2024-12-31T09:13:49.659Z [INFO]: Connected to database
+2024-12-31T09:14:48.933Z [ERROR]: Internal server error.
+2024-12-31T09:15:02.934Z [INFO]: Server started on port 3000
+2024-12-31T09:15:03.424Z [ERROR]: Database error
+2024-12-31T09:15:08.549Z [INFO]: [object Object]
+2024-12-31T09:15:08.799Z [INFO]: [object Object]
+2024-12-31T09:15:19.799Z [INFO]: Server started on port 3000
+2024-12-31T09:15:20.991Z [ERROR]: Database error
+2024-12-31T09:15:21.406Z [ERROR]: [object Object]
+2024-12-31T09:15:22.025Z [INFO]: Connected to database
+2024-12-31T09:15:22.916Z [INFO]: Connected to database
+2024-12-31T09:18:20.973Z [INFO]: Server started on port 3000
+2024-12-31T09:18:21.861Z [ERROR]: Database error
+2024-12-31T09:18:23.340Z [INFO]: Connected to database
+2024-12-31T09:18:23.604Z [INFO]: [object Object]
+2024-12-31T09:18:23.786Z [INFO]: [object Object]
+2024-12-31T09:18:35.486Z [INFO]: Server started on port 3000
+2024-12-31T09:18:36.566Z [ERROR]: Database error
+2024-12-31T09:18:36.848Z [ERROR]: [object Object]
+2024-12-31T09:18:37.679Z [INFO]: Connected to database
+2024-12-31T09:19:09.921Z [ERROR]: Internal server error.
+2024-12-31T09:20:50.001Z [INFO]: Server started on port 3000
+2024-12-31T09:20:50.390Z [ERROR]: Database error
+2024-12-31T09:20:51.904Z [INFO]: Connected to database
+2024-12-31T09:20:52.054Z [INFO]: [object Object]
+2024-12-31T09:20:52.088Z [INFO]: [object Object]
+2024-12-31T09:20:54.386Z [INFO]: Server started on port 3000
+2024-12-31T09:20:54.594Z [ERROR]: Database error
+2024-12-31T09:20:54.663Z [ERROR]: [object Object]
+2024-12-31T09:20:55.815Z [INFO]: Connected to database
+2024-12-31T09:21:49.938Z [INFO]: Server started on port 3000
+2024-12-31T09:21:50.335Z [ERROR]: Database error
+2024-12-31T09:21:52.139Z [INFO]: Connected to database
+2024-12-31T09:21:52.253Z [INFO]: [object Object]
+2024-12-31T09:21:52.288Z [INFO]: [object Object]
+2024-12-31T09:21:54.654Z [INFO]: Server started on port 3000
+2024-12-31T09:21:54.850Z [ERROR]: Database error
+2024-12-31T09:21:54.917Z [ERROR]: [object Object]
+2024-12-31T09:21:56.105Z [INFO]: Connected to database
+2024-12-31T09:22:06.830Z [ERROR]: Internal server error.
+2024-12-31T09:23:36.099Z [ERROR]: Internal server error.
+2024-12-31T09:23:39.850Z [INFO]: Server started on port 3000
+2024-12-31T09:23:40.188Z [ERROR]: Database error
+2024-12-31T09:23:41.909Z [INFO]: Connected to database
+2024-12-31T09:23:42.029Z [INFO]: [object Object]
+2024-12-31T09:23:42.069Z [INFO]: [object Object]
+2024-12-31T09:23:44.674Z [INFO]: Server started on port 3000
+2024-12-31T09:23:44.877Z [ERROR]: Database error
+2024-12-31T09:23:44.944Z [ERROR]: [object Object]
+2024-12-31T09:23:46.105Z [INFO]: Connected to database
+2024-12-31T09:26:03.706Z [ERROR]: Internal server error.
+2024-12-31T09:26:07.116Z [INFO]: Server started on port 3000
+2024-12-31T09:26:07.446Z [ERROR]: Database error
+2024-12-31T09:26:09.160Z [INFO]: Connected to database
+2024-12-31T09:26:09.273Z [INFO]: [object Object]
+2024-12-31T09:26:09.309Z [INFO]: [object Object]
+2024-12-31T09:26:11.351Z [INFO]: Server started on port 3000
+2024-12-31T09:26:11.537Z [ERROR]: Database error
+2024-12-31T09:26:11.602Z [ERROR]: [object Object]
+2024-12-31T09:26:13.249Z [INFO]: Connected to database
+2024-12-31T09:42:48.926Z [INFO]: Server started on port 3000
+2024-12-31T09:42:51.070Z [INFO]: Connected to database
+2024-12-31T09:49:30.192Z [INFO]: Server started on port 3000
+2024-12-31T09:49:30.605Z [ERROR]: Database error
+2024-12-31T09:49:31.917Z [INFO]: Connected to database
+2024-12-31T09:49:32.028Z [INFO]: Connected to database
+2024-12-31T09:49:32.061Z [INFO]: [object Object]
+2024-12-31T09:49:32.099Z [INFO]: [object Object]
+2024-12-31T09:49:34.260Z [ERROR]: Internal server error.
+2024-12-31T09:49:37.348Z [ERROR]: Database error
+2024-12-31T09:49:37.422Z [ERROR]: [object Object]
+2024-12-31T09:49:38.635Z [INFO]: Connected to database
+2024-12-31T10:05:05.958Z [INFO]: Server started on port 3000
+2024-12-31T10:05:06.366Z [ERROR]: Database error
+2024-12-31T10:05:08.034Z [INFO]: Connected to database
+2024-12-31T10:05:08.158Z [INFO]: [object Object]
+2024-12-31T10:05:08.192Z [INFO]: [object Object]
+2024-12-31T10:05:10.622Z [INFO]: Server started on port 3000
+2024-12-31T10:05:10.824Z [ERROR]: Database error
+2024-12-31T10:05:10.890Z [ERROR]: [object Object]
+2024-12-31T10:05:12.216Z [INFO]: Connected to database
+2024-12-31T10:05:14.008Z [ERROR]: Internal server error.
+2024-12-31T10:05:26.145Z [INFO]: Server started on port 3000
+2024-12-31T10:05:26.538Z [ERROR]: Unexpected error
+2024-12-31T10:05:27.810Z [INFO]: Connected to database
+2024-12-31T10:07:14.178Z [INFO]: Server started on port 3000
+2024-12-31T10:07:14.761Z [ERROR]: Unexpected error
+2024-12-31T10:07:16.036Z [INFO]: Connected to database
+2024-12-31T10:07:19.409Z [INFO]: Server started on port 3000
+2024-12-31T10:07:19.603Z [ERROR]: Database error
+2024-12-31T10:07:21.055Z [INFO]: Connected to database
+2024-12-31T10:07:21.165Z [INFO]: [object Object]
+2024-12-31T10:07:21.197Z [INFO]: [object Object]
+2024-12-31T10:07:23.501Z [INFO]: Server started on port 3000
+2024-12-31T10:07:23.686Z [ERROR]: Database error
+2024-12-31T10:07:23.750Z [ERROR]: [object Object]
+2024-12-31T10:07:25.153Z [INFO]: Connected to database
+2024-12-31T10:07:27.592Z [ERROR]: Internal server error.
+2024-12-31T10:08:26.695Z [INFO]: Server started on port 3000
+2024-12-31T10:08:27.282Z [ERROR]: Unexpected error
+2024-12-31T10:08:28.692Z [INFO]: Connected to database
+2024-12-31T10:08:32.122Z [INFO]: Server started on port 3000
+2024-12-31T10:08:32.317Z [ERROR]: Database error
+2024-12-31T10:08:33.553Z [INFO]: Connected to database
+2024-12-31T10:08:33.663Z [INFO]: [object Object]
+2024-12-31T10:08:33.697Z [INFO]: [object Object]
+2024-12-31T10:08:36.061Z [INFO]: Server started on port 3000
+2024-12-31T10:08:36.243Z [ERROR]: Database error
+2024-12-31T10:08:36.307Z [ERROR]: [object Object]
+2024-12-31T10:08:37.855Z [INFO]: Connected to database
+2024-12-31T10:08:40.320Z [ERROR]: Internal server error.
+2024-12-31T10:10:09.018Z [INFO]: Server started on port 3000
+2024-12-31T10:10:09.720Z [ERROR]: Unexpected error
+2024-12-31T10:10:10.009Z [ERROR]: Unexpected error
+2024-12-31T10:10:11.041Z [INFO]: Connected to database
+2024-12-31T10:10:15.027Z [INFO]: Server started on port 3000
+2024-12-31T10:10:15.242Z [ERROR]: Database error
+2024-12-31T10:10:16.278Z [INFO]: Connected to database
+2024-12-31T10:10:16.382Z [INFO]: [object Object]
+2024-12-31T10:10:16.415Z [INFO]: [object Object]
+2024-12-31T10:10:19.040Z [INFO]: Server started on port 3000
+2024-12-31T10:10:19.237Z [ERROR]: Database error
+2024-12-31T10:10:19.298Z [ERROR]: [object Object]
+2024-12-31T10:10:20.595Z [INFO]: Connected to database
+2024-12-31T10:10:23.665Z [ERROR]: Internal server error.
+2024-12-31T10:11:18.052Z [INFO]: Server started on port 3000
+2024-12-31T10:11:18.590Z [ERROR]: Unexpected error
+2024-12-31T10:11:18.768Z [ERROR]: Unexpected error
+2024-12-31T10:11:19.937Z [INFO]: Connected to database
+2024-12-31T10:11:23.332Z [INFO]: Server started on port 3000
+2024-12-31T10:11:23.527Z [ERROR]: Database error
+2024-12-31T10:11:24.705Z [INFO]: Connected to database
+2024-12-31T10:11:24.815Z [INFO]: [object Object]
+2024-12-31T10:11:24.850Z [INFO]: [object Object]
+2024-12-31T10:11:27.132Z [INFO]: Server started on port 3000
+2024-12-31T10:11:27.321Z [ERROR]: Database error
+2024-12-31T10:11:27.384Z [ERROR]: [object Object]
+2024-12-31T10:11:28.796Z [INFO]: Connected to database
+2024-12-31T10:11:31.511Z [ERROR]: Internal server error.
+2024-12-31T10:13:41.878Z [INFO]: Server started on port 3000
+2024-12-31T10:13:42.413Z [ERROR]: Unexpected error
+2024-12-31T10:13:42.602Z [ERROR]: Unexpected error
+2024-12-31T10:13:44.140Z [INFO]: Connected to database
+2024-12-31T10:13:47.866Z [INFO]: Server started on port 3000
+2024-12-31T10:13:48.080Z [ERROR]: Database error
+2024-12-31T10:13:49.573Z [INFO]: Connected to database
+2024-12-31T10:13:49.682Z [INFO]: [object Object]
+2024-12-31T10:13:49.714Z [INFO]: [object Object]
+2024-12-31T10:13:52.018Z [INFO]: Server started on port 3000
+2024-12-31T10:13:52.210Z [ERROR]: Database error
+2024-12-31T10:13:52.269Z [ERROR]: [object Object]
+2024-12-31T10:13:53.357Z [INFO]: Connected to database
+2024-12-31T10:13:55.845Z [ERROR]: Internal server error.
+2024-12-31T10:15:53.880Z [INFO]: Server started on port 3000
+2024-12-31T10:15:54.400Z [ERROR]: Unexpected error
+2024-12-31T10:15:59.585Z [ERROR]: Unexpected error
+2024-12-31T10:16:01.666Z [INFO]: Connected to database
+2024-12-31T10:16:04.855Z [INFO]: Server started on port 3000
+2024-12-31T10:16:05.032Z [ERROR]: Database error
+2024-12-31T10:16:06.477Z [INFO]: Connected to database
+2024-12-31T10:16:06.575Z [INFO]: [object Object]
+2024-12-31T10:16:06.609Z [INFO]: [object Object]
+2024-12-31T10:16:09.014Z [INFO]: Server started on port 3000
+2024-12-31T10:16:09.199Z [ERROR]: Database error
+2024-12-31T10:16:09.258Z [ERROR]: [object Object]
+2024-12-31T10:16:10.516Z [INFO]: Connected to database
+2024-12-31T10:16:12.443Z [ERROR]: Internal server error.
+2024-12-31T10:21:38.094Z [INFO]: Server started on port 3000
+2024-12-31T10:21:40.316Z [INFO]: Connected to database
+2024-12-31T10:21:56.047Z [INFO]: Closing Redis client...
+2024-12-31T10:24:55.096Z [INFO]: Server started on port 3000
+2024-12-31T10:24:55.624Z [ERROR]: Unexpected error
+2024-12-31T10:24:55.787Z [ERROR]: Unexpected error
+2024-12-31T10:24:56.923Z [INFO]: Connected to database
+2024-12-31T10:25:03.989Z [INFO]: Server started on port 3000
+2024-12-31T10:25:04.160Z [ERROR]: Database error
+2024-12-31T10:25:05.300Z [INFO]: Connected to database
+2024-12-31T10:25:05.406Z [INFO]: [object Object]
+2024-12-31T10:25:05.441Z [INFO]: [object Object]
+2024-12-31T10:25:11.166Z [INFO]: Server started on port 3000
+2024-12-31T10:25:11.366Z [ERROR]: Database error
+2024-12-31T10:25:11.427Z [ERROR]: [object Object]
+2024-12-31T10:25:12.692Z [INFO]: Connected to database
+2024-12-31T10:25:18.780Z [ERROR]: Internal server error.
+2024-12-31T10:27:31.544Z [INFO]: Server started on port 3000
+2024-12-31T10:27:32.076Z [ERROR]: Unexpected error
+2024-12-31T10:27:32.235Z [ERROR]: Unexpected error
+2024-12-31T10:27:33.396Z [INFO]: Connected to database
+2024-12-31T10:27:37.183Z [INFO]: Server started on port 3000
+2024-12-31T10:27:37.367Z [ERROR]: Database error
+2024-12-31T10:27:38.515Z [INFO]: Connected to database
+2024-12-31T10:27:38.661Z [INFO]: [object Object]
+2024-12-31T10:27:38.702Z [INFO]: [object Object]
+2024-12-31T10:27:41.427Z [INFO]: Server started on port 3000
+2024-12-31T10:27:41.621Z [ERROR]: Database error
+2024-12-31T10:27:41.687Z [ERROR]: [object Object]
+2024-12-31T10:27:44.757Z [INFO]: Connected to database
+2024-12-31T10:27:47.578Z [ERROR]: Internal server error.
+2024-12-31T10:29:22.531Z [INFO]: Server started on port 3000
+2024-12-31T10:29:23.058Z [ERROR]: Unexpected error
+2024-12-31T10:29:23.216Z [ERROR]: Unexpected error
+2024-12-31T10:29:24.428Z [INFO]: Connected to database
+2024-12-31T10:29:27.376Z [INFO]: Server started on port 3000
+2024-12-31T10:29:27.563Z [ERROR]: Database error
+2024-12-31T10:29:27.627Z [ERROR]: [object Object]
+2024-12-31T10:29:29.104Z [INFO]: Connected to database
+2024-12-31T10:29:32.150Z [INFO]: Server started on port 3000
+2024-12-31T10:29:32.340Z [ERROR]: Database error
+2024-12-31T10:29:33.610Z [INFO]: Connected to database
+2024-12-31T10:29:33.707Z [INFO]: [object Object]
+2024-12-31T10:29:33.745Z [INFO]: [object Object]
+2024-12-31T10:29:36.320Z [ERROR]: Internal server error.
+2024-12-31T10:31:35.707Z [INFO]: Server started on port 3000
+2024-12-31T10:31:36.245Z [ERROR]: Unexpected error
+2024-12-31T10:31:36.407Z [ERROR]: Unexpected error
+2024-12-31T10:31:37.658Z [INFO]: Connected to database
+2024-12-31T10:31:41.007Z [INFO]: Server started on port 3000
+2024-12-31T10:31:41.199Z [ERROR]: Database error
+2024-12-31T10:31:42.746Z [INFO]: Connected to database
+2024-12-31T10:31:42.852Z [INFO]: [object Object]
+2024-12-31T10:31:42.883Z [INFO]: [object Object]
+2024-12-31T10:31:45.237Z [INFO]: Server started on port 3000
+2024-12-31T10:31:45.429Z [ERROR]: Database error
+2024-12-31T10:31:45.489Z [ERROR]: [object Object]
+2024-12-31T10:31:47.054Z [INFO]: Connected to database
+2024-12-31T10:31:49.494Z [ERROR]: Internal server error.
+2024-12-31T10:34:35.129Z [INFO]: Server started on port 3000
+2024-12-31T10:34:35.671Z [ERROR]: Unexpected error
+2024-12-31T10:34:35.832Z [ERROR]: Unexpected error
+2024-12-31T10:34:37.130Z [INFO]: Connected to database
+2024-12-31T10:34:40.422Z [INFO]: Server started on port 3000
+2024-12-31T10:34:40.619Z [ERROR]: Database error
+2024-12-31T10:34:41.943Z [INFO]: Connected to database
+2024-12-31T10:34:42.046Z [INFO]: [object Object]
+2024-12-31T10:34:42.077Z [INFO]: [object Object]
+2024-12-31T10:34:44.353Z [INFO]: Server started on port 3000
+2024-12-31T10:34:44.547Z [ERROR]: Database error
+2024-12-31T10:34:44.610Z [ERROR]: [object Object]
+2024-12-31T10:34:45.834Z [INFO]: Connected to database
+2024-12-31T10:34:48.274Z [ERROR]: Internal server error.
+2024-12-31T10:38:31.581Z [INFO]: Server started on port 3000
+2024-12-31T10:38:32.111Z [ERROR]: Unexpected error
+2024-12-31T10:38:32.299Z [ERROR]: Unexpected error
+2024-12-31T10:38:33.494Z [INFO]: Connected to database
+2024-12-31T10:38:37.050Z [INFO]: Server started on port 3000
+2024-12-31T10:38:37.238Z [ERROR]: Database error
+2024-12-31T10:38:38.700Z [INFO]: Connected to database
+2024-12-31T10:38:38.810Z [INFO]: [object Object]
+2024-12-31T10:38:38.842Z [INFO]: [object Object]
+2024-12-31T10:38:41.166Z [INFO]: Server started on port 3000
+2024-12-31T10:38:41.350Z [ERROR]: Database error
+2024-12-31T10:38:41.411Z [ERROR]: [object Object]
+2024-12-31T10:38:42.655Z [INFO]: Connected to database
+2024-12-31T10:38:45.248Z [ERROR]: Internal server error.
+2024-12-31T10:47:57.661Z [INFO]: Server started on port 3000
+2024-12-31T10:47:58.177Z [ERROR]: Unexpected error
+2024-12-31T10:47:58.398Z [ERROR]: Unexpected error
+2024-12-31T10:47:59.653Z [INFO]: Connected to database
+2024-12-31T10:48:03.068Z [INFO]: Server started on port 3000
+2024-12-31T10:48:03.259Z [ERROR]: Database error
+2024-12-31T10:48:04.521Z [INFO]: Connected to database
+2024-12-31T10:48:04.622Z [INFO]: [object Object]
+2024-12-31T10:48:04.653Z [INFO]: [object Object]
+2024-12-31T10:48:06.964Z [INFO]: Server started on port 3000
+2024-12-31T10:48:07.138Z [ERROR]: Database error
+2024-12-31T10:48:07.197Z [ERROR]: [object Object]
+2024-12-31T10:48:08.511Z [INFO]: Connected to database
+2024-12-31T10:48:11.000Z [ERROR]: Internal server error.
+2024-12-31T10:50:49.659Z [INFO]: Server started on port 3000
+2024-12-31T10:50:50.188Z [ERROR]: Unexpected error
+2024-12-31T10:50:50.350Z [ERROR]: Unexpected error
+2024-12-31T10:50:51.888Z [INFO]: Connected to database
+2024-12-31T10:50:55.251Z [INFO]: Server started on port 3000
+2024-12-31T10:50:55.438Z [ERROR]: Database error
+2024-12-31T10:50:56.809Z [INFO]: Connected to database
+2024-12-31T10:50:56.912Z [INFO]: [object Object]
+2024-12-31T10:50:56.943Z [INFO]: [object Object]
+2024-12-31T10:50:59.249Z [INFO]: Server started on port 3000
+2024-12-31T10:50:59.451Z [ERROR]: Database error
+2024-12-31T10:50:59.510Z [ERROR]: [object Object]
+2024-12-31T10:51:01.203Z [INFO]: Connected to database
+2024-12-31T10:51:03.609Z [ERROR]: Internal server error.
+2024-12-31T10:53:43.682Z [INFO]: Server started on port 3000
+2024-12-31T10:53:44.206Z [ERROR]: Unexpected error
+2024-12-31T10:53:44.368Z [ERROR]: Unexpected error
+2024-12-31T10:53:45.871Z [INFO]: Connected to database
+2024-12-31T10:53:49.316Z [INFO]: Server started on port 3000
+2024-12-31T10:53:49.560Z [ERROR]: Database error
+2024-12-31T10:53:51.041Z [INFO]: Connected to database
+2024-12-31T10:53:51.151Z [INFO]: [object Object]
+2024-12-31T10:53:51.186Z [INFO]: [object Object]
+2024-12-31T10:53:53.537Z [INFO]: Server started on port 3000
+2024-12-31T10:53:53.724Z [ERROR]: Database error
+2024-12-31T10:53:53.783Z [ERROR]: [object Object]
+2024-12-31T10:53:54.913Z [INFO]: Connected to database
+2024-12-31T10:53:57.788Z [ERROR]: Internal server error.
+2024-12-31T10:58:13.825Z [INFO]: Server started on port 3000
+2024-12-31T10:58:14.353Z [ERROR]: Unexpected error
+2024-12-31T10:58:14.518Z [ERROR]: Unexpected error
+2024-12-31T10:58:15.911Z [INFO]: Connected to database
+2024-12-31T10:58:19.384Z [INFO]: Server started on port 3000
+2024-12-31T10:58:19.584Z [ERROR]: Database error
+2024-12-31T10:58:21.120Z [INFO]: Connected to database
+2024-12-31T10:58:21.252Z [INFO]: [object Object]
+2024-12-31T10:58:21.288Z [INFO]: [object Object]
+2024-12-31T10:58:23.728Z [INFO]: Server started on port 3000
+2024-12-31T10:58:23.918Z [ERROR]: Database error
+2024-12-31T10:58:23.987Z [ERROR]: [object Object]
+2024-12-31T10:58:25.423Z [INFO]: Connected to database
+2024-12-31T10:58:28.068Z [ERROR]: Internal server error.
+2024-12-31T10:59:20.990Z [INFO]: Server started on port 3000
+2024-12-31T10:59:21.708Z [ERROR]: Unexpected error
+2024-12-31T10:59:21.996Z [ERROR]: Unexpected error
+2024-12-31T10:59:22.973Z [INFO]: Connected to database
+2024-12-31T10:59:26.646Z [INFO]: Server started on port 3000
+2024-12-31T10:59:26.869Z [ERROR]: Database error
+2024-12-31T10:59:27.992Z [INFO]: Connected to database
+2024-12-31T10:59:28.160Z [INFO]: [object Object]
+2024-12-31T10:59:28.218Z [INFO]: [object Object]
+2024-12-31T10:59:32.171Z [INFO]: Server started on port 3000
+2024-12-31T10:59:32.441Z [ERROR]: Database error
+2024-12-31T10:59:32.541Z [ERROR]: [object Object]
+2024-12-31T10:59:34.128Z [INFO]: Connected to database
+2024-12-31T10:59:38.820Z [ERROR]: Internal server error.
+2024-12-31T10:59:58.782Z [INFO]: Server started on port 3000
+2024-12-31T10:59:59.335Z [ERROR]: Unexpected error
+2024-12-31T10:59:59.581Z [ERROR]: Unexpected error
+2024-12-31T11:00:00.291Z [INFO]: Connected to database
+2024-12-31T11:00:07.094Z [INFO]: Server started on port 3000
+2024-12-31T11:00:07.350Z [ERROR]: Database error
+2024-12-31T11:00:08.748Z [INFO]: Connected to database
+2024-12-31T11:00:08.840Z [INFO]: [object Object]
+2024-12-31T11:00:08.875Z [INFO]: [object Object]
+2024-12-31T11:00:13.001Z [INFO]: Server started on port 3000
+2024-12-31T11:00:13.152Z [ERROR]: Database error
+2024-12-31T11:00:13.211Z [ERROR]: [object Object]
+2024-12-31T11:00:14.683Z [INFO]: Connected to database
+2024-12-31T11:00:18.900Z [ERROR]: Internal server error.
+2024-12-31T11:03:19.521Z [INFO]: Server started on port 3000
+2024-12-31T11:03:19.830Z [ERROR]: Unexpected error
+2024-12-31T11:03:19.986Z [ERROR]: Unexpected error
+2024-12-31T11:03:21.146Z [INFO]: Connected to database
+2024-12-31T11:03:22.383Z [ERROR]: Internal server error.
+2024-12-31T11:03:24.368Z [INFO]: Server started on port 3000
+2024-12-31T11:03:24.524Z [ERROR]: Database error
+2024-12-31T11:03:25.871Z [INFO]: Connected to database
+2024-12-31T11:03:25.972Z [INFO]: [object Object]
+2024-12-31T11:03:26.016Z [INFO]: [object Object]
+2024-12-31T11:03:27.829Z [INFO]: Server started on port 3000
+2024-12-31T11:03:27.987Z [ERROR]: Database error
+2024-12-31T11:03:28.047Z [ERROR]: [object Object]
+2024-12-31T11:03:29.353Z [INFO]: Connected to database
+2024-12-31T11:05:04.563Z [INFO]: Server started on port 3000
+2024-12-31T11:05:04.892Z [ERROR]: Unexpected error
+2024-12-31T11:05:05.109Z [ERROR]: Unexpected error
+2024-12-31T11:05:06.351Z [INFO]: Connected to database
+2024-12-31T11:05:08.732Z [INFO]: Server started on port 3000
+2024-12-31T11:05:08.892Z [ERROR]: Database error
+2024-12-31T11:05:10.217Z [INFO]: Connected to database
+2024-12-31T11:05:10.315Z [INFO]: [object Object]
+2024-12-31T11:05:10.365Z [INFO]: [object Object]
+2024-12-31T11:05:12.331Z [INFO]: Server started on port 3000
+2024-12-31T11:05:12.514Z [ERROR]: Database error
+2024-12-31T11:05:12.574Z [ERROR]: [object Object]
+2024-12-31T11:05:13.996Z [INFO]: Connected to database
+2024-12-31T11:05:15.127Z [ERROR]: Internal server error.
+2024-12-31T11:06:24.247Z [INFO]: Server started on port 3000
+2024-12-31T11:06:24.606Z [ERROR]: Unexpected error
+2024-12-31T11:06:24.799Z [ERROR]: Unexpected error
+2024-12-31T11:06:26.224Z [INFO]: Connected to database
+2024-12-31T11:06:28.603Z [INFO]: Server started on port 3000
+2024-12-31T11:06:28.795Z [ERROR]: Database error
+2024-12-31T11:06:30.017Z [INFO]: Connected to database
+2024-12-31T11:06:30.127Z [INFO]: [object Object]
+2024-12-31T11:06:30.171Z [INFO]: [object Object]
+2024-12-31T11:06:32.171Z [INFO]: Server started on port 3000
+2024-12-31T11:06:32.323Z [ERROR]: Database error
+2024-12-31T11:06:32.384Z [ERROR]: [object Object]
+2024-12-31T11:06:33.774Z [INFO]: Connected to database
+2024-12-31T11:06:35.601Z [ERROR]: Internal server error.
+2024-12-31T11:07:16.916Z [INFO]: Server started on port 3000
+2024-12-31T11:07:17.135Z [ERROR]: Database error
+2024-12-31T11:07:18.821Z [INFO]: Connected to database
+2024-12-31T11:07:18.941Z [INFO]: [object Object]
+2024-12-31T11:07:18.987Z [INFO]: [object Object]
+2024-12-31T11:07:21.279Z [INFO]: Server started on port 3000
+2024-12-31T11:07:21.445Z [ERROR]: Database error
+2024-12-31T11:07:21.521Z [ERROR]: [object Object]
+2024-12-31T11:07:22.931Z [INFO]: Connected to database
+2024-12-31T11:07:24.984Z [ERROR]: Internal server error.
+2024-12-31T11:07:32.405Z [ERROR]: Internal server error.
+2024-12-31T11:07:35.459Z [INFO]: Server started on port 3000
+2024-12-31T11:07:35.644Z [ERROR]: Database error
+2024-12-31T11:07:37.468Z [INFO]: Connected to database
+2024-12-31T11:07:37.562Z [INFO]: [object Object]
+2024-12-31T11:07:37.608Z [INFO]: [object Object]
+2024-12-31T11:07:39.886Z [INFO]: Server started on port 3000
+2024-12-31T11:07:40.046Z [ERROR]: Database error
+2024-12-31T11:07:40.107Z [ERROR]: [object Object]
+2024-12-31T11:07:41.567Z [INFO]: Connected to database
+2024-12-31T11:07:46.644Z [INFO]: Server started on port 3000
+2024-12-31T11:07:46.918Z [ERROR]: Unexpected error
+2024-12-31T11:07:47.054Z [ERROR]: Unexpected error
+2024-12-31T11:07:48.324Z [INFO]: Connected to database
+2024-12-31T11:09:00.386Z [INFO]: Server started on port 3000
+2024-12-31T11:09:00.721Z [ERROR]: Unexpected error
+2024-12-31T11:09:00.869Z [ERROR]: Unexpected error
+2024-12-31T11:09:01.936Z [INFO]: Connected to database
+2024-12-31T11:09:04.100Z [ERROR]: Internal server error.
+2024-12-31T11:09:06.524Z [INFO]: Server started on port 3000
+2024-12-31T11:09:06.760Z [ERROR]: Database error
+2024-12-31T11:09:07.997Z [INFO]: Connected to database
+2024-12-31T11:09:08.097Z [INFO]: [object Object]
+2024-12-31T11:09:08.131Z [INFO]: [object Object]
+2024-12-31T11:09:09.432Z [INFO]: Server started on port 3000
+2024-12-31T11:09:09.586Z [ERROR]: Database error
+2024-12-31T11:09:09.648Z [ERROR]: [object Object]
+2024-12-31T11:09:10.966Z [INFO]: Connected to database
+2024-12-31T11:10:11.519Z [INFO]: Server started on port 3000
+2024-12-31T11:10:11.805Z [ERROR]: Unexpected error
+2024-12-31T11:10:11.965Z [ERROR]: Unexpected error
+2024-12-31T11:10:13.296Z [INFO]: Connected to database
+2024-12-31T11:10:16.219Z [INFO]: Server started on port 3000
+2024-12-31T11:10:16.371Z [ERROR]: Database error
+2024-12-31T11:10:17.842Z [INFO]: Connected to database
+2024-12-31T11:10:17.949Z [INFO]: [object Object]
+2024-12-31T11:10:17.993Z [INFO]: [object Object]
+2024-12-31T11:10:19.380Z [INFO]: Server started on port 3000
+2024-12-31T11:10:19.557Z [ERROR]: Database error
+2024-12-31T11:10:19.620Z [ERROR]: [object Object]
+2024-12-31T11:10:20.807Z [INFO]: Connected to database
+2024-12-31T11:10:23.117Z [ERROR]: Internal server error.
+2024-12-31T11:11:45.797Z [INFO]: Server started on port 3000
+2024-12-31T11:11:46.326Z [ERROR]: Unexpected error
+2024-12-31T11:11:46.474Z [ERROR]: Unexpected error
+2024-12-31T11:11:47.846Z [INFO]: Connected to database
+2024-12-31T11:11:51.093Z [INFO]: Server started on port 3000
+2024-12-31T11:11:51.285Z [ERROR]: Database error
+2024-12-31T11:11:52.876Z [INFO]: Connected to database
+2024-12-31T11:11:52.982Z [INFO]: [object Object]
+2024-12-31T11:11:53.017Z [INFO]: [object Object]
+2024-12-31T11:11:55.299Z [INFO]: Server started on port 3000
+2024-12-31T11:11:55.484Z [ERROR]: Database error
+2024-12-31T11:11:55.544Z [ERROR]: [object Object]
+2024-12-31T11:11:56.857Z [INFO]: Connected to database
+2024-12-31T11:11:59.291Z [ERROR]: Internal server error.
+2024-12-31T11:19:38.076Z [INFO]: Server started on port 3000
+2024-12-31T11:19:38.393Z [ERROR]: Unexpected error
+2024-12-31T11:19:38.541Z [ERROR]: Unexpected error
+2024-12-31T11:19:40.512Z [INFO]: Connected to database
+2024-12-31T11:19:43.830Z [INFO]: Server started on port 3000
+2024-12-31T11:19:43.984Z [ERROR]: Database error
+2024-12-31T11:19:45.477Z [INFO]: Connected to database
+2024-12-31T11:19:45.593Z [INFO]: [object Object]
+2024-12-31T11:19:45.639Z [INFO]: [object Object]
+2024-12-31T11:19:47.093Z [INFO]: Server started on port 3000
+2024-12-31T11:19:47.276Z [ERROR]: Database error
+2024-12-31T11:19:47.344Z [ERROR]: [object Object]
+2024-12-31T11:19:48.692Z [INFO]: Connected to database
+2024-12-31T11:19:51.293Z [ERROR]: Internal server error.
+2024-12-31T11:21:38.530Z [INFO]: Server started on port 3000
+2024-12-31T11:21:38.863Z [ERROR]: Unexpected error
+2024-12-31T11:21:39.015Z [ERROR]: Unexpected error
+2024-12-31T11:21:40.540Z [INFO]: Connected to database
+2024-12-31T11:21:43.876Z [INFO]: Server started on port 3000
+2024-12-31T11:21:44.040Z [ERROR]: Database error
+2024-12-31T11:21:45.527Z [INFO]: Connected to database
+2024-12-31T11:21:45.640Z [INFO]: [object Object]
+2024-12-31T11:21:45.687Z [INFO]: [object Object]
+2024-12-31T11:21:47.092Z [INFO]: Server started on port 3000
+2024-12-31T11:21:47.262Z [ERROR]: Database error
+2024-12-31T11:21:47.326Z [ERROR]: [object Object]
+2024-12-31T11:21:48.803Z [INFO]: Connected to database
+2024-12-31T11:21:51.474Z [ERROR]: Internal server error.
+2024-12-31T11:22:15.343Z [INFO]: Server started on port 3000
+2024-12-31T11:22:15.635Z [ERROR]: Unexpected error
+2024-12-31T11:22:15.776Z [ERROR]: Unexpected error
+2024-12-31T11:22:16.928Z [INFO]: Connected to database
+2024-12-31T11:22:20.117Z [INFO]: Server started on port 3000
+2024-12-31T11:22:20.273Z [ERROR]: Database error
+2024-12-31T11:22:21.468Z [INFO]: Connected to database
+2024-12-31T11:22:21.568Z [INFO]: [object Object]
+2024-12-31T11:22:21.613Z [INFO]: [object Object]
+2024-12-31T11:22:24.238Z [INFO]: Server started on port 3000
+2024-12-31T11:22:24.453Z [ERROR]: Database error
+2024-12-31T11:22:24.523Z [ERROR]: [object Object]
+2024-12-31T11:22:25.757Z [INFO]: Connected to database
+2024-12-31T11:22:26.888Z [ERROR]: Internal server error.
+2024-12-31T11:26:49.217Z [INFO]: Server started on port 3000
+2024-12-31T11:26:49.739Z [ERROR]: Unexpected error
+2024-12-31T11:26:49.883Z [ERROR]: Unexpected error
+2024-12-31T11:26:51.587Z [INFO]: Connected to database
+2024-12-31T11:26:54.140Z [ERROR]: Internal server error.
+2024-12-31T11:26:57.183Z [INFO]: Server started on port 3000
+2024-12-31T11:26:57.369Z [ERROR]: Database error
+2024-12-31T11:26:58.564Z [INFO]: Connected to database
+2024-12-31T11:26:58.712Z [INFO]: [object Object]
+2024-12-31T11:26:58.744Z [INFO]: [object Object]
+2024-12-31T11:27:01.631Z [INFO]: Server started on port 3000
+2024-12-31T11:27:01.827Z [ERROR]: Database error
+2024-12-31T11:27:01.887Z [ERROR]: [object Object]
+2024-12-31T11:27:03.067Z [INFO]: Connected to database
+2024-12-31T11:29:09.786Z [INFO]: Server started on port 3000
+2024-12-31T11:29:10.072Z [ERROR]: Unexpected error
+2024-12-31T11:29:10.208Z [ERROR]: Unexpected error
+2024-12-31T11:29:11.780Z [INFO]: Connected to database
+2024-12-31T11:29:14.693Z [INFO]: Server started on port 3000
+2024-12-31T11:29:14.916Z [ERROR]: Database error
+2024-12-31T11:29:16.289Z [INFO]: Connected to database
+2024-12-31T11:29:16.384Z [INFO]: [object Object]
+2024-12-31T11:29:16.420Z [INFO]: [object Object]
+2024-12-31T11:29:17.575Z [INFO]: Server started on port 3000
+2024-12-31T11:29:17.731Z [ERROR]: Database error
+2024-12-31T11:29:17.786Z [ERROR]: [object Object]
+2024-12-31T11:29:18.900Z [INFO]: Connected to database
+2024-12-31T11:29:21.344Z [ERROR]: Internal server error.
+2024-12-31T11:31:09.627Z [INFO]: Server started on port 3000
+2024-12-31T11:31:10.010Z [ERROR]: Unexpected error
+2024-12-31T11:31:10.181Z [ERROR]: Unexpected error
+2024-12-31T11:31:11.487Z [INFO]: Connected to database
+2024-12-31T11:31:15.402Z [INFO]: Server started on port 3000
+2024-12-31T11:31:15.606Z [ERROR]: Database error
+2024-12-31T11:31:17.169Z [INFO]: Connected to database
+2024-12-31T11:31:17.282Z [INFO]: [object Object]
+2024-12-31T11:31:17.329Z [INFO]: [object Object]
+2024-12-31T11:31:18.678Z [INFO]: Server started on port 3000
+2024-12-31T11:31:18.851Z [ERROR]: Database error
+2024-12-31T11:31:18.914Z [ERROR]: [object Object]
+2024-12-31T11:31:20.212Z [INFO]: Connected to database
+2024-12-31T11:31:23.205Z [ERROR]: Internal server error.
+2024-12-31T11:32:47.616Z [INFO]: Server started on port 3000
+2024-12-31T11:32:47.898Z [ERROR]: Unexpected error
+2024-12-31T11:32:48.062Z [ERROR]: Unexpected error
+2024-12-31T11:32:49.689Z [INFO]: Connected to database
+2024-12-31T11:32:53.333Z [INFO]: Server started on port 3000
+2024-12-31T11:32:53.534Z [ERROR]: Database error
+2024-12-31T11:32:54.909Z [INFO]: Connected to database
+2024-12-31T11:32:55.022Z [INFO]: [object Object]
+2024-12-31T11:32:55.065Z [INFO]: [object Object]
+2024-12-31T11:32:56.139Z [ERROR]: Internal server error.
+2024-12-31T11:32:59.481Z [INFO]: Server started on port 3000
+2024-12-31T11:32:59.652Z [ERROR]: Database error
+2024-12-31T11:32:59.711Z [ERROR]: [object Object]
+2024-12-31T11:33:01.257Z [INFO]: Connected to database
+2024-12-31T11:33:15.674Z [INFO]: Server started on port 3000
+2024-12-31T11:33:16.228Z [ERROR]: Unexpected error
+2024-12-31T11:33:16.404Z [ERROR]: Unexpected error
+2024-12-31T11:33:17.566Z [INFO]: Connected to database
+2024-12-31T11:33:21.063Z [INFO]: Server started on port 3000
+2024-12-31T11:33:21.273Z [ERROR]: Database error
+2024-12-31T11:33:22.864Z [INFO]: Connected to database
+2024-12-31T11:33:22.970Z [INFO]: [object Object]
+2024-12-31T11:33:23.002Z [INFO]: [object Object]
+2024-12-31T11:33:25.230Z [ERROR]: Internal server error.
+2024-12-31T11:33:28.155Z [INFO]: Server started on port 3000
+2024-12-31T11:33:28.342Z [ERROR]: Database error
+2024-12-31T11:33:28.401Z [ERROR]: [object Object]
+2024-12-31T11:33:29.931Z [INFO]: Connected to database
+2024-12-31T11:33:51.550Z [INFO]: Server started on port 3000
+2024-12-31T11:33:51.847Z [ERROR]: Unexpected error
+2024-12-31T11:33:52.021Z [ERROR]: Unexpected error
+2024-12-31T11:33:53.008Z [INFO]: Connected to database
+2024-12-31T11:33:54.341Z [ERROR]: Internal server error.
+2024-12-31T11:33:58.362Z [INFO]: Server started on port 3000
+2024-12-31T11:33:58.548Z [ERROR]: Database error
+2024-12-31T11:33:59.831Z [INFO]: Connected to database
+2024-12-31T11:33:59.916Z [INFO]: [object Object]
+2024-12-31T11:33:59.966Z [INFO]: [object Object]
+2024-12-31T11:34:03.663Z [INFO]: Server started on port 3000
+2024-12-31T11:34:03.889Z [ERROR]: Database error
+2024-12-31T11:34:03.979Z [ERROR]: [object Object]
+2024-12-31T11:34:05.362Z [INFO]: Connected to database
+2024-12-31T11:36:19.837Z [INFO]: Server started on port 3000
+2024-12-31T11:36:20.155Z [ERROR]: Unexpected error
+2024-12-31T11:36:20.313Z [ERROR]: Unexpected error
+2024-12-31T11:36:21.759Z [INFO]: Connected to database
+2024-12-31T11:36:22.915Z [ERROR]: Internal server error.
+2024-12-31T11:36:27.170Z [INFO]: Server started on port 3000
+2024-12-31T11:36:27.378Z [ERROR]: Database error
+2024-12-31T11:36:28.722Z [INFO]: Connected to database
+2024-12-31T11:36:28.842Z [INFO]: [object Object]
+2024-12-31T11:36:28.897Z [INFO]: [object Object]
+2024-12-31T11:36:32.811Z [INFO]: Server started on port 3000
+2024-12-31T11:36:32.994Z [ERROR]: Database error
+2024-12-31T11:36:33.065Z [ERROR]: [object Object]
+2024-12-31T11:36:34.227Z [INFO]: Connected to database
+2024-12-31T11:37:15.547Z [INFO]: Server started on port 3000
+2024-12-31T11:37:15.838Z [ERROR]: Unexpected error
+2024-12-31T11:37:16.015Z [ERROR]: Unexpected error
+2024-12-31T11:37:17.262Z [INFO]: Connected to database
+2024-12-31T11:37:21.111Z [INFO]: Server started on port 3000
+2024-12-31T11:37:21.349Z [ERROR]: Database error
+2024-12-31T11:37:23.197Z [INFO]: Connected to database
+2024-12-31T11:37:23.303Z [INFO]: [object Object]
+2024-12-31T11:37:23.344Z [INFO]: [object Object]
+2024-12-31T11:37:24.894Z [INFO]: Server started on port 3000
+2024-12-31T11:37:25.079Z [ERROR]: Database error
+2024-12-31T11:37:25.152Z [ERROR]: [object Object]
+2024-12-31T11:37:26.478Z [INFO]: Connected to database
+2024-12-31T11:37:30.000Z [ERROR]: Internal server error.
+2024-12-31T11:38:16.076Z [INFO]: Server started on port 3000
+2024-12-31T11:38:16.683Z [ERROR]: Unexpected error
+2024-12-31T11:38:17.014Z [ERROR]: Unexpected error
+2024-12-31T11:38:17.989Z [INFO]: Connected to database
+2024-12-31T11:38:21.968Z [INFO]: Server started on port 3000
+2024-12-31T11:38:22.166Z [ERROR]: Database error
+2024-12-31T11:38:24.008Z [INFO]: Connected to database
+2024-12-31T11:38:24.111Z [INFO]: [object Object]
+2024-12-31T11:38:24.149Z [INFO]: [object Object]
+2024-12-31T11:38:26.217Z [ERROR]: Internal server error.
+2024-12-31T11:38:29.099Z [INFO]: Server started on port 3000
+2024-12-31T11:38:29.285Z [ERROR]: Database error
+2024-12-31T11:38:29.349Z [ERROR]: [object Object]
+2024-12-31T11:38:30.585Z [INFO]: Connected to database
+2024-12-31T11:38:58.593Z [INFO]: Server started on port 3000
+2024-12-31T11:38:58.947Z [ERROR]: Unexpected error
+2024-12-31T11:38:59.130Z [ERROR]: Unexpected error
+2024-12-31T11:39:00.070Z [INFO]: Connected to database
+2024-12-31T11:39:01.403Z [ERROR]: Internal server error.
+2024-12-31T11:39:05.544Z [INFO]: Server started on port 3000
+2024-12-31T11:39:05.723Z [ERROR]: Database error
+2024-12-31T11:39:07.241Z [INFO]: Connected to database
+2024-12-31T11:39:07.334Z [INFO]: [object Object]
+2024-12-31T11:39:07.384Z [INFO]: [object Object]
+2024-12-31T11:39:11.036Z [INFO]: Server started on port 3000
+2024-12-31T11:39:11.239Z [ERROR]: Database error
+2024-12-31T11:39:11.321Z [ERROR]: [object Object]
+2024-12-31T11:39:12.765Z [INFO]: Connected to database
+2024-12-31T11:41:34.312Z [INFO]: Server started on port 3000
+2024-12-31T11:41:34.848Z [ERROR]: Unexpected error
+2024-12-31T11:41:35.001Z [ERROR]: Unexpected error
+2024-12-31T11:41:36.096Z [INFO]: Connected to database
+2024-12-31T11:41:39.402Z [INFO]: Server started on port 3000
+2024-12-31T11:41:39.590Z [ERROR]: Database error
+2024-12-31T11:41:40.841Z [INFO]: Connected to database
+2024-12-31T11:41:40.949Z [INFO]: [object Object]
+2024-12-31T11:41:40.983Z [INFO]: [object Object]
+2024-12-31T11:41:43.355Z [INFO]: Server started on port 3000
+2024-12-31T11:41:43.547Z [ERROR]: Database error
+2024-12-31T11:41:43.614Z [ERROR]: [object Object]
+2024-12-31T11:41:44.831Z [INFO]: Connected to database
+2024-12-31T11:41:47.857Z [ERROR]: Internal server error.
+2024-12-31T11:42:46.583Z [INFO]: Server started on port 3000
+2024-12-31T11:42:46.839Z [ERROR]: Database error
+2024-12-31T11:42:48.629Z [INFO]: Connected to database
+2024-12-31T11:42:48.723Z [INFO]: [object Object]
+2024-12-31T11:42:48.776Z [INFO]: [object Object]
+2024-12-31T11:42:50.217Z [INFO]: Server started on port 3000
+2024-12-31T11:42:50.388Z [ERROR]: Database error
+2024-12-31T11:42:50.452Z [ERROR]: [object Object]
+2024-12-31T11:42:52.006Z [INFO]: Connected to database
+2024-12-31T11:42:55.924Z [ERROR]: Internal server error.
+2024-12-31T11:43:51.876Z [INFO]: Server started on port 3000
+2024-12-31T11:43:52.165Z [ERROR]: Database error
+2024-12-31T11:43:53.962Z [INFO]: Connected to database
+2024-12-31T11:43:54.070Z [INFO]: [object Object]
+2024-12-31T11:43:54.111Z [INFO]: [object Object]
+2024-12-31T11:43:55.412Z [ERROR]: Internal server error.
+2024-12-31T11:43:59.308Z [INFO]: Server started on port 3000
+2024-12-31T11:43:59.480Z [ERROR]: Database error
+2024-12-31T11:43:59.556Z [ERROR]: [object Object]
+2024-12-31T11:44:01.228Z [INFO]: Connected to database
+2024-12-31T11:44:10.707Z [INFO]: Server started on port 3000
+2024-12-31T11:44:11.032Z [ERROR]: Unexpected error
+2024-12-31T11:44:11.220Z [ERROR]: Unexpected error
+2024-12-31T11:44:12.184Z [INFO]: Connected to database
+2024-12-31T11:44:39.461Z [INFO]: Server started on port 3000
+2024-12-31T11:44:39.794Z [ERROR]: Unexpected error
+2024-12-31T11:44:39.986Z [ERROR]: Unexpected error
+2024-12-31T11:44:40.958Z [INFO]: Connected to database
+2024-12-31T11:44:42.228Z [ERROR]: Internal server error.
+2024-12-31T11:44:48.492Z [INFO]: Server started on port 3000
+2024-12-31T11:44:48.676Z [ERROR]: Database error
+2024-12-31T11:44:50.610Z [INFO]: Connected to database
+2024-12-31T11:44:50.735Z [INFO]: [object Object]
+2024-12-31T11:44:50.787Z [INFO]: [object Object]
+2024-12-31T11:44:57.133Z [INFO]: Server started on port 3000
+2024-12-31T11:44:57.606Z [ERROR]: Database error
+2024-12-31T11:44:57.736Z [ERROR]: [object Object]
+2024-12-31T11:44:59.194Z [INFO]: Connected to database
+2024-12-31T11:47:24.702Z [INFO]: Connected to database
+2024-12-31T12:24:47.072Z [INFO]: Connected to database
+2024-12-31T12:24:54.070Z [INFO]: Server started on port 3000
+2024-12-31T12:24:55.227Z [ERROR]: Database error
+2024-12-31T12:24:56.235Z [INFO]: Connected to database
+2024-12-31T12:24:56.555Z [INFO]: [object Object]
+2024-12-31T12:24:56.782Z [INFO]: [object Object]
+2024-12-31T12:25:04.824Z [INFO]: Server started on port 3000
+2024-12-31T12:25:05.965Z [ERROR]: Database error
+2024-12-31T12:25:06.374Z [ERROR]: [object Object]
+2024-12-31T12:25:06.892Z [INFO]: Connected to database
+2024-12-31T12:25:13.597Z [ERROR]: Internal server error.
+2024-12-31T12:25:56.968Z [INFO]: Server started on port 3000
+2024-12-31T12:26:05.218Z [ERROR]: Database error
+2024-12-31T12:26:05.470Z [ERROR]: [object Object]
+2024-12-31T12:26:06.198Z [INFO]: Connected to database
+2024-12-31T12:26:06.433Z [INFO]: Connected to database
+2024-12-31T12:26:20.150Z [ERROR]: Database error
+2024-12-31T12:26:21.123Z [INFO]: Connected to database
+2024-12-31T12:26:21.361Z [INFO]: [object Object]
+2024-12-31T12:26:21.523Z [INFO]: [object Object]
+2024-12-31T12:26:32.151Z [ERROR]: Internal server error.
+2024-12-31T12:30:58.467Z [INFO]: Server started on port 3000
+2024-12-31T12:31:00.675Z [INFO]: Connected to database
+2024-12-31T12:32:02.837Z [INFO]: Connected to database
+2024-12-31T12:33:29.980Z [INFO]: Connected to database
+2024-12-31T12:39:40.263Z [INFO]: Server started on port 3000
+2024-12-31T12:39:42.322Z [INFO]: Connected to database
+2024-12-31T12:40:02.281Z [INFO]: Server started on port 3000
+2024-12-31T12:40:02.749Z [ERROR]: Database error
+2024-12-31T12:40:03.905Z [INFO]: Connected to database
+2024-12-31T12:40:04.068Z [INFO]: [object Object]
+2024-12-31T12:40:04.104Z [INFO]: [object Object]
+2024-12-31T12:40:14.647Z [INFO]: Server started on port 3000
+2024-12-31T12:40:14.813Z [ERROR]: Cannot read properties of undefined (reading 'length')
+2024-12-31T12:40:16.016Z [INFO]: Connected to database
+2024-12-31T12:40:19.107Z [INFO]: Server started on port 3000
+2024-12-31T12:40:19.314Z [ERROR]: Database error
+2024-12-31T12:40:19.389Z [ERROR]: [object Object]
+2024-12-31T12:40:20.496Z [INFO]: Connected to database
+2024-12-31T12:40:22.887Z [ERROR]: Internal server error.
+2024-12-31T12:44:17.978Z [ERROR]: Internal server error.
+2024-12-31T12:44:36.882Z [ERROR]: Internal server error.
+2024-12-31T12:44:46.219Z [INFO]: Server started on port 3000
+2024-12-31T12:44:46.509Z [ERROR]: Cannot read properties of undefined (reading 'length')
+2024-12-31T12:44:48.227Z [INFO]: Connected to database
+2024-12-31T12:44:51.106Z [INFO]: Server started on port 3000
+2024-12-31T12:44:51.298Z [ERROR]: Database error
+2024-12-31T12:44:52.722Z [INFO]: Connected to database
+2024-12-31T12:44:52.816Z [INFO]: [object Object]
+2024-12-31T12:44:52.849Z [INFO]: [object Object]
+2024-12-31T12:44:55.028Z [INFO]: Server started on port 3000
+2024-12-31T12:44:55.224Z [ERROR]: Database error
+2024-12-31T12:44:55.284Z [ERROR]: [object Object]
+2024-12-31T12:44:56.508Z [INFO]: Connected to database
+2024-12-31T12:45:16.168Z [INFO]: Server started on port 3000
+2024-12-31T12:45:16.581Z [ERROR]: Cannot read properties of undefined (reading 'length')
+2024-12-31T12:45:18.117Z [INFO]: Connected to database
+2024-12-31T12:45:20.408Z [ERROR]: Internal server error.
+2024-12-31T12:45:23.070Z [INFO]: Server started on port 3000
+2024-12-31T12:45:23.368Z [ERROR]: Database error
+2024-12-31T12:45:24.315Z [INFO]: Connected to database
+2024-12-31T12:45:24.466Z [INFO]: [object Object]
+2024-12-31T12:45:24.523Z [INFO]: [object Object]
+2024-12-31T12:45:27.263Z [INFO]: Server started on port 3000
+2024-12-31T12:45:27.575Z [ERROR]: Database error
+2024-12-31T12:45:27.696Z [ERROR]: [object Object]
+2024-12-31T12:45:28.563Z [INFO]: Connected to database
+2024-12-31T12:46:00.704Z [INFO]: Server started on port 3000
+2024-12-31T12:46:01.074Z [ERROR]: Cannot read properties of undefined (reading 'length')
+2024-12-31T12:46:02.591Z [INFO]: Connected to database
+2024-12-31T12:46:05.208Z [INFO]: Server started on port 3000
+2024-12-31T12:46:05.399Z [ERROR]: Database error
+2024-12-31T12:46:05.460Z [ERROR]: [object Object]
+2024-12-31T12:46:07.065Z [INFO]: Connected to database
+2024-12-31T12:46:09.960Z [INFO]: Server started on port 3000
+2024-12-31T12:46:10.145Z [ERROR]: Database error
+2024-12-31T12:46:11.571Z [INFO]: Connected to database
+2024-12-31T12:46:11.666Z [INFO]: [object Object]
+2024-12-31T12:46:11.697Z [INFO]: [object Object]
+2024-12-31T12:46:13.943Z [ERROR]: Internal server error.
+2024-12-31T12:49:50.614Z [INFO]: Server started on port 3000
+2024-12-31T12:49:50.989Z [ERROR]: Cannot read properties of undefined (reading 'length')
+2024-12-31T12:49:52.564Z [INFO]: Connected to database
+2024-12-31T12:49:54.790Z [ERROR]: Internal server error.
+2024-12-31T12:49:57.395Z [INFO]: Server started on port 3000
+2024-12-31T12:49:57.607Z [ERROR]: Database error
+2024-12-31T12:49:58.811Z [INFO]: Connected to database
+2024-12-31T12:49:58.905Z [INFO]: [object Object]
+2024-12-31T12:49:58.943Z [INFO]: [object Object]
+2024-12-31T12:50:01.130Z [INFO]: Server started on port 3000
+2024-12-31T12:50:01.336Z [ERROR]: Database error
+2024-12-31T12:50:01.400Z [ERROR]: [object Object]
+2024-12-31T12:50:03.109Z [INFO]: Connected to database
+2024-12-31T12:52:09.884Z [INFO]: Server started on port 3000
+2024-12-31T12:52:10.260Z [ERROR]: Cannot read properties of undefined (reading 'length')
+2024-12-31T12:52:12.040Z [INFO]: Connected to database
+2024-12-31T12:52:14.737Z [INFO]: Server started on port 3000
+2024-12-31T12:52:14.937Z [ERROR]: Database error
+2024-12-31T12:52:15.002Z [ERROR]: [object Object]
+2024-12-31T12:52:16.134Z [INFO]: Connected to database
+2024-12-31T12:52:19.090Z [INFO]: Server started on port 3000
+2024-12-31T12:52:19.279Z [ERROR]: Database error
+2024-12-31T12:52:20.337Z [INFO]: Connected to database
+2024-12-31T12:52:20.428Z [INFO]: [object Object]
+2024-12-31T12:52:20.462Z [INFO]: [object Object]
+2024-12-31T12:52:22.963Z [ERROR]: Internal server error.
+2024-12-31T12:53:33.231Z [INFO]: Server started on port 3000
+2024-12-31T12:53:33.623Z [ERROR]: Cannot read properties of undefined (reading 'length')
+2024-12-31T12:53:35.192Z [INFO]: Connected to database
+2024-12-31T12:53:38.082Z [INFO]: Server started on port 3000
+2024-12-31T12:53:38.272Z [ERROR]: Database error
+2024-12-31T12:53:39.490Z [INFO]: Connected to database
+2024-12-31T12:53:39.582Z [INFO]: [object Object]
+2024-12-31T12:53:39.615Z [INFO]: [object Object]
+2024-12-31T12:53:41.801Z [INFO]: Server started on port 3000
+2024-12-31T12:53:41.988Z [ERROR]: Database error
+2024-12-31T12:53:42.043Z [ERROR]: [object Object]
+2024-12-31T12:53:43.587Z [INFO]: Connected to database
+2024-12-31T12:53:45.969Z [ERROR]: Internal server error.
+2024-12-31T12:55:43.387Z [INFO]: Server started on port 3000
+2024-12-31T12:55:45.444Z [INFO]: Connected to database
+2024-12-31T12:55:48.184Z [INFO]: Server started on port 3000
+2024-12-31T12:55:48.381Z [ERROR]: Database error
+2024-12-31T12:55:48.449Z [ERROR]: [object Object]
+2024-12-31T12:55:50.054Z [INFO]: Connected to database
+2024-12-31T12:55:53.273Z [INFO]: Server started on port 3000
+2024-12-31T12:55:53.472Z [ERROR]: Database error
+2024-12-31T12:55:54.613Z [INFO]: Connected to database
+2024-12-31T12:55:54.702Z [INFO]: [object Object]
+2024-12-31T12:55:54.740Z [INFO]: [object Object]
+2024-12-31T12:55:57.273Z [ERROR]: Internal server error.
+2024-12-31T12:57:17.908Z [INFO]: Server started on port 3000
+2024-12-31T12:57:19.878Z [INFO]: Connected to database
+2024-12-31T12:57:23.043Z [INFO]: Server started on port 3000
+2024-12-31T12:57:23.316Z [ERROR]: Database error
+2024-12-31T12:57:24.473Z [INFO]: Connected to database
+2024-12-31T12:57:24.572Z [INFO]: [object Object]
+2024-12-31T12:57:24.603Z [INFO]: [object Object]
+2024-12-31T12:57:27.029Z [INFO]: Server started on port 3000
+2024-12-31T12:57:27.226Z [ERROR]: Database error
+2024-12-31T12:57:27.290Z [ERROR]: [object Object]
+2024-12-31T12:57:28.781Z [INFO]: Connected to database
+2024-12-31T12:57:30.931Z [ERROR]: Internal server error.
+2024-12-31T12:58:04.916Z [INFO]: Server started on port 3000
+2024-12-31T12:58:06.771Z [INFO]: Connected to database
+2024-12-31T12:58:09.896Z [INFO]: Server started on port 3000
+2024-12-31T12:58:10.175Z [ERROR]: Database error
+2024-12-31T12:58:11.701Z [INFO]: Connected to database
+2024-12-31T12:58:11.802Z [INFO]: [object Object]
+2024-12-31T12:58:11.833Z [INFO]: [object Object]
+2024-12-31T12:58:14.271Z [INFO]: Server started on port 3000
+2024-12-31T12:58:14.457Z [ERROR]: Database error
+2024-12-31T12:58:14.522Z [ERROR]: [object Object]
+2024-12-31T12:58:15.673Z [INFO]: Connected to database
+2024-12-31T12:58:17.832Z [ERROR]: Internal server error.
+2024-12-31T12:59:04.032Z [INFO]: Server started on port 3000
+2024-12-31T12:59:05.902Z [INFO]: Connected to database
+2024-12-31T12:59:08.222Z [ERROR]: Internal server error.
+2024-12-31T12:59:11.063Z [INFO]: Server started on port 3000
+2024-12-31T12:59:11.292Z [ERROR]: Database error
+2024-12-31T12:59:12.425Z [INFO]: Connected to database
+2024-12-31T12:59:12.521Z [INFO]: [object Object]
+2024-12-31T12:59:12.555Z [INFO]: [object Object]
+2024-12-31T12:59:14.810Z [INFO]: Server started on port 3000
+2024-12-31T12:59:15.011Z [ERROR]: Database error
+2024-12-31T12:59:15.070Z [ERROR]: [object Object]
+2024-12-31T12:59:16.103Z [INFO]: Connected to database
+2024-12-31T13:00:19.488Z [INFO]: Server started on port 3000
+2024-12-31T13:00:20.054Z [ERROR]: Unexpected error
+2024-12-31T13:00:20.234Z [ERROR]: Unexpected error
+2024-12-31T13:00:21.430Z [INFO]: Connected to database
+2024-12-31T13:00:24.895Z [INFO]: Server started on port 3000
+2024-12-31T13:00:25.102Z [ERROR]: Database error
+2024-12-31T13:00:26.968Z [INFO]: Connected to database
+2024-12-31T13:00:27.080Z [INFO]: [object Object]
+2024-12-31T13:00:27.113Z [INFO]: [object Object]
+2024-12-31T13:00:29.587Z [INFO]: Server started on port 3000
+2024-12-31T13:00:29.802Z [ERROR]: Database error
+2024-12-31T13:00:29.879Z [ERROR]: [object Object]
+2024-12-31T13:00:31.050Z [INFO]: Connected to database
+2024-12-31T13:00:33.755Z [ERROR]: Internal server error.

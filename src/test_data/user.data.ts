@@ -1,3 +1,5 @@
+import jwt from "jsonwebtoken";
+
 export const mockUsers = [
     {
         _id: 1,
@@ -104,14 +106,14 @@ export const newStudent1 = {
 export const instructors = [
     {
         _id: 1,
-        user: 4,
+        user: { name: "Mario Reynolds", email: "marioreynolds05@gmail.com" },
         dapartment: "Computer Science",
         coursesTaugth: [],
         salary: 50_000.0,
     },
     {
         _id: 2,
-        user: 5,
+        user: { name: "Sophia McDonald", email: "sophiamacdonald@gmail.com" },
         dapartment: "Communication and Professionalism",
         coursesTaugth: [],
         salary: 70_000.0,
@@ -124,4 +126,13 @@ export const instructor1 = {
     dapartment: "Computer Science",
     coursesTaugth: [],
     salary: 50_000.0,
+};
+
+type UserRole = "student" | "instructor";
+
+export const generateTestToken = ({ role }: { role: UserRole }) => {
+    const payload = { id: "testUser", type: "refreshToken", role };
+    return jwt.sign(payload, process.env.JWT_SECRET as string, {
+        expiresIn: "1d",
+    });
 };

@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { isInstructor } from "@/utils/middleware/isInstructor";
-import EnrollmentController from "@/controllers/enrollments";
+import { isInstructor } from "../utils/middleware/isInstructor";
+import EnrollmentController from "../controllers/enrollments";
 
 const router = Router();
 

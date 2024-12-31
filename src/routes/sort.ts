@@ -1,5 +1,5 @@
 import { Router } from "express";
-import SortCourseAndStudentController from "@/controllers/sort";
+import SortCourseAndStudentController from "../controllers/sort";
 
 const sortStudentRouter = Router();
 const sortCourseRouter = Router();

@@ -1,5 +1,5 @@
 import { models, model, Schema, Types } from "mongoose";
-import { IInstructor } from "@/utils/types/instructor";
+import { IInstructor } from "../utils/types/instructor";
 
 const InstructorSchema: Schema<IInstructor> = new Schema(
     {

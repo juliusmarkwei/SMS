@@ -1,12 +1,12 @@
 import { Router } from "express";
-import AuthController from "@/controllers/auth";
+import AuthController from "../controllers/auth";
 import { checkSchema } from "express-validator";
 import {
     loginValidationScheme,
     forgotPasswordValidationSchema,
     resetPasswordValidationSchema,
-} from "@/utils/middleware/validators/auth";
-import _404Controller from "@/controllers/404";
+} from "../utils/middleware/validators/auth";
+import _404Controller from "../controllers/404";
 
 const router = Router();
 

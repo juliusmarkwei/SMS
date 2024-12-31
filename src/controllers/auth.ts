@@ -1,14 +1,14 @@
 import { Request, Response } from "express";
 import { matchedData } from "express-validator";
-import { requestBodyErrorsInterrupt } from "@/utils/middleware/handleReqBodyErrors";
+import { requestBodyErrorsInterrupt } from "../utils/middleware/handleReqBodyErrors";
 import bcrypt from "bcrypt";
-import User from "@/models/User";
-import { logger } from "@/utils/logger";
+import User from "../models/User";
+import { logger } from "../utils/logger";
 import jwt from "jsonwebtoken";
-import { sendResetPasswordEmail } from "@/utils/mailer";
-import { AuthToken } from "@/utils/types/jwt";
-import { Token } from "@/utils/enums";
-import { IUser } from "@/utils/types/user";
+import { sendResetPasswordEmail } from "../utils/mailer";
+import { AuthToken } from "../utils/types/jwt";
+import { Token } from "../utils/enums";
+import { IUser } from "../utils/types/user";
 
 class AuthController {
     static async login(req: Request, res: Response) {

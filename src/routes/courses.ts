@@ -1,10 +1,9 @@
 import { Router } from "express";
-import { isInstructor } from "@/utils/middleware/isInstructor";
-import CourseController from "@/controllers/courses";
+import CourseController from "../controllers/courses";
 import {
     courseCreationValidationSchema,
     courseUpdationValidationSchema,
-} from "@/utils/middleware/validators/course";
+} from "../utils/middleware/validators/course";
 import { checkSchema } from "express-validator";
 
 const router = Router();
@@ -261,7 +260,10 @@ router.get("/", CourseController.getAllCourses);
  *                 message:
  *                   type: string
  *                   example: "Internal server error"
- */ /**
+ */
+router.get("/:courseCode", CourseController.getCourse);
+
+/**
  * @swagger
  * /api/v1/courses:
  *   post:
@@ -496,4 +498,63 @@ router.put(
     CourseController.updateCourse
 );
 
+/**
+ * @swagger
+ * /api/v1/courses/{courseCode}:
+ *   delete:
+ *     summary: Delete a course by its code
+ *     description: Deletes a course based on the provided course code.
+ *     security:
+ *       - bearerAuth: []
+ *     tags:
+ *       - Courses
+ *     parameters:
+ *       - in: path
+ *         name: courseCode
+ *         required: true
+ *         description: The course code for the course to delete
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Course deleted successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: true
+ *                 message:
+ *                   type: string
+ *                   example: "Course deleted successfully!"
+ *       404:
+ *         description: Course not found
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: "Course with code {courseCode} not found"
+ *       500:
+ *         description: Internal server error
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                   example: false
+ *                 message:
+ *                   type: string
+ *                   example: "Internal server error"
+ */
+router.delete("/:courseCode", CourseController.deleteCourse);
 export { router as courseRouter };

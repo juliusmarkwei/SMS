@@ -1,6 +1,6 @@
 import { emailNewUsers } from "../../utils/mailer";
 import nodemailer from "nodemailer";
-import { IUser } from "@/utils/types/user";
+import { IUser } from "../../utils/types/user";
 import { user1 } from "../../test_data/user.data";
 
 // Mock nodemailer

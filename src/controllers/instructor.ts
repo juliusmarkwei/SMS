@@ -1,17 +1,17 @@
 import { Request, Response } from "express";
-import User from "@/models/User";
-import { requestBodyErrorsInterrupt } from "@/utils/middleware/handleReqBodyErrors";
+import User from "../models/User";
+import { requestBodyErrorsInterrupt } from "../utils/middleware/handleReqBodyErrors";
 import { matchedData } from "express-validator";
-import { Role } from "@/utils/enums";
+import { Role } from "../utils/enums";
 import bcrypt from "bcrypt";
-import { emailNewUsers } from "@/utils/mailer";
-import { logger } from "@/utils/logger";
-import Instructor from "@/models/Instructor";
-import Course from "@/models/Course";
-import { IInstructor } from "@/utils/types/instructor";
-import { IUser } from "@/utils/types/user";
-import { ICourse } from "@/utils/types/course";
-import { getOrSetCache } from "@/utils/cache";
+import { emailNewUsers } from "../utils/mailer";
+import { logger } from "../utils/logger";
+import Instructor from "../models/Instructor";
+import Course from "../models/Course";
+import { IInstructor } from "../utils/types/instructor";
+import { IUser } from "../utils/types/user";
+import { ICourse } from "../utils/types/course";
+import { getOrSetCache } from "../utils/cache";
 
 class InstructorController {
     static async createInstructor(req: Request, res: Response) {
@@ -128,6 +128,7 @@ class InstructorController {
                 instructors,
             });
         } catch (error: any) {
+            console.log(`An error occured: ${error}`);
             res.status(500).json({
                 success: false,
                 error:
@@ -214,8 +215,16 @@ class InstructorController {
                 const validCourses: ICourse[] = await Course.find({
                     _id: { $in: courses },
                 });
+                console.log(
+                    `Valid courses from controller is : ${JSON.stringify(
+                        validCourses
+                    )}`
+                );
 
                 if (validCourses.length !== courses.length) {
+                    console.log(
+                        "Invalid courses provided----------------------------"
+                    );
                     res.status(400).json({
                         success: false,
                         error: "One or more courses provided are invalid",

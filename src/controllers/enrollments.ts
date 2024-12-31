@@ -1,12 +1,12 @@
 import { Response, Request } from "express";
-import Enrollment from "@/models/Enrollment";
-import { logger } from "@/utils/logger";
-import { getOrSetCache } from "@/utils/cache";
-import Student from "@/models/Student";
-import Course from "@/models/Course";
-import { Role } from "@/utils/enums";
-import { ICourse } from "@/utils/types/course";
-import { IStudent } from "@/utils/types/student";
+import Enrollment from "../models/Enrollment";
+import { logger } from "../utils/logger";
+import { getOrSetCache } from "../utils/cache";
+import Student from "../models/Student";
+import Course from "../models/Course";
+import { Role } from "../utils/enums";
+import { ICourse } from "../utils/types/course";
+import { IStudent } from "../utils/types/student";
 
 class EnrollmentController {
     static async enrollStudentInCourse(req: Request, res: Response) {
@@ -18,12 +18,15 @@ class EnrollmentController {
             });
             return;
         }
-
         const { id, role } = req.user as { [key: string]: string };
         const isInstructor = role === Role.INSTRUCTOR;
         if (!isInstructor) {
             // check if student is enrolling themselve, else deny them
-            const student = await Student.findOne({ user: id, _id: studentId });
+            const student: IStudent | null = await Student.findOne({
+                user: id,
+                _id: studentId,
+            });
+
             if (!student) {
                 res.status(401).json({
                     success: false,
@@ -33,22 +36,18 @@ class EnrollmentController {
             }
         }
 
-        console.log("--------------------------------");
-
-        const course =
-            ((await Course.findOne({ code: courseCode }).select(
-                "_id"
-            )) as ICourse) || null;
-
-        if (!course) {
-            res.status(404).json({
-                success: false,
-                message: `Course with code ${courseCode} not found`,
-            });
-            return;
-        }
-
         try {
+            const courseQuery = await Course.findOne({ code: courseCode });
+            const course: ICourse | null = await courseQuery.select("_id");
+
+            if (!course) {
+                res.status(404).json({
+                    success: false,
+                    message: `Course with code ${courseCode} not found`,
+                });
+                return;
+            }
+
             const enrollment = new Enrollment({
                 student: studentId,
                 course: course._id,
@@ -116,7 +115,7 @@ class EnrollmentController {
                 query.user = id;
             }
 
-            console.log(query);
+            logger.info(query);
 
             const cacheKey = isInstructor
                 ? `enrollments:studentId=${studentId}`
@@ -133,7 +132,6 @@ class EnrollmentController {
                 if (!studentCourses || studentCourses.length === 0) {
                     return null;
                 }
-                console.log("-----------------------------", studentCourses);
                 logger.info("Fetched Courses:", studentCourses);
 
                 // Return the courses array

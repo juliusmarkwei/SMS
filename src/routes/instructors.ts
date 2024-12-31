@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { isInstructor } from "@/utils/middleware/isInstructor";
-import InstructorController from "@/controllers/instructor";
-import { signupInstructorValidationScheme } from "@/utils/middleware/validators/instructor";
-import { updateInstructorValidationScheme } from "@/utils/middleware/validators/instructor";
+import { isInstructor } from "../utils/middleware/isInstructor";
+import InstructorController from "../controllers/instructor";
+import { signupInstructorValidationScheme } from "../utils/middleware/validators/instructor";
+import { updateInstructorValidationScheme } from "../utils/middleware/validators/instructor";
 import { checkSchema } from "express-validator";
-import { preprocessCourses } from "@/utils/middleware/processCourses";
+import { preprocessCourses } from "../utils/middleware/processCourses";
 
 const router = Router();
 

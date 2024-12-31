@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
-import Course from "@/models/Course";
-import { logger } from "@/utils/logger";
-import { requestBodyErrorsInterrupt } from "@/utils/middleware/handleReqBodyErrors";
+import Course from "../models/Course";
+import { logger } from "../utils/logger";
+import { requestBodyErrorsInterrupt } from "../utils/middleware/handleReqBodyErrors";
 import { matchedData } from "express-validator";
-import { getOrSetCache } from "@/utils/cache";
-import { ICourse } from "@/utils/types/course";
+import { getOrSetCache } from "../utils/cache";
+import { ICourse } from "../utils/types/course";
 
 class CourseController {
     static async getAllCourses(req: Request, res: Response) {
@@ -262,7 +262,7 @@ class CourseController {
             }
             res.status(200).json({
                 success: true,
-                message: "Course deleted successfullt!",
+                message: "Course deleted successfully!",
             });
         } catch (error) {
             logger.error(error);

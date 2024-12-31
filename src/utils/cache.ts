@@ -1,4 +1,5 @@
 import { createClient, RedisClientType } from "redis";
+import { logger } from "./logger";
 
 export const client: RedisClientType = createClient();
 
@@ -29,7 +30,7 @@ export const getOrSetCache = async (
 
 // Cleanup Redis client on process exit
 process.on("SIGINT", async () => {
-    console.log("Closing Redis client...");
+    logger.info("Closing Redis client...");
     await client.quit();
     process.exit(0);
 });

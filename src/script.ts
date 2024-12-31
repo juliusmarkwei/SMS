@@ -2,9 +2,9 @@ import "dotenv/config";
 import express, { json, urlencoded } from "express";
 import path from "path";
 import { logger, requestLogMiddleware } from "./utils/logger";
-import { authRouter } from "@/routes/auth";
+import { authRouter } from "./routes/auth";
 import cors from "cors";
-import { checkJwtToken } from "@/utils/middleware/authenticateUser";
+import { checkJwtToken } from "./utils/middleware/authenticateUser";
 import { studentRouter } from "./routes/students";
 import { courseRouter } from "./routes/courses";
 import { enrollmentRouter } from "./routes/enrollments";
@@ -23,7 +23,7 @@ connect(); // db connection
 
 app.use(json());
 app.use(urlencoded({ extended: true }));
-app.use(requestLogMiddleware);
+// app.use(requestLogMiddleware);
 
 const options = {
     origin: true,
@@ -54,6 +54,8 @@ apiRouter.use("/sort/courses", sortCourseRouter);
 app.use("/api/v1", apiRouter);
 app.use("*", _404Controller.index);
 
-app.listen(PORT, () => {
+export const server = app.listen(PORT, () => {
     logger.info(`Server started on port ${PORT}`);
 });
+
+export default app;

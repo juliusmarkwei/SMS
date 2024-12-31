@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">78.82% </span>
+                <span class="strong">78.72% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>335/425</span>
+                <span class='fraction'>333/423</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">78.82% </span>
+                <span class="strong">78.72% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>335/425</span>
+                <span class='fraction'>333/423</span>
             </div>
         
             
@@ -486,9 +486,7 @@
 <a name='L421'></a><a href='#L421'>421</a>
 <a name='L422'></a><a href='#L422'>422</a>
 <a name='L423'></a><a href='#L423'>423</a>
-<a name='L424'></a><a href='#L424'>424</a>
-<a name='L425'></a><a href='#L425'>425</a>
-<a name='L426'></a><a href='#L426'>426</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L424'></a><a href='#L424'>424</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -684,7 +682,6 @@
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -894,6 +891,12 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -901,14 +904,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -928,7 +924,7 @@ import { IUser } from "../utils/types/user";
 import { IStudent } from "../utils/types/student";
 &nbsp;
 class StudentController {
-    static async <span class="fstat-no" title="function not covered" >getStudentById(studentId: string) {</span>
+    static async <span class="fstat-no" title="function not covered" >getStudentById(studentId: string | number) {</span>
 <span class="cstat-no" title="statement not covered" >        return await Student.findById(studentId);</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
 &nbsp;
@@ -1109,7 +1105,6 @@ class StudentController {
                 );
 &nbsp;
                 if (!foundStudent<span class="branch-0 cbranch-no" title="branch not covered" > &amp;&amp; foundStudent.user.toString() !== id)</span> <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >                    console.log("------------------------------");</span>
 <span class="cstat-no" title="statement not covered" >                    res.status(401).json({</span>
 <span class="cstat-no" title="statement not covered" >                        success: false,</span>
 <span class="cstat-no" title="statement not covered" >                        error: "You are not authorized to update this student's information",</span>
@@ -1307,33 +1302,32 @@ class StudentController {
 <span class="cstat-no" title="statement not covered" >                return;</span>
 <span class="cstat-no" title="statement not covered" >            }</span>
 &nbsp;
-            console.log("------------------------------*********");
-&nbsp;
             // Delete the associated user
             const deletedUser: IUser | null = await User.findByIdAndDelete(
-                new Types.ObjectId(deletedStudent.user)
+                deletedStudent.user
             );
-<span class="cstat-no" title="statement not covered" ><span class="branch-0 cbranch-no" title="branch not covered" ></span></span>
-<span class="cstat-no" title="statement not covered" >            if (!deletedUser) {</span>
+&nbsp;
+            if (!deletedUser) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >                res.status(404).json({</span>
 <span class="cstat-no" title="statement not covered" >                    success: false,</span>
 <span class="cstat-no" title="statement not covered" >                    error: "User not found",</span>
 <span class="cstat-no" title="statement not covered" >                });</span>
 <span class="cstat-no" title="statement not covered" >                return;</span>
 <span class="cstat-no" title="statement not covered" >            }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >            res.json({</span>
-<span class="cstat-no" title="statement not covered" >                success: true,</span>
-<span class="cstat-no" title="statement not covered" >                message: "Student deleted successfully",</span>
-<span class="cstat-no" title="statement not covered" >            });</span>
-        } catch (error: any) {
-            res.status(500).json({
-                success: false,
-                error:
-                    error.message<span class="branch-0 cbranch-no" title="branch not covered" > ||</span>
-                    "An error occurred while deleting the student",
+&nbsp;
+            res.status(200).json({
+                success: true,
+                message: "Student deleted successfully",
             });
-        }
+        } <span class="branch-0 cbranch-no" title="branch not covered" >catch (error: any) {</span>
+<span class="cstat-no" title="statement not covered" >            logger.info(`Error is: ${error}`);</span>
+<span class="cstat-no" title="statement not covered" >            res.status(500).json({</span>
+<span class="cstat-no" title="statement not covered" >                success: false,</span>
+<span class="cstat-no" title="statement not covered" >                error:</span>
+<span class="cstat-no" title="statement not covered" >                    error.message ||</span>
+<span class="cstat-no" title="statement not covered" >                    "An error occurred while deleting the student",</span>
+<span class="cstat-no" title="statement not covered" >            });</span>
+<span class="cstat-no" title="statement not covered" >        }</span>
     }
 }
 &nbsp;
@@ -1345,7 +1339,7 @@ export default StudentController;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-12-28T17:35:27.620Z
+                at 2024-12-31T12:44:21.682Z
             </div>
         <script src="../prettify.js"></script>
         <script>

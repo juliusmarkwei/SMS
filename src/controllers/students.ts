@@ -13,7 +13,7 @@ import { IUser } from "../utils/types/user";
 import { IStudent } from "../utils/types/student";
 
 class StudentController {
-    static async getStudentById(studentId: string) {
+    static async getStudentById(studentId: string | number) {
         return await Student.findById(studentId);
     }
 
@@ -194,7 +194,6 @@ class StudentController {
                 );
 
                 if (!foundStudent && foundStudent.user.toString() !== id) {
-                    console.log("------------------------------");
                     res.status(401).json({
                         success: false,
                         error: "You are not authorized to update this student's information",
@@ -392,11 +391,9 @@ class StudentController {
                 return;
             }
 
-            console.log("------------------------------*********");
-
             // Delete the associated user
             const deletedUser: IUser | null = await User.findByIdAndDelete(
-                new Types.ObjectId(deletedStudent.user)
+                deletedStudent.user
             );
 
             if (!deletedUser) {
@@ -407,11 +404,12 @@ class StudentController {
                 return;
             }
 
-            res.json({
+            res.status(200).json({
                 success: true,
                 message: "Student deleted successfully",
             });
         } catch (error: any) {
+            logger.info(`Error is: ${error}`);
             res.status(500).json({
                 success: false,
                 error:
