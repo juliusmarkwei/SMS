@@ -1,299 +1,301 @@
-import { Response, Request } from "express";
-import Enrollment from "../models/Enrollment";
-import { logger } from "../utils/logger";
-import { getOrSetCache } from "../utils/cache";
-import Student from "../models/Student";
-import Course from "../models/Course";
-import { Role } from "../utils/enums";
-import { ICourse } from "../utils/types/course";
-import { IStudent } from "../utils/types/student";
+import { Response, Request } from 'express'
+import Enrollment from '../models/Enrollment'
+import { logger } from '../utils/logger'
+import { getOrSetCache } from '../utils/cache'
+import Student from '../models/Student'
+import Course from '../models/Course'
+import { Role } from '../utils/enums'
+import { ICourse } from '../utils/types/course'
+import { IStudent } from '../utils/types/student'
 
 class EnrollmentController {
     static async enrollStudentInCourse(req: Request, res: Response) {
-        const { studentId, courseCode } = req.body;
+        const { studentId, courseCode } = req.body
         if (!studentId || !courseCode) {
             res.status(400).json({
-                message: "studentId and courseCode are required",
+                message: 'studentId and courseCode are required',
                 success: false,
-            });
-            return;
+            })
+            return
         }
-        const { id, role } = req.user as { [key: string]: string };
-        const isInstructor = role === Role.INSTRUCTOR;
+        const { id, role } = req.user as { [key: string]: string }
+        const isInstructor = role === Role.INSTRUCTOR
         if (!isInstructor) {
-            // check if student is enrolling themselve, else deny them
+            // check if student is enrolling themselves, else deny access
             const student: IStudent | null = await Student.findOne({
                 user: id,
                 _id: studentId,
-            });
+            })
 
             if (!student) {
                 res.status(401).json({
                     success: false,
-                    message: "You are not authorized to enroll another student",
-                });
-                return;
+                    message: 'You are not authorized to enroll another student',
+                })
+                return
             }
         }
 
         try {
-            const courseQuery = await Course.findOne({ code: courseCode });
-            const course: ICourse | null = await courseQuery.select("_id");
+            const courseQuery = await Course.findOne({ code: courseCode })
+            const course: ICourse | null = await courseQuery.select('_id')
 
             if (!course) {
                 res.status(404).json({
                     success: false,
                     message: `Course with code ${courseCode} not found`,
-                });
-                return;
+                })
+                return
             }
 
             const enrollment = new Enrollment({
                 student: studentId,
                 course: course._id,
-            });
-            await enrollment.save();
+            })
+            await enrollment.save()
 
             // add courseId to courses for the student
             await Student.findByIdAndUpdate(studentId, {
                 $push: { courses: course._id },
-            });
+            })
 
             res.status(201).json({
                 success: true,
-                message: "Student enrolled successfully!",
-            });
+                message: 'Student enrolled successfully!',
+            })
         } catch (error: any) {
-            logger.error(error);
+            logger.error(error)
 
             // handle mongoose error (unique constraint)
             if (error.code === 11000) {
                 res.status(400).json({
                     success: false,
                     message: `Student is already enrolled in course ${courseCode}`,
-                });
-                return;
+                })
+                return
             }
 
-            if (error.name === "ValidationError") {
+            if (error.name === 'ValidationError') {
                 const validationErrors = Object.values(error.errors).map(
                     (err: any) => err.message
-                );
+                )
                 res.status(400).json({
                     success: false,
-                    message: validationErrors.join(", "),
-                });
-                return;
+                    message: validationErrors.join(', '),
+                })
+                return
             }
 
             res.status(500).json({
                 success: false,
-                message: "Internal server error",
-            });
+                message: 'Internal server error',
+            })
         }
     }
 
     static async getAllCoursesForAStudent(req: Request, res: Response) {
-        const { studentId } = req.params;
+        const { studentId } = req.params
 
         // Validate studentId
         if (!studentId) {
             res.status(400).json({
-                message: "Student ID is required",
+                message: 'Student ID is required',
                 success: false,
-            });
-            return;
+            })
+            return
         }
 
         try {
-            const { id, role } = req.user as { [key: string]: string };
-            const isInstructor = role === Role.INSTRUCTOR;
+            const { id, role } = req.user as { [key: string]: string }
+            const isInstructor = role === Role.INSTRUCTOR
 
             // Restrict students to only view their own courses
-            const query: any = { _id: studentId };
+            const query: any = { _id: studentId }
             if (!isInstructor) {
-                query.user = id;
+                query.user = id
             }
 
-            logger.info(query);
+            logger.info(query)
 
             const cacheKey = isInstructor
                 ? `enrollments:studentId=${studentId}`
-                : `enrollments:studentId=${studentId}&user=${id}`;
+                : `enrollments:studentId=${studentId}&user=${id}`
 
             const courses = await getOrSetCache(cacheKey, async () => {
                 // Fetch the student and populate courses
                 const studentCourses: IStudent[] | null = await Student.find(
                     query
                 )
-                    .populate("courses", "-__v")
-                    .select("courses");
+                    .populate('courses', '-__v')
+                    .select('courses')
 
                 if (!studentCourses || studentCourses.length === 0) {
-                    return null;
+                    return null
                 }
-                logger.info("Fetched Courses:", studentCourses);
+                logger.info('Fetched Courses:', studentCourses)
 
                 // Return the courses array
-                return studentCourses[0].courses;
-            });
+                return studentCourses[0].courses
+            })
 
             if (!courses || courses.length === 0) {
                 res.status(404).json({
                     success: false,
-                    message: "No courses found for this student",
-                });
-                return;
+                    message: 'No courses found for this student',
+                })
+                return
             }
 
             res.status(200).json({
                 success: true,
                 courses,
-            });
+            })
         } catch (error: any) {
-            logger.error(error.message);
+            logger.error(error.message)
             res.status(500).json({
                 success: false,
-                message: error.message || "Internal server error",
-            });
+                message: error.message || 'Internal server error',
+            })
         }
     }
 
     static async getAllStudentsForACourse(req: Request, res: Response) {
-        const { courseCode } = req.params;
+        const { courseCode } = req.params
 
         if (!courseCode) {
             res.status(400).json({
-                message: "Course code is required",
+                message: 'Course code is required',
                 success: false,
-            });
-            return;
+            })
+            return
         }
 
         try {
-            const cacheKey = `enrollments:courseCode=${courseCode}`;
+            const cacheKey = `enrollments:courseCode=${courseCode}`
 
             const students = await getOrSetCache(cacheKey, async () => {
                 const course: ICourse | null = await Course.findOne({
                     code: courseCode,
-                }).select("_id");
+                }).select('_id')
 
                 if (!course) {
-                    throw new Error(`Course with code ${courseCode} not found`);
+                    throw new Error(`Course with code ${courseCode} not found`)
                 }
 
                 const results: IStudent[] | null = await Student.find({
                     courses: course._id,
                 })
-                    .populate("user", "name email phone -_id")
-                    .select("-__v -createdAt -updatedAt -courses");
+                    .populate('user', 'name email phone -_id')
+                    .select('-__v -createdAt -updatedAt -courses')
 
                 const foramattedResults = results.map((student: any) => {
-                    const { user, ...rest } = student.toObject();
+                    const { user, ...rest } = student.toObject()
                     return {
                         ...rest,
                         ...user,
-                    };
-                });
-                return foramattedResults;
-            });
+                    }
+                })
+                return foramattedResults
+            })
 
-            res.status(200).json({ success: true, students });
+            res.status(200).json({ success: true, students })
         } catch (error: any) {
-            logger.error(error.message || error);
+            logger.error(error.message || error)
             res.status(500).json({
                 success: false,
-                message: error.message || "Internal server error",
-            });
+                message: error.message || 'Internal server error',
+            })
         }
     }
 
     static async deleteEnrollment(req: Request, res: Response) {
-        const { enrollmentId } = req.params;
+        const { enrollmentId } = req.params
 
         if (!enrollmentId) {
             res.status(400).json({
                 success: false,
-                message: "enrollmentId is required",
-            });
-            return;
+                message: 'enrollmentId is required',
+            })
+            return
         }
 
         // Build query to restrict students from deleting other enrollments
-        const { id, role } = req.user as { [key: string]: string };
-        const isInstructor = role === Role.INSTRUCTOR;
+        const { id, role } = req.user as { [key: string]: string }
+        const isInstructor = role === Role.INSTRUCTOR
 
         try {
-            const enrollmentQuery: any = { _id: enrollmentId };
+            const enrollmentQuery: any = { _id: enrollmentId }
 
             if (!isInstructor) {
                 // Get the student's _id
-                const student: IStudent | null = await Student.findOne({
+                const studentQuery = await Student.findOne({
                     user: id,
-                }).select("_id");
+                })
+                const student = await studentQuery.select('_id')
+
                 if (!student) {
                     res.status(401).json({
                         success: false,
-                        message: "Unauthorized: Student not found",
-                    });
-                    return;
+                        message: 'Unauthorized: Student not found',
+                    })
+                    return
                 }
 
                 // Restrict deletion to the student's enrollment only
-                enrollmentQuery.student = student._id;
+                enrollmentQuery.student = student._id
             }
 
             // Delete the enrollment
             const deletedEnrollment: any = await Enrollment.findOneAndDelete(
                 enrollmentQuery
-            );
+            )
             if (!deletedEnrollment) {
                 res.status(404).json({
                     success: false,
-                    message: "Enrollment not found!",
-                });
-                return;
+                    message: 'Enrollment not found!',
+                })
+                return
             }
 
             // Remove the enrollment from the student's courses array
             await Student.findByIdAndUpdate(
                 { _id: deletedEnrollment.student },
                 { $pull: { courses: deletedEnrollment.course } }
-            );
+            )
 
             res.status(200).json({
                 success: true,
-                message: "Enrollment deleted successfully",
-            });
+                message: 'Enrollment deleted successfully',
+            })
         } catch (error) {
-            logger.error(error);
+            logger.error(error)
             res.status(500).json({
                 success: false,
-                message: "Internal server error",
-            });
+                message: 'Internal server error',
+            })
         }
     }
 
     static async getAllEnrollments(req: Request, res: Response) {
         try {
             const enrollments = await getOrSetCache(
-                "enrollments:all",
+                'enrollments:all',
                 async () => {
                     const results = await Enrollment.find({})
                         .populate({
-                            path: "student",
+                            path: 'student',
                             populate: {
-                                path: "user",
-                                select: "name _id",
+                                path: 'user',
+                                select: 'name _id',
                             },
-                            select: "name email level",
+                            select: 'name email level',
                         })
-                        .populate("course", "_id name code")
-                        .select("-__v");
+                        .populate('course', '_id name code')
+                        .select('-__v')
 
                     const foramattedResults = results.map((enrollment: any) => {
-                        const { student, ...rest } = enrollment.toObject();
-                        const { user, ...studentRest } = student;
+                        const { student, ...rest } = enrollment.toObject()
+                        const { user, ...studentRest } = student
                         const studentDateCombined = {
                             ...studentRest,
                             ...user,
@@ -302,28 +304,28 @@ class EnrollmentController {
                             cgps: undefined,
                             createdAt: undefined,
                             updatedAt: undefined,
-                        };
+                        }
                         return {
                             ...rest,
                             student: studentDateCombined,
-                        };
-                    });
-                    return foramattedResults;
+                        }
+                    })
+                    return foramattedResults
                 }
-            );
+            )
 
             res.status(200).json({
                 success: true,
                 enrollments,
-            });
+            })
         } catch (error) {
-            logger.error(error);
+            logger.error(error)
             res.status(500).json({
                 success: false,
-                message: "Internal server error",
-            });
+                message: 'Internal server error',
+            })
         }
     }
 }
 
-export default EnrollmentController;
+export default EnrollmentController

@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">65.7% </span>
+                <span class="strong">67.5% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>182/277</span>
+                <span class='fraction'>187/277</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">46.15% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>12/26</span>
+                <span class='fraction'>14/28</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">65.7% </span>
+                <span class="strong">67.5% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>182/277</span>
+                <span class='fraction'>187/277</span>
             </div>
         
             
@@ -380,12 +380,12 @@
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
@@ -617,13 +617,13 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Request, Response } from "express";
-import Course from "../models/Course";
-import { logger } from "../utils/logger";
-import { requestBodyErrorsInterrupt } from "../utils/middleware/handleReqBodyErrors";
-import { matchedData } from "express-validator";
-import { getOrSetCache } from "../utils/cache";
-import { ICourse } from "../utils/types/course";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Request, Response } from 'express'
+import Course from '../models/Course'
+import { logger } from '../utils/logger'
+import { requestBodyErrorsInterrupt } from '../utils/middleware/handleReqBodyErrors'
+import { matchedData } from 'express-validator'
+import { getOrSetCache } from '../utils/cache'
+import { ICourse } from '../utils/types/course'
 &nbsp;
 class CourseController {
     static async getAllCourses(req: Request, res: Response) {
@@ -633,50 +633,50 @@ class CourseController {
             credits,
             page = 1,
             limit = 10,
-        } = req.query;
+        } = req.query
 &nbsp;
         try {
             // Pagination setup
-            const pageNumber = parseInt(page as string, 10)<span class="branch-0 cbranch-no" title="branch not covered" > || 1;</span>
-            const pageSize = parseInt(limit as string, 10)<span class="branch-0 cbranch-no" title="branch not covered" > || 10;</span>
-            const skip = (pageNumber - 1) * pageSize;
+            const pageNumber = parseInt(page as string, 10)<span class="branch-0 cbranch-no" title="branch not covered" > || 1</span>
+            const pageSize = parseInt(limit as string, 10)<span class="branch-0 cbranch-no" title="branch not covered" > || 10</span>
+            const skip = (pageNumber - 1) * pageSize
 &nbsp;
-            const query: any = {};
+            const query: any = {}
             if (department) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >                query.department = { $regex: department, $options: "i" };</span>
+<span class="cstat-no" title="statement not covered" >                query.department = { $regex: department, $options: 'i' }</span>
 <span class="cstat-no" title="statement not covered" >            }</span>
             if (semester) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >                query.semester = { $regex: semester, $options: "i" };</span>
+<span class="cstat-no" title="statement not covered" >                query.semester = { $regex: semester, $options: 'i' }</span>
 <span class="cstat-no" title="statement not covered" >            }</span>
             if (credits) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >                query.credits = parseInt(credits as string, 10);</span>
+<span class="cstat-no" title="statement not covered" >                query.credits = parseInt(credits as string, 10)</span>
 <span class="cstat-no" title="statement not covered" >            }</span>
 &nbsp;
-            const cacheKey = `courses:dep=${department || "all"}&amp;sem=${
-                semester || "all"
-            }&amp;credits=${credits}&amp;page=${pageNumber}&amp;limit=${pageSize}`;
+            const cacheKey = `courses:dep=${department || 'all'}&amp;sem=${
+                semester || 'all'
+            }&amp;credits=${credits}&amp;page=${pageNumber}&amp;limit=${pageSize}`
 &nbsp;
             const courses = await getOrSetCache(cacheKey, async () =&gt; {
-<span class="cstat-no" title="statement not covered" >                const results: ICourse[] = await Course.find(query)</span>
-<span class="cstat-no" title="statement not covered" >                    .select("-__v")</span>
-<span class="cstat-no" title="statement not covered" >                    .skip(skip)</span>
-<span class="cstat-no" title="statement not covered" >                    .limit(pageSize);</span>
-<span class="cstat-no" title="statement not covered" >                return results;</span>
-            });
+                const results: ICourse[] = await Course.find(query)
+                    .select('-__v')
+                    .skip(skip)
+                    .limit(pageSize)
+                return results
+            })
 &nbsp;
             // Get the total count of documents (for pagination metadata)
-            const totalCourses = await Course.countDocuments(query);
+            const totalCourses = await Course.countDocuments(query)
 &nbsp;
             if (!courses || courses.length === 0) {
                 res.status(404).json({
                     success: false,
-                    message: "No courses found",
-                });
-                return;
+                    message: 'No courses found',
+                })
+                return
             }
 &nbsp;
             // Pagination metadata
-            const totalPages = Math.ceil(totalCourses / pageSize);
+            const totalPages = Math.ceil(totalCourses / pageSize)
 &nbsp;
             res.status(200).json({
                 success: true,
@@ -685,23 +685,23 @@ class CourseController {
                 totalCourses,
                 totalPages,
                 courses,
-            });
+            })
         } catch (error) {
             res.status(500).json({
                 success: false,
-                message: "Internal server error",
-            });
+                message: 'Internal server error',
+            })
         }
     }
 &nbsp;
     static async getCourse(req: Request, res: Response) {
-        const { courseCode } = req.params;
+        const { courseCode } = req.params
         if (!courseCode) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >            res.status(400).json({</span>
-<span class="cstat-no" title="statement not covered" >                message: "Course code is required",</span>
+<span class="cstat-no" title="statement not covered" >                message: 'Course code is required',</span>
 <span class="cstat-no" title="statement not covered" >                success: false,</span>
-<span class="cstat-no" title="statement not covered" >            });</span>
-<span class="cstat-no" title="statement not covered" >            return;</span>
+<span class="cstat-no" title="statement not covered" >            })</span>
+<span class="cstat-no" title="statement not covered" >            return</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
         try {
             const course = await getOrSetCache(
@@ -709,34 +709,34 @@ class CourseController {
                 async () =&gt; {
 <span class="cstat-no" title="statement not covered" >                    const result: ICourse | null = await Course.findOne({</span>
 <span class="cstat-no" title="statement not covered" >                        code: courseCode,</span>
-<span class="cstat-no" title="statement not covered" >                    }).select("-__v");</span>
+<span class="cstat-no" title="statement not covered" >                    }).select('-__v')</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >                    return result;</span>
+<span class="cstat-no" title="statement not covered" >                    return result</span>
 <span class="cstat-no" title="statement not covered" >                }</span>
-            );
+            )
             if (!course) {
                 res.status(404).json({
                     message: `Course with code ${courseCode} not found`,
                     success: false,
-                });
-                return;
+                })
+                return
             }
-            res.status(200).json({ success: true, course });
+            res.status(200).json({ success: true, course })
         } catch (error) {
-            logger.error(error);
+            logger.error(error)
             res.status(500).json({
-                message: "Internal server error",
+                message: 'Internal server error',
                 success: false,
-            });
+            })
         }
     }
 &nbsp;
     static async createCourse(req: Request, res: Response) {
-        const errors = requestBodyErrorsInterrupt(req, res);
-        if (errors) <span class="branch-0 cbranch-no" title="branch not covered" >return;</span>
+        const errors = requestBodyErrorsInterrupt(req, res)
+        if (errors) <span class="branch-0 cbranch-no" title="branch not covered" >return</span>
 &nbsp;
         const { name, code, description, credits, semester, department } =
-            matchedData(req);
+            matchedData(req)
 &nbsp;
         try {
             const course: ICourse = new Course({
@@ -746,154 +746,154 @@ class CourseController {
                 credits,
                 semester,
                 department,
-            });
-            await course.save();
+            })
+            await course.save()
             res.status(201).json({
                 success: true,
-                message: "Course created successfully!",
-            });
+                message: 'Course created successfully!',
+            })
         } catch (error: any) {
-            logger.error(error);
+            logger.error(error)
 &nbsp;
             // Handle duplicate key error (MongoDB error code 11000)
             if (error.code === 11000) {
                 const duplicateField = Object.keys(
                     error.keyPattern<span class="branch-0 cbranch-no" title="branch not covered" > || error.keyValue</span>
-                )[0];
-                const duplicateValue = error.keyValue[duplicateField];
+                )[0]
+                const duplicateValue = error.keyValue[duplicateField]
                 res.status(400).json({
                     success: false,
                     message: `A course with the same ${duplicateField} (${duplicateValue}) already exists.`,
-                });
-                return;
+                })
+                return
             }
 <span class="cstat-no" title="statement not covered" ><span class="branch-0 cbranch-no" title="branch not covered" ></span></span>
 <span class="cstat-no" title="statement not covered" >            // Handle validation errors</span>
-<span class="cstat-no" title="statement not covered" >            if (error.name === "ValidationError") {</span>
+<span class="cstat-no" title="statement not covered" >            if (error.name === 'ValidationError') {</span>
 <span class="cstat-no" title="statement not covered" >                const validationErrors = Object.values(error.errors).map(</span>
 <span class="cstat-no" title="statement not covered" >                    (err: any) =&gt; err.message</span>
-<span class="cstat-no" title="statement not covered" >                );</span>
+<span class="cstat-no" title="statement not covered" >                )</span>
 <span class="cstat-no" title="statement not covered" >                res.status(400).json({</span>
 <span class="cstat-no" title="statement not covered" >                    success: false,</span>
-<span class="cstat-no" title="statement not covered" >                    message: "Validation error",</span>
+<span class="cstat-no" title="statement not covered" >                    message: 'Validation error',</span>
 <span class="cstat-no" title="statement not covered" >                    errors: validationErrors,</span>
-<span class="cstat-no" title="statement not covered" >                });</span>
-<span class="cstat-no" title="statement not covered" >                return;</span>
+<span class="cstat-no" title="statement not covered" >                })</span>
+<span class="cstat-no" title="statement not covered" >                return</span>
 <span class="cstat-no" title="statement not covered" >            }</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >            // General error fallback</span>
 <span class="cstat-no" title="statement not covered" >            res.status(500).json({</span>
 <span class="cstat-no" title="statement not covered" >                success: false,</span>
-<span class="cstat-no" title="statement not covered" >                message: "Internal server error",</span>
-<span class="cstat-no" title="statement not covered" >            });</span>
+<span class="cstat-no" title="statement not covered" >                message: 'Internal server error',</span>
+<span class="cstat-no" title="statement not covered" >            })</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
     }
 &nbsp;
     static async updateCourse(req: Request, res: Response) {
-        const { courseCode } = req.params;
+        const { courseCode } = req.params
         if (!courseCode) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >            res.status(400).json({</span>
-<span class="cstat-no" title="statement not covered" >                message: "Course code is required",</span>
+<span class="cstat-no" title="statement not covered" >                message: 'Course code is required',</span>
 <span class="cstat-no" title="statement not covered" >                success: false,</span>
-<span class="cstat-no" title="statement not covered" >            });</span>
-<span class="cstat-no" title="statement not covered" >            return;</span>
+<span class="cstat-no" title="statement not covered" >            })</span>
+<span class="cstat-no" title="statement not covered" >            return</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
 &nbsp;
-        const errors = requestBodyErrorsInterrupt(req, res);
-        if (errors) <span class="branch-0 cbranch-no" title="branch not covered" >return;</span>
+        const errors = requestBodyErrorsInterrupt(req, res)
+        if (errors) <span class="branch-0 cbranch-no" title="branch not covered" >return</span>
 &nbsp;
         const { name, code, description, credits, semester, department } =
-            matchedData(req);
+            matchedData(req)
 &nbsp;
         try {
             const course: ICourse | null = await Course.findOneAndUpdate(
                 { code: courseCode },
                 { name, code, description, credits, semester, department },
                 { new: true }
-            );
+            )
             if (!course) {
                 res.status(404).json({
                     message: `Course with code ${courseCode} not found`,
                     success: false,
-                });
-                return;
+                })
+                return
             }
             res.status(200).json({
-                message: "Course updated successfully!",
+                message: 'Course updated successfully!',
                 success: true,
-            });
+            })
         } <span class="branch-0 cbranch-no" title="branch not covered" >catch (error: any) {</span>
-<span class="cstat-no" title="statement not covered" >            logger.error(error);</span>
+<span class="cstat-no" title="statement not covered" >            logger.error(error)</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >            // Handle duplicate key error (MongoDB error code 11000)</span>
 <span class="cstat-no" title="statement not covered" >            if (error.code === 11000) {</span>
 <span class="cstat-no" title="statement not covered" >                const duplicateField = Object.keys(</span>
 <span class="cstat-no" title="statement not covered" >                    error.keyPattern || error.keyValue</span>
-<span class="cstat-no" title="statement not covered" >                )[0];</span>
-<span class="cstat-no" title="statement not covered" >                const duplicateValue = error.keyValue[duplicateField];</span>
+<span class="cstat-no" title="statement not covered" >                )[0]</span>
+<span class="cstat-no" title="statement not covered" >                const duplicateValue = error.keyValue[duplicateField]</span>
 <span class="cstat-no" title="statement not covered" >                res.status(400).json({</span>
 <span class="cstat-no" title="statement not covered" >                    message: `A course with the same ${duplicateField} (${duplicateValue}) already exists.`,</span>
 <span class="cstat-no" title="statement not covered" >                    success: false,</span>
-<span class="cstat-no" title="statement not covered" >                });</span>
-<span class="cstat-no" title="statement not covered" >                return;</span>
+<span class="cstat-no" title="statement not covered" >                })</span>
+<span class="cstat-no" title="statement not covered" >                return</span>
 <span class="cstat-no" title="statement not covered" >            }</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >            // Handle validation errors</span>
-<span class="cstat-no" title="statement not covered" >            if (error.name === "ValidationError") {</span>
+<span class="cstat-no" title="statement not covered" >            if (error.name === 'ValidationError') {</span>
 <span class="cstat-no" title="statement not covered" >                const validationErrors = Object.values(error.errors).map(</span>
 <span class="cstat-no" title="statement not covered" >                    (err: any) =&gt; err.message</span>
-<span class="cstat-no" title="statement not covered" >                );</span>
+<span class="cstat-no" title="statement not covered" >                )</span>
 <span class="cstat-no" title="statement not covered" >                res.status(400).json({</span>
-<span class="cstat-no" title="statement not covered" >                    message: "Validation error",</span>
+<span class="cstat-no" title="statement not covered" >                    message: 'Validation error',</span>
 <span class="cstat-no" title="statement not covered" >                    errors: validationErrors,</span>
 <span class="cstat-no" title="statement not covered" >                    success: false,</span>
-<span class="cstat-no" title="statement not covered" >                });</span>
-<span class="cstat-no" title="statement not covered" >                return;</span>
+<span class="cstat-no" title="statement not covered" >                })</span>
+<span class="cstat-no" title="statement not covered" >                return</span>
 <span class="cstat-no" title="statement not covered" >            }</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >            // General error fallback</span>
 <span class="cstat-no" title="statement not covered" >            res.status(500).json({</span>
-<span class="cstat-no" title="statement not covered" >                message: "Internal server error",</span>
+<span class="cstat-no" title="statement not covered" >                message: 'Internal server error',</span>
 <span class="cstat-no" title="statement not covered" >                success: false,</span>
-<span class="cstat-no" title="statement not covered" >            });</span>
+<span class="cstat-no" title="statement not covered" >            })</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
     }
 &nbsp;
     static async deleteCourse(req: Request, res: Response) {
-        const { courseCode } = req.params;
+        const { courseCode } = req.params
         if (!courseCode) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
 <span class="cstat-no" title="statement not covered" >            res.status(400).json({</span>
-<span class="cstat-no" title="statement not covered" >                message: "Course code is required",</span>
+<span class="cstat-no" title="statement not covered" >                message: 'Course code is required',</span>
 <span class="cstat-no" title="statement not covered" >                success: false,</span>
-<span class="cstat-no" title="statement not covered" >            });</span>
-<span class="cstat-no" title="statement not covered" >            return;</span>
+<span class="cstat-no" title="statement not covered" >            })</span>
+<span class="cstat-no" title="statement not covered" >            return</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
         try {
             const course: ICourse | null = await Course.findOneAndDelete({
                 code: courseCode,
-            });
+            })
             if (!course) {
                 res.status(404).json({
-                    message: "Course not found",
+                    message: `Course with code ${courseCode} not found`,
                     success: false,
-                });
-                return;
+                })
+                return
             }
             res.status(200).json({
                 success: true,
-                message: "Course deleted successfully!",
-            });
+                message: 'Course deleted successfully!',
+            })
         } <span class="branch-0 cbranch-no" title="branch not covered" >catch (error) {</span>
-<span class="cstat-no" title="statement not covered" >            logger.error(error);</span>
+<span class="cstat-no" title="statement not covered" >            logger.error(error)</span>
 <span class="cstat-no" title="statement not covered" >            res.status(500).json({</span>
-<span class="cstat-no" title="statement not covered" >                message: "Internal server error",</span>
+<span class="cstat-no" title="statement not covered" >                message: 'Internal server error',</span>
 <span class="cstat-no" title="statement not covered" >                success: false,</span>
-<span class="cstat-no" title="statement not covered" >            });</span>
+<span class="cstat-no" title="statement not covered" >            })</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
     }
 }
 &nbsp;
-export default CourseController;
+export default CourseController
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -901,7 +901,7 @@ export default CourseController;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-12-31T20:08:49.018Z
+                at 2025-01-01T17:08:43.073Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

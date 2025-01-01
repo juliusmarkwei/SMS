@@ -54,8 +54,10 @@ apiRouter.use("/sort/courses", sortCourseRouter);
 app.use("/api/v1", apiRouter);
 app.use("*", _404Controller.index);
 
-export const server = app.listen(PORT, () => {
-    logger.info(`Server started on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'test') {
+    app.listen(PORT, () => {
+        logger.info(`Server started on port ${PORT}`);
+    });
+}
 
 export default app;

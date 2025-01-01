@@ -1,12 +1,12 @@
-import { Request, Response, NextFunction } from "express";
-import { Role } from "../enums";
+import { Request, Response, NextFunction } from 'express'
+import { Role } from '../enums'
 
-declare module "express" {
+declare module 'express' {
     interface Request {
         user?: {
-            role: string;
-            id: string;
-        };
+            role: string
+            id: string
+        }
     }
 }
 
@@ -15,13 +15,13 @@ export const isInstructor = (
     res: Response,
     next: NextFunction
 ) => {
-    const isAnInstructor = req?.user?.role === Role.INSTRUCTOR;
+    const isAnInstructor = req?.user?.role === Role.INSTRUCTOR
     if (!isAnInstructor) {
         res.status(401).json({
             success: false,
-            error: "Unauthorized!",
-        });
-        return;
+            error: 'Unauthorized!',
+        })
+        return
     }
-    next();
-};
+    next()
+}
