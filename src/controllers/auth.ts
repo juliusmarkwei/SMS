@@ -71,11 +71,11 @@ class AuthController {
                 accessToken,
                 refreshToken,
             })
-        } catch (err) {
-            logger.error(err)
-            res.status(500).json({
+        } catch (error: any) {
+            logger.error(error)
+            res.status(error.code || 500).json({
                 success: false,
-                error: 'Internal server error.',
+                error: error.message || 'Internal server error.',
             })
         }
     }
@@ -126,12 +126,12 @@ class AuthController {
                 { expiresIn: '1d' }
             )
 
-            res.json({ success: true, accessToken })
-        } catch (error) {
+            res.status(200).json({ success: true, accessToken })
+        } catch (error: any) {
             logger.error(error)
-            res.status(500).json({
+            res.status(error.code || 500).json({
                 success: false,
-                error: 'Internal server error.',
+                error: error.message || 'Internal server error.',
             })
         }
     }
@@ -171,7 +171,7 @@ class AuthController {
             // Send reset password email
             const emailResult = await sendResetPasswordEmail(user, hashToken)
             if (emailResult.success) {
-                res.json({
+                res.status(200).json({
                     success: true,
                     message: 'Check your inbox for a password reset link',
                 })

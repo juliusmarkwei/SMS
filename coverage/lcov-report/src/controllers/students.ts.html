@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">72.68% </span>
+                <span class="strong">73.63% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>306/421</span>
+                <span class='fraction'>310/421</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">51.21% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>21/42</span>
+                <span class='fraction'>21/41</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">72.68% </span>
+                <span class="strong">73.63% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>306/421</span>
+                <span class='fraction'>310/421</span>
             </div>
         
             
@@ -829,17 +829,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -848,6 +837,17 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -1250,25 +1250,25 @@ class StudentController {
 &nbsp;
             // Calculate total count (needed for pagination metadata)
             const totalCount = await Student.countDocuments(query)
-<span class="cstat-no" title="statement not covered" ><span class="branch-0 cbranch-no" title="branch not covered" ></span></span>
-<span class="cstat-no" title="statement not covered" >            res.status(200).json({</span>
-<span class="cstat-no" title="statement not covered" >                success: true,</span>
-<span class="cstat-no" title="statement not covered" >                currentPage: parseInt(page as string, 10),</span>
-<span class="cstat-no" title="statement not covered" >                totalPages: Math.ceil(</span>
-<span class="cstat-no" title="statement not covered" >                    totalCount / parseInt(limit as string, 10)</span>
-<span class="cstat-no" title="statement not covered" >                ),</span>
-<span class="cstat-no" title="statement not covered" >                count: totalCount,</span>
-<span class="cstat-no" title="statement not covered" >                size: parseInt(limit as string, 10),</span>
-<span class="cstat-no" title="statement not covered" >                data: students,</span>
-<span class="cstat-no" title="statement not covered" >            })</span>
-        } catch (error: any) {
-            res.status(500).json({
-                success: false,
-                error:
-                    error.message<span class="branch-0 cbranch-no" title="branch not covered" > ||</span>
-                    'An error occurred while fetching students.',
+&nbsp;
+            res.status(200).json({
+                success: true,
+                currentPage: parseInt(page as string, 10),
+                totalPages: Math.ceil(
+                    totalCount / parseInt(limit as string, 10)
+                ),
+                count: totalCount,
+                size: parseInt(limit as string, 10),
+                data: students,
             })
-        }
+        } <span class="branch-0 cbranch-no" title="branch not covered" >catch (error: any) {</span>
+<span class="cstat-no" title="statement not covered" >            res.status(500).json({</span>
+<span class="cstat-no" title="statement not covered" >                success: false,</span>
+<span class="cstat-no" title="statement not covered" >                error:</span>
+<span class="cstat-no" title="statement not covered" >                    error.message ||</span>
+<span class="cstat-no" title="statement not covered" >                    'An error occurred while fetching students.',</span>
+<span class="cstat-no" title="statement not covered" >            })</span>
+<span class="cstat-no" title="statement not covered" >        }</span>
     }
 &nbsp;
     // instructors only
@@ -1333,7 +1333,7 @@ export default StudentController
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-01-01T17:08:43.073Z
+                at 2025-01-03T09:56:44.631Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
