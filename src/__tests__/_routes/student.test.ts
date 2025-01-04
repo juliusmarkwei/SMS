@@ -1,27 +1,42 @@
 import request from 'supertest'
-import app from '../../script'
+import { createServer } from '../../utils/server'
 import User from '../../models/User'
 import Student from '../../models/Student'
 import { Role } from '../../utils/enums'
 import mongoose, { Types } from 'mongoose'
-import bcrypt from 'bcrypt'
 import { generateTestToken } from '../../test_data/user.data'
 import { client, getOrSetCache } from '../../utils/cache'
+import { emailNewUsers } from '../../utils/mailer'
+
+const app = createServer()
 
 jest.mock('../../models/User')
 jest.mock('../../models/Student')
 jest.mock('../../utils/mailer')
 jest.mock('../../utils/cache')
-jest.mock('../../utils/logger')
 
 const baseUrl = '/api/v1/students'
 let token: string
 
 describe('Student Routes', () => {
-    const mockStudentId = new Types.ObjectId()
-    const mockUserId = new Types.ObjectId()
+    beforeAll(() => {
+        token = generateTestToken({ role: 'instructor' }) // default role is instructor
+    })
+    beforeEach(() => {
+        jest.clearAllMocks()
+    })
+
+    afterAll(async () => {
+        if (client.isReady) {
+            await client.quit() // Close the Redis connection
+        }
+        await mongoose.connection.close()
+    })
+
+    const mockStudentId = 'studId123'
+    const mockUserId = 'userId123'
     const mockPassword = 'password123'
-    const hashedPassword = bcrypt.hashSync(mockPassword, 10)
+    const hashedPassword = `hashed_${mockPassword}`
 
     const mockStudent = {
         _id: mockStudentId,
@@ -34,7 +49,7 @@ describe('Student Routes', () => {
         _id: mockUserId,
         name: 'John Doe',
         email: 'john.doe@example.com',
-        password: hashedPassword,
+        password: mockPassword,
         role: Role.STUDENT,
         phone: '1234567890',
         gender: 'male',
@@ -42,41 +57,20 @@ describe('Student Routes', () => {
         address: '123 Main Street',
     }
 
-    beforeAll(() => {
-        token = generateTestToken({ role: 'instructor' })
-    })
-    beforeEach(() => {
-        jest.clearAllMocks()
-    })
-    afterAll(async () => {
-        if (client.isReady) {
-            await client.quit() // Close the Redis connection
-        }
-        await mongoose.connection.close()
-    })
-
     describe('POST /students', () => {
         it('should create a new student successfully', async () => {
-            ;(User.findOne as jest.Mock).mockResolvedValue(null)
+            jest.spyOn(Types.ObjectId, 'isValid').mockReturnValue(true)
+            ;(User.findOne as jest.Mock).mockImplementation(() => null)
             ;(User.prototype.save as jest.Mock).mockResolvedValue(mockUser)
             ;(Student.prototype.save as jest.Mock).mockResolvedValue(
                 mockStudent
             )
+            ;(emailNewUsers as jest.Mock).mockImplementation(() => true)
 
             const response = await request(app)
                 .post(`${baseUrl}`)
                 .set('Authorization', `Bearer ${token}`)
-                .send({
-                    name: 'John Doe',
-                    email: 'john.doe@example.com',
-                    password: 'password123',
-                    phone: '1234567890',
-                    gender: 'male',
-                    dateOfBirth: '1990-01-01',
-                    address: '123 Main Street',
-                    level: 100,
-                    cgpa: 3.8,
-                })
+                .send(mockUser)
 
             expect(response.status).toBe(201)
             expect(response.body.success).toBe(true)
@@ -89,17 +83,7 @@ describe('Student Routes', () => {
             const response = await request(app)
                 .post(`${baseUrl}`)
                 .set('Authorization', `Bearer ${token}`)
-                .send({
-                    name: 'John Doe',
-                    email: 'john.doe@example.com',
-                    password: 'password123',
-                    phone: '1234567890',
-                    gender: 'male',
-                    dateOfBirth: '1990-01-01',
-                    address: '123 Main Street',
-                    level: 100,
-                    cgpa: 3.8,
-                })
+                .send(mockUser)
 
             expect(response.status).toBe(400)
             expect(response.body.success).toBe(false)
@@ -133,7 +117,21 @@ describe('Student Routes', () => {
     })
 
     describe('GET /students/:studentId', () => {
+        it('should return 400 if studentId is invalid', async () => {
+            jest.spyOn(Types.ObjectId, 'isValid').mockReturnValue(false)
+            const response = await request(app)
+                .get(`${baseUrl}/invalidId`)
+                .set('Authorization', `Bearer ${token}`)
+
+            expect(response.status).toBe(400)
+            expect(response.body.success).toBe(false)
+            expect(response.body.error).toBe(
+                'studentId not provided or is invalid'
+            )
+        })
+
         it('should return the student if found', async () => {
+            jest.spyOn(Types.ObjectId, 'isValid').mockReturnValue(true)
             ;(getOrSetCache as jest.Mock).mockResolvedValue(mockStudent)
 
             const response = await request(app)
@@ -146,11 +144,11 @@ describe('Student Routes', () => {
         })
 
         it('should return 404 if the student is not found', async () => {
+            jest.spyOn(Types.ObjectId, 'isValid').mockReturnValue(true)
             ;(Student.findOne as jest.Mock).mockReturnValue({
                 populate: jest.fn().mockReturnThis(),
                 select: jest.fn().mockResolvedValue(null),
             }) as jest.Mock
-
             ;(getOrSetCache as jest.Mock).mockImplementation(
                 async (key, callback) => {
                     return await callback()
@@ -163,18 +161,6 @@ describe('Student Routes', () => {
             expect(response.body.error).toBe('Student not found')
             expect(response.status).toBe(404)
             expect(response.body.success).toBe(false)
-        })
-
-        it('should return 400 if studentId is invalid', async () => {
-            const response = await request(app)
-                .get(`${baseUrl}/invalidId`)
-                .set('Authorization', `Bearer ${token}`)
-
-            expect(response.status).toBe(400)
-            expect(response.body.success).toBe(false)
-            expect(response.body.error).toBe(
-                'studentId not provided or is invalid'
-            )
         })
     })
 

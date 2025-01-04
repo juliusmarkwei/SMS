@@ -1,11 +1,11 @@
-import { Router } from "express";
-import { checkSchema } from "express-validator";
-import StudentController from "../controllers/students";
-import { isInstructor } from "../utils/middleware/isInstructor";
-import { studentUpdateValidationScheme } from "../utils/middleware/validators/student";
-import { signupStudentValidationScheme } from "../utils/middleware/validators/student";
+import { Router } from 'express'
+import { checkSchema } from 'express-validator'
+import StudentController from '../controllers/students'
+import { isInstructor } from '../utils/middleware/isInstructor'
+import { studentUpdateValidationScheme } from '../utils/middleware/validators/student'
+import { signupStudentValidationScheme } from '../utils/middleware/validators/student'
 
-const router = Router();
+const router = Router()
 
 /**
  * @swagger
@@ -62,7 +62,7 @@ const router = Router();
  *       404:
  *         description: Student not found
  */
-router.get("/:studentId", StudentController.getSingleStudent);
+router.get('/:studentId', StudentController.getSingleStudent)
 
 /**
  * @swagger
@@ -114,12 +114,12 @@ router.get("/:studentId", StudentController.getSingleStudent);
  *         description: Internal server error
  */
 router.put(
-    "/:studentId",
+    '/:studentId',
     checkSchema(studentUpdateValidationScheme),
     StudentController.updateSingleStudent
-);
+)
 
-router.use(isInstructor);
+router.use(isInstructor)
 
 /**
  * @swagger
@@ -240,10 +240,10 @@ router.use(isInstructor);
  *                   example: "Internal server error."
  */
 router.post(
-    "/",
+    '/',
     checkSchema(signupStudentValidationScheme),
     StudentController.createStudent
-);
+)
 
 /**
  * @swagger
@@ -322,7 +322,7 @@ router.post(
  *       500:
  *         description: Internal server error
  */
-router.get("/", StudentController.getAllStudents);
+router.get('/', StudentController.getAllStudents)
 
 /**
  * @swagger
@@ -349,6 +349,6 @@ router.get("/", StudentController.getAllStudents);
  *       500:
  *         description: Internal server error
  */
-router.delete("/:studentId", StudentController.deleteStudent);
+router.delete('/:studentId', StudentController.deleteStudent)
 
-export { router as studentRouter };
+export { router as studentRouter }

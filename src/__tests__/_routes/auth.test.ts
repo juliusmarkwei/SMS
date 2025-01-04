@@ -1,11 +1,13 @@
 import 'dotenv/config'
 import request from 'supertest'
-import app from '../../script'
 import User from '../../models/User'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import { sendResetPasswordEmail } from '../../utils/mailer'
 import mongoose from 'mongoose'
+import { createServer } from '../../utils/server'
+
+const app = createServer()
 
 // Mock dependencies
 jest.mock('../../models/User')

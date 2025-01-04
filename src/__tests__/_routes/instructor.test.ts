@@ -2,10 +2,12 @@ import request from 'supertest'
 import User from '../../models/User'
 import Instructor from '../../models/Instructor'
 import Course from '../../models/Course'
-import app from '../../script'
 import { generateTestToken, instructors } from '../../test_data/user.data'
 import { client, getOrSetCache } from '../../utils/cache'
 import mongoose from 'mongoose'
+import { createServer } from '../../utils/server'
+
+const app = createServer()
 
 jest.mock('../../models/User')
 jest.mock('../../models/Instructor')
@@ -21,7 +23,7 @@ jest.useRealTimers()
 
 describe('Instructor Routes', () => {
     beforeAll(() => {
-        token = generateTestToken({ role: 'instructor' })
+        token = generateTestToken({ role: 'instructor' }) // default role is instructor
     })
     afterAll(async () => {
         if (client.isReady) {

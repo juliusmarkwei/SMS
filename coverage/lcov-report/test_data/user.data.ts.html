@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.37% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>133/138</span>
+                <span class='fraction'>152/152</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.37% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>133/138</span>
+                <span class='fraction'>152/152</span>
             </div>
         
             
@@ -201,7 +201,21 @@
 <a name='L136'></a><a href='#L136'>136</a>
 <a name='L137'></a><a href='#L137'>137</a>
 <a name='L138'></a><a href='#L138'>138</a>
-<a name='L139'></a><a href='#L139'>139</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -334,88 +348,103 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import jwt from "jsonwebtoken";
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import jwt from 'jsonwebtoken'
+import 'dotenv/config'
 &nbsp;
 export const mockUsers = [
     {
         _id: 1,
-        name: "Max Stevenson",
-        password: "p@$$wOrd123",
-        email: "max@gmail.com",
-        role: "student",
-        phone: "0247584843",
-        gender: "male",
-        address: "Labadi",
-        dateOfBirth: "2001-05-12",
+        name: 'Max Stevenson',
+        password: 'p@$$wOrd123',
+        email: 'max@gmail.com',
+        role: 'student',
+        phone: '0247584843',
+        gender: 'male',
+        address: 'Labadi',
+        dateOfBirth: '2001-05-12',
     },
     {
         _id: 2,
-        name: "Ellen Bass",
-        password: "p@$$wOrd123",
-        email: "bassellen@gmail.com",
-        role: "student",
-        phone: "0474638398",
-        gender: "female",
-        address: "Amamoma",
-        dateOfBirth: "1999-07-23",
+        name: 'Ellen Bass',
+        password: 'p@$$wOrd123',
+        email: 'bassellen@gmail.com',
+        role: 'student',
+        phone: '0474638398',
+        gender: 'female',
+        address: 'Amamoma',
+        dateOfBirth: '1999-07-23',
     },
     {
         id: 3,
-        name: "Mario Reynolds",
-        password: "p@$$wOrd123",
-        email: "marioreynolds05@gmail.com",
-        role: "student",
-        phone: "0256849272",
-        gender: "male",
-        address: "Spintex",
-        dateOfBirth: "2003-12-30",
+        name: 'Mario Reynolds',
+        password: 'p@$$wOrd123',
+        email: 'marioreynolds05@gmail.com',
+        role: 'student',
+        phone: '0256849272',
+        gender: 'male',
+        address: 'Spintex',
+        dateOfBirth: '2003-12-30',
     },
     {
         id: 4,
-        name: "Floyd Morales",
-        password: "p@$$wOrd123",
-        email: "moralesfloyed@gmail.com",
-        role: "instructor",
-        phone: "0558362849",
-        gender: "male",
-        address: "East Legon",
-        dateOfBirth: "1996-01-01",
+        name: 'Floyd Morales',
+        password: 'p@$$wOrd123',
+        email: 'moralesfloyed@gmail.com',
+        role: 'instructor',
+        phone: '0558362849',
+        gender: 'male',
+        address: 'East Legon',
+        dateOfBirth: '1996-01-01',
     },
     {
         id: 5,
-        name: "Sophia McDonald",
-        password: "p@$$wOrd123",
-        email: "sophiamacdonald@gmail.com",
-        role: "instructor",
-        phone: "0338464738",
-        gender: "femal",
-        address: "American House",
-        dateOfBirth: "1899-04-11",
+        name: 'Sophia McDonald',
+        password: 'p@$$wOrd123',
+        email: 'sophiamacdonald@gmail.com',
+        role: 'instructor',
+        phone: '0338464738',
+        gender: 'female',
+        address: 'American House',
+        dateOfBirth: '1899-04-11',
     },
-];
+]
 &nbsp;
 export const user1 = {
     _id: 3,
-    name: "Mario Reynolds",
-    password: "p@$$wOrd123",
-    email: "marioreynolds05@gmail.com",
-    role: "student",
-    phone: "0256849272",
-    gender: "male",
-    address: "Spintex",
+    name: 'Mario Reynolds',
+    password: 'p@$$wOrd123',
+    email: 'marioreynolds05@gmail.com',
+    role: 'student',
+    phone: '0256849272',
+    gender: 'male',
+    address: 'Spintex',
     dateOfBirth: new Date(2003 - 12 - 30),
-};
+}
 &nbsp;
 export const mockStudents = [
     { _id: 1, user: 1, level: 100, cgpa: 4.0, courses: [1, 2] },
     { _id: 2, user: 2, level: 200, cgpa: 3.5, courses: [1, 3] },
     { _id: 3, user: 3, level: 300, cgpa: 2.9, courses: [2, 4] },
-];
+]
 &nbsp;
 export const student1 = {
     _id: 1,
@@ -423,60 +452,73 @@ export const student1 = {
     level: 100,
     cgpa: 4.0,
     courses: [1, 2],
-};
+}
+&nbsp;
 export const student2 = {
     _id: 2,
     user: 2,
     level: 200,
     cgpa: 3.5,
     courses: [1, 3],
-};
+}
 &nbsp;
 export const newStudent1 = {
-    name: "Adrian Keller",
-    email: "kelleradrian@kencu.rw",
-    password: "p@$$wOrd123",
-    phone: "(201) 724-3216",
-    gender: "female",
-    address: "Kigali",
-    dateOfBirth: "2001-05-12",
+    name: 'Adrian Keller',
+    email: 'kelleradrian@kencu.rw',
+    password: 'p@$$wOrd123',
+    phone: '(201) 724-3216',
+    gender: 'female',
+    address: 'Kigali',
+    dateOfBirth: '2001-05-12',
     level: 100,
     cgpa: 4.0,
-};
+}
+&nbsp;
+export const newInstructorUser = {
+    name: 'John Doe',
+    password: 'p@$$wOrd123',
+    email: 'john.doe@gmail.com',
+    phone: '0247584843',
+    gender: 'male',
+    address: 'Labadi',
+    dateOfBirth: '2001-05-12',
+    salary: 50_000.0,
+    coursesTaught: [],
+}
 &nbsp;
 export const instructors = [
     {
         _id: 1,
-        user: { name: "Mario Reynolds", email: "marioreynolds05@gmail.com" },
-        dapartment: "Computer Science",
-        coursesTaugth: [],
+        user: { name: 'Mario Reynolds', email: 'marioreynolds05@gmail.com' },
+        department: 'Computer Science',
+        coursesTaught: [],
         salary: 50_000.0,
     },
     {
         _id: 2,
-        user: { name: "Sophia McDonald", email: "sophiamacdonald@gmail.com" },
-        dapartment: "Communication and Professionalism",
-        coursesTaugth: [],
+        user: { name: 'Sophia McDonald', email: 'sophiamacdonald@gmail.com' },
+        department: 'Communication and Professionalism',
+        coursesTaught: [],
         salary: 70_000.0,
     },
-];
+]
 &nbsp;
 export const instructor1 = {
     _id: 1,
     user: 4,
-    dapartment: "Computer Science",
-    coursesTaugth: [],
+    department: 'Computer Science',
+    coursesTaught: [],
     salary: 50_000.0,
-};
+}
 &nbsp;
-type UserRole = "student" | "instructor";
+type UserRole = 'student' | 'instructor'
 &nbsp;
-export const generateTestToken = <span class="fstat-no" title="function not covered" >({ role }: { role: UserRole }) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    const payload = { id: "testUser", type: "refreshToken", role };</span>
-<span class="cstat-no" title="statement not covered" >    return jwt.sign(payload, process.env.JWT_SECRET as string, {</span>
-<span class="cstat-no" title="statement not covered" >        expiresIn: "1d",</span>
-<span class="cstat-no" title="statement not covered" >    });</span>
-<span class="cstat-no" title="statement not covered" >};</span>
+export const generateTestToken = ({ role }: { role: UserRole | undefined }) =&gt; {
+    const payload = { id: 'testUser', type: 'refreshToken', role }
+    return jwt.sign(payload, process.env.JWT_SECRET as string, {
+        expiresIn: '1d',
+    })
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -484,7 +526,7 @@ export const generateTestToken = <span class="fstat-no" title="function not cove
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-12-31T12:44:21.682Z
+                at 2025-01-04T18:35:46.423Z
             </div>
         <script src="../prettify.js"></script>
         <script>

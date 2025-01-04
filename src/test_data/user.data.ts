@@ -1,4 +1,5 @@
 import jwt from 'jsonwebtoken'
+import 'dotenv/config'
 
 export const mockUsers = [
     {
@@ -83,6 +84,7 @@ export const student1 = {
     cgpa: 4.0,
     courses: [1, 2],
 }
+
 export const student2 = {
     _id: 2,
     user: 2,
@@ -101,6 +103,18 @@ export const newStudent1 = {
     dateOfBirth: '2001-05-12',
     level: 100,
     cgpa: 4.0,
+}
+
+export const newInstructorUser = {
+    name: 'John Doe',
+    password: 'p@$$wOrd123',
+    email: 'john.doe@gmail.com',
+    phone: '0247584843',
+    gender: 'male',
+    address: 'Labadi',
+    dateOfBirth: '2001-05-12',
+    salary: 50_000.0,
+    coursesTaught: [],
 }
 
 export const instructors = [

@@ -33,7 +33,6 @@ class StudentController {
                 level,
                 cgpa,
             } = matchedData(req)
-
             // Check if user already exists
             const userExists: IUser | null = await User.findOne({ email })
             if (userExists) {
@@ -72,7 +71,6 @@ class StudentController {
 
             // Notify new user via email of their new account
             await emailNewUsers(user, password)
-
             res.status(201).json({
                 success: true,
                 message: `${Role.STUDENT} created successfully!`,

@@ -1,17 +1,20 @@
 import request from 'supertest'
-import app from '../../../script'
 import { generateTestToken } from '../../../test_data/user.data'
 import { Role } from '../../../utils/enums'
 import User from '../../../models/User'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import { client } from '../../../utils/cache'
-import mongoose from 'mongoose'
+import { client, getOrSetCache } from '../../../utils/cache'
+import mongoose, { Types } from 'mongoose'
+import { createServer } from '../../../utils/server'
+
+const app = createServer()
 
 // mock dependencies
 jest.mock('../../../models/User')
 jest.mock('bcrypt')
 jest.mock('../../../models/User')
+jest.mock('../../../utils/cache')
 
 let token: string
 
@@ -52,13 +55,33 @@ describe('studentRateLimiter Middleware', () => {
     })
 
     it('should block requests exceeding the rate limit for a student', async () => {
+        const courseCode = 'INF123'
+        jest.spyOn(Types.ObjectId, 'isValid').mockReturnValue(true)
+        ;(getOrSetCache as jest.Mock).mockImplementation(async () => ({
+            name: 'Course 1',
+            code: 'INF128',
+            credits: 3,
+            semester: 'First',
+        }))
+
         for (let i = 0; i < 15; i++) {
-            await request(app)
-                .get('/api/v1/courses')
+            const response = await request(app)
+                .get(`/api/v1/courses/${courseCode}`)
                 .set('Authorization', `Bearer ${token}`)
+
+            expect(response.status).toBe(200)
+            expect(response.body).toEqual({
+                success: true,
+                course: {
+                    name: 'Course 1',
+                    code: 'INF128',
+                    credits: 3,
+                    semester: 'First',
+                },
+            })
         }
         const response = await request(app)
-            .get('/api/v1/courses')
+            .get(`/api/v1/courses/${courseCode}`)
             .set('Authorization', `Bearer ${token}`)
 
         expect(response.status).toBe(429)

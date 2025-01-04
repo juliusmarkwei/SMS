@@ -1,7 +1,9 @@
 import request from 'supertest'
-import app from '../../script'
 import _404Controller from '../../controllers/404'
 import { generateTestToken } from '../../test_data/user.data'
+import { createServer } from '../../utils/server'
+
+const app = createServer()
 
 let token: string
 

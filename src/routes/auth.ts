@@ -1,14 +1,14 @@
-import { Router } from "express";
-import AuthController from "../controllers/auth";
-import { checkSchema } from "express-validator";
+import { Router } from 'express'
+import AuthController from '../controllers/auth'
+import { checkSchema } from 'express-validator'
 import {
     loginValidationScheme,
     forgotPasswordValidationSchema,
     resetPasswordValidationSchema,
-} from "../utils/middleware/validators/auth";
-import _404Controller from "../controllers/404";
+} from '../utils/middleware/validators/auth'
+import _404Controller from '../controllers/404'
 
-const router = Router();
+const router = Router()
 
 // Public routes
 
@@ -71,7 +71,7 @@ const router = Router();
  *       500:
  *         description: Server error
  */
-router.post("/login", checkSchema(loginValidationScheme), AuthController.login);
+router.post('/login', checkSchema(loginValidationScheme), AuthController.login)
 
 /**
  * @swagger
@@ -109,10 +109,10 @@ router.post("/login", checkSchema(loginValidationScheme), AuthController.login);
  *         description: Server error
  */
 router.post(
-    "/forgot-password",
+    '/forgot-password',
     checkSchema(forgotPasswordValidationSchema),
     AuthController.forgotPassword
-);
+)
 
 /**
  * @swagger
@@ -163,10 +163,10 @@ router.post(
  *         description: Server error
  */
 router.post(
-    "/password-reset",
+    '/password-reset',
     checkSchema(resetPasswordValidationSchema),
     AuthController.resetPassword
-);
+)
 
 /**
  * @swagger
@@ -203,8 +203,9 @@ router.post(
  *       500:
  *         description: Server error
  */
-router.post("/refresh-token", AuthController.refreshAccessToken);
+router.post('/refresh-token', AuthController.refreshAccessToken)
 
 // handle 404
-router.use(_404Controller.index);
-export { router as authRouter };
+router.use(_404Controller.index)
+
+export { router as authRouter }

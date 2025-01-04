@@ -1,9 +1,11 @@
 import request from 'supertest'
-import app from '../../script'
 import Course from '../../models/Course'
 import { client, getOrSetCache } from '../../utils/cache'
 import { generateTestToken } from '../../test_data/user.data'
 import mongoose from 'mongoose'
+import { createServer } from '../../utils/server'
+
+const app = createServer()
 
 // Mock dependencies
 jest.mock('../../models/Course')

@@ -1,11 +1,13 @@
 import request from 'supertest'
-import app from '../../script'
 import Enrollment from '../../models/Enrollment'
 import Student from '../../models/Student'
 import Course from '../../models/Course'
 import { client, getOrSetCache } from '../../utils/cache'
 import { generateTestToken } from '../../test_data/user.data'
 import mongoose from 'mongoose'
+import { createServer } from '../../utils/server'
+
+const app = createServer()
 
 // Mock dependencies
 jest.mock('../../models/Enrollment')
@@ -48,7 +50,6 @@ describe('Enrollment Routes', () => {
             ;(Course.findOne as jest.Mock).mockReturnValue(mockQuery)
             // mock select()
             ;(mockQuery.select as jest.Mock).mockResolvedValue(mockCourse)
-
             ;(Student.findOne as jest.Mock).mockResolvedValue(mockStudent)
             ;(Enrollment.prototype.save as jest.Mock).mockResolvedValue(
                 mockEnrollment

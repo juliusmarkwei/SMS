@@ -1,9 +1,14 @@
 import { Request, Response, NextFunction } from 'express'
 import { Role } from '../../../utils/enums'
 import request from 'supertest'
-import app from '../../../script'
-import { generateTestToken } from '../../../test_data/user.data'
-import { client } from '../../../utils/cache'
+import { generateTestToken, instructors } from '../../../test_data/user.data'
+import { client, getOrSetCache } from '../../../utils/cache'
+import { createServer } from '../../../utils/server'
+
+const app = createServer()
+
+// mock dependencies
+jest.mock('../../../utils/cache')
 
 let token: string
 describe('isInstructor Middleware', () => {
@@ -24,12 +29,19 @@ describe('isInstructor Middleware', () => {
             req.user = { role: Role.INSTRUCTOR, id: '123' } // Mock instructor
             next()
         })
+        ;(getOrSetCache as jest.Mock).mockImplementation(async () => [
+            ...instructors,
+        ])
 
         const response = await request(app)
             .get('/api/v1/instructors')
             .set('Authorization', `Bearer ${token}`)
 
         expect(response.status).toBe(200)
+        expect(response.body).toEqual({
+            success: true,
+            instructors,
+        })
     })
 
     it('should deny access if user is not an instructor', async () => {
