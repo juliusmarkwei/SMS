@@ -10,7 +10,6 @@ export const checkJwtToken = (
 ) => {
     const token = req.headers.authorization?.split(' ')[1] // Split 'Bearer <token>'
 
-    console.log('User data attached to request object:', req.user)
     if (!token) {
         res.status(401).json({
             success: false,

@@ -2,14 +2,14 @@ const baseValidationSchema = {
     name: {
         optional: true,
         isLength: {
-            errorMessage: "Course name cannot be empty",
+            errorMessage: 'Course name cannot be empty',
             options: { min: 1 },
         },
     },
     code: {
         optional: true,
         isLength: {
-            errorMessage: "Course code cannot be empty",
+            errorMessage: 'Course code cannot be empty',
             options: { min: 1 },
         },
     },
@@ -17,25 +17,32 @@ const baseValidationSchema = {
         optional: true,
         isInt: {
             errorMessage:
-                "Number of credits should be an integer between 1 and 3",
+                'Number of credits should be an integer between 1 and 3',
             options: { min: 1, max: 3 },
         },
     },
     semester: {
         optional: true,
         isIn: {
-            options: [["First", "Second"]],
-            errorMessage: "Semester must be one of First or Second",
+            options: [['First', 'Second']],
+            errorMessage: 'Semester must be one of First or Second',
         },
     },
     department: {
         optional: true,
         isLength: {
-            errorMessage: "Department cannot be empty",
+            errorMessage: 'Department cannot be empty',
             options: { min: 1 },
         },
     },
-};
+    description: {
+        optional: true,
+        isLength: {
+            errorMessage: 'Description is cannot be empty',
+            options: { min: 1 },
+        },
+    },
+}
 
 export const courseCreationValidationSchema = {
     ...baseValidationSchema,
@@ -44,8 +51,9 @@ export const courseCreationValidationSchema = {
     credits: { ...baseValidationSchema.credits, optional: false },
     semester: { ...baseValidationSchema.semester, optional: false },
     department: { ...baseValidationSchema.department, optional: false },
-};
+    description: { ...baseValidationSchema.description, optional: false },
+}
 
 export const courseUpdationValidationSchema = {
     ...baseValidationSchema, // All fields remain optional
-};
+}

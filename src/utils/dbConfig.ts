@@ -26,26 +26,4 @@ const connect = async () => {
     }
 }
 
-export const connectTestDB = async () => {
-    if (mongoose.connection.readyState === 1) {
-        logger.info('Already connected to test database')
-        return
-    }
-    if (mongoose.connection.readyState === 2) {
-        logger.info('Connecting to test database')
-        return
-    }
-    try {
-        await mongoose.connect(`${process.env.MONGODB_URI}/smsTest`, {
-            bufferCommands: true,
-        })
-
-        mongoose.connection.on('connected', () => {
-            logger.info('Connected to test database')
-        })
-    } catch (error: any) {
-        logger.error('Error connecting to test database: ', error.message)
-    }
-}
-
 export default connect

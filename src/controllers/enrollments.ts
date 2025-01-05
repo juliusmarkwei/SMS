@@ -37,8 +37,7 @@ class EnrollmentController {
         }
 
         try {
-            const courseQuery = await Course.findOne({ code: courseCode })
-            const course: ICourse | null = await courseQuery.select('_id')
+            const course = await Course.findOne({ code: courseCode })
 
             if (!course) {
                 res.status(404).json({
@@ -88,7 +87,7 @@ class EnrollmentController {
 
             res.status(500).json({
                 success: false,
-                message: 'Internal server error',
+                message: error.message || 'Internal server error',
             })
         }
     }

@@ -95,7 +95,7 @@ export const student2 = {
 
 export const newStudent1 = {
     name: 'Adrian Keller',
-    email: 'kelleradrian@kencu.rw',
+    email: 'watchmker@gmail.com',
     password: 'p@$$wOrd123',
     phone: '(201) 724-3216',
     gender: 'female',
@@ -105,15 +105,27 @@ export const newStudent1 = {
     cgpa: 4.0,
 }
 
-export const newInstructorUser = {
+export const newInstructorUser1 = {
     name: 'John Doe',
     password: 'p@$$wOrd123',
-    email: 'john.doe@gmail.com',
+    email: 'najiweh431@myweblaw.com',
     phone: '0247584843',
     gender: 'male',
     address: 'Labadi',
     dateOfBirth: '2001-05-12',
     salary: 50_000.0,
+    coursesTaught: [],
+}
+
+export const newInstructorUser2 = {
+    name: 'Dean Gutierrez',
+    password: 'p@$$wOrd123',
+    email: 'fispugiydi@gufum.com',
+    phone: '0536284593',
+    gender: 'male',
+    address: 'Kumasi',
+    dateOfBirth: '2005-03-23',
+    salary: 80_000.0,
     coursesTaught: [],
 }
 
@@ -141,6 +153,54 @@ export const instructor1 = {
     coursesTaught: [],
     salary: 50_000.0,
 }
+
+export const testCourses = [
+    {
+        name: 'Introduction to Computer Science',
+        code: 'CSC101',
+        description:
+            'An introductory course in computer science covering basic programming and problem-solving techniques.',
+        credits: 3,
+        semester: 'First',
+        department: 'Computer Science',
+    },
+    {
+        name: 'Calculus I',
+        code: 'MTH101',
+        description:
+            'A foundational mathematics course focusing on limits, derivatives, and integrals.',
+        credits: 3,
+        semester: 'First',
+        department: 'Mathematics',
+    },
+    {
+        name: 'General Chemistry',
+        code: 'CHM101',
+        description:
+            'An introductory chemistry course covering atomic structure, chemical reactions, and laboratory techniques.',
+        credits: 2,
+        semester: 'Second',
+        department: 'Chemistry',
+    },
+    {
+        name: 'Principles of Economics',
+        code: 'ECO101',
+        description:
+            'An overview of microeconomic and macroeconomic principles, including market behavior and economic policies.',
+        credits: 3,
+        semester: 'Second',
+        department: 'Economics',
+    },
+    {
+        name: 'Introduction to Psychology',
+        code: 'PSY101',
+        description:
+            'An introductory course exploring key psychological concepts and research methods.',
+        credits: 2,
+        semester: 'First',
+        department: 'Psychology',
+    },
+]
 
 type UserRole = 'student' | 'instructor'
 

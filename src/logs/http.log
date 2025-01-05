@@ -11923,3 +11923,95 @@
 2025-01-04T18:35:16.099Z [ERROR]: Something went wrong
 2025-01-04T18:35:37.751Z [ERROR]: Internal error
 2025-01-04T18:35:37.762Z [ERROR]: Internal error
+2025-01-04T18:46:09.103Z [ERROR]: Unexpected error
+2025-01-04T18:46:09.200Z [ERROR]: Unexpected error
+2025-01-04T18:46:15.935Z [ERROR]: Database error
+2025-01-04T18:46:15.960Z [INFO]: [object Object]
+2025-01-04T18:46:15.984Z [INFO]: [object Object]
+2025-01-04T18:46:22.113Z [ERROR]: Database error
+2025-01-04T18:46:27.605Z [ERROR]: Database error
+2025-01-04T18:46:27.661Z [ERROR]: [object Object]
+2025-01-04T18:46:44.075Z [ERROR]: Something went wrong
+2025-01-04T18:46:44.297Z [ERROR]: Something went wrong
+2025-01-04T18:47:01.166Z [ERROR]: Internal error
+2025-01-04T18:47:01.179Z [ERROR]: Internal error
+2025-01-04T18:47:06.455Z [ERROR]: Internal server error.
+2025-01-04T18:54:00.519Z [ERROR]: Unexpected error
+2025-01-04T18:54:00.610Z [ERROR]: Unexpected error
+2025-01-04T18:54:07.198Z [ERROR]: Database error
+2025-01-04T18:54:07.222Z [INFO]: [object Object]
+2025-01-04T18:54:07.246Z [INFO]: [object Object]
+2025-01-04T18:54:18.494Z [ERROR]: Database error
+2025-01-04T18:54:28.822Z [ERROR]: Database error
+2025-01-04T18:54:28.872Z [ERROR]: [object Object]
+2025-01-04T18:54:32.972Z [ERROR]: Something went wrong
+2025-01-04T18:54:33.043Z [ERROR]: Something went wrong
+2025-01-04T18:54:35.823Z [ERROR]: Internal server error.
+2025-01-04T18:54:44.385Z [ERROR]: Internal error
+2025-01-04T18:54:44.396Z [ERROR]: Internal error
+2025-01-04T19:16:09.037Z [ERROR]: Unexpected error
+2025-01-04T19:16:09.116Z [ERROR]: Unexpected error
+2025-01-04T19:16:10.596Z [ERROR]: Database error
+2025-01-04T19:16:10.614Z [INFO]: [object Object]
+2025-01-04T19:16:10.636Z [INFO]: [object Object]
+2025-01-04T19:16:11.940Z [ERROR]: Database error
+2025-01-04T19:16:21.949Z [ERROR]: Database error
+2025-01-04T19:16:21.983Z [ERROR]: [object Object]
+2025-01-04T19:16:25.162Z [ERROR]: Something went wrong
+2025-01-04T19:16:25.236Z [ERROR]: Something went wrong
+2025-01-04T19:16:33.589Z [ERROR]: Internal error
+2025-01-04T19:16:33.598Z [ERROR]: Internal error
+2025-01-04T19:16:35.234Z [ERROR]: Internal server error.
+2025-01-04T21:16:40.592Z [INFO]: Server started on port 3000
+2025-01-04T21:17:01.704Z [INFO]: Connected to database
+2025-01-04T21:18:31.461Z [INFO]: Closing Redis client...
+2025-01-04T21:48:43.132Z [INFO]: Server started on port 3000
+2025-01-04T21:48:47.038Z [INFO]: Connected to database
+2025-01-04T21:52:00.713Z [INFO]: Server started on port 3000
+2025-01-04T21:52:10.771Z [INFO]: Server started on port 3000
+2025-01-04T21:52:14.181Z [INFO]: Connected to database
+2025-01-04T21:53:43.442Z [INFO]: Server started on port 3000
+2025-01-04T21:53:48.322Z [INFO]: Connected to database
+2025-01-04T21:53:57.582Z [INFO]: Server started on port 3000
+2025-01-04T21:54:00.862Z [INFO]: Connected to database
+2025-01-04T21:54:28.432Z [INFO]: Server started on port 3000
+2025-01-04T21:54:31.779Z [INFO]: Connected to database
+2025-01-04T21:55:06.251Z [ERROR]: Course validation failed: description: Path `description` is required.
+2025-01-04T21:55:20.322Z [INFO]: Closing Redis client...
+2025-01-04T21:56:20.745Z [ERROR]: Course validation failed: description: Path `description` is required.
+2025-01-04T21:57:21.819Z [ERROR]: Course validation failed: description: Path `description` is required.
+2025-01-04T21:58:13.203Z [ERROR]: Course validation failed: description: Path `description` is required.
+2025-01-04T22:16:22.306Z [ERROR]: Course validation failed: description: Path `description` is required.
+2025-01-04T22:19:23.879Z [ERROR]: Course validation failed: description: Path `description` is required.
+2025-01-04T22:42:39.115Z [ERROR]: Course validation failed: description: Path `description` is required.
+2025-01-05T00:05:13.826Z [ERROR]: Course validation failed: description: Path `description` is required.
+2025-01-05T00:06:36.014Z [ERROR]: Course validation failed: description: Path `description` is required.
+2025-01-05T00:07:15.862Z [ERROR]: Course validation failed: description: Path `description` is required.
+2025-01-05T00:08:01.259Z [INFO]: Server started on port 3000
+2025-01-05T00:08:03.677Z [INFO]: Connected to database
+2025-01-05T00:08:05.811Z [ERROR]: Course validation failed: description: Path `description` is required.
+2025-01-05T00:12:00.760Z [INFO]: Server started on port 3000
+2025-01-05T00:12:09.109Z [INFO]: Server started on port 3000
+2025-01-05T00:12:13.674Z [INFO]: Connected to database
+2025-01-05T00:12:20.471Z [INFO]: Closing Redis client...
+2025-01-05T00:49:14.545Z [ERROR]: courseQuery.select is not a function
+2025-01-05T00:53:25.846Z [ERROR]: courseQuery.select is not a function
+2025-01-05T00:54:23.825Z [ERROR]: courseQuery.select is not a function
+2025-01-05T00:55:01.559Z [ERROR]: courseQuery.select is not a function
+2025-01-05T00:56:51.537Z [INFO]: Server started on port 3000
+2025-01-05T00:56:53.145Z [INFO]: Connected to database
+2025-01-05T00:56:58.744Z [ERROR]: courseQuery.select is not a function
+2025-01-05T00:58:35.035Z [INFO]: Server started on port 3000
+2025-01-05T00:58:37.261Z [INFO]: Connected to database
+2025-01-05T00:58:39.038Z [ERROR]: courseQuery.select is not a function
+2025-01-05T00:59:04.473Z [INFO]: Server started on port 3000
+2025-01-05T00:59:06.118Z [INFO]: Connected to database
+2025-01-05T00:59:16.043Z [ERROR]: courseQuery.select is not a function
+2025-01-05T01:00:39.754Z [INFO]: Server started on port 3000
+2025-01-05T01:00:41.459Z [INFO]: Connected to database
+2025-01-05T01:00:43.136Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('675ec943a1368b32c795f301'), course: ObjectId('676051fd3cbd4e7f12075c2d') }
+2025-01-05T01:00:47.710Z [INFO]: Closing Redis client...
+2025-01-05T01:20:53.989Z [ERROR]: Cannot read properties of undefined (reading 'success')
+2025-01-05T01:21:57.465Z [ERROR]: Cannot read properties of undefined (reading 'success')
+2025-01-05T01:41:59.155Z [ERROR]: jwt malformed
+2025-01-05T01:42:59.593Z [ERROR]: jwt malformed
