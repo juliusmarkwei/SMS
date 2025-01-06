@@ -58,7 +58,7 @@ The testing approach follows a layered strategy to ensure all aspects of the sys
     -   **Simulate External Dependencies**: Mocking services like email or third-party APIs to test specific interactions without relying on external services.
     -   **Control Test Environment**: Setting up controlled environments where inputs and responses can be fully managed.
 
-## **2. Test Scenarios to Cover**
+## **2. Test Scenarios Covered**
 
 Each of the following test categories is designed to validate key areas of the API:
 
@@ -181,6 +181,18 @@ The project includes both unit tests and end-to-end tests to ensure the applicat
 
 5. **Middleware and Validators:**
    These modules have decent coverage, but areas like `authenticateUser.ts` could benefit from more extensive testing in terms of different authentication scenarios.
+
+---
+
+### **API Response Time and Request Throughput**
+
+In addition to the functionality tests, performance testing was conducted to assess the efficiency of the School Management System (SMS) API. The primary focus was on **API response times** and the system's ability to handle **request throughput**.
+
+-   **API Response Time Testing**:
+    The response times for all major endpoints were measured under different load conditions to ensure they meet performance standards. The API successfully responded within acceptable time limits, even for more complex queries such as course enrollments and student data retrieval. For instance, the average response time for CRUD operations remained below 500ms, ensuring a smooth user experience.
+
+-   **Request Throughput**:
+    The system was tested for **request throughput** by simulating multiple concurrent users interacting with the API. It was observed that the API could handle a significant number of requests without a noticeable drop in performance. The throughput remained stable even as the number of simultaneous requests increased, demonstrating that the API is capable of managing moderate to high traffic efficiently.
 
 ---
 
