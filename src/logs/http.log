@@ -12304,3 +12304,113 @@
 2025-01-06T09:28:40.280Z [INFO]: [object Object]
 2025-01-06T09:28:40.304Z [INFO]: Fetched Courses:
 2025-01-06T09:28:40.343Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677ba2472b6e5f4cb9a07cb3'), course: ObjectId('677ba2472b6e5f4cb9a07cb9') }
+2025-01-06T09:59:29.584Z [INFO]: Server started on port 3000
+2025-01-06T09:59:31.301Z [INFO]: Connected to database
+2025-01-06T10:00:21.987Z [INFO]: [object Object]
+2025-01-06T10:00:22.206Z [INFO]: Fetched Courses:
+2025-01-06T10:05:37.914Z [INFO]: Server started on port 3000
+2025-01-06T10:05:38.545Z [INFO]: [object Object]
+2025-01-06T10:05:38.562Z [INFO]: Fetched Courses:
+2025-01-06T10:05:38.594Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677baaf2c9517df32ab25277'), course: ObjectId('677baaf2c9517df32ab2527d') }
+2025-01-06T10:05:39.624Z [INFO]: Connected to database
+2025-01-06T10:05:45.571Z [ERROR]: Unexpected error
+2025-01-06T10:05:45.644Z [ERROR]: Unexpected error
+2025-01-06T10:05:47.746Z [ERROR]: Database error
+2025-01-06T10:05:47.781Z [ERROR]: [object Object]
+2025-01-06T10:05:48.685Z [ERROR]: Something went wrong
+2025-01-06T10:05:48.744Z [ERROR]: Something went wrong
+2025-01-06T10:05:53.414Z [ERROR]: Database error
+2025-01-06T10:05:53.440Z [INFO]: [object Object]
+2025-01-06T10:05:53.461Z [INFO]: [object Object]
+2025-01-06T10:05:56.528Z [ERROR]: Database error
+2025-01-06T10:07:06.873Z [INFO]: [object Object]
+2025-01-06T10:07:06.890Z [INFO]: Fetched Courses:
+2025-01-06T10:07:06.941Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677bab4a1b37e90a59439f51'), course: ObjectId('677bab4a1b37e90a59439f57') }
+2025-01-06T10:07:09.347Z [INFO]: Server started on port 3000
+2025-01-06T10:07:11.061Z [INFO]: Connected to database
+2025-01-06T10:07:11.897Z [ERROR]: Unexpected error
+2025-01-06T10:07:11.977Z [ERROR]: Unexpected error
+2025-01-06T10:07:14.441Z [ERROR]: Database error
+2025-01-06T10:07:14.467Z [INFO]: [object Object]
+2025-01-06T10:07:14.488Z [INFO]: [object Object]
+2025-01-06T10:07:17.988Z [ERROR]: Database error
+2025-01-06T10:07:18.022Z [ERROR]: [object Object]
+2025-01-06T10:07:25.335Z [ERROR]: Database error
+2025-01-06T10:07:26.436Z [ERROR]: Something went wrong
+2025-01-06T10:07:26.497Z [ERROR]: Something went wrong
+2025-01-06T10:10:45.276Z [INFO]: [object Object]
+2025-01-06T10:10:45.305Z [INFO]: Fetched Courses:
+2025-01-06T10:10:45.335Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677bac2442f25ecb36328031'), course: ObjectId('677bac2442f25ecb36328037') }
+2025-01-06T10:10:48.094Z [ERROR]: Unexpected error
+2025-01-06T10:10:48.171Z [ERROR]: Unexpected error
+2025-01-06T10:10:49.173Z [ERROR]: Database error
+2025-01-06T10:10:49.196Z [INFO]: [object Object]
+2025-01-06T10:10:49.215Z [INFO]: [object Object]
+2025-01-06T10:10:50.147Z [ERROR]: Database error
+2025-01-06T10:10:56.458Z [ERROR]: Something went wrong
+2025-01-06T10:10:56.513Z [ERROR]: Something went wrong
+2025-01-06T10:10:57.215Z [ERROR]: Database error
+2025-01-06T10:10:57.249Z [ERROR]: [object Object]
+2025-01-06T10:16:02.097Z [INFO]: [object Object]
+2025-01-06T10:16:02.115Z [INFO]: Fetched Courses:
+2025-01-06T10:16:02.145Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677bad618b4a09d8478743f3'), course: ObjectId('677bad618b4a09d8478743f9') }
+2025-01-06T10:16:04.337Z [INFO]: Server started on port 3000
+2025-01-06T10:16:05.910Z [ERROR]: Unexpected error
+2025-01-06T10:16:05.980Z [ERROR]: Unexpected error
+2025-01-06T10:16:06.246Z [INFO]: Connected to database
+2025-01-06T10:16:07.126Z [ERROR]: Database error
+2025-01-06T10:16:07.150Z [INFO]: [object Object]
+2025-01-06T10:16:07.171Z [INFO]: [object Object]
+2025-01-06T10:16:08.483Z [ERROR]: Something went wrong
+2025-01-06T10:16:08.557Z [ERROR]: Something went wrong
+2025-01-06T10:16:09.433Z [ERROR]: Database error
+2025-01-06T10:16:11.169Z [ERROR]: Database error
+2025-01-06T10:16:11.204Z [ERROR]: [object Object]
+2025-01-06T10:21:47.209Z [INFO]: Server started on port 3000
+2025-01-06T10:21:47.536Z [INFO]: [object Object]
+2025-01-06T10:21:47.552Z [INFO]: Fetched Courses:
+2025-01-06T10:21:47.584Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677baebb32d17ae3b341a17a'), course: ObjectId('677baebb32d17ae3b341a180') }
+2025-01-06T10:21:48.985Z [INFO]: Connected to database
+2025-01-06T10:21:51.233Z [ERROR]: Unexpected error
+2025-01-06T10:21:51.315Z [ERROR]: Unexpected error
+2025-01-06T10:21:52.915Z [ERROR]: Something went wrong
+2025-01-06T10:21:52.977Z [ERROR]: Something went wrong
+2025-01-06T10:21:54.706Z [ERROR]: Database error
+2025-01-06T10:21:54.733Z [INFO]: [object Object]
+2025-01-06T10:21:54.756Z [INFO]: [object Object]
+2025-01-06T10:21:57.202Z [ERROR]: Database error
+2025-01-06T10:21:59.911Z [ERROR]: Database error
+2025-01-06T10:21:59.948Z [ERROR]: [object Object]
+2025-01-06T10:23:15.492Z [INFO]: Closing Redis client...
+2025-01-06T10:23:47.966Z [INFO]: [object Object]
+2025-01-06T10:23:47.988Z [INFO]: Fetched Courses:
+2025-01-06T10:23:48.023Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677baf330f79fc7881fb0235'), course: ObjectId('677baf330f79fc7881fb023b') }
+2025-01-06T10:23:50.555Z [ERROR]: Unexpected error
+2025-01-06T10:23:50.661Z [ERROR]: Unexpected error
+2025-01-06T10:23:53.723Z [ERROR]: Internal server error.
+2025-01-06T10:23:55.719Z [ERROR]: Database error
+2025-01-06T10:23:55.755Z [INFO]: [object Object]
+2025-01-06T10:23:55.787Z [INFO]: [object Object]
+2025-01-06T10:23:57.353Z [ERROR]: Internal error
+2025-01-06T10:23:57.365Z [ERROR]: Internal error
+2025-01-06T10:23:59.277Z [ERROR]: Something went wrong
+2025-01-06T10:23:59.354Z [ERROR]: Something went wrong
+2025-01-06T10:24:05.150Z [ERROR]: Database error
+2025-01-06T10:24:05.215Z [ERROR]: [object Object]
+2025-01-06T10:24:14.676Z [ERROR]: Database error
+2025-01-06T10:26:04.555Z [INFO]: [object Object]
+2025-01-06T10:26:04.577Z [INFO]: Fetched Courses:
+2025-01-06T10:26:04.613Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677bafbc5815d0b2076fbf14'), course: ObjectId('677bafbc5815d0b2076fbf1a') }
+2025-01-06T10:26:08.152Z [ERROR]: Database error
+2025-01-06T10:26:13.545Z [ERROR]: Unexpected error
+2025-01-06T10:26:13.641Z [ERROR]: Unexpected error
+2025-01-06T10:26:15.655Z [ERROR]: Database error
+2025-01-06T10:26:15.690Z [INFO]: [object Object]
+2025-01-06T10:26:15.721Z [INFO]: [object Object]
+2025-01-06T10:26:17.525Z [ERROR]: Database error
+2025-01-06T10:26:17.570Z [ERROR]: [object Object]
+2025-01-06T10:26:21.344Z [ERROR]: Something went wrong
+2025-01-06T10:26:21.434Z [ERROR]: Something went wrong
+2025-01-06T10:26:26.630Z [ERROR]: Internal server error.
+2025-01-06T10:26:30.403Z [ERROR]: Internal error
+2025-01-06T10:26:30.414Z [ERROR]: Internal error

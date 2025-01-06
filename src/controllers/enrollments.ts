@@ -300,9 +300,9 @@ class EnrollmentController {
                         path: 'student',
                         populate: {
                             path: 'user',
-                            select: 'name _id',
+                            select: 'name -_id',
                         },
-                        select: 'name email level',
+                        select: '_id level',
                     })
                     .populate('course', '_id name code')
                     .select('-__v')
