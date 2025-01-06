@@ -12015,3 +12015,117 @@
 2025-01-05T01:21:57.465Z [ERROR]: Cannot read properties of undefined (reading 'success')
 2025-01-05T01:41:59.155Z [ERROR]: jwt malformed
 2025-01-05T01:42:59.593Z [ERROR]: jwt malformed
+2025-01-05T22:37:13.278Z [INFO]: Server started on port 3000
+2025-01-05T22:37:24.038Z [INFO]: Connected to database
+2025-01-05T22:37:32.603Z [INFO]: [object Object]
+2025-01-05T22:37:33.576Z [INFO]: Fetched Courses:
+2025-01-05T22:40:26.193Z [INFO]: [object Object]
+2025-01-05T22:40:26.223Z [INFO]: Fetched Courses:
+2025-01-05T22:40:27.050Z [INFO]: Server started on port 3000
+2025-01-05T22:40:28.235Z [INFO]: [object Object]
+2025-01-05T22:40:40.169Z [INFO]: Connected to database
+2025-01-05T22:43:20.868Z [INFO]: [object Object]
+2025-01-05T22:43:20.884Z [INFO]: Fetched Courses:
+2025-01-05T22:43:22.652Z [INFO]: Server started on port 3000
+2025-01-05T22:43:26.455Z [INFO]: [object Object]
+2025-01-05T22:43:34.362Z [INFO]: [object Object]
+2025-01-05T22:43:37.313Z [INFO]: Server started on port 3000
+2025-01-05T22:43:45.565Z [INFO]: Connected to database
+2025-01-05T22:43:50.490Z [INFO]: Closing Redis client...
+2025-01-05T22:44:36.345Z [INFO]: [object Object]
+2025-01-05T22:44:36.359Z [INFO]: Fetched Courses:
+2025-01-05T22:44:54.512Z [INFO]: [object Object]
+2025-01-05T22:45:47.845Z [INFO]: Server started on port 3000
+2025-01-05T22:45:59.776Z [INFO]: Connected to database
+2025-01-05T22:46:57.340Z [INFO]: [object Object]
+2025-01-05T22:47:20.513Z [INFO]: [object Object]
+2025-01-05T22:49:26.471Z [INFO]: Server started on port 3000
+2025-01-05T22:49:32.639Z [INFO]: Connected to database
+2025-01-05T22:49:35.131Z [INFO]: [object Object]
+2025-01-05T22:51:13.871Z [INFO]: [object Object]
+2025-01-05T22:51:15.450Z [INFO]: Fetched Courses:
+2025-01-05T22:54:39.450Z [INFO]: Server started on port 3000
+2025-01-05T22:54:47.334Z [INFO]: [object Object]
+2025-01-05T22:54:47.353Z [INFO]: Fetched Courses:
+2025-01-05T22:55:01.708Z [INFO]: Connected to database
+2025-01-05T22:56:01.080Z [INFO]: Server started on port 3000
+2025-01-05T22:56:09.468Z [INFO]: [object Object]
+2025-01-05T22:56:09.486Z [INFO]: Fetched Courses:
+2025-01-05T22:56:24.332Z [INFO]: Connected to database
+2025-01-05T22:57:00.027Z [INFO]: Server started on port 3000
+2025-01-05T22:57:10.007Z [INFO]: [object Object]
+2025-01-05T22:57:10.025Z [INFO]: Fetched Courses:
+2025-01-05T22:57:15.025Z [INFO]: Connected to database
+2025-01-05T22:58:33.905Z [INFO]: Server started on port 3000
+2025-01-05T22:58:39.803Z [INFO]: [object Object]
+2025-01-05T22:58:39.821Z [INFO]: Fetched Courses:
+2025-01-05T22:58:45.485Z [INFO]: Connected to database
+2025-01-05T22:59:21.310Z [INFO]: Server started on port 3000
+2025-01-05T22:59:30.715Z [INFO]: Connected to database
+2025-01-06T07:38:53.865Z [INFO]: Server started on port 3000
+2025-01-06T07:39:00.585Z [INFO]: [object Object]
+2025-01-06T07:39:00.605Z [INFO]: Fetched Courses:
+2025-01-06T07:39:00.636Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677b88943d95d889c2c6a678'), course: ObjectId('677b88943d95d889c2c6a67e') }
+2025-01-06T07:52:25.939Z [INFO]: [object Object]
+2025-01-06T07:52:25.952Z [INFO]: Fetched Courses:
+2025-01-06T07:52:25.976Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677b8bb973e261b26e9f03a6'), course: ObjectId('677b8bb973e261b26e9f03ac') }
+2025-01-06T08:01:34.984Z [INFO]: Server started on port 3000
+2025-01-06T08:01:36.533Z [INFO]: Connected to database
+2025-01-06T08:10:33.023Z [INFO]: Server started on port 3000
+2025-01-06T08:10:34.586Z [INFO]: Connected to database
+2025-01-06T08:14:17.562Z [INFO]: Server started on port 3000
+2025-01-06T08:14:19.325Z [INFO]: Connected to database
+2025-01-06T08:15:45.263Z [INFO]: Server started on port 3000
+2025-01-06T08:15:48.835Z [INFO]: Connected to database
+2025-01-06T08:16:08.876Z [INFO]: Server started on port 3000
+2025-01-06T08:16:10.012Z [INFO]: Connected to database
+2025-01-06T08:16:43.886Z [INFO]: Server started on port 3000
+2025-01-06T08:16:45.143Z [INFO]: Connected to database
+2025-01-06T08:19:16.760Z [INFO]: Server started on port 3000
+2025-01-06T08:19:18.202Z [INFO]: Connected to database
+2025-01-06T08:19:42.920Z [INFO]: Server started on port 3000
+2025-01-06T08:19:44.190Z [INFO]: Connected to database
+2025-01-06T08:19:51.039Z [INFO]: [object Object]
+2025-01-06T08:19:51.055Z [INFO]: Fetched Courses:
+2025-01-06T08:19:51.081Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677b9226c83531138b456394'), course: ObjectId('677b9226c83531138b45639a') }
+2025-01-06T08:21:15.131Z [INFO]: Server started on port 3000
+2025-01-06T08:21:16.726Z [INFO]: Connected to database
+2025-01-06T08:21:25.299Z [INFO]: [object Object]
+2025-01-06T08:21:25.310Z [INFO]: Fetched Courses:
+2025-01-06T08:21:25.335Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677b9284cfb9e97a35dfc069'), course: ObjectId('677b9285cfb9e97a35dfc06f') }
+2025-01-06T08:22:37.523Z [INFO]: Server started on port 3000
+2025-01-06T08:22:38.974Z [INFO]: Connected to database
+2025-01-06T08:23:24.636Z [INFO]: Server started on port 3000
+2025-01-06T08:23:25.895Z [INFO]: Connected to database
+2025-01-06T08:23:30.908Z [INFO]: [object Object]
+2025-01-06T08:23:30.922Z [INFO]: Fetched Courses:
+2025-01-06T08:23:30.945Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677b930246eac047dd8f00eb'), course: ObjectId('677b930246eac047dd8f00f1') }
+2025-01-06T08:23:31.016Z [ERROR]: studentQuery.select is not a function
+2025-01-06T08:25:44.300Z [INFO]: Server started on port 3000
+2025-01-06T08:25:45.780Z [INFO]: Connected to database
+2025-01-06T08:25:49.669Z [INFO]: [object Object]
+2025-01-06T08:25:49.691Z [INFO]: Fetched Courses:
+2025-01-06T08:25:49.717Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677b938d5ab5ff7e88a61bcc'), course: ObjectId('677b938d5ab5ff7e88a61bd2') }
+2025-01-06T08:25:49.787Z [ERROR]: studentQuery.select is not a function
+2025-01-06T08:36:10.730Z [ERROR]: studentQuery.select is not a function
+2025-01-06T08:36:16.591Z [ERROR]: studentQuery.select is not a function
+2025-01-06T08:36:58.580Z [INFO]: Server started on port 3000
+2025-01-06T08:37:00.256Z [INFO]: Connected to database
+2025-01-06T08:37:31.718Z [INFO]: Server started on port 3000
+2025-01-06T08:37:32.926Z [INFO]: Connected to database
+2025-01-06T08:37:40.974Z [INFO]: Server started on port 3000
+2025-01-06T08:37:42.196Z [INFO]: Connected to database
+2025-01-06T08:37:50.126Z [INFO]: [object Object]
+2025-01-06T08:37:50.140Z [INFO]: Fetched Courses:
+2025-01-06T08:37:50.168Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677b965d466bd65533376313'), course: ObjectId('677b965d466bd65533376319') }
+2025-01-06T08:39:48.788Z [ERROR]: E11000 duplicate key error collection: test.courses index: code_1 dup key: { code: "CHEM524" }
+2025-01-06T08:41:58.662Z [INFO]: Server started on port 3000
+2025-01-06T08:42:00.137Z [INFO]: Connected to database
+2025-01-06T08:43:36.562Z [INFO]: Server started on port 3000
+2025-01-06T08:43:38.185Z [INFO]: Connected to database
+2025-01-06T08:43:48.694Z [INFO]: Server started on port 3000
+2025-01-06T08:43:50.004Z [INFO]: Connected to database
+2025-01-06T08:43:58.980Z [INFO]: [object Object]
+2025-01-06T08:43:58.995Z [INFO]: Fetched Courses:
+2025-01-06T08:43:59.021Z [ERROR]: E11000 duplicate key error collection: test.enrollments index: student_1_course_1 dup key: { student: ObjectId('677b97ce2b9eb5aa6d3d77b5'), course: ObjectId('677b97ce2b9eb5aa6d3d77bb') }
+2025-01-06T08:44:12.196Z [INFO]: Closing Redis client...

@@ -137,7 +137,7 @@ class EnrollmentController {
                 return studentCourses[0].courses
             })
 
-            if (!courses || courses.length === 0) {
+            if (!courses) {
                 res.status(404).json({
                     success: false,
                     message: 'No courses found for this student',
@@ -227,11 +227,9 @@ class EnrollmentController {
 
             if (!isInstructor) {
                 // Get the student's _id
-                const studentQuery = await Student.findOne({
+                const student = await Student.findOne({
                     user: id,
                 })
-                const student = await studentQuery.select('_id')
-
                 if (!student) {
                     res.status(401).json({
                         success: false,
@@ -277,41 +275,56 @@ class EnrollmentController {
 
     static async getAllEnrollments(req: Request, res: Response) {
         try {
-            const enrollments = await getOrSetCache(
-                'enrollments:all',
-                async () => {
-                    const results = await Enrollment.find({})
-                        .populate({
-                            path: 'student',
-                            populate: {
-                                path: 'user',
-                                select: 'name _id',
-                            },
-                            select: 'name email level',
-                        })
-                        .populate('course', '_id name code')
-                        .select('-__v')
-
-                    const foramattedResults = results.map((enrollment: any) => {
-                        const { student, ...rest } = enrollment.toObject()
-                        const { user, ...studentRest } = student
-                        const studentDateCombined = {
-                            ...studentRest,
-                            ...user,
-                            __v: undefined, // exclude from result
-                            courses: undefined,
-                            cgps: undefined,
-                            createdAt: undefined,
-                            updatedAt: undefined,
-                        }
-                        return {
-                            ...rest,
-                            student: studentDateCombined,
-                        }
+            const { id, role } = req.user as { [key: string]: string }
+            const isInstructor = role === Role.INSTRUCTOR
+            const query: any = {}
+            if (!isInstructor) {
+                // get student using the corresponding user id
+                const student = await Student.findOne({ user: id })
+                if (!student) {
+                    res.status(401).json({
+                        success: false,
+                        message: 'Unauthorized: Student not found',
                     })
-                    return foramattedResults
+                    return
                 }
-            )
+                // restrict enrollments to the student's enrollments only
+                query.student = student._id
+            }
+            const cacheKey = `enrollments:${query.student}`
+            const enrollments = await getOrSetCache(cacheKey, async () => {
+                console.log(`Enrollment query is ${query}`)
+                const results = await Enrollment.find(query)
+                    .populate({
+                        path: 'student',
+                        populate: {
+                            path: 'user',
+                            select: 'name _id',
+                        },
+                        select: 'name email level',
+                    })
+                    .populate('course', '_id name code')
+                    .select('-__v')
+
+                const foramattedResults = results.map((enrollment: any) => {
+                    const { student, ...rest } = enrollment.toObject()
+                    const { user, ...studentRest } = student
+                    const studentDateCombined = {
+                        ...studentRest,
+                        ...user,
+                        __v: undefined, // exclude from result
+                        courses: undefined,
+                        cgpa: undefined,
+                        createdAt: undefined,
+                        updatedAt: undefined,
+                    }
+                    return {
+                        ...rest,
+                        student: studentDateCombined,
+                    }
+                })
+                return foramattedResults
+            })
 
             res.status(200).json({
                 success: true,

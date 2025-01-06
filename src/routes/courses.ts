@@ -1,12 +1,13 @@
-import { Router } from "express";
-import CourseController from "../controllers/courses";
+import { Router } from 'express'
+import CourseController from '../controllers/courses'
 import {
     courseCreationValidationSchema,
     courseUpdationValidationSchema,
-} from "../utils/middleware/validators/course";
-import { checkSchema } from "express-validator";
+} from '../utils/middleware/validators/course'
+import { checkSchema } from 'express-validator'
+import { isInstructor } from '../utils/middleware/isInstructor'
 
-const router = Router();
+const router = Router()
 
 /**
  * @swagger
@@ -159,7 +160,7 @@ const router = Router();
  *                   type: string
  *                   example: "Internal server error"
  */
-router.get("/", CourseController.getAllCourses);
+router.get('/', CourseController.getAllCourses)
 
 /**
  * @swagger
@@ -261,7 +262,9 @@ router.get("/", CourseController.getAllCourses);
  *                   type: string
  *                   example: "Internal server error"
  */
-router.get("/:courseCode", CourseController.getCourse);
+router.get('/:courseCode', CourseController.getCourse)
+
+router.use(isInstructor)
 
 /**
  * @swagger
@@ -394,10 +397,10 @@ router.get("/:courseCode", CourseController.getCourse);
  *                   example: "Internal server error"
  */
 router.post(
-    "/",
+    '/',
     checkSchema(courseCreationValidationSchema),
     CourseController.createCourse
-);
+)
 
 /**
  * @swagger
@@ -493,10 +496,10 @@ router.post(
  *                   example: "Internal server error"
  */
 router.put(
-    "/:courseCode",
+    '/:courseCode',
     checkSchema(courseUpdationValidationSchema),
     CourseController.updateCourse
-);
+)
 
 /**
  * @swagger
@@ -556,5 +559,5 @@ router.put(
  *                   type: string
  *                   example: "Internal server error"
  */
-router.delete("/:courseCode", CourseController.deleteCourse);
-export { router as courseRouter };
+router.delete('/:courseCode', CourseController.deleteCourse)
+export { router as courseRouter }

@@ -14,8 +14,12 @@ import { client } from '../../utils/cache'
 const app = createServer()
 let instructorsAccessToken: string
 let instructorsRefreshToken: string
+let studentsAccessToken: string
+let studentsRefreshToken: string
 let studentId: string
-let courseCode: string
+let course1: { [key: string]: string } = {}
+let course2: { [key: string]: string } = {}
+let enrollmentId: string
 
 describe('User End to End', () => {
     beforeAll(async () => {
@@ -103,6 +107,24 @@ describe('User End to End', () => {
         expect(response.body.data).toHaveProperty('email')
     })
 
+    test('fetch the just created student', async () => {
+        const response = await request(app)
+            .get('/api/v1/students')
+            .set('Authorization', `Bearer ${instructorsAccessToken}`)
+
+        expect(response.status).toBe(200)
+        expect(Array.isArray(response.body.data)).toBe(true)
+        expect(response.body.data.length).toBe(1)
+        expect(response.body.data[0].name).toBe(newStudent1.name)
+        expect(response.body.data[0].level).toBe(newStudent1.level)
+
+        // set student id
+        console.log(
+            `The student data is = ${JSON.stringify(response.body.data[0]._id)}`
+        )
+        studentId = response.body.data[0]._id
+    })
+
     test('create courses', async () => {
         for (let i = 0; i < 5; i++) {
             const response = await request(app)
@@ -147,34 +169,114 @@ describe('User End to End', () => {
             )
         })
 
-        // set courseCode to be the first course in test data
-        courseCode = response.body.courses[0].code
+        // set course1 & course2 to be the first and second course in test data respectively
+        course1 = response.body.courses[0]
+        course2 = response.body.courses[1]
     })
 
-    test('fetch the just created student', async () => {
-        const response = await request(app)
-            .get('/api/v1/students')
-            .set('Authorization', `Bearer ${instructorsAccessToken}`)
-
-        expect(response.status).toBe(200)
-        expect(Array.isArray(response.body.data)).toBe(true)
-        expect(response.body.data.length).toBe(1)
-        expect(response.body.data[0].name).toBe(newStudent1.name)
-        expect(response.body.data[0].level).toBe(newStudent1.level)
-
-        // set student id
-        studentId = response.body.data[0]._id
-    })
-
-    test('instructor enrolls student in a course', async () => {
-        console.log(`Request body id = ${studentId} - ${courseCode}`)
+    test('instructor enrolls a student in a course', async () => {
         const response = await request(app)
             .post('/api/v1/enrollments')
             .set('Authorization', `Bearer ${instructorsAccessToken}`)
-            .send({ studentId, courseCode })
+            .send({ studentId, courseCode: course1.code })
 
         expect(response.status).toBe(201)
         expect(response.body.success).toBe(true)
         expect(response.body.message).toEqual('Student enrolled successfully!')
+    })
+
+    test('fetch all enrollments', async () => {
+        const response = await request(app)
+            .get('/api/v1/enrollments')
+            .set('Authorization', `Bearer ${instructorsAccessToken}`)
+
+        expect(response.status).toBe(200)
+        expect(response.body.success).toBe(true)
+        expect(response.body.enrollments.length).toBe(1)
+
+        enrollmentId = response.body.enrollments[0]._id
+    })
+
+    test('login as a student', async () => {
+        const response = await request(app).post('/api/v1/auth/login').send({
+            email: newStudent1.email,
+            password: newStudent1.password,
+        })
+
+        expect(response.status).toBe(200)
+        expect(response.body.success).toBe(true)
+        expect(response.body).toHaveProperty('refreshToken')
+
+        studentsAccessToken = response.body.accessToken
+        studentsRefreshToken = response.body.refreshToken
+    })
+
+    test('get all courses for a student', async () => {
+        const response = await request(app)
+            .get(`/api/v1/enrollments/student/${studentId}`)
+            .set('Authorization', `Bearer ${studentsAccessToken}`) // student fetched their courses
+
+        expect(response.status).toBe(200)
+        expect(response.body.success).toBe(true)
+        expect(response.body.courses.length).toBe(1)
+        expect(response.body.courses[0].code).toBe(course1.code)
+    })
+
+    test('student tries to enrolls themselves in an already enrolled course', async () => {
+        const response = await request(app)
+            .post('/api/v1/enrollments')
+            .set('Authorization', `Bearer ${studentsAccessToken}`)
+            .send({ studentId, courseCode: course1.code })
+
+        expect(response.status).toBe(400)
+        expect(response.body.success).toBe(false)
+        expect(response.body.message).toEqual(
+            `Student is already enrolled in course ${course1.code}`
+        )
+    })
+
+    test("student enrolls themselves in a course they're not already enrolled in", async () => {
+        const response = await request(app)
+            .post('/api/v1/enrollments')
+            .set('Authorization', `Bearer ${studentsAccessToken}`)
+            .send({ studentId, courseCode: course2.code })
+
+        expect(response.status).toBe(201)
+        expect(response.body.success).toBe(true)
+        expect(response.body.message).toEqual('Student enrolled successfully!')
+    })
+
+    test('student gets initial enrollmentId', async () => {
+        const response = await request(app)
+            .get('/api/v1/enrollments')
+            .set('Authorization', `Bearer ${studentsAccessToken}`)
+
+        expect(response.status).toBe(200)
+        expect(response.body.success).toBe(true)
+        expect(response.body.enrollments.length).toBe(2)
+
+        enrollmentId = response.body.enrollments[0]._id
+    })
+
+    test('student deletes initial enrollment', async () => {
+        const deleteResponse = await request(app)
+            .delete(`/api/v1/enrollments/${enrollmentId}`)
+            .set('Authorization', `Bearer ${studentsAccessToken}`)
+
+        expect(deleteResponse.status).toBe(200)
+        expect(deleteResponse.body.success).toBe(true)
+        expect(deleteResponse.body.message).toEqual(
+            'Enrollment deleted successfully'
+        )
+    })
+
+    test('student tries to delete a course', async () => {
+        const deleteResponse = await request(app)
+            .delete(`/api/v1/courses/${course1.code}`)
+            .set('Authorization', `Bearer ${studentsAccessToken}`)
+
+        expect(deleteResponse.status).toBe(401)
+        expect(deleteResponse.body.success).toBe(false)
+        expect(deleteResponse.body.error).toEqual('Unauthorized!')
     })
 })

@@ -1,8 +1,8 @@
-import { Router } from "express";
-import { isInstructor } from "../utils/middleware/isInstructor";
-import EnrollmentController from "../controllers/enrollments";
+import { Router } from 'express'
+import { isInstructor } from '../utils/middleware/isInstructor'
+import EnrollmentController from '../controllers/enrollments'
 
-const router = Router();
+const router = Router()
 
 /**
  * @swagger
@@ -56,7 +56,7 @@ const router = Router();
  *       500:
  *         description: Internal server error
  */
-router.post("/", EnrollmentController.enrollStudentInCourse);
+router.post('/', EnrollmentController.enrollStudentInCourse)
 
 /**
  * @swagger
@@ -85,10 +85,25 @@ router.post("/", EnrollmentController.enrollStudentInCourse);
  *       500:
  *         description: Internal server error
  */
-router.get(
-    "/student/:studentId",
-    EnrollmentController.getAllCoursesForAStudent
-);
+router.get('/student/:studentId', EnrollmentController.getAllCoursesForAStudent)
+
+/**
+ * @swagger
+ * /api/v1/enrollments:
+ *   get:
+ *     summary: Get all enrollments
+ *     description: Retrieve all enrollments with student and course details.
+ *     security:
+ *       - bearerAuth: []
+ *     tags:
+ *       - Enrollments
+ *     responses:
+ *       200:
+ *         description: A list of all enrollments
+ *       500:
+ *         description: Internal server error
+ */
+router.get('/', EnrollmentController.getAllEnrollments)
 
 /**
  * @swagger
@@ -119,9 +134,9 @@ router.get(
  *       500:
  *         description: Internal server error
  */
-router.delete("/:enrollmentId", EnrollmentController.deleteEnrollment);
+router.delete('/:enrollmentId', EnrollmentController.deleteEnrollment)
 
-router.use(isInstructor);
+router.use(isInstructor)
 
 /**
  * @swagger
@@ -150,27 +165,6 @@ router.use(isInstructor);
  *       500:
  *         description: Internal server error
  */
-router.get(
-    "/course/:courseCode",
-    EnrollmentController.getAllStudentsForACourse
-);
+router.get('/course/:courseCode', EnrollmentController.getAllStudentsForACourse)
 
-/**
- * @swagger
- * /api/v1/enrollments:
- *   get:
- *     summary: Get all enrollments
- *     description: Retrieve all enrollments with student and course details.
- *     security:
- *       - bearerAuth: []
- *     tags:
- *       - Enrollments
- *     responses:
- *       200:
- *         description: A list of all enrollments
- *       500:
- *         description: Internal server error
- */
-router.get("/", EnrollmentController.getAllEnrollments);
-
-export { router as enrollmentRouter };
+export { router as enrollmentRouter }
