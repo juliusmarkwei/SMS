@@ -37,8 +37,9 @@ class EnrollmentController {
         }
 
         try {
-            const course = await Course.findOne({ code: courseCode })
-
+            const course: ICourse | null = await Course.findOne({
+                code: courseCode,
+            })
             if (!course) {
                 res.status(404).json({
                     success: false,

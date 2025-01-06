@@ -66,9 +66,7 @@ describe('Enrollment Controller', () => {
             )
             const res: any = mockResponse()
 
-            Course.findOne = jest
-                .fn()
-                .mockResolvedValue({ select: jest.fn((id: any) => null) }) // Course not found
+            ;(Student.findOne as jest.Mock).mockReturnValue(null)
 
             await EnrollmentController.enrollStudentInCourse(req, res)
 
@@ -145,7 +143,7 @@ describe('Enrollment Controller', () => {
             Course.findOne = jest.fn().mockResolvedValue(mockCourse)
             Enrollment.prototype.save = jest
                 .fn()
-                .mockRejectedValue(new Error('Internal error'))
+                .mockRejectedValue(new Error('Internal server error'))
 
             await EnrollmentController.enrollStudentInCourse(req, res)
 

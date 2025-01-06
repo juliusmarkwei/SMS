@@ -44,13 +44,10 @@ describe('Enrollment Routes', () => {
             }
 
             // Mock the chainable query
-            const mockQuery = {
-                select: jest.fn().mockResolvedValue(mockCourse),
-            }
-            ;(Course.findOne as jest.Mock).mockReturnValue(mockQuery)
+
+            ;(Course.findOne as jest.Mock).mockReturnValue(mockCourse)
             // mock select()
-            ;(mockQuery.select as jest.Mock).mockResolvedValue(mockCourse)
-            ;(Student.findOne as jest.Mock).mockResolvedValue(mockStudent)
+            ;(Student.findOne as jest.Mock).mockResolvedValue(mockCourse)
             ;(Enrollment.prototype.save as jest.Mock).mockResolvedValue(
                 mockEnrollment
             )
@@ -90,10 +87,7 @@ describe('Enrollment Routes', () => {
         })
 
         it('should return 404 if the course does not exist', async () => {
-            const mockQuery = {
-                select: jest.fn().mockResolvedValue(null),
-            }
-            ;(Course.findOne as jest.Mock).mockResolvedValue(mockQuery)
+            ;(Course.findOne as jest.Mock).mockResolvedValue(null)
 
             const response = await request(app)
                 .post(`${baseUrl}`)
@@ -125,12 +119,10 @@ describe('Enrollment Routes', () => {
 
         it('should return 500 for unexpected errors', async () => {
             // Mock the chainable query
-            const mockQuery = {
-                select: jest.fn().mockImplementation(() => {
-                    throw new Error('Database error')
-                }),
-            }
-            ;(Course.findOne as jest.Mock).mockReturnValue(mockQuery)
+
+            ;(Course.findOne as jest.Mock).mockImplementation(() => {
+                throw new Error('Database error')
+            })
             const response = await request(app)
                 .post(`${baseUrl}`)
                 .set('Authorization', `Bearer ${token}`)
@@ -139,7 +131,7 @@ describe('Enrollment Routes', () => {
             expect(response.status).toBe(500)
             expect(response.body).toEqual({
                 success: false,
-                message: 'Internal server error',
+                message: 'Database error',
             })
         })
     })

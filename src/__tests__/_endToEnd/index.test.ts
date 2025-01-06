@@ -15,7 +15,6 @@ const app = createServer()
 let instructorsAccessToken: string
 let instructorsRefreshToken: string
 let studentsAccessToken: string
-let studentsRefreshToken: string
 let studentId: string
 let course1: { [key: string]: string } = {}
 let course2: { [key: string]: string } = {}
@@ -208,7 +207,6 @@ describe('User End to End', () => {
         expect(response.body).toHaveProperty('refreshToken')
 
         studentsAccessToken = response.body.accessToken
-        studentsRefreshToken = response.body.refreshToken
     })
 
     test('get all courses for a student', async () => {

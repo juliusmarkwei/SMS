@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>176/176</span>
+                <span class='fraction'>170/170</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>176/176</span>
+                <span class='fraction'>170/170</span>
             </div>
         
             
@@ -233,13 +233,7 @@
 <a name='L168'></a><a href='#L168'>168</a>
 <a name='L169'></a><a href='#L169'>169</a>
 <a name='L170'></a><a href='#L170'>170</a>
-<a name='L171'></a><a href='#L171'>171</a>
-<a name='L172'></a><a href='#L172'>172</a>
-<a name='L173'></a><a href='#L173'>173</a>
-<a name='L174'></a><a href='#L174'>174</a>
-<a name='L175'></a><a href='#L175'>175</a>
-<a name='L176'></a><a href='#L176'>176</a>
-<a name='L177'></a><a href='#L177'>177</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L171'></a><a href='#L171'>171</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -409,17 +403,11 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Router } from "express";
-import { isInstructor } from "../utils/middleware/isInstructor";
-import EnrollmentController from "../controllers/enrollments";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Router } from 'express'
+import { isInstructor } from '../utils/middleware/isInstructor'
+import EnrollmentController from '../controllers/enrollments'
 &nbsp;
-const router = Router();
+const router = Router()
 &nbsp;
 /**
  * @swagger
@@ -473,7 +461,7 @@ const router = Router();
  *       500:
  *         description: Internal server error
  */
-router.post("/", EnrollmentController.enrollStudentInCourse);
+router.post('/', EnrollmentController.enrollStudentInCourse)
 &nbsp;
 /**
  * @swagger
@@ -502,10 +490,25 @@ router.post("/", EnrollmentController.enrollStudentInCourse);
  *       500:
  *         description: Internal server error
  */
-router.get(
-    "/student/:studentId",
-    EnrollmentController.getAllCoursesForAStudent
-);
+router.get('/student/:studentId', EnrollmentController.getAllCoursesForAStudent)
+&nbsp;
+/**
+ * @swagger
+ * /api/v1/enrollments:
+ *   get:
+ *     summary: Get all enrollments
+ *     description: Retrieve all enrollments with student and course details.
+ *     security:
+ *       - bearerAuth: []
+ *     tags:
+ *       - Enrollments
+ *     responses:
+ *       200:
+ *         description: A list of all enrollments
+ *       500:
+ *         description: Internal server error
+ */
+router.get('/', EnrollmentController.getAllEnrollments)
 &nbsp;
 /**
  * @swagger
@@ -536,9 +539,9 @@ router.get(
  *       500:
  *         description: Internal server error
  */
-router.delete("/:enrollmentId", EnrollmentController.deleteEnrollment);
+router.delete('/:enrollmentId', EnrollmentController.deleteEnrollment)
 &nbsp;
-router.use(isInstructor);
+router.use(isInstructor)
 &nbsp;
 /**
  * @swagger
@@ -567,30 +570,9 @@ router.use(isInstructor);
  *       500:
  *         description: Internal server error
  */
-router.get(
-    "/course/:courseCode",
-    EnrollmentController.getAllStudentsForACourse
-);
+router.get('/course/:courseCode', EnrollmentController.getAllStudentsForACourse)
 &nbsp;
-/**
- * @swagger
- * /api/v1/enrollments:
- *   get:
- *     summary: Get all enrollments
- *     description: Retrieve all enrollments with student and course details.
- *     security:
- *       - bearerAuth: []
- *     tags:
- *       - Enrollments
- *     responses:
- *       200:
- *         description: A list of all enrollments
- *       500:
- *         description: Internal server error
- */
-router.get("/", EnrollmentController.getAllEnrollments);
-&nbsp;
-export { router as enrollmentRouter };
+export { router as enrollmentRouter }
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -598,7 +580,7 @@ export { router as enrollmentRouter };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-01-05T21:21:44.835Z
+                at 2025-01-06T09:28:41.202Z
             </div>
         <script src="../prettify.js"></script>
         <script>
